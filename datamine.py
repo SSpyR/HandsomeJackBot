@@ -8,7 +8,7 @@ import json
 import appdirs
 import requests
 import datetime
-import asyncio
+import time
 import discord
 
 from discord.ext import commands
@@ -20,8 +20,7 @@ class Datamine(commands.Cog):
         self.bot=bot
         self.sched=BackgroundScheduler()
 
-    @commands.command
-    async def bl_hotfix(self, ctx):
+    def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
         output_dir = "C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes"
         point_in_time_base = 'point_in_time'
@@ -105,20 +104,21 @@ class Datamine(commands.Cog):
 
             hotfixes=json.load(hotfixes_new)
 
-            await chat.send('```NEW HOTFIX DATA INCOMING```')
-            await chat2.send('```NEW HOTFIX DATA INCOMING```')
-            await asyncio.sleep(20)
+            chat.send('```NEW HOTFIX DATA INCOMING```')
+            chat2.send('```NEW HOTFIX DATA INCOMING```')
+            time.sleep(20)
 
             for index in enumerate(hotfixes['parameters']):
                 response=("```{}```".format(index[1]))
                 if len(response)>=2000:
-                    await chat.send('```Data String too Long, Skipping...```')
-                    await chat2.send('```Data String too Long, Skipping...```')
+                    chat.send('```Data String too Long, Skipping...```')
+                    chat2.send('```Data String too Long, Skipping...```')
                     continue
                 else:
-                    await chat.send(response)
-                    await chat2.send(response)
-            await ctx.send('```Data Sent```')
+                    chat.send(response)
+                    chat2.send(response)
+            chat.send('```Data Sent```')
+            chat2.send('```Data Sent```')
                 
 
 
@@ -155,10 +155,10 @@ class Datamine(commands.Cog):
     #@bot.command(name='ref')
     #async def bl_ref(self, ctx):
 
-    
+
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', hours=1)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=30)
         
 
 def setup(bot):
