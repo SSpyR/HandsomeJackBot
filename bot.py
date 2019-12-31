@@ -2,9 +2,12 @@
 
 import os
 import discord
+import logging
 from discord.ext import commands
 from dotenv import load_dotenv
+
 load_dotenv()
+logging.basicConfig(level=logging.INFO)
 
 startup_extensions=['resources', 'social', 'datamine']
 token = os.getenv('DISCORD_TOKEN')
@@ -44,14 +47,18 @@ async def unload(ctx, extension_name : str):
     bot.unload_extension(extension_name)
     await ctx.send("{} unloaded.".format(extension_name))
 
-'''
+
 @bot.command(name='shutdown')
-@bot.is_owner
 async def shutdown(ctx):
-    await ctx.send('Shutting Down...')
-    print('Shutdown Command Executed by Owner')
-    await ctx.bot.logout()
-'''
+    #user_id=ctx.author.id
+    if ctx.author.id==int(owner_id):
+        await ctx.send('Shutting Down...')
+        print('Shutdown Command Executed by Owner')
+        await bot.logout()
+    else:
+        print (type(ctx.author.id),'{}'.format(ctx.author.id))
+        print (type(owner_id),owner_id)
+        print('Shutdown Command Execution Attempted by Non-Owner')
 
 
 if __name__=="__main__":
