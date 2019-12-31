@@ -14,14 +14,12 @@ import discord
 from discord.ext import commands
 from apscheduler.schedulers.background import BackgroundScheduler
 
-sched=BackgroundScheduler()
-
 class Datamine(commands.Cog):
 
     def __init__(self, bot):
         self.bot=bot
+        self.sched=BackgroundScheduler()
 
-    @sched.scheduled_job('interval', hours=1)
     @commands.command
     async def bl_hotfix(self, ctx):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
@@ -157,7 +155,12 @@ class Datamine(commands.Cog):
     #@bot.command(name='ref')
     #async def bl_ref(self, ctx):
 
-sched.start()
+    
+    def start_sched(self):
+        self.sched.start()
+        self.sched.add_job(self.bl_hotfix, trigger='interval', hours=1)
+        
 
 def setup(bot):
+    Datamine(bot).start_sched()
     bot.add_cog(Datamine(bot))
