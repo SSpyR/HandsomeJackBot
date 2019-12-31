@@ -16,6 +16,12 @@ class Social(commands.Cog):
         await ctx.author.send('Here is the link to invite Handsome JackBot to your Discord.')
         await ctx.author.send(response)
 
+    @commands.command(name='github', help='Github Repository for the Bot')
+    async def github_link(self, ctx):
+        response='https://github.com/SSpyR/HandsomeJackBot.git'
+        await ctx.author.send('Here is the link to the Github Repo.')
+        await ctx.author.send(response)
+
     @commands.command(name='randy', help='Randy Emote')
     async def bl_randy(self, ctx):
         response='<:justintime:646748813981384746>'
