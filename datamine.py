@@ -1,5 +1,6 @@
 # datamine.py
 # original code for def bl_hotfix by apocalyptech on GitHub, thanks to him
+# see https://github.com/apocalyptech/
 
 import os
 import sys
