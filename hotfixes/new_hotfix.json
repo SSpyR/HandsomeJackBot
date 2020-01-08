@@ -1,0 +1,128 @@
+{
+  "parameters": [	
+	{
+      "key": "SparkCharacterLoadedEntry437",
+      "value": "(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools,817,((ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money.ItemPool_Money\"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"')),(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc\"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Lots.Init_RandomLootCount_Lots_C\"')),(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium.ItemPool_Eridium\"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_LotsAndLots.Init_RandomLootCount_LotsAndLots_C\"'))),((ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money.ItemPool_Money\"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"')),(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc\"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Lots.Init_RandomLootCount_Lots_C\"')),(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium.ItemPool_Eridium\"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_LotsAndLots.Init_RandomLootCount_LotsAndLots_C\"')),(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Unique/ItemPool_Agonizer1500_Terror.ItemPool_Agonizer1500_Terror\"',PoolProbability=(BaseValueConstant=0.400000)))"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry492",
+      "value": "(1,1,0,BPChar_LoaderBasic),/Game/GameData/Attributes/MayhemMode/Att_MayhemModeBadassScaler.Att_MayhemModeBadassScaler:ValueResolver_ConstantAttributeValueResolver,Value.BaseValueConstant,8,3.500000,1.75"
+    },
+    {
+      "key": "SparkLevelPatchEntry817",
+      "value": "(1,1,0,Trashtown_P),/Game/LevelArt/Environments/Pandora/_Shared/Effects/Systems/PS_Pandora_Tiki_Torch_01.PS_Pandora_Tiki_Torch_01:ParticleSpriteEmitter_0.SpawnRampDistribution,Object.DistanceSpawnRamp.Distribution.Object.ConstantCurve.Points.Points[1].OutVal,8,0.000000,1.000000"
+    },
+    {
+      "key": "SparkLevelPatchEntry818",
+      "value": "(1,1,0,Prologue_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry819",
+      "value": "(1,1,0,Sacrifice_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry820",
+      "value": "(1,1,0,City_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry821",
+      "value": "(1,1,0,CityVault_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry822",
+      "value": "(1,1,0,Outskirts_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry823",
+      "value": "(1,1,0,Wetlands_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry824",
+      "value": "(1,1,0,Convoy_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry825",
+      "value": "(1,1,0,Desert_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry826",
+      "value": "(1,1,0,DesertVault_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry827",
+      "value": "(1,1,0,Motorcade_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry828",
+      "value": "(1,1,0,MotorcadeFestival_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry829",
+      "value": "(1,1,0,Desolate_P),/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_MayhemAddedHP.Att_Vehicle_MayhemAddedHP:ValueResolver_LevelMultiplierAttributeValueResolver,Value.Level.BaseValueConstant,8,0.150000,1.250000"
+    },
+    {
+      "key": "SparkLevelPatchEntry831",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,95,\"5700.000000,-33200.000000,10050.000000|0.000000,-134.999832,0.000000|7.250000,9.750000,2.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry832",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,96,\"6600.000000,-34350.000000,10050.000000|0.000000,-89.999962,0.000000|22.250000,54.000000,2.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry833",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,94,\"7550.000000,-33100.000000,10050.000000|0.000000,-40.000050,0.000000|7.250000,9.750000,2.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry834",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,94,\"8650.000000,-32400.000000,10050.000000|0.000000,0.000000,0.000000|22.250000,54.000000,2.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry835",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,93,\"7500.000000,-31550.000000,10050.000000|0.000000,39.999977,0.000000|7.250000,9.750000,2.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry836",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,96,\"6600.000000,-30350.000000,10050.000000|0.000000,-89.999962,0.000000|22.250000,54.000000,2.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry837",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,94,\"5700.000000,-31500.000000,10050.000000|0.000000,135.000061,0.000000|7.250000,9.750000,2.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry838",
+      "value": "(1,6,0,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior,/Engine/BasicShapes,Cube,94,\"4600.000000,-32400.000000,10050.000000|0.000000,0.000000,0.000000|22.250000,54.000000,2.250000\",1"
+    },
+    {
+      "key": "SparkPatchEntry593",
+      "value": "(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_SimpleFormulas.DataTable_Operative_SimpleFormulas,Presentation_TeamworkDreamwork_BonusDamage,Level,357,(BaseValueConstant=0.000000,DataTableValue=(DataTable=DataTable'\"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance\"',RowName=\"SkillEffect\",ValueName=\"ThreePointLarge_17_AB3E46BA44DA3529007BBBA71FDD9D28\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=0.120000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry594",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_UrsaCorps/LowHpDamage/Status_FullCan_LowHPDamage_IB.Status_FullCan_LowHPDamage_IB,AttributeEffects.AttributeEffects[0].AttributeData,76,GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage',GbxAttributeData'/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Skill.Att_DamageSourceInstigatorMultiplier_Skill'"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry493",
+      "value": "(1,2,0,BPChar_OversphereDeathsphere),/Game/PatchDLC/Raid1/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_OversphereRaid1.Table_Balance_OversphereRaid1,Deathsphere,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,8,3.000000,2.000000"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry494",
+      "value": "(1,2,0,BPChar_OversphereDefenderDarkRaid1),/Game/PatchDLC/Raid1/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_OversphereRaid1.Table_Balance_OversphereRaid1,Deathsphere,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,8,3.000000,2.000000"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry495",
+      "value": "(1,2,0,BPChar_OversphereDeathsphere),/Game/PatchDLC/Raid1/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_OversphereRaid1.Table_Balance_OversphereRaid1,Deathsphere,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,8,3.000000,2.000000"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry496",
+      "value": "(1,2,0,BPChar_OversphereDefenderDarkRaid1),/Game/PatchDLC/Raid1/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_OversphereRaid1.Table_Balance_OversphereRaid1,Deathsphere,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,8,3.000000,2.000000"
+    },
+    {
+      "key": "SparkEarlyLevelPatchEntry12",
+      "value": "(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.OakSpawner_PortaPrisonVandals.SpawnerComponent,SpawnDetails,166,(Critical=NotCritical,bOverrideCritical=False,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False),(Critical=Critical,bOverrideCritical=True,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False)"
+    },
+    {
+      "key": "SparkPatchEntry571",
+      "value": "(1,2,0,),/Game/Common/_Design/Table_MicropatchSwitches.Table_MicropatchSwitches,MainMenuAltBackground,Value,0,,(BaseValueConstant=4.0)"
+    }
+  ]
+}
