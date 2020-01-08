@@ -44,6 +44,9 @@ class Social(commands.Cog):
             if 'randy' in message.content:
                 response='<:justintime:646748813981384746>'
                 await message.channel.send(response)
+            if 'RANDY' in message.content:
+                response='<:4hed:662477280034947072>'
+                await message.channel.send(response)
 
 
 def setup(bot):
