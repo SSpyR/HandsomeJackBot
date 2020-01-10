@@ -2,6 +2,14 @@
 # original code for def bl_hotfix by apocalyptech on GitHub, thanks to him
 # see https://github.com/apocalyptech/
 
+# send new hotfixes to a new file with only that data (possibly done, need to account for negative changes) 
+# detect additions and removals in hotfix data and state both as such in new hotfix file?
+# parsed summary of each changed item ("Changed [Print affected item] [print affected property] to [print new effect]")?
+# fix refget
+# simplify chat and guild variables if possible
+
+# <a:rooHack:652663804840247316> meme emote to add in?
+
 import os
 import sys
 import json
@@ -26,6 +34,7 @@ class Datamine(commands.Cog):
         point_in_time_base = 'point_in_time'
         point_in_time_dir = os.path.join(output_dir, point_in_time_base)
         cumulative_file = 'hotfixes_current.json'
+        new_data = 'new_hotfix.json'
 
         # Get our cache dir, and create if it doesn't exist
         cache_dir = appdirs.user_cache_dir('hotfixes', 'lavoiet2')
@@ -74,6 +83,10 @@ class Datamine(commands.Cog):
         # Do the write, if we have to
         if do_write:
 
+            # update previous content file
+            with open("hotfixes/hotfixes_current.json", "r") as new, open("hotfixes/hotfixes_prev.json", "w") as old:
+                old.write(new.read())
+
             # First write the new file to the cache
             print('Writing new hotfix cache to {}'.format(hotfix_cache))
             with open(hotfix_cache, 'w') as df:
@@ -91,69 +104,180 @@ class Datamine(commands.Cog):
             with open(os.path.join(output_dir, cumulative_file), 'w') as df:
                 df.write(hotfixes)
 
-            # Written Extra for Bot, Send Update to Channel
-            guild1=self.bot.get_guild(632633098584064018)
-            guild2=self.bot.get_guild(639786657666826242)
-            chat=self.bot.get_channel(661350189696811094)
+            # Split the new data out
+            startindex=None
+            with open('hotfixes/hotfixes_current.json', "r") as f1:
+                with open('hotfixes/hotfixes_prev.json', "r") as f2:
+                    newdata=json.load(f1)
+                    olddata=json.load(f2)
+                    for index in reversed(list(enumerate(olddata["parameters"]))):
+                        referencepoint=len(olddata["parameters"])-1
+                        lastline=olddata["parameters"][referencepoint]
+                        for value in newdata["parameters"]:
+                            if str(value) in str(lastline):
+                                startindex=newdata["parameters"].index(value)
+                                break
+            with open('hotfixes/hotfixes_current.json', "r") as f1:
+                with open('hotfixes/new_hotfix.json', "r") as f2:
+                    currentdata=json.load(f1)
+                    newdata=json.load(f2)
+                    newdata["parameters"].clear()
+                    for value in currentdata["parameters"]:
+                        if startindex is not None:
+                            linevalue=currentdata["parameters"].index(value)
+                            if linevalue>startindex:
+                                newvalue=currentdata["parameters"][linevalue]
+                                newdata["parameters"].append(newvalue)
+                        else:
+                            print('startindex not assigned')
+            with open('hotfixes/new_hotfix.json', "w") as fp:
+                json.dump(newdata, fp, indent=4)
+            print('New Data Split From Exisiting, Sending..')
+
+
+            # Send Update to Channels
+            chat1=self.bot.get_channel(661350189696811094)
             chat2=self.bot.get_channel(661363999656640513)
+            chat3=self.bot.get_channel(664940635236728832)
 
-            '''with open('hotfixes/hotfixes_current.json') as f:
+            with open('hotfixes/new_hotfix.json') as f:
                 data=json.load(f)
-            with open('hotfixes/hotfixes_current.json', 'w') as f:
-                json.dump(data, f)'''
 
-            hotfixes=json.load(hotfixes_new)
-
-            chat.send('```NEW HOTFIX DATA INCOMING```')
+            chat1.send('```NEW HOTFIX DATA INCOMING```')
             chat2.send('```NEW HOTFIX DATA INCOMING```')
+            chat3.send('```NEW HOTFIX DATA INCOMING```')
             time.sleep(20)
 
-            for index in enumerate(hotfixes['parameters']):
+            for index in enumerate(data['parameters']):
                 response=("```{}```".format(index[1]))
                 if len(response)>=2000:
-                    chat.send('```Data String too Long, Skipping...```')
+                    chat1.send('```Data String too Long, Skipping...```')
                     chat2.send('```Data String too Long, Skipping...```')
+                    chat3.send('```Data String too Long, Skipping...```')
                     continue
                 else:
-                    chat.send(response)
+                    chat1.send(response)
                     chat2.send(response)
-            chat.send('```Data Sent```')
+                    chat3.send(response)
+            chat1.send('```Data Sent```')
             chat2.send('```Data Sent```')
-                
+            chat3.send('```Data Sent```')
 
 
     @commands.command(name='hotfix', help='Prints out Hotfix Data for Most Recent Hotfix in Designated Chat')
     async def bl_current_hotfix(self, ctx):
         guild1=self.bot.get_guild(632633098584064018)
         guild2=self.bot.get_guild(639786657666826242)
-        chat=self.bot.get_channel(661350189696811094)
+        guild3=self.bot.get_guild(648588069250793492)
+        chat1=self.bot.get_channel(661350189696811094)
         chat2=self.bot.get_channel(661363999656640513)
-        with open('hotfixes/hotfixes_current.json') as f:
+        chat3=self.bot.get_channel(664940635236728832)
+        destchat=None
+        with open('hotfixes/new_hotfix.json', 'r') as f:
             data=json.load(f)
-        with open('hotfixes/hotfixes_current.json', 'w') as f:
-            json.dump(data, f)
 
         await ctx.send('```Preparing Data Dump, See #handsome-jackbot for Results```')
         
         for index in enumerate(data['parameters']):
             response=("```{}```".format(index[1]))
             if ctx.guild==guild1:
-                if len(response)>=2000:
-                    await chat.send('```Data String too Long, Skipping...```')
-                    continue
-                else:
-                    await chat.send(response)
-            if ctx.guild==guild2:
-                if len(response)>=2000:
-                    await chat2.send('```Data String too Long, Skipping...```')
-                    continue
-                else:
-                    await chat2.send(response)
+                destchat=chat1
+            elif ctx.guild==guild2:
+                destchat=chat2
+            elif ctx.guild==guild3:
+                destchat=chat3
+            if len(response)>=2000:
+                await destchat.send('```Data String too Long, Skipping...```')
+                continue
+            else:
+                await destchat.send(response)
         await ctx.send('```Data Sent```')
             
 
-    #@bot.command(name='ref')
-    #async def bl_ref(self, ctx):
+    @commands.command(name='ref', help='Command for searching through the in-game files, auto-directs to bot specific chat')
+    async def bl_ref(self, ctx, queryname: str):
+        guild1=self.bot.get_guild(632633098584064018)
+        guild2=self.bot.get_guild(639786657666826242)
+        guild3=self.bot.get_guild(648588069250793492)
+        chat1=self.bot.get_channel(661350189696811094)
+        chat2=self.bot.get_channel(661363999656640513)
+        chat3=self.bot.get_channel(664940635236728832)
+        destchat=None
+        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3\\Datamining\\FoundFiles'
+        if ctx.guild==guild1:
+            destchat=chat1
+        elif ctx.guild==guild2:
+            destchat=chat2
+        elif ctx.guild==guild3:
+            destchat=chat3
+        elif destchat is None:
+            print('Chat Error')
+
+        if os.path.isdir(fileFolder):
+            await destchat.send('{}'.format(ctx.author.mention))
+            await destchat.send('```RESULTS```')
+            for root, dirs, files in os.walk(fileFolder):
+                for name in files:
+                    if (queryname.lower() in name.lower()) and name.endswith('.json'):
+                        response=os.path.join(root, name)
+                        await destchat.send('```{}```'.format(response.replace('lavoiet2', 'USER')))
+            await destchat.send('```SEARCH DONE```')
+        else:
+            print ('Directory Not Found')           
+
+
+    @bl_ref.error
+    async def bl_ref_error(self, ctx, error):
+        if isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send('{} ref command requires a query name to search for.'.format(ctx.author.mention))
+
+
+    @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name, auto-directs to bot specific chat')
+    async def bl_refget(self, ctx, filename: str):
+        guild1=self.bot.get_guild(632633098584064018)
+        guild2=self.bot.get_guild(639786657666826242)
+        guild3=self.bot.get_guild(648588069250793492)
+        chat1=self.bot.get_channel(661350189696811094)
+        chat2=self.bot.get_channel(661363999656640513)
+        chat3=self.bot.get_channel(664940635236728832)
+        destchat=None
+        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3\\Datamining\\FoundFiles'
+        if ctx.guild==guild1:
+            destchat=chat1
+        elif ctx.guild==guild2:
+            destchat=chat2
+        elif ctx.guild==guild3:
+            destchat=chat3
+        elif destchat is None:
+            print('Chat Error')
+
+        if os.path.isdir(fileFolder):
+            await destchat.send('{}'.format(ctx.author.mention))
+            await destchat.send('```RESULTS```')
+            for root, dirs, files in os.walk(fileFolder):
+                for name in files:
+                    if (filename.lower()==name.lower()):
+                        target=os.path.join(root, name)
+            with open(target, 'r') as f:
+                data=json.load(f)
+                print(type(data))
+                for index in enumerate(data["InventoryBalanceStateClass"]):
+                    print(index[1])
+                    response=("```{}```".format(index[1]))
+                    if len(response)>=2000:
+                        await destchat.send('```Data String too Long, Skipping...```')
+                        continue
+                    else:
+                        await destchat.send(response)
+            await destchat.send('```DATA DUMP DONE```')
+        else:
+            print ('Directory Not Found')        
+
+
+    @bl_refget.error
+    async def bl_refget_error(self, ctx, error):
+        if isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send('{} refget command requires a file name to search for.'.format(ctx.author.mention))
 
 
     def start_sched(self):
