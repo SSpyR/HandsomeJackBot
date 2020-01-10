@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 startup_extensions=['resources', 'social', 'datamine']
 token = os.getenv('DISCORD_TOKEN')
 owner_id = os.getenv('OWNER_ID')
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='~')
 
 @bot.event
 async def on_ready():
@@ -50,7 +50,6 @@ async def unload(ctx, extension_name : str):
 
 @bot.command(name='shutdown')
 async def shutdown(ctx):
-    #user_id=ctx.author.id
     if ctx.author.id==int(owner_id):
         await ctx.send('Shutting Down...')
         print('Shutdown Command Executed by Owner')
