@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
-startup_extensions=['resources', 'social', 'datamine']
+startup_extensions=['resources', 'social', 'datamine', 'hotfix']
 token = os.getenv('DISCORD_TOKEN')
 owner_id = os.getenv('OWNER_ID')
 bot = commands.Bot(command_prefix='~')

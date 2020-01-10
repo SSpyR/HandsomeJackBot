@@ -27,6 +27,37 @@ class Hotfix(commands.Cog):
         self.bot=bot
         self.sched=BackgroundScheduler()
 
+
+    @commands.command(name='hotfix', help='Prints out Hotfix Data for Most Recent Hotfix in Designated Chat')
+    async def bl_current_hotfix(self, ctx):
+        guild1=self.bot.get_guild(632633098584064018)
+        guild2=self.bot.get_guild(639786657666826242)
+        guild3=self.bot.get_guild(648588069250793492)
+        chat1=self.bot.get_channel(661350189696811094)
+        chat2=self.bot.get_channel(661363999656640513)
+        chat3=self.bot.get_channel(664940635236728832)
+        destchat=None
+        with open('hotfixes/new_hotfix.json', 'r') as f:
+            data=json.load(f)
+
+        await ctx.send('```Preparing Data Dump, See #handsome-jackbot for Results```')
+        
+        for index in enumerate(data['parameters']):
+            response=("```{}```".format(index[1]))
+            if ctx.guild==guild1:
+                destchat=chat1
+            elif ctx.guild==guild2:
+                destchat=chat2
+            elif ctx.guild==guild3:
+                destchat=chat3
+            if len(response)>=2000:
+                await destchat.send('```Data String too Long, Skipping...```')
+                continue
+            else:
+                await destchat.send(response)
+        await ctx.send('```Data Sent```')
+
+
     def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
         output_dir = "C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes"
@@ -161,36 +192,6 @@ class Hotfix(commands.Cog):
             chat1.send('```Data Sent```')
             chat2.send('```Data Sent```')
             chat3.send('```Data Sent```')
-
-
-    @commands.command(name='hotfix', help='Prints out Hotfix Data for Most Recent Hotfix in Designated Chat')
-    async def bl_current_hotfix(self, ctx):
-        guild1=self.bot.get_guild(632633098584064018)
-        guild2=self.bot.get_guild(639786657666826242)
-        guild3=self.bot.get_guild(648588069250793492)
-        chat1=self.bot.get_channel(661350189696811094)
-        chat2=self.bot.get_channel(661363999656640513)
-        chat3=self.bot.get_channel(664940635236728832)
-        destchat=None
-        with open('hotfixes/new_hotfix.json', 'r') as f:
-            data=json.load(f)
-
-        await ctx.send('```Preparing Data Dump, See #handsome-jackbot for Results```')
-        
-        for index in enumerate(data['parameters']):
-            response=("```{}```".format(index[1]))
-            if ctx.guild==guild1:
-                destchat=chat1
-            elif ctx.guild==guild2:
-                destchat=chat2
-            elif ctx.guild==guild3:
-                destchat=chat3
-            if len(response)>=2000:
-                await destchat.send('```Data String too Long, Skipping...```')
-                continue
-            else:
-                await destchat.send(response)
-        await ctx.send('```Data Sent```')
 
 
     def start_sched(self):
