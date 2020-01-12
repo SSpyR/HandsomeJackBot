@@ -58,7 +58,7 @@ class Datamine(commands.Cog):
             await ctx.send('{} ref command requires a query name to search for.'.format(ctx.author.mention))
 
 
-    @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name, auto-directs to bot specific chat')
+    @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name (does not require caps or ".json"), auto-directs to bot specific chat')
     async def bl_refget(self, ctx, *, filename: str):
         guild1=self.bot.get_guild(632633098584064018)
         guild2=self.bot.get_guild(639786657666826242)
