@@ -79,7 +79,6 @@ class Datamine(commands.Cog):
         
         if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))
-            await destchat.send('```RESULTS```')
             filename+='.json'
             for root, dirs, files in os.walk(fileFolder):
                 for name in files:
