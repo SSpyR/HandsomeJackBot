@@ -1,6 +1,5 @@
 # datamine.py
 
-# fix refget
 # simplify chat and guild variables if possible
 
 import os
@@ -21,7 +20,7 @@ class Datamine(commands.Cog):
             
 
     @commands.command(name='ref', help='Command for searching through the in-game files, auto-directs to bot specific chat')
-    async def bl_ref(self, ctx, queryname: str):
+    async def bl_ref(self, ctx, *, queryname: str):
         guild1=self.bot.get_guild(632633098584064018)
         guild2=self.bot.get_guild(639786657666826242)
         guild3=self.bot.get_guild(648588069250793492)
@@ -42,6 +41,7 @@ class Datamine(commands.Cog):
         if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))
             await destchat.send('```RESULTS```')
+            queryname=queryname.replace(' ', '_')
             for root, dirs, files in os.walk(fileFolder):
                 for name in files:
                     if (queryname.lower() in name.lower()) and name.endswith('.json'):
@@ -59,7 +59,7 @@ class Datamine(commands.Cog):
 
 
     @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name, auto-directs to bot specific chat')
-    async def bl_refget(self, ctx, filename: str):
+    async def bl_refget(self, ctx, *, filename: str):
         guild1=self.bot.get_guild(632633098584064018)
         guild2=self.bot.get_guild(639786657666826242)
         guild3=self.bot.get_guild(648588069250793492)
@@ -76,26 +76,16 @@ class Datamine(commands.Cog):
             destchat=chat3
         elif destchat is None:
             print('Chat Error')
-
+        
         if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))
             await destchat.send('```RESULTS```')
+            filename+='.json'
             for root, dirs, files in os.walk(fileFolder):
                 for name in files:
                     if (filename.lower()==name.lower()):
                         target=os.path.join(root, name)
-            with open(target, 'r') as f:
-                data=json.load(f)
-                print(type(data))
-                for index in enumerate(data["InventoryBalanceStateClass"]):
-                    print(index[1])
-                    response=("```{}```".format(index[1]))
-                    if len(response)>=2000:
-                        await destchat.send('```Data String too Long, Skipping...```')
-                        continue
-                    else:
-                        await destchat.send(response)
-            await destchat.send('```DATA DUMP DONE```')
+                        await destchat.send(file=discord.File(target))
         else:
             print ('Directory Not Found')        
 
