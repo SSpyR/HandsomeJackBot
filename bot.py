@@ -48,7 +48,7 @@ async def unload(ctx, extension_name : str):
     await ctx.send("{} unloaded.".format(extension_name))
 
 
-@bot.command(name='shutdown')
+@bot.command(name='shutdown', help='Only Usable by Owner')
 async def shutdown(ctx):
     if ctx.author.id==int(owner_id):
         await ctx.send('Shutting Down...')
