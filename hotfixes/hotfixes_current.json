@@ -1,7 +1,7 @@
 {
   "service_name": "Micropatch",
   "configuration_group": "OakDefault",
-  "configuration_version": "1.172.191",
+  "configuration_version": "1.176.198",
   "parameters": [
     {
       "key": "SparkLevelPatchEntry3",
@@ -2332,30 +2332,6 @@
       "value": "(1,1,0,BPChar_GoonAnointed),/Game/Enemies/Goon/_Shared/Effects/Systems/Anointed/PS_Anointed_Goon_Beam.PS_Anointed_Goon_Beam:ParticleSpriteEmitter_3,DetailModeBitmask,1,6,7"
     },
     {
-      "key": "SparkPatchEntry467",
-      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_01,PlaythroughOne,159,(BaseValueConstant=16.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=7.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
-    },
-    {
-      "key": "SparkPatchEntry468",
-      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_01,PlaythroughTwoAndBeyond,159,(BaseValueConstant=12.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=7.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
-    },
-    {
-      "key": "SparkPatchEntry469",
-      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_02,PlaythroughOne,159,(BaseValueConstant=12.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=4.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
-    },
-    {
-      "key": "SparkPatchEntry470",
-      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_02,PlaythroughTwoAndBeyond,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=4.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
-    },
-    {
-      "key": "SparkPatchEntry471",
-      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughOne,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=2.600000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
-    },
-    {
-      "key": "SparkPatchEntry472",
-      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughTwoAndBeyond,158,(BaseValueConstant=6.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=2.600000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
-    },
-    {
       "key": "SparkLevelPatchEntry737",
       "value": "(1,1,0,Mansion_P),/Game/InteractiveObjects/ExplodingBarrels/Global/DA_ExplodingObject_Barrel_Jacobs.DA_ExplodingObject_Barrel_Jacobs,ExplodedDuration,8,0.000000,0.25"
     },
@@ -2389,7 +2365,7 @@
     },
     {
       "key": "SparkCharacterLoadedEntry388",
-      "value": "(1,1,0,BPChar_ServiceBot_Abomination),/Game/Enemies/ServiceBot/_Unique/Abomination/_Design/Character/BPChar_ServiceBot_Abomination.Default__BPChar_ServiceBot_Abomination_C:DefaultGameplayTagContainerComponent,TagContainer,217,(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Promethea.ServiceBot\"),(TagName=\"Population.Classification.Robotic\"),(TagName=\"FriendEvent.NamedEnemy\"))),(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Promethea.ServiceBot\"),(TagName=\"Population.Classification.Robotic\"),(TagName=\"FriendEvent.NamedEnemy\"),(TagName=\"Population.ImmuneTo._Global.TeamSwap\")))"
+      "value": "(1,1,0,BPChar_ServiceBot_Abomination),/Game/Enemies/ServiceBot/_Unique/Abomination/_Design/Character/BPChar_ServiceBot_Abomination.Default__BPChar_ServiceBot_Abomination_C:DefaultGameplayTagContainerComponent,TagContainer,217,(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Promethea.ServiceBot\"),(TagName=\"Population.Classification.Robotic\"),(TagName=\"FriendEvent.NamedEnemy\"))),(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Promethea.ServiceBot\"),(TagName=\"Population.Classification.Robotic\"),(TagName=\"FriendEvent.NamedEnemy\"),(TagName=\"Population.ImmuneTo._Global.TeamSwap\"),(TagName=\"Population.ImmuneTo.SirenSkills.Thoughtlock\")))"
     },
     {
       "key": "SparkSaveGameEntry5",
@@ -2886,6 +2862,946 @@
     {
       "key": "SparkEarlyLevelPatchEntry12",
       "value": "(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.OakSpawner_PortaPrisonVandals.SpawnerComponent,SpawnDetails,166,(Critical=NotCritical,bOverrideCritical=False,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False),(Critical=Critical,bOverrideCritical=True,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False)"
+    },
+    {
+      "key": "SparkPatchEntry625",
+      "value": "(1,7,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun1/Passive_Beastmaster_HitAndRun_1.Passive_Beastmaster_HitAndRun_1_C,0,1,ExecuteUbergraph_Passive_Beastmaster_HitAndRun_1,1,965,1:1,1:0"
+    },
+    {
+      "key": "SparkPatchEntry626",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun1/Status_Beastmaster_HitAndRun_1_PetDamage.Status_Beastmaster_HitAndRun_1_PetDamage,StackingStrategy,130,StatusEffectStackingStrategyData_Capped'/Game/GameData/StackingStrategy/StackingStrategy_SingleStack.StackingStrategy_SingleStack',StatusEffectStackingStrategyData_Capped'/Game/GameData/StackingStrategy/StackingStrategy_Capped_10.StackingStrategy_Capped_10'"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry498",
+      "value": "(1,2,0,BPChar_EnforcerAnointed),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance.Table_Enforcer_Balance,Enforcer_Anointed,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,18.000000,12.000000"
+    },
+    {
+      "key": "SparkPatchEntry627",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkills/Skill1_RakkAttack/StatusEffects/StatusEffect_Mod3_AdditionalCharge.StatusEffect_Mod3_AdditionalCharge,AttributeEffects,219,((AttributeData=GbxAttributeData'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/Att_Beastmaster_RakkAttack_MaxCharges.Att_Beastmaster_RakkAttack_MaxCharges\"',BaseModifierValue=(BaseValueConstant=1.000000))),((AttributeData=GbxAttributeData'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/Att_Beastmaster_RakkAttack_MaxCharges.Att_Beastmaster_RakkAttack_MaxCharges\"',BaseModifierValue=(BaseValueConstant=1.000000)),(AttributeData=GbxAttributeData'\"/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_ActionSkill_Beastmaster_SkillCooldownRate_Skill1.Att_ActionSkill_Beastmaster_SkillCooldownRate_Skill1\"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0.200000)))"
+    },
+    {
+      "key": "SparkPatchEntry628",
+      "value": "(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/CheapTips/Parts/Part_SM_HYP_Barrel_CheapTips.Part_SM_HYP_Barrel_CheapTips,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue.BaseValueConstant,8,1.000000,0.000000"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry499",
+      "value": "(1,1,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss.BPChar_Mech_TrialBoss_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].BalanceTableRow,126,(DataTable=DataTable'\"/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech.Table_Balance_Mech\"',RowName=\"Mech_Basic\"),(DataTable=DataTable'\"/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Unique.Table_Balance_Mech_Unique\"',RowName=\"Mech_TrialBoss\")"
+    },
+    {
+      "key": "SparkLevelPatchEntry830",
+      "value": "(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_P.Raid_P:PersistentLevel.Raid_P_C_1,ForceBalance,4,True,False"
+    },
+    {
+      "key": "SparkLevelPatchEntry842",
+      "value": "(1,2,0,Prologue_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry843",
+      "value": "(1,2,0,Prologue_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry844",
+      "value": "(1,2,0,Prologue_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry845",
+      "value": "(1,2,0,AtlasHQ_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry846",
+      "value": "(1,2,0,AtlasHQ_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry847",
+      "value": "(1,2,0,AtlasHQ_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry848",
+      "value": "(1,2,0,OrbitalPlatform_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry849",
+      "value": "(1,2,0,OrbitalPlatform_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry850",
+      "value": "(1,2,0,OrbitalPlatform_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry851",
+      "value": "(1,2,0,Outskirts_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry852",
+      "value": "(1,2,0,Outskirts_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry853",
+      "value": "(1,2,0,Outskirts_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry854",
+      "value": "(1,2,0,Towers_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry855",
+      "value": "(1,2,0,Towers_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry856",
+      "value": "(1,2,0,Towers_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry857",
+      "value": "(1,2,0,Mansion_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry858",
+      "value": "(1,2,0,Mansion_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry859",
+      "value": "(1,2,0,Mansion_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry860",
+      "value": "(1,2,0,Prison_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry861",
+      "value": "(1,2,0,Prison_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry862",
+      "value": "(1,2,0,Prison_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry863",
+      "value": "(1,2,0,Watership_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry864",
+      "value": "(1,2,0,MarshFields_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry865",
+      "value": "(1,2,0,MarshFields_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry866",
+      "value": "(1,2,0,MarshFields_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry871",
+      "value": "(1,2,0,Watership_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry872",
+      "value": "(1,2,0,Watership_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry873",
+      "value": "(1,2,0,Mine_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry874",
+      "value": "(1,2,0,Mine_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry875",
+      "value": "(1,2,0,Mine_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry876",
+      "value": "(1,2,0,Wetlands_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry877",
+      "value": "(1,2,0,Wetlands_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry878",
+      "value": "(1,2,0,Wetlands_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry879",
+      "value": "(1,2,0,Motorcade_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry880",
+      "value": "(1,2,0,Motorcade_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry881",
+      "value": "(1,2,0,Motorcade_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry882",
+      "value": "(1,2,0,MotorcadeFestival_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,Rare,Value,159,(BaseValueConstant=30.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry883",
+      "value": "(1,2,0,MotorcadeFestival_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,159,(BaseValueConstant=20.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry884",
+      "value": "(1,2,0,MotorcadeFestival_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry634",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[43],207,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_HolyDumptruck.ItemPool_HolyDumptruck\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_HolyDumptruck.ItemPool_HolyDumptruck\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry635",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[44],219,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MouthpieceDedicated.ItemPool_MouthpieceDedicated\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MouthpieceDedicated.ItemPool_MouthpieceDedicated\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry636",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[45],195,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_RedRain.ItemPool_RedRain\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_RedRain.ItemPool_RedRain\"',PoolProbability=(BaseValueConstant=0.500000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry637",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[46],197,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_BlueFire.ItemPool_BlueFire\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_BlueFire.ItemPool_BlueFire\"',PoolProbability=(BaseValueConstant=0.500000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry638",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[47],213,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss.Itempool_CoVSlaughterBoss\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss.Itempool_CoVSlaughterBoss\"',PoolProbability=(BaseValueConstant=0.500000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry639",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[48],207,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGoon.ItemPool_TrialBossGoon\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGoon.ItemPool_TrialBossGoon\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry640",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[49],215,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry641",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51],201,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry642",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[52],199,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry643",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[53],203,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss.ItemPool_MansionBoss\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss.ItemPool_MansionBoss\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry644",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[54],207,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry645",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[55],203,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Broodmother.ItemPool_Broodmother\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Broodmother.ItemPool_Broodmother\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry646",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[57],209,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossRatch.ItemPool_TrialBossRatch\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossRatch.ItemPool_TrialBossRatch\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry647",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[58],201,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant.ItemPool_IndoTyrant\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant.ItemPool_IndoTyrant\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry648",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[59],223,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CreatureSlaughterBoss.ItemPool_CreatureSlaughterBoss\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CreatureSlaughterBoss.ItemPool_CreatureSlaughterBoss\"',PoolProbability=(BaseValueConstant=0.500000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry649",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[60],213,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSaurian.ItemPool_TrialBossSaurian\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSaurian.ItemPool_TrialBossSaurian\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry650",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[61],203,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry651",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[62],207,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry652",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[63],197,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Antalope.ItemPool_Antalope\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Antalope.ItemPool_Antalope\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry653",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[64],191,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty.ItemPool_Warty\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty.ItemPool_Warty\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry654",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[65],191,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Thunk.ItemPool_Thunk\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Thunk.ItemPool_Thunk\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry655",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[66],207,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink\"',PoolProbability=(BaseValueConstant=0.200000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink\"',PoolProbability=(BaseValueConstant=0.400000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry656",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[67],209,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry657",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[68],209,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry658",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[69],209,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry659",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[70],209,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry660",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[71],209,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry661",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[72],207,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated.ItemPool_TroyDedicated\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated.ItemPool_TroyDedicated\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry662",
+      "value": "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[73],239,(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot.ItemPool_MotherOfDragons_Loot\"',PoolProbability=(BaseValueConstant=0.100000))),ItemPoolExpansions=),(DropOnDeathItemPools=((ItemPool=ItemPoolData'\"/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot.ItemPool_MotherOfDragons_Loot\"',PoolProbability=(BaseValueConstant=0.300000))),ItemPoolExpansions=)"
+    },
+    {
+      "key": "SparkPatchEntry665",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss1,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.200000,0.400000"
+    },
+    {
+      "key": "SparkPatchEntry666",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss2,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry667",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss3,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry668",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss4,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry669",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss5,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry670",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss6,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry671",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss7,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry672",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TrialBoss8,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry673",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Verminvorous,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry674",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,RaidMiniBoss1,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry675",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,RaidMiniboss2,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry676",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,RaidMiniboss3,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry677",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,RaidBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.000000,0.200000"
+    },
+    {
+      "key": "SparkPatchEntry678",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,CreatureSlaughterBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry679",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TechSlaughterBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry680",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,CoVSlaughterBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry681",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Shiv,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry682",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Mouthpiece,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry683",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaJr,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry684",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Warden,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry685",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaBall,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry686",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KillaVolt,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry687",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Beans,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry688",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Aurelia,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry689",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,GeneVIV,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry690",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Gigamind,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry691",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,AnnointedIntro,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry692",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DemoSkag,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry693",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,BoremanNates,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry694",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Dinklebot,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry695",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,PowerTroopers,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry696",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,VicandWarty,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry697",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,IndoTyrant,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry698",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,ElDragonJunior,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry699",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Maxitrillion,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.400000"
+    },
+    {
+      "key": "SparkPatchEntry700",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TheUnstoppable,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.400000"
+    },
+    {
+      "key": "SparkPatchEntry701",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,SirenSkag,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry702",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,CaptainThunkandSloth,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry703",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,RoadDog,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.400000"
+    },
+    {
+      "key": "SparkPatchEntry704",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Rakkman,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry705",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Cyranid,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry706",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Guardian,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry707",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Tarantella,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.400000"
+    },
+    {
+      "key": "SparkPatchEntry708",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,BaronNoggin,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry709",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,HandsomeJackie,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry710",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,JudgeHightower,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry711",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,SkyBullies,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry712",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Crushjaw,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry713",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Roadblock,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry714",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,GoreGirls,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry715",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,HeckleAndHyde,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry716",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,SylestroAndAtomic,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry717",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DJBlood,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry718",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Skrakk,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry719",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Mothman,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry720",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Phoenix,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry721",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Antalope,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry722",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.025000,0.225000"
+    },
+    {
+      "key": "SparkPatchEntry723",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Chupacabratch,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry724",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,BigFoot,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry725",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Jabbermogwai,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry726",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,BlindingBanshee,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry727",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,HopperSwarmer,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry728",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Graveward,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry729",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Terror,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry730",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TyreenFinalBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry731",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,OnePunch,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry732",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,AnnointedJoe,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry733",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,TinkDemon,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry734",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,EnforcerUrist,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.400000"
+    },
+    {
+      "key": "SparkPatchEntry735",
+      "value": "(1,2,0,),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,ChonkStomp,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,0.300000"
+    },
+    {
+      "key": "SparkPatchEntry736",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance,PlaythroughOne,159,(BaseValueConstant=28.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=2.300000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry737",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_01,PlaythroughOne,159,(BaseValueConstant=16.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=1.5,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry738",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_02,PlaythroughOne,159,(BaseValueConstant=12.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry739",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughOne,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=.5,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry887",
+      "value": "(1,2,0,Raid_P),/Game/PatchDLC/Raid1/GameData/Loot/Table_Legendary_SpecificLootOdds_Raid1.Table_Legendary_SpecificLootOdds_Raid1,MiniBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.100000,.5"
+    },
+    {
+      "key": "SparkLevelPatchEntry888",
+      "value": "(1,2,0,Raid_P),/Game/PatchDLC/Raid1/GameData/Loot/Table_Legendary_SpecificLootOdds_Raid1.Table_Legendary_SpecificLootOdds_Raid1,RaidBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,8,0.200000,.4"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry501",
+      "value": "(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[0].bOverrideDropOnDeathItemPools,4,True,False"
+    },
+    {
+      "key": "SparkPatchEntry740",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Gunner_AutoBearActive_BonusFireDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,8,0.200000,0.750000"
+    },
+    {
+      "key": "SparkPatchEntry741",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Gunner_SkillEnd_FireBonusDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,8,0.400000,1.250000"
+    },
+    {
+      "key": "SparkPatchEntry742",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Gunner_SkillEnd_SplashDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,8,1.200000,1.600000"
+    },
+    {
+      "key": "SparkPatchEntry743",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Gunner_SkillStart_Nova,Damage_7_39142BF947B2CBE02701DBA97A4D507F,8,1.750000,2.750000"
+    },
+    {
+      "key": "SparkPatchEntry744",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Operative_BarrierActive_AccuracyCrit,Custom_B_22_F3E78C5F4BA4BD6A1DC031AF51327791,8,0.300000,0.700000"
+    },
+    {
+      "key": "SparkPatchEntry745",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Operative_DroneActive_BonusDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,8,0.500000,1.00000"
+    },
+    {
+      "key": "SparkPatchEntry746",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Shield_StealthNova,Damage_7_39142BF947B2CBE02701DBA97A4D507F,8,1.750000,2.750000"
+    },
+    {
+      "key": "SparkPatchEntry747",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_RakkStart_CritDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,8,0.250000,0.500000"
+    },
+    {
+      "key": "SparkLevelPatchEntry894",
+      "value": "(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_P.Mine_P:PersistentLevel.ResurrectTravelStationObject_29.ActivationArea,DetectionRadius,11,1000.000000,3000"
+    },
+    {
+      "key": "SparkLevelPatchEntry895",
+      "value": "(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_P.Mine_P:PersistentLevel.ResurrectTravelStationObject_29.ActivationArea,RelativeLocation,34,(X=0.000000,Y=0.000000,Z=0.000000),(X=2724.022949,Y=2157.943604,Z=281.682007)"
+    },
+    {
+      "key": "SparkLevelPatchEntry896",
+      "value": "(1,6,0,Crypt_P),/Game/Maps/Zone_4/Crypt,/Engine/BasicShapes,Cube,92,\"-4328.724609,1697.989502,-458.078033|0.000000,-45.000088,0.000000|1.000000,3.750000,1.000000\",0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry502",
+      "value": "(1,2,0,BPChar_Constructor),/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor.Table_Balance_Constructor,Basic,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,8,0.500000,1.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry503",
+      "value": "(1,2,0,BPChar_Constructor),/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor.Table_Balance_Constructor,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,12.000000,15.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry504",
+      "value": "(1,2,0,BPChar_Constructor),/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor.Table_Balance_Constructor,Basic,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,8,5.000000,10.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry505",
+      "value": "(1,2,0,BPChar_Constructor),/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor.Table_Balance_Constructor,BasicPT2,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,8,0.800000,1.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry506",
+      "value": "(1,2,0,BPChar_Constructor),/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor.Table_Balance_Constructor,BasicPT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,8,5.000000,10.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry507",
+      "value": "(1,2,0,BPChar_Fabrikator_Shared),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,Fabrikator,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,35.000000,40.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry508",
+      "value": "(1,2,0,BPChar_Fabrikator_Shared),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,Fabrikator,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,9,25.000000,35.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry509",
+      "value": "(1,2,0,BPChar_Fabrikator_Shared),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,FabrikatorPT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,9,25.000000,35.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry510",
+      "value": "(1,1,0,BPChar_TraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Character/BPChar_TraitorEddie.BPChar_TraitorEddie_C:AIBalanceState_GEN_VARIABLE,ExperienceLevelFormula.BaseValueAttribute,121,GbxAttributeData'/Game/GameData/Balance/GameStageOffsets/AttCalc_GameStage_MinorVariance.AttCalc_GameStage_MinorVariance',AttCalc_GameStage_Plus2.AttCalc_GameStage_Plus2"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry511",
+      "value": "(1,2,0,BPChar_VIPOnly_Dandelion),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Dandellion,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,10.000000,20.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry512",
+      "value": "(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,10.000000,20.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry513",
+      "value": "(1,2,0,BPChar_OneMansTrash_TonyBordel),/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique.Table_Looters_Balance_Unique,TonyBordel,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,12.000000,16.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry514",
+      "value": "(1,2,0,BPChar_ThePlan_TricksyNick),/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique.Table_Looters_Balance_Unique,TricksyNick,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,8,6.000000,12.0"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry515",
+      "value": "(1,2,0,BPChar_MeetTimothy_ThirdRail),/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique.Table_Looters_Balance_Unique,ThirdRail,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,8,9.000000,14.0"
+    },
+    {
+      "key": "SparkPatchEntry751",
+      "value": "(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Parts/Part_HW_VLA_Barrel_IonCannon.Part_HW_VLA_Barrel_IonCannon,InventoryAttributeEffects,564,((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(DataTableValue=(DataTable=DataTable'\"/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion\"',RowName=\"HW_IonCannon\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\")))),((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(DataTableValue=(DataTable=DataTable'\"/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion\"',RowName=\"HW_IonCannon\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\"))),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=6.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_ReloadTime.Att_Weapon_ReloadTime\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.300000)))"
+    },
+    {
+      "key": "SparkLevelPatchEntry889",
+      "value": "(1,6,0,City_P),/Game/Maps/Zone_1/City,/Engine/BasicShapes,Cube,93,\"-9668.619141,-61042.535156,5130.589844|0.000000,0.000000,0.000000|6.000000,1.000000,13.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry890",
+      "value": "(1,6,0,City_P),/Game/Maps/Zone_1/City,/Engine/BasicShapes,Cube,92,\"8032.241699,-62560.285156,4055.916016|0.000000,45.000038,0.000000|7.000000,1.000000,5.500000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry891",
+      "value": "(1,6,0,City_P),/Game/Maps/Zone_1/City,/Engine/BasicShapes,Cube,92,\"6398.416016,-55581.199219,3987.681152|0.000000,45.000038,0.000000|1.000000,1.500000,1.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry892",
+      "value": "(1,6,0,CityVault_P),/Game/Maps/Zone_1/CityVault,/Engine/BasicShapes,Cube,89,\"65749.890625,7450.090820,357.690338|0.000000,0.000000,0.000000|1.000000,1.000000,4.250000\",1"
+    },
+    {
+      "key": "SparkLevelPatchEntry893",
+      "value": "(1,6,0,CityVault_P),/Game/Maps/Zone_1/CityVault,/Engine/BasicShapes,Cube,93,\"-76463.882813,104476.351563,5941.659180|0.000000,0.000000,0.000000|2.000000,7.000000,1.000000\",1"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry532",
+      "value": "(1,1,0,BPChar_PsychoRare03),/Game/Enemies/Psycho_Male/_Unique/Rare03/_Design/Character/BPChar_PsychoRare03.BPChar_PsychoRare03_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry533",
+      "value": "(1,1,0,BPChar_Goon_Rare01),/Game/Enemies/Goon/_Unique/Rare01/_Design/Character/BPChar_Goon_Rare01.BPChar_Goon_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry534",
+      "value": "(1,1,0,BPChar_FinalBoss),/Game/Enemies/FinalBoss/_Shared/_Design/Character/BPChar_FinalBoss.BPChar_FinalBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry535",
+      "value": "(1,1,0,BPChar_OnePunch),/Game/Enemies/Psycho_Male/_Unique/OnePunch/Design/Character/BPChar_OnePunch.BPChar_OnePunch_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry536",
+      "value": "(1,1,0,BPChar_AnointedJoe),/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/Character/BPChar_AnointedJoe.BPChar_AnointedJoe_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry537",
+      "value": "(1,1,0,BPChar_TinkDemon),/Game/Enemies/Tink/_Unique/Demon/_Design/Character/BPChar_TinkDemon.BPChar_TinkDemon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry538",
+      "value": "(1,1,0,BPChar_SpiderBrain),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/SpiderBrain/Character/BPChar_SpiderBrain.BPChar_SpiderBrain_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry539",
+      "value": "(1,1,0,BPChar_UpperHalf),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/UpperHalf/Character/BPChar_UpperHalf.BPChar_UpperHalf_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry540",
+      "value": "(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid.BPChar_BehemothRaid_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry541",
+      "value": "(1,1,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossBar/_Design/Character/BPChar_MechRaidBossBar.BPChar_MechRaidBossBar_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.DataTableValue.ValueName,68,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry542",
+      "value": "(1,2,0,BPChar_CasinoBot_BigJanitor),/Game/PatchDLC/Dandelion/Enemies/ServiceBot/_Shared/_Design/Balance/Table_Balance_CasinoBot.Table_Balance_CasinoBot,CasinoBot_Janitor,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,13.000000,18.0"
+    },
+    {
+      "key": "SparkPatchEntry772",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance,PlaythroughTwoAndBeyond,159,(BaseValueConstant=16.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=2.300000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry773",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_01,PlaythroughTwoAndBeyond,159,(BaseValueConstant=12.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=1.500000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry774",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_02,PlaythroughTwoAndBeyond,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=1.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry775",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughTwoAndBeyond,158,(BaseValueConstant=6.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=0.500000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry516",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry517",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry520",
+      "value": "(1,1,0,BPChar_VarkidHunt01),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry521",
+      "value": "(1,1,0,BPChar_VarkidHunt01),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry524",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultA),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry525",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultA),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry528",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultB),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry529",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultB),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkPatchEntry752",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,9,75.000000,100"
+    },
+    {
+      "key": "SparkPatchEntry753",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,10,125.000000,500"
+    },
+    {
+      "key": "SparkPatchEntry754",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,10,500.000000,1000"
+    },
+    {
+      "key": "SparkPatchEntry755",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,11,1000.000000,5000"
+    },
+    {
+      "key": "SparkPatchEntry756",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,9,75.000000,15"
+    },
+    {
+      "key": "SparkPatchEntry757",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,10,500.000000,150"
+    },
+    {
+      "key": "SparkPatchEntry758",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,11,1000.000000,500"
+    },
+    {
+      "key": "SparkPatchEntry759",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,11,2000.000000,5000"
+    },
+    {
+      "key": "SparkPatchEntry760",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,9,50.000000,20"
+    },
+    {
+      "key": "SparkPatchEntry761",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,11,2000.000000,200"
+    },
+    {
+      "key": "SparkPatchEntry762",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,11,3000.000000,1250"
+    },
+    {
+      "key": "SparkPatchEntry763",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,11,4000.000000,10000"
+    },
+    {
+      "key": "SparkPatchEntry764",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,10,100.000000,75"
+    },
+    {
+      "key": "SparkPatchEntry765",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,11,9000.000000,750"
+    },
+    {
+      "key": "SparkPatchEntry766",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,12,30000.000000,7500"
+    },
+    {
+      "key": "SparkPatchEntry767",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,12,60000.000000,50000"
+    },
+    {
+      "key": "SparkPatchEntry768",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,10,100.000000,50"
+    },
+    {
+      "key": "SparkPatchEntry769",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,11,3000.000000,500"
+    },
+    {
+      "key": "SparkPatchEntry770",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,13,100000.000000,50000"
+    },
+    {
+      "key": "SparkPatchEntry771",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,13,100000.000000,100000"
+    },
+    {
+      "key": "SparkPatchEntry776",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Gamma_BonusRadiationDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,8,0.650000,1.150000"
+    },
+    {
+      "key": "SparkPatchEntry777",
+      "value": "(1,1,0,),/Game/Missions/Plot/Mission_Ep05_Sanctuary.OBJ_ReleaseTrappedCrew_Objective,bPauseObjectiveChain,4,True,False"
+    },
+    {
+      "key": "SparkEarlyLevelPatchEntry51",
+      "value": "(1,1,1,Strip_P),/Dandelion/Maps/Strip/Strip_Mission.Strip_Mission:PersistentLevel.OakMissionSpawner_Ember.SpawnerComponent,bRandomizeSpawnPoints,4,True,False"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry545",
+      "value": "(1,1,0,BPChar_Brick),/Game/NonPlayerCharacters/Brick/_Design/Character/BPChar_Brick.Default__BPChar_Brick_C:DefaultDamageComponent,bDemiGodMode,5,False,True"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry546",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry547",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry548",
+      "value": "(1,1,0,BPChar_VarkidSuperBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry549",
+      "value": "(1,1,0,BPChar_VarkidSuperBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
     }
   ]
 }
