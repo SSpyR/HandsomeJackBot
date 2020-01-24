@@ -3,9 +3,11 @@
 # see https://github.com/apocalyptech/
 
 # send new hotfixes to a new file with only that data (possibly done, need to account for negative changes) 
-# detect additions and removals in hotfix data and state both as such in new hotfix file?
+# detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
 # parsed summary of each changed item ("Changed [Print affected item] [print affected property] to [print new effect]")?
 # simplify chat and guild variables if possible
+# double check new data is actually new (DO NOT KEEP BOT ACTIVE WHEN PUT LAPTOP TO SLEEP)
+# allow access to grab point_in_time files
 
 # <a:rooHack:652663804840247316> meme emote to add in?
 
@@ -16,16 +18,17 @@ import appdirs
 import requests
 import datetime
 import time
+import asyncio
 import discord
 
 from discord.ext import commands
-from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 class Hotfix(commands.Cog):
 
     def __init__(self, bot):
         self.bot=bot
-        self.sched=BackgroundScheduler()
+        self.sched=AsyncIOScheduler()
 
 
     @commands.command(name='hotfix', help='Prints out Hotfix Data for Most Recent Hotfix in Designated Chat')
@@ -58,7 +61,7 @@ class Hotfix(commands.Cog):
         await ctx.send('```Data Sent```')
 
 
-    def bl_hotfix(self):
+    async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
         output_dir = "C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes"
         point_in_time_base = 'point_in_time'
@@ -166,32 +169,32 @@ class Hotfix(commands.Cog):
 
 
             # Send Update to Channels
-            chat1=self.bot.get_channel(661350189696811094)
-            chat2=self.bot.get_channel(661363999656640513)
-            chat3=self.bot.get_channel(664940635236728832)
+            chat1=self.bot.get_guild(632633098584064018).get_channel(661350189696811094)
+            chat2=self.bot.get_guild(639786657666826242).get_channel(661363999656640513)
+            chat3=self.bot.get_guild(648588069250793492).get_channel(664940635236728832)
 
             with open('hotfixes/new_hotfix.json') as f:
                 data=json.load(f)
 
-            chat1.send('```NEW HOTFIX DATA INCOMING```')
-            chat2.send('```NEW HOTFIX DATA INCOMING```')
-            chat3.send('```NEW HOTFIX DATA INCOMING```')
-            time.sleep(20)
+            await chat1.send('```NEW HOTFIX DATA INCOMING```')
+            await chat2.send('```NEW HOTFIX DATA INCOMING```')
+            await chat3.send('```NEW HOTFIX DATA INCOMING```')
+            time.sleep(10)
 
             for index in enumerate(data['parameters']):
                 response=("```{}```".format(index[1]))
                 if len(response)>=2000:
-                    chat1.send('```Data String too Long, Skipping...```')
-                    chat2.send('```Data String too Long, Skipping...```')
-                    chat3.send('```Data String too Long, Skipping...```')
+                    await chat1.send('```Data String too Long, Skipping...```')
+                    await chat2.send('```Data String too Long, Skipping...```')
+                    await chat3.send('```Data String too Long, Skipping...```')
                     continue
                 else:
-                    chat1.send(response)
-                    chat2.send(response)
-                    chat3.send(response)
-            chat1.send('```Data Sent```')
-            chat2.send('```Data Sent```')
-            chat3.send('```Data Sent```')
+                    await chat1.send(response)
+                    await chat2.send(response)
+                    await chat3.send(response)
+            await chat1.send('```Data Sent```')
+            await chat2.send('```Data Sent```')
+            await chat3.send('```Data Sent```')
 
 
     def start_sched(self):

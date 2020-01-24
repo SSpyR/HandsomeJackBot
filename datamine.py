@@ -1,6 +1,7 @@
 # datamine.py
 
 # simplify chat and guild variables if possible
+# try to detect if the server that the message is coming from has a handsome-jackbot chat, send there
 
 import os
 import sys
@@ -79,12 +80,17 @@ class Datamine(commands.Cog):
         
         if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))
-            filename+='.json'
+            fileSent=False
+            if ('.json' not in filename.lower()):
+                filename+='.json'
             for root, dirs, files in os.walk(fileFolder):
                 for name in files:
                     if (filename.lower()==name.lower()):
                         target=os.path.join(root, name)
                         await destchat.send(file=discord.File(target))
+                        fileSent=True
+            if fileSent==False:
+                await destchat.send('```{} Could Not Be Found.```'.format(filename))            
         else:
             print ('Directory Not Found')        
 
