@@ -2,6 +2,7 @@
 # base code provided by @Prismatic
 
 # FL4K Math is next
+# Clean up code to catch and explain exceptions/errors
 
 
 import discord
@@ -76,15 +77,15 @@ class BLCalc(commands.Cog):
         await ctx.channel.send(response)
 
     
-    @commands.command(name='mozehelp' help='Use for Further VH Calc Info')
+    @commands.command(name='mozehelp', help='Use for Further VH Calc Info')
     async def mozehelp(self, ctx):
-        response='Arguments: [Click Click, DiB Stacks, DM, Phalanx] + \n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
+        response='Arguments: [Click Click, DiB Stacks, DM, Phalanx]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
-    @commands.command(name='zanehelp' help='Use for Further VH Calc Info')
+    @commands.command(name='zanehelp', help='Use for Further VH Calc Info')
     async def zanehelp(self, ctx):
-        response='Arguments: [Bonus DFC Points, Kill Skill Stacks, Number of Active Action Skills, Movespeed Bonuses] + \n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
+        response='Arguments: [Bonus DFC Points, Kill Skill Stacks, Number of Active Action Skills, Movespeed Bonuses]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
 
