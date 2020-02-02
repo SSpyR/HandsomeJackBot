@@ -5,7 +5,6 @@
 # send new hotfixes to a new file with only that data (possibly done, need to account for negative changes) 
 # detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
 # parsed summary of each changed item ("Changed [Print affected item] [print affected property] to [print new effect]")?
-# simplify chat and guild variables if possible
 # double check new data is actually new (DO NOT KEEP BOT ACTIVE WHEN PUT LAPTOP TO SLEEP)
 # allow access to grab point_in_time files
 
@@ -33,26 +32,20 @@ class Hotfix(commands.Cog):
 
     @commands.command(name='hotfix', help='Prints out Hotfix Data for Most Recent Hotfix in Designated Chat')
     async def bl_current_hotfix(self, ctx):
-        guild1=self.bot.get_guild(632633098584064018)
-        guild2=self.bot.get_guild(639786657666826242)
-        guild3=self.bot.get_guild(648588069250793492)
-        chat1=self.bot.get_channel(661350189696811094)
-        chat2=self.bot.get_channel(661363999656640513)
-        chat3=self.bot.get_channel(664940635236728832)
         destchat=None
         with open('hotfixes/new_hotfix.json', 'r') as f:
             data=json.load(f)
 
         await ctx.send('```Preparing Data Dump, See #handsome-jackbot for Results```')
+
+        for channel in ctx.guild.channels:
+            if channel.name=='handsome-jackbot':
+                destchat=channel
+        if destchat==None:
+            await ctx.send('handsome-jackbot channel not detected and is required.')
         
         for index in enumerate(data['parameters']):
             response=("```{}```".format(index[1]))
-            if ctx.guild==guild1:
-                destchat=chat1
-            elif ctx.guild==guild2:
-                destchat=chat2
-            elif ctx.guild==guild3:
-                destchat=chat3
             if len(response)>=2000:
                 await destchat.send('```Data String too Long, Skipping...```')
                 continue
@@ -63,7 +56,7 @@ class Hotfix(commands.Cog):
 
     async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
-        output_dir = "C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes"
+        output_dir = "/home/sspyr/BL3/HandsomeJackBot/hotfixes"
         point_in_time_base = 'point_in_time'
         point_in_time_dir = os.path.join(output_dir, point_in_time_base)
         cumulative_file = 'hotfixes_current.json'

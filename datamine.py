@@ -1,7 +1,5 @@
 # datamine.py
 
-# simplify chat and guild variables if possible
-# try to detect if the server that the message is coming from has a handsome-jackbot chat, send there
 
 import os
 import sys
@@ -22,22 +20,14 @@ class Datamine(commands.Cog):
 
     @commands.command(name='ref', help='Command for searching through the in-game files, auto-directs to bot specific chat')
     async def bl_ref(self, ctx, *, queryname: str):
-        guild1=self.bot.get_guild(632633098584064018)
-        guild2=self.bot.get_guild(639786657666826242)
-        guild3=self.bot.get_guild(648588069250793492)
-        chat1=self.bot.get_channel(661350189696811094)
-        chat2=self.bot.get_channel(661363999656640513)
-        chat3=self.bot.get_channel(664940635236728832)
         destchat=None
-        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3\\Datamining\\FoundFiles'
-        if ctx.guild==guild1:
-            destchat=chat1
-        elif ctx.guild==guild2:
-            destchat=chat2
-        elif ctx.guild==guild3:
-            destchat=chat3
-        elif destchat is None:
-            print('Chat Error')
+        fileFolder='/home/sspyr/BL3/FoundFiles'
+
+        for channel in ctx.guild.channels:
+            if channel.name=='handsome-jackbot':
+                destchat=channel
+        if destchat==None:
+            await ctx.send('handsome-jackbot channel not detected and is required.')
 
         if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))
@@ -61,22 +51,14 @@ class Datamine(commands.Cog):
 
     @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name (does not require caps or ".json"), auto-directs to bot specific chat')
     async def bl_refget(self, ctx, *, filename: str):
-        guild1=self.bot.get_guild(632633098584064018)
-        guild2=self.bot.get_guild(639786657666826242)
-        guild3=self.bot.get_guild(648588069250793492)
-        chat1=self.bot.get_channel(661350189696811094)
-        chat2=self.bot.get_channel(661363999656640513)
-        chat3=self.bot.get_channel(664940635236728832)
         destchat=None
-        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3\\Datamining\\FoundFiles'
-        if ctx.guild==guild1:
-            destchat=chat1
-        elif ctx.guild==guild2:
-            destchat=chat2
-        elif ctx.guild==guild3:
-            destchat=chat3
-        elif destchat is None:
-            print('Chat Error')
+        fileFolder='/home/sspyr/BL3/FoundFiles'
+
+        for channel in ctx.guild.channels:
+            if channel.name=='handsome-jackbot':
+                destchat=channel
+        if destchat==None:
+            await ctx.send('handsome-jackbot channel not detected and is required.')
         
         if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))

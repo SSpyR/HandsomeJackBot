@@ -6,7 +6,8 @@ import logging
 from discord.ext import commands
 from dotenv import load_dotenv
 
-load_dotenv()
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 logging.basicConfig(level=logging.INFO)
 
 startup_extensions=['resources', 'social', 'datamine', 'hotfix']

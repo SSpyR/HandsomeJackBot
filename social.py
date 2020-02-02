@@ -18,6 +18,12 @@ class Social(commands.Cog):
         await ctx.author.send('Here is the link to invite Handsome JackBot to your Discord.')
         await ctx.author.send(response)'''
 
+    
+    @commands.command(name='tutorial', help='Tutorial Video for the Bot')
+    async def video_link(self, ctx):
+        response='https://youtu.be/rTVcSizSIQQ'
+        await ctx.send(response)
+
 
     @commands.command(name='github', help='Github Repository for the Bot')
     async def github_link(self, ctx):
