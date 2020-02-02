@@ -1,4 +1,5 @@
 # bot.py
+# Creator: SSpyR
 
 import os
 import discord

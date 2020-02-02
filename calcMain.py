@@ -1,5 +1,7 @@
 # math.py
-# code provided by @Prismatic
+# base code provided by @Prismatic
+
+# FL4K Math is next
 
 
 import discord
@@ -60,7 +62,7 @@ class BLCalc(commands.Cog):
         return body + "\n" + crit, damage, crit_damage
 
 
-    @commands.command(name='calc', help='')
+    @commands.command(name='calc', help='Calculate Your Builds Damage, Use VH Specific Help Commands for Further Info')
     async def bl_calc(self, ctx):
         args=ctx.message.content.split(" ")
         mods=[]
@@ -72,6 +74,18 @@ class BLCalc(commands.Cog):
         while len(gear)<7: gear.append(0)
         response=BLCalc.unpack(args[1], mods, gear)
         await ctx.channel.send(response)
+
+    
+    @commands.command(name='mozehelp' help='Use for Further VH Calc Info')
+    async def mozehelp(self, ctx):
+        response='Arguments: [Click Click, DiB Stacks, DM, Phalanx] + \n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
+        await ctx.channel.send('```{}```'.format(response))
+
+    
+    @commands.command(name='zanehelp' help='Use for Further VH Calc Info')
+    async def zanehelp(self, ctx):
+        response='Arguments: [Bonus DFC Points, Kill Skill Stacks, Number of Active Action Skills, Movespeed Bonuses] + \n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
+        await ctx.channel.send('```{}```'.format(response))
 
 
 def setup(bot):
