@@ -4,11 +4,10 @@ Script to handle Moze related Math calculations
 """
 
 
-import math
-
 experimental_munitions = 0
 
 def skillsSpec(tree, mods, gear):
+    import calcMain
     cloud_of_lead = tree[0]
     stoke_the_embers = tree[3]
     scorching_rpms = tree[7]
@@ -38,9 +37,9 @@ def skillsSpec(tree, mods, gear):
     
     mults = [normal, v1, v2, splash, elemental, critical, bonus_fire]
 
-    response, body, crit = math.calc_Damage(mults)
+    response, body, crit = calcMain.BLCalc.calc_Damage(mults)
 
-    bonus_ele, body_1, crit_1 = math.calc_bonus_elements(mults, experimental_munitions)
+    bonus_ele, body_1, crit_1 = calcMain.BLCalc.calc_bonus_elements(mults, experimental_munitions)
     if crit_1 != 0: response = response + "\n" + bonus_ele
 
     if skag_den != 0: 
@@ -91,4 +90,4 @@ def calc_short_fuse(body, crit, mults, iron_bear_damage, skag_den):
         crit = skag + sf_crit_damage
         str_skag = str_skag + "\nShort Fuse Critical Skag Den: " + str(round(skag,2))
 
-    return sf_body_string + "\n" + sf_crit_string + "\n" + str_skag
+    return sf_body_string + "\n" + sf_crit_string + "\n" + str_skag, body, crit

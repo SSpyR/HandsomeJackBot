@@ -3,6 +3,7 @@
 import os
 import discord
 import logging
+import math
 from discord.ext import commands
 from dotenv import load_dotenv
 
@@ -10,10 +11,11 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 logging.basicConfig(level=logging.INFO)
 
-startup_extensions=['resources', 'social', 'datamine', 'hotfix', 'math']
+startup_extensions=['resources', 'social', 'datamine', 'hotfix', 'calcMain']
 token = os.getenv('DISCORD_TOKEN')
 owner_id = os.getenv('OWNER_ID')
 bot = commands.Bot(command_prefix='~')
+
 
 @bot.event
 async def on_ready():

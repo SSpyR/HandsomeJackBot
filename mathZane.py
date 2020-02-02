@@ -4,11 +4,10 @@ Script to handle Zane related Math calculations
 """
 
 
-import math
-
 experimental_munitions = 0
 
 def skillsSpec(tree, mods, gear):
+    import calcMain
     confident_competence = tree[6]
     cold_bore = tree[15]
     violent_momentum = tree[16]
@@ -31,9 +30,9 @@ def skillsSpec(tree, mods, gear):
     
     mults = [normal, v1, v2, splash, elemental, critical, bonus_cryo]
 
-    response, body, crit = math.calc_Damage(mults)
+    response, body, crit = calcMain.BLCalc.calc_Damage(mults)
 
-    bonus_ele, body_1, crit_1 = math.calc_bonus_elements(mults)
+    bonus_ele, body_1, crit_1 = calcMain.BLCalc.calc_bonus_elements(mults)
     if crit_1 != 0: response = response + "\n" + bonus_ele
     
     body = body + body_1

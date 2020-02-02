@@ -1,12 +1,14 @@
 # math.py
 # code provided by @Prismatic
 
-import mathMoze as Moze
-import mathZane as Zane
+
 import discord
 from discord.ext import commands
+import mathMoze as Moze
+import mathZane as Zane
 
-class Math(commands.Cog):
+
+class BLCalc(commands.Cog):
     
     def __init__(self, bot):
         self.bot=bot
@@ -16,6 +18,7 @@ class Math(commands.Cog):
     def compare(self, ctx, current1, current2, bonus1):
         bonus2=bonus1*(1+current2)/(1+current1)
         return bonus2'''
+
 
     """
     gear {Normal hit, v1, v2, Splash, elemental, crit, bonus element}
@@ -30,6 +33,7 @@ class Math(commands.Cog):
                 print("\n**Zane**")
         print(str(author) + "\n\n" + toReturn)
         return toReturn
+
 
     """
     mults {Normal hit, v1, v2, Splash, elemental, crit, bonus element}
@@ -55,19 +59,20 @@ class Math(commands.Cog):
         crit = "Critical Hit Damage: " + str(round(crit_damage,2))
         return body + "\n" + crit, damage, crit_damage
 
+
     @commands.command(name='calc', help='')
-    def bl_calc(self, ctx):
-        args=ctx.content.split(" ")
+    async def bl_calc(self, ctx):
+        args=ctx.message.content.split(" ")
         mods=[]
         for i in range(2, 6):
-            mods.append(args[i])
+            mods.append(eval(args[i]))
         gear=[]
         for i in range(6, len(args)):
             gear.append(eval(args[i]))
         while len(gear)<7: gear.append(0)
-        response=math.unpack(args[1], mods, gear)
+        response=BLCalc.unpack(args[1], mods, gear)
         await ctx.channel.send(response)
 
 
-    def setup(bot):
-        bot.add_cog(Math(bot))'''
+def setup(bot):
+    bot.add_cog(BLCalc(bot))
