@@ -1,7 +1,7 @@
 {
   "service_name": "Micropatch",
   "configuration_group": "OakDefault",
-  "configuration_version": "1.175.197",
+  "configuration_version": "1.176.198",
   "parameters": [
     {
       "key": "SparkLevelPatchEntry3",
@@ -3658,6 +3658,150 @@
     {
       "key": "SparkPatchEntry775",
       "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughTwoAndBeyond,158,(BaseValueConstant=6.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=0.500000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry516",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry517",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry520",
+      "value": "(1,1,0,BPChar_VarkidHunt01),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry521",
+      "value": "(1,1,0,BPChar_VarkidHunt01),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry524",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultA),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry525",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultA),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry528",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultB),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry529",
+      "value": "(1,1,0,BPChar_VarkidHunt02_AdultB),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_AOE_Knockback_Incendiary.PS_Varkid_AOE_Knockback_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkPatchEntry752",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,9,75.000000,100"
+    },
+    {
+      "key": "SparkPatchEntry753",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,10,125.000000,500"
+    },
+    {
+      "key": "SparkPatchEntry754",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,10,500.000000,1000"
+    },
+    {
+      "key": "SparkPatchEntry755",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,11,1000.000000,5000"
+    },
+    {
+      "key": "SparkPatchEntry756",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,9,75.000000,15"
+    },
+    {
+      "key": "SparkPatchEntry757",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,10,500.000000,150"
+    },
+    {
+      "key": "SparkPatchEntry758",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,11,1000.000000,500"
+    },
+    {
+      "key": "SparkPatchEntry759",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,11,2000.000000,5000"
+    },
+    {
+      "key": "SparkPatchEntry760",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,9,50.000000,20"
+    },
+    {
+      "key": "SparkPatchEntry761",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,11,2000.000000,200"
+    },
+    {
+      "key": "SparkPatchEntry762",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,11,3000.000000,1250"
+    },
+    {
+      "key": "SparkPatchEntry763",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,11,4000.000000,10000"
+    },
+    {
+      "key": "SparkPatchEntry764",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,10,100.000000,75"
+    },
+    {
+      "key": "SparkPatchEntry765",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,11,9000.000000,750"
+    },
+    {
+      "key": "SparkPatchEntry766",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,12,30000.000000,7500"
+    },
+    {
+      "key": "SparkPatchEntry767",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,12,60000.000000,50000"
+    },
+    {
+      "key": "SparkPatchEntry768",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,10,100.000000,50"
+    },
+    {
+      "key": "SparkPatchEntry769",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,11,3000.000000,500"
+    },
+    {
+      "key": "SparkPatchEntry770",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,13,100000.000000,50000"
+    },
+    {
+      "key": "SparkPatchEntry771",
+      "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestFourGems,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,13,100000.000000,100000"
+    },
+    {
+      "key": "SparkPatchEntry776",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Gamma_BonusRadiationDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,8,0.650000,1.150000"
+    },
+    {
+      "key": "SparkPatchEntry777",
+      "value": "(1,1,0,),/Game/Missions/Plot/Mission_Ep05_Sanctuary.OBJ_ReleaseTrappedCrew_Objective,bPauseObjectiveChain,4,True,False"
+    },
+    {
+      "key": "SparkEarlyLevelPatchEntry51",
+      "value": "(1,1,1,Strip_P),/Dandelion/Maps/Strip/Strip_Mission.Strip_Mission:PersistentLevel.OakMissionSpawner_Ember.SpawnerComponent,bRandomizeSpawnPoints,4,True,False"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry545",
+      "value": "(1,1,0,BPChar_Brick),/Game/NonPlayerCharacters/Brick/_Design/Character/BPChar_Brick.Default__BPChar_Brick_C:DefaultDamageComponent,bDemiGodMode,5,False,True"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry546",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry547",
+      "value": "(1,1,0,BPChar_VarkidBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry548",
+      "value": "(1,1,0,BPChar_VarkidSuperBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Horizontal,1,5,6"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry549",
+      "value": "(1,1,0,BPChar_VarkidSuperBadass),/Game/Enemies/Varkid/_Shared/Effects/Systems/PS_Varkid_Ambient_Incendiary.PS_Varkid_Ambient_Incendiary:ParticleModuleRequired_10,SubImages_Vertical,1,5,6"
     }
   ]
 }
