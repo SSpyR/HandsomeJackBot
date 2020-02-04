@@ -9,6 +9,7 @@ import discord
 from discord.ext import commands
 import mathMoze as Moze
 import mathZane as Zane
+import mathAmara as Amara
 
 
 class BLCalc(commands.Cog):
@@ -34,6 +35,9 @@ class BLCalc(commands.Cog):
             elif "operative" in link:
                 toReturn = Zane.skillsSpec(link[link.find("#")+1:len(link)+1], mods, gear)
                 print("\n**Zane**")
+            elif "siren" in link:
+                toReturn = Amara.skillsSpec(link[link.find("#")+1:len(link)+1], mods, gear)
+                print("\n**Amara**")
         print(str(author) + "\n\n" + toReturn)
         return toReturn
 
@@ -76,10 +80,16 @@ class BLCalc(commands.Cog):
         response=BLCalc.unpack(args[1], mods, gear)
         await ctx.channel.send(response)
 
+
+    @commands.command(name='calchelp', help='General Format Display for Calc Command')
+    async def calchelp(self, ctx):
+        response='(Command Template: ~calc bl3skills_link arguments) When entering arguments, just type the number and hit space, do not encase in brackets or separate by commas'
+        await ctx.channel.send('```{}```'.format(response))
+
     
     @commands.command(name='mozehelp', help='Use for Further VH Calc Info')
     async def mozehelp(self, ctx):
-        response='Arguments: [Click Click, DiB Stacks, DM, Phalanx]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
+        response='Arguments: [Click Click (0-1), DiB Stacks, DM (0-1), Phalanx]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
@@ -87,6 +97,12 @@ class BLCalc(commands.Cog):
     async def zanehelp(self, ctx):
         response='Arguments: [Bonus DFC Points, Kill Skill Stacks, Number of Active Action Skills, Movespeed Bonuses]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
+
+    
+    @commands.command(name='amarahelp', help='Use for Further VH Calc Info')
+    async def amarahelp(self, ctx):
+        response='Arguments: [Personal Space Strength (0-1), Samsara Stacks, unused, unused]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
+        await ctx.channel.send('```{}```'.format(response)) 
 
 
 def setup(bot):
