@@ -1,21 +1,27 @@
 """
 Script to handle Zane related Math calculations
+
+Arguments for mod: {death_follows_close, kill_skill_stacks, active_action_skills, movement_speed_over_base}
+
 @author Prismatic
 """
 
 
-experimental_munitions = 0
-
-def skillsSpec(tree, mods, gear):
+def skillsSpec(skills, mods, gear):
     import calcMain
-    confident_competence = tree[6]
-    cold_bore = tree[15]
-    violent_momentum = tree[16]
-    death_follows_close = tree[20]
-    synchronicity = tree[25]
-    donnybrook = tree[28]
-    trick_of_the_light = tree[37]
-    double_barrel = tree[38]
+    # Doubled Agent
+    synchronicity = skills[0]
+    donnybrook = skills[1]
+    trick_of_the_light = skills[2]
+    double_barrel = skills[3]
+
+    # Hitman
+    cold_bore = skills[4]
+    violent_momentum = skills[5]
+    death_follows_close = skills[6]
+
+    # Under Cover
+    confident_competence = skills[7]
 
     mods[0] = mods[0] + eval(death_follows_close)
     normal_hit = [confident_competence, violent_momentum, synchronicity, donnybrook, double_barrel]
@@ -30,9 +36,9 @@ def skillsSpec(tree, mods, gear):
     
     mults = [normal, v1, v2, splash, elemental, critical, bonus_cryo]
 
-    response, body, crit = calcMain.BLCalc.calc_Damage(mults)
+    response, body, crit = calcMain.calc_Damage(mults)
 
-    bonus_ele, body_1, crit_1 = calcMain.BLCalc.calc_bonus_elements(mults)
+    bonus_ele, body_1, crit_1 = calcMain.calc_bonus_elements(mults)
     if crit_1 != 0: response = response + "\n" + bonus_ele
     
     body = body + body_1

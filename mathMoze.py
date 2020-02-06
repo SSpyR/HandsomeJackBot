@@ -1,28 +1,32 @@
 """
 Script to handle Moze related Math calculations
+
+Arguments for mod: {Click Click, Drowning in Brass, Desperate Measures, Phalanx Doctrine}
+
 @author Prismatic
 """
 
 
 experimental_munitions = 0
 
-def skillsSpec(tree, mods, gear):
+def skillsSpec(skills, mods, gear):
     import calcMain
-    cloud_of_lead = tree[0]
-    stoke_the_embers = tree[3]
-    scorching_rpms = tree[7]
-    click_click = tree[11]
-    fire_in_the_skag_den = tree[13]
-    stainless_steel_bear = tree[18]
-    short_fuse = tree[25]
-    selfless_vengeance = tree[26]
-    armored_infantry = tree[28]
-    drowning_in_brass = tree[29]
+    
+    selfless_vengeance = skills[0]
+    armored_infantry = skills[1]
+    drowning_in_brass = skills[2]
     global experimental_munitions
-    experimental_munitions = eval(tree[33])*0.1
-    desperate_measures = tree[35]
-    phalanx_doctrine = tree[36]
-    tenacious_defense = tree[38]
+    experimental_munitions = eval(skills[3])*0.1
+    desperate_measures = skills[4]
+    phalanx_doctrine = skills[5]
+    tenacious_defense = skills[6]
+    cloud_of_lead = skills[7]
+    stoke_the_embers = skills[8]
+    scorching_rpms = skills[9]
+    click_click = skills[10]
+    fire_in_the_skag_den = skills[11]
+    stainless_steel_bear = skills[12]
+    short_fuse = skills[13]
 
     normal_hit = [click_click, armored_infantry, drowning_in_brass, desperate_measures, phalanx_doctrine, tenacious_defense]
     normal = moze_normal_hit(normal_hit, mods) + gear[0]
@@ -37,9 +41,9 @@ def skillsSpec(tree, mods, gear):
     
     mults = [normal, v1, v2, splash, elemental, critical, bonus_fire]
 
-    response, body, crit = calcMain.BLCalc.calc_Damage(mults)
+    response, body, crit = calcMain.calc_Damage(mults)
 
-    bonus_ele, body_1, crit_1 = calcMain.BLCalc.calc_bonus_elements(mults, experimental_munitions)
+    bonus_ele, body_1, crit_1 = calcMain.calc_bonus_elements(mults, experimental_munitions)
     if crit_1 != 0: response = response + "\n" + bonus_ele
 
     if skag_den != 0: 
@@ -89,5 +93,5 @@ def calc_short_fuse(body, crit, mults, iron_bear_damage, skag_den):
         skag = crit * 0.75 * (1+iron_bear_damage) * skag_den
         crit = skag + sf_crit_damage
         str_skag = str_skag + "\nShort Fuse Critical Skag Den: " + str(round(skag,2))
-
+ 
     return sf_body_string + "\n" + sf_crit_string + "\n" + str_skag, body, crit

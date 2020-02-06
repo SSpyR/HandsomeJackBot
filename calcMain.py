@@ -7,6 +7,7 @@
 
 import discord
 from discord.ext import commands
+import urlDecrypt as url
 import mathMoze as Moze
 import mathZane as Zane
 import mathAmara as Amara
@@ -18,26 +19,45 @@ class BLCalc(commands.Cog):
         self.bot=bot
 
 
-    '''@commands.command(name='compare', help='Compare 2 Damage Value Types Against Each Other'):
-    def compare(self, ctx, current1, current2, bonus1):
+    @commands.command(name='compare', help='Compare 2 Damage Value Types Against Each Other')
+    async def compare(self, ctx, current1, current2, bonus1):
         bonus2=bonus1*(1+current2)/(1+current1)
-        return bonus2'''
+        response=bonus2
+        await ctx.send(response)
 
 
     """
     gear {Normal hit, v1, v2, Splash, elemental, crit, bonus element}
     """
     def unpack(link, mods, gear, author="Testing"):
-        if "bl3skills" in link:
+        toReturn=""
+        
+        if "bl3zone.com" in link:
+            index = link.find("planner/")+11
+            if "A" == link[index-1]:
+                skills = url.zoneAmaraSpec(link[index:len(link)+1])
+                toReturn = Amara.skillsSpec(skills, mods, gear)
+            # elif "B" == link[index-1]:
+            #     skills = url.zoneFlakSpec(link[index:len(link)+1])
+            elif "C" == link[index-1]:
+                skills = url.zoneMozeSpec(link[index:len(link)+1])
+                toReturn = Moze.skillsSpec(skills, mods, gear)
+            elif "D" == link[index-1]:
+                skills = url.zoneZaneSpec(link[index:len(link)+1])
+                toReturn = Zane.skillsSpec(skills, mods, gear)
+        
+        elif "bl3skills" in link:
+            index = link.find("#")+1
             if "gunner" in link:
-                toReturn = Moze.skillsSpec(link[link.find("#")+1:len(link)+1], mods, gear)
-                print("\n**Moze**")
+                skills = url.skillsMozeSpec(link[index:len(link)+1])
+                toReturn = Moze.skillsSpec(skills, mods, gear)
             elif "operative" in link:
-                toReturn = Zane.skillsSpec(link[link.find("#")+1:len(link)+1], mods, gear)
-                print("\n**Zane**")
+                skills = url.skillsZaneSpec(link[index:len(link)+1])
+                toReturn = Zane.skillsSpec(skills, mods, gear)
             elif "siren" in link:
-                toReturn = Amara.skillsSpec(link[link.find("#")+1:len(link)+1], mods, gear)
-                print("\n**Amara**")
+                skills = url.skillsAmaraSpec(link[index:len(link)+1])
+                toReturn = Amara.skillsSpec(skills, mods, gear)
+        
         print(str(author) + "\n\n" + toReturn)
         return toReturn
 
@@ -83,24 +103,24 @@ class BLCalc(commands.Cog):
 
     @commands.command(name='calchelp', help='General Format Display for Calc Command')
     async def calchelp(self, ctx):
-        response='(Command Template: ~calc bl3skills_link arguments) When entering arguments, just type the number and hit space, do not encase in brackets or separate by commas'
+        response='(Command Template: ~calc bl3skills/bl3zone_link arguments) When entering arguments, just type the number and hit space, do not encase in brackets or separate by commas'
         await ctx.channel.send('```{}```'.format(response))
 
     
-    @commands.command(name='mozehelp', help='Use for Further VH Calc Info')
-    async def mozehelp(self, ctx):
+    @commands.command(name='cmozehelp', help='Use for Further VH Calc Info')
+    async def cmozehelp(self, ctx):
         response='Arguments: [Click Click (0-1), DiB Stacks, DM (0-1), Phalanx]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
-    @commands.command(name='zanehelp', help='Use for Further VH Calc Info')
-    async def zanehelp(self, ctx):
+    @commands.command(name='czanehelp', help='Use for Further VH Calc Info')
+    async def czanehelp(self, ctx):
         response='Arguments: [Bonus DFC Points, Kill Skill Stacks, Number of Active Action Skills, Movespeed Bonuses]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
-    @commands.command(name='amarahelp', help='Use for Further VH Calc Info')
-    async def amarahelp(self, ctx):
+    @commands.command(name='camarahelp', help='Use for Further VH Calc Info')
+    async def camarahelp(self, ctx):
         response='Arguments: [Personal Space Strength (0-1), Samsara Stacks, unused, unused]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response)) 
 
