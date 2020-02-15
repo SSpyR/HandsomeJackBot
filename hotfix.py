@@ -18,6 +18,7 @@ import requests
 import datetime
 import time
 import asyncio
+import pickle as pkl
 import discord
 
 from discord.ext import commands
@@ -28,6 +29,15 @@ class Hotfix(commands.Cog):
     def __init__(self, bot):
         self.bot=bot
         self.sched=AsyncIOScheduler()
+        self.optinguilds=[]
+        self.optinchats=[]
+        try:
+            with open('optinlistg.pkl', 'rb') as foo:
+                self.optinguilds=pkl.load(foo)
+            with open('optinlistc.pkl', 'rb') as foo:
+                self.optinchats=pkl.load(foo)
+        except EOFError:
+            print('File Was Empty')
 
 
     @commands.command(name='hotfix', help='Prints out Hotfix Data for Most Recent Hotfix in Designated Chat')
@@ -52,6 +62,43 @@ class Hotfix(commands.Cog):
             else:
                 await destchat.send(response)
         await ctx.send('```Data Sent```')
+
+    
+    @commands.command(name='hfoptin', help='Command to Opt-In to Auto Hotfix Updates')
+    async def hotfix_optin(self, ctx):
+        sent=False
+        for channel in ctx.guild.channels:
+            if channel.name=='handsome-jackbot':
+                if ctx.guild.id in self.optinguilds:
+                    await ctx.send('Server is Already Registered.')
+                    sent=True
+                else:
+                    self.optinguilds.append(ctx.guild.id)
+                    self.optinchats.append(channel.id)
+                    await ctx.send('Server Has Been Registered for Hotfix Updates.')
+                    sent=True
+        if sent==False:
+            await ctx.send('Server Requires #handsome-jackbot Channel.')
+        with open('optinlistg.pkl', 'wb') as foo:
+            pkl.dump(self.optinguilds, foo)
+        with open('optinlistc.pkl', 'wb') as foo:
+            pkl.dump(self.optinchats, foo)
+
+
+    @commands.command(name='hfoptout', help='Command to Opt-Out of Auto Hotfix Updates')
+    async def hotfix_optout(self, ctx):
+        for channel in ctx.guild.channels:
+            if channel.name=='handsome-jackbot':
+                if ctx.guild.id in self.optinguilds:
+                    self.optinguilds.remove(ctx.guild.id)
+                    self.optinchats.remove(channel.id)
+                    await ctx.send('Server Has Been De-Registered.')
+                else:
+                    await ctx.send('Server Isnt Registered.')
+        with open('optinlistg.pkl', 'wb') as foo:
+            pkl.dump(self.optinguilds, foo)
+        with open('optinlistc.pkl', 'wb') as foo:
+            pkl.dump(self.optinchats, foo)
 
 
     async def bl_hotfix(self):
@@ -160,35 +207,27 @@ class Hotfix(commands.Cog):
                 json.dump(newdata, fp, indent=4)
             print('New Data Split From Exisiting, Sending..')
 
-
             # Send Update to Channels
-            chat1=self.bot.get_guild(632633098584064018).get_channel(661350189696811094)
-            chat2=self.bot.get_guild(639786657666826242).get_channel(661363999656640513)
-            chat3=self.bot.get_guild(648588069250793492).get_channel(664940635236728832)
+            for glist in range(len(self.optinguilds)):
+                for clist in range(len(self.optinchats)):
 
-            with open('hotfixes/new_hotfix.json') as f:
-                data=json.load(f)
+                    destchat=self.bot.get_guild(self.optinguilds[glist]).get_channel(self.optinchats[clist])
 
-            await chat1.send('```NEW HOTFIX DATA INCOMING```')
-            await chat2.send('```NEW HOTFIX DATA INCOMING```')
-            await chat3.send('```NEW HOTFIX DATA INCOMING```')
-            time.sleep(10)
+                    with open('hotfixes/new_hotfix.json') as f:
+                        data=json.load(f)
 
-            for index in enumerate(data['parameters']):
-                response=("```{}```".format(index[1]))
-                if len(response)>=2000:
-                    await chat1.send('```Data String too Long, Skipping...```')
-                    await chat2.send('```Data String too Long, Skipping...```')
-                    await chat3.send('```Data String too Long, Skipping...```')
-                    continue
-                else:
-                    await chat1.send(response)
-                    await chat2.send(response)
-                    await chat3.send(response)
-            await chat1.send('```Data Sent```')
-            await chat2.send('```Data Sent```')
-            await chat3.send('```Data Sent```')
+                    await destchat.send('```NEW HOTFIX DATA INCOMING```')
+                    time.sleep(10)
 
+                    for index in enumerate(data['parameters']):
+                        response=("```{}```".format(index[1]))
+                        if len(response)>=2000:
+                            await destchat.send('```Data String too Long, Skipping...```')
+                            continue
+                        else:
+                            await destchat.send(response)
+                    await destchat.send('```Data Sent```')
+                    
 
     def start_sched(self):
         self.sched.start()

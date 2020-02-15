@@ -64,6 +64,16 @@ async def shutdown(ctx):
         print('Shutdown Command Execution Attempted by Non-Owner')
 
 
+@bot.command(name='echo', help='Only Usable by Owner')
+async def echo(ctx):
+    if ctx.author.id==int(owner_id):
+        for guild in bot.guilds:
+            for channel in guild.channels:
+                if channel.name=="handsome-jackbot":
+                    response=(ctx.message.content).replace(ctx.prefix,'').replace(ctx.command.name,'')
+                    await channel.send(response)
+
+
 if __name__=="__main__":
     for extension in startup_extensions:
         try:
