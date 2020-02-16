@@ -42,16 +42,19 @@ class Social(commands.Cog):
     @commands.command(name='channel', help='Creates the Handsome JackBot Channel')
     async def channel_create(self, ctx):
         channel=False
-        if 'handsome-jackbot' in ctx.guild.text_channels:
+        if 'handsome-jackbot' in ctx.guild.channels:
             channel=True
-        try:
-            if channel==False:
-                await ctx.guild.create_text_channel('handsome-jackbot')
-                await ctx.send('Channel Created.')
-            else:
-                await ctx.send('Channel Already Exists.')
-        except discord.errors.Forbidden:
-            await ctx.send('Missing Permissions.')
+        if ctx.message.author.guild_permissions.administrator:
+            try:
+                if channel==False:
+                    await ctx.guild.create_text_channel('handsome-jackbot')
+                    await ctx.send('Channel Created.')
+                else:
+                    await ctx.send('Channel Already Exists.')
+            except discord.errors.Forbidden:
+                await ctx.send('Bot Missing Permissions.')
+        else:
+            await ctx.send('You Do Not Have Permission To Use That Command.')
 
 
     @commands.Cog.listener()

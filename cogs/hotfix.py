@@ -75,39 +75,45 @@ class Hotfix(commands.Cog):
     
     @commands.command(name='hfoptin', help='Command to Opt-In to Auto Hotfix Updates')
     async def hotfix_optin(self, ctx):
-        sent=False
-        for channel in ctx.guild.channels:
-            if channel.name=='handsome-jackbot':
-                if ctx.guild.id in self.optinguilds:
-                    await ctx.send('Server is Already Registered.')
-                    sent=True
-                else:
-                    self.optinguilds.append(ctx.guild.id)
-                    self.optinchats.append(channel.id)
-                    await ctx.send('Server Has Been Registered for Hotfix Updates.')
-                    sent=True
-        if sent==False:
-            await ctx.send('Server Requires #handsome-jackbot Channel.')
-        with open('optinlistg.pkl', 'wb') as foo:
-            pkl.dump(self.optinguilds, foo)
-        with open('optinlistc.pkl', 'wb') as foo:
-            pkl.dump(self.optinchats, foo)
+        if ctx.message.author.guild_permissions.kick_members:
+            sent=False
+            for channel in ctx.guild.channels:
+                if channel.name=='handsome-jackbot':
+                    if ctx.guild.id in self.optinguilds:
+                        await ctx.send('Server is Already Registered.')
+                        sent=True
+                    else:
+                        self.optinguilds.append(ctx.guild.id)
+                        self.optinchats.append(channel.id)
+                        await ctx.send('Server Has Been Registered for Hotfix Updates.')
+                        sent=True
+            if sent==False:
+                await ctx.send('Server Requires #handsome-jackbot Channel.')
+            with open('optinlistg.pkl', 'wb') as foo:
+                pkl.dump(self.optinguilds, foo)
+            with open('optinlistc.pkl', 'wb') as foo:
+                pkl.dump(self.optinchats, foo)
+        else:
+            await ctx.send('You Do Not Have Permission To Use That Command.')
 
 
     @commands.command(name='hfoptout', help='Command to Opt-Out of Auto Hotfix Updates')
     async def hotfix_optout(self, ctx):
-        for channel in ctx.guild.channels:
-            if channel.name=='handsome-jackbot':
-                if ctx.guild.id in self.optinguilds:
-                    self.optinguilds.remove(ctx.guild.id)
-                    self.optinchats.remove(channel.id)
-                    await ctx.send('Server Has Been De-Registered.')
-                else:
-                    await ctx.send('Server Isnt Registered.')
-        with open('optinlistg.pkl', 'wb') as foo:
-            pkl.dump(self.optinguilds, foo)
-        with open('optinlistc.pkl', 'wb') as foo:
-            pkl.dump(self.optinchats, foo)
+        if ctx.message.author.guild_permissions.kick_members:
+            for channel in ctx.guild.channels:
+                if channel.name=='handsome-jackbot':
+                    if ctx.guild.id in self.optinguilds:
+                        self.optinguilds.remove(ctx.guild.id)
+                        self.optinchats.remove(channel.id)
+                        await ctx.send('Server Has Been De-Registered.')
+                    else:
+                        await ctx.send('Server Isnt Registered.')
+            with open('optinlistg.pkl', 'wb') as foo:
+                pkl.dump(self.optinguilds, foo)
+            with open('optinlistc.pkl', 'wb') as foo:
+                pkl.dump(self.optinchats, foo)
+        else:
+            await ctx.send('You Do Not Have Permission To Use That Command.')
 
 
     async def bl_hotfix(self):
