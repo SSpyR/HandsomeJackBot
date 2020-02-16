@@ -8,10 +8,10 @@
 
 import discord
 from discord.ext import commands
-import urlDecrypt as url
-import mathMoze as Moze
-import mathZane as Zane
-import mathAmara as Amara
+from utils import urlDecrypt as url
+from utils import mathMoze as Moze
+from utils import mathZane as Zane
+from utils import mathAmara as Amara
 
 
 class BLCalc(commands.Cog):

@@ -31,9 +31,9 @@ class Hotfix(commands.Cog):
         self.optinguilds=[]
         self.optinchats=[]
         try:
-            with open('optinlistg.pkl', 'rb') as foo:
+            with open('utils/optinlistg.pkl', 'rb') as foo:
                 self.optinguilds=pkl.load(foo)
-            with open('optinlistc.pkl', 'rb') as foo:
+            with open('utils/optinlistc.pkl', 'rb') as foo:
                 self.optinchats=pkl.load(foo)
         except EOFError:
             print('File Was Empty')
