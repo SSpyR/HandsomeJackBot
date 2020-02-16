@@ -39,6 +39,7 @@ Thumbs.db
 #########
 *.env
 *.lnk
+*.pyc
 hotfix.py.save
 hotfixes/new_hotfix.json
 hotfixes/hotfixes_prev.json
