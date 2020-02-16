@@ -11,12 +11,12 @@ class Social(commands.Cog):
         self.bot=bot
 
 
-    '''@commands.command(name='invite', help='Invite Link for the Bot')
+    @commands.command(name='invite', help='Invite Link for the Bot')
     async def server_invite(self, ctx):
         response='https://discordapp.com/api/oauth2/authorize?client_id=660646451273007127&permissions=8&scope=bot'
         await ctx.send('{} A Direct Message has Been Sent You.'.format(ctx.author.mention))
-        await ctx.author.send('Here is the link to invite Handsome JackBot to your Discord.')
-        await ctx.author.send(response)'''
+        await ctx.author.send('Here is the link to invite Handsome JackBot to your Discord. Make sure to grant it Admin privileges.')
+        await ctx.author.send(response)
 
     
     @commands.command(name='tutorial', help='Tutorial Video for the Bot')
@@ -37,6 +37,21 @@ class Social(commands.Cog):
     async def bl_randy(self, ctx):
         response='<:justintime:646748813981384746>'
         await ctx.send(response)
+
+
+    @commands.command(name='channel', help='Creates the Handsome JackBot Channel')
+    async def channel_create(self, ctx):
+        channel=False
+        if 'handsome-jackbot' in ctx.guild.text_channels:
+            channel=True
+        try:
+            if channel==False:
+                await ctx.guild.create_text_channel('handsome-jackbot')
+                await ctx.send('Channel Created.')
+            else:
+                await ctx.send('Channel Already Exists.')
+        except discord.errors.Forbidden:
+            await ctx.send('Missing Permissions.')
 
 
     @commands.Cog.listener()

@@ -2,11 +2,8 @@
 # original code for def bl_hotfix by apocalyptech on GitHub, thanks to him
 # see https://github.com/apocalyptech/
 
-# send new hotfixes to a new file with only that data (possibly done, need to account for negative changes) 
 # detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
 # parsed summary of each changed item ("Changed [Print affected item] [print affected property] to [print new effect]")?
-# double check new data is actually new (DO NOT KEEP BOT ACTIVE WHEN PUT LAPTOP TO SLEEP)
-# allow access to grab point_in_time files
 
 # <a:rooHack:652663804840247316> meme emote to add in?
 
@@ -18,11 +15,13 @@ import requests
 import datetime
 import time
 import asyncio
+import git
 import pickle as pkl
 import discord
 
 from discord.ext import commands
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
 
 class Hotfix(commands.Cog):
 
@@ -40,10 +39,20 @@ class Hotfix(commands.Cog):
             print('File Was Empty')
 
 
-    @commands.command(name='hotfix', help='Prints out Hotfix Data for Most Recent Hotfix in Designated Chat')
+    @commands.command(name='hotfix', help='Links to the Commit History Page of the Latest Hotfix to View All Changes')
     async def bl_current_hotfix(self, ctx):
         destchat=None
-        with open('hotfixes/new_hotfix.json', 'r') as f:
+
+        for channel in ctx.guild.channels:
+            if channel.name=='handsome-jackbot':
+                destchat=channel
+        if destchat==None:
+            await ctx.send('handsome-jackbot channel not detected and is required.')
+
+        await destchat.send('Go To This Link And View The Lastest Commit History To Show Everything Changed With The Latest Hotfix')
+        await destchat.send('https://github.com/SSpyR/HandsomeJackBot/commits/master/hotfixes/hotfixes_current.json')
+
+        '''with open('hotfixes/new_hotfix.json', 'r') as f:
             data=json.load(f)
 
         await ctx.send('```Preparing Data Dump, See #handsome-jackbot for Results```')
@@ -61,7 +70,7 @@ class Hotfix(commands.Cog):
                 continue
             else:
                 await destchat.send(response)
-        await ctx.send('```Data Sent```')
+        await ctx.send('```Data Sent```')'''
 
     
     @commands.command(name='hfoptin', help='Command to Opt-In to Auto Hotfix Updates')
@@ -177,6 +186,15 @@ class Hotfix(commands.Cog):
             with open(os.path.join(output_dir, cumulative_file), 'w') as df:
                 df.write(hotfixes)
 
+            # Do the git interaction
+            print('Pushing to git')
+            repo = git.Repo(output_dir)
+            repo.git.pull()
+            repo.git.add('--', os.path.join(point_in_time_base, hotfix_filename))
+            repo.git.add('--', cumulative_file)
+            repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
+            repo.git.push()
+
             # Split the new data out
             startindex=None
             with open('hotfixes/hotfixes_current.json', "r") as f1:
@@ -217,6 +235,7 @@ class Hotfix(commands.Cog):
                         data=json.load(f)
 
                     await destchat.send('```NEW HOTFIX DATA INCOMING```')
+                    await destchat.send('```REMINDER: THIS ONLY DISPLAYS NEW ADDED DATA```')
                     time.sleep(10)
 
                     for index in enumerate(data['parameters']):
@@ -227,7 +246,8 @@ class Hotfix(commands.Cog):
                         else:
                             await destchat.send(response)
                     await destchat.send('```Data Sent```')
-                    
+                    await destchat.send('```Use ~hotfix To View More Specific Change History With This Hotfix```')
+
 
     def start_sched(self):
         self.sched.start()

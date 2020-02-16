@@ -64,6 +64,14 @@ async def shutdown(ctx):
         print('Shutdown Command Execution Attempted by Non-Owner')
 
 
+@bot.event
+async def on_guild_join(guild):
+    try:
+        await guild.create_text_channel('handsome-jackbot')
+    except discord.errors.Forbidden:
+        print('Missing Permissions on Join')
+
+
 @bot.command(name='echo', help='Only Usable by Owner')
 async def echo(ctx):
     if ctx.author.id==int(owner_id):
