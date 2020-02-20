@@ -28,7 +28,7 @@ class Hotfix(commands.Cog):
     def __init__(self, bot):
         self.bot=bot
         self.sched=AsyncIOScheduler()
-        self.optinguilds=[]
+        '''self.optinguilds=[]
         self.optinchats=[]
         try:
             with open('utils/optinlistg.pkl', 'rb') as foo:
@@ -36,7 +36,7 @@ class Hotfix(commands.Cog):
             with open('utils/optinlistc.pkl', 'rb') as foo:
                 self.optinchats=pkl.load(foo)
         except EOFError:
-            print('File Was Empty')
+            print('File Was Empty')'''
 
 
     @commands.command(name='hotfix', help='Links to the Commit History Page of the Latest Hotfix to View All Changes')
@@ -73,7 +73,7 @@ class Hotfix(commands.Cog):
         await ctx.send('```Data Sent```')'''
 
     
-    @commands.command(name='hfoptin', help='Command to Opt-In to Auto Hotfix Updates')
+    '''@commands.command(name='hfoptin', help='Command to Opt-In to Auto Hotfix Updates')
     async def hotfix_optin(self, ctx):
         if ctx.message.author.guild_permissions.kick_members:
             sent=False
@@ -113,7 +113,7 @@ class Hotfix(commands.Cog):
             with open('optinlistc.pkl', 'wb+') as foo:
                 pkl.dump(self.optinchats, foo)
         else:
-            await ctx.send('You Do Not Have Permission To Use That Command.')
+            await ctx.send('You Do Not Have Permission To Use That Command.')'''
 
 
     async def bl_hotfix(self):
@@ -234,15 +234,20 @@ class Hotfix(commands.Cog):
             print('New Data Split From Exisiting, Sending..')
 
             # Send Update to Channels
-            for glist in range(len(self.optinguilds)):
+            '''for glist in range(len(self.optinguilds)):
                 for clist in range(len(self.optinchats)):
 
                     destchat=self.bot.get_guild(self.optinguilds[glist]).get_channel(self.optinchats[clist])
                     print(self.optinguilds[glist])
-                    print(self.optinchats[clist])
+                    print(self.optinchats[clist])'''
+            for guild in self.bot.guilds:
+                for channel in guild.channels:
 
-                    if (destchat==None):
-                        print('continued')
+                    destchat=None
+
+                    if channel.name=="handsome-jackbot":
+                        destchat=channel
+                    else:
                         continue
 
                     with open('hotfixes/new_hotfix.json') as f:
