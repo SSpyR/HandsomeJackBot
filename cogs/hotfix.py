@@ -89,9 +89,9 @@ class Hotfix(commands.Cog):
                         sent=True
             if sent==False:
                 await ctx.send('Server Requires #handsome-jackbot Channel.')
-            with open('optinlistg.pkl', 'wb') as foo:
+            with open('optinlistg.pkl', 'wb+') as foo:
                 pkl.dump(self.optinguilds, foo)
-            with open('optinlistc.pkl', 'wb') as foo:
+            with open('optinlistc.pkl', 'wb+') as foo:
                 pkl.dump(self.optinchats, foo)
         else:
             await ctx.send('You Do Not Have Permission To Use That Command.')
@@ -108,9 +108,9 @@ class Hotfix(commands.Cog):
                         await ctx.send('Server Has Been De-Registered.')
                     else:
                         await ctx.send('Server Isnt Registered.')
-            with open('optinlistg.pkl', 'wb') as foo:
+            with open('optinlistg.pkl', 'wb+') as foo:
                 pkl.dump(self.optinguilds, foo)
-            with open('optinlistc.pkl', 'wb') as foo:
+            with open('optinlistc.pkl', 'wb+') as foo:
                 pkl.dump(self.optinchats, foo)
         else:
             await ctx.send('You Do Not Have Permission To Use That Command.')
@@ -265,7 +265,7 @@ class Hotfix(commands.Cog):
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=10)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=1)
         
 
 def setup(bot):
