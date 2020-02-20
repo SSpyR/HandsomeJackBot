@@ -238,8 +238,8 @@ class Hotfix(commands.Cog):
                 for clist in range(len(self.optinchats)):
 
                     destchat=self.bot.get_guild(self.optinguilds[glist]).get_channel(self.optinchats[clist])
-                    print(optinguilds[glist])
-                    print(optinchats[clist])
+                    print(self.optinguilds[glist])
+                    print(self.optinchats[clist])
 
                     if (destchat==None):
                         print('continued')
@@ -265,7 +265,7 @@ class Hotfix(commands.Cog):
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=2)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=1)
         
 
 def setup(bot):
