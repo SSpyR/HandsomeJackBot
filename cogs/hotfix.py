@@ -265,7 +265,7 @@ class Hotfix(commands.Cog):
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=1)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=10)
         
 
 def setup(bot):
