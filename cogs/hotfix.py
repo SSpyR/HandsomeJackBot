@@ -262,10 +262,16 @@ class Hotfix(commands.Cog):
                     await destchat.send('```Data Sent```')
                     await destchat.send('```Use ~hotfix To View More Specific Change History With This Hotfix```')
 
+    @commands.command(name='clear')
+    async def clear(self, ctx):
+        self.optinchats.clear
+        self.optinguilds.clear
+        print('cleared')
+
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=1)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=2)
         
 
 def setup(bot):
