@@ -199,7 +199,7 @@ class Hotfix(commands.Cog):
             repo = git.Repo('/home/sspyr/BL3/HandsomeJackBot/')
             repo.git.pull()
             repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
-            repo.git.add('--', cumulative_file)
+            repo.git.add('--', os.path.join(output_dir, cumulative_file))
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
             repo.git.push()
 
