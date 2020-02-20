@@ -238,7 +238,12 @@ class Hotfix(commands.Cog):
                 for clist in range(len(self.optinchats)):
 
                     destchat=self.bot.get_guild(self.optinguilds[glist]).get_channel(self.optinchats[clist])
-                    print(destchat)
+                    print(optinguilds[glist])
+                    print(optinchats[clist])
+
+                    if (destchat==None):
+                        print('continued')
+                        continue
 
                     with open('hotfixes/new_hotfix.json') as f:
                         data=json.load(f)

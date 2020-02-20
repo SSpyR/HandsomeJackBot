@@ -2,38 +2,5 @@
     "service_name": "Micropatch",
     "configuration_group": "OakDefault",
     "configuration_version": "1.172.191",
-    "parameters": [
-        {
-            "key": "SparkPatchEntry778",
-            "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,10,200.000000,30"
-        },
-        {
-            "key": "SparkPatchEntry779",
-            "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,10,500.000000,300"
-        },
-        {
-            "key": "SparkPatchEntry780",
-            "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,11,2000.000000,3000"
-        },
-        {
-            "key": "SparkPatchEntry781",
-            "value": "(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,RedChest,LegendaryWeightModifier_18_B98DE11946C28DF64D94E197F7FED9BE,11,1000.000000,65000"
-        },
-        {
-            "key": "SparkLevelPatchEntry904",
-            "value": "(1,1,1,Trashtown_P),/Dandelion/Maps/Trashtown/Trashtown_M_Plot.Trashtown_M_Plot:PersistentLevel.IO_Trashtown_Turret.LaserPointer,RelativeScale3D,35,(X=0.063500,Y=0.063500,Z=48.875000),(X=0.001,Y=0.001,Z=0.001)"
-        },
-        {
-            "key": "SparkEarlyLevelPatchEntry55",
-            "value": "(1,1,0,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BPIO_Lootable_Industrial_CarTrunk_2.RegionBalanceState,BalanceTableRowHandle,140,(DataTable=DataTable'\"/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData\"',RowName=\"Awesome\"),(DataTable=DataTable'\"/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData\"',RowName=\"RedChest\")"
-        },
-        {
-            "key": "SparkEarlyLevelPatchEntry56",
-            "value": "(1,1,0,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_M_Ep14MinerDetails.Prologue_M_Ep14MinerDetails:PersistentLevel.BPIO_Lootable_Industrial_CarTrunk_2.RegionBalanceState,BalanceTableRowHandle,133,(DataTable=DataTable'\"/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData\"',RowName=\"\"),(DataTable=DataTable'\"/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData\"',RowName=\"RedChest\")"
-        },
-        {
-            "key": "SparkEarlyLevelPatchEntry58",
-            "value": "(1,1,0,Desert_P),/Game/Maps/Zone_3/Desert/Desert_Dynamic.Desert_Dynamic:PersistentLevel.BPIO_Lootable_Industrial_CarTrunk_2.RegionBalanceState,BalanceTableRowHandle,133,(DataTable=DataTable'\"/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData\"',RowName=\"\"),(DataTable=DataTable'\"/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData\"',RowName=\"RedChest\")"
-        }
-    ]
+    "parameters": []
 }
