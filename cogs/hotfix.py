@@ -46,11 +46,11 @@ class Hotfix(commands.Cog):
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
                 destchat=channel
+                await destchat.send('{}'.format(ctx.author.mention))
+                await destchat.send('Go To This Link And View The Lastest Commit History To Show Everything Changed With The Latest Hotfix')
+                await destchat.send('https://github.com/SSpyR/HandsomeJackBot/commits/master/hotfixes/hotfixes_current.json')
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
-
-        await destchat.send('Go To This Link And View The Lastest Commit History To Show Everything Changed With The Latest Hotfix')
-        await destchat.send('https://github.com/SSpyR/HandsomeJackBot/commits/master/hotfixes/hotfixes_current.json')
 
         '''with open('hotfixes/new_hotfix.json', 'r') as f:
             data=json.load(f)
@@ -168,6 +168,8 @@ class Hotfix(commands.Cog):
         else:
             do_write = True
 
+        do_write = True
+
         # Do the write, if we have to
         if do_write:
 
@@ -194,9 +196,9 @@ class Hotfix(commands.Cog):
 
             # Do the git interaction
             print('Pushing to git')
-            repo = git.Repo(output_dir)
+            repo = git.Repo('/home/sspyr/BL3/HandsomeJackBot/')
             repo.git.pull()
-            repo.git.add('--', os.path.join(point_in_time_base, hotfix_filename))
+            repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', cumulative_file)
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
             repo.git.push()
@@ -236,6 +238,7 @@ class Hotfix(commands.Cog):
                 for clist in range(len(self.optinchats)):
 
                     destchat=self.bot.get_guild(self.optinguilds[glist]).get_channel(self.optinchats[clist])
+                    print(destchat)
 
                     with open('hotfixes/new_hotfix.json') as f:
                         data=json.load(f)
@@ -257,7 +260,7 @@ class Hotfix(commands.Cog):
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=30)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=2)
         
 
 def setup(bot):
