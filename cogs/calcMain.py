@@ -113,24 +113,25 @@ class BLCalc(commands.Cog):
 
     
     @commands.command(name='mmozehelp', help='Use for Further VH Calc Info')
-    async def cmozehelp(self, ctx):
+    async def mmozehelp(self, ctx):
         response='Arguments: [Click Click (0-1), DiB Stacks, DM (0-1), Phalanx]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
     @commands.command(name='mzanehelp', help='Use for Further VH Calc Info')
-    async def czanehelp(self, ctx):
+    async def mzanehelp(self, ctx):
         response='Arguments: [Bonus DFC Points, Kill Skill Stacks, Number of Active Action Skills, Movespeed Bonuses]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
     @commands.command(name='mamarahelp', help='Use for Further VH Calc Info')
-    async def camarahelp(self, ctx):
+    async def mamarahelp(self, ctx):
         response='Arguments: [Personal Space Strength (0-1), Samsara Stacks, unused, unused]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response)) 
 
     
     @commands.command(name='mfl4khelp', help='Use for Further VH Calc Info')
+    async def mfl4khelp(self, ctx):
         response='Arguments: [Big Game Bonus Points, Furious Attack Stacks, Int Stalker Stacks, Full Health or Not (0-1, for Power Inside)]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response)) 
 
