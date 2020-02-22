@@ -135,6 +135,12 @@ class BLCalc(commands.Cog):
         response='Arguments: [Big Game Bonus Points, Furious Attack Stacks, Int Stalker Stacks, Full Health or Not (0-1, for Power Inside)]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response)) 
 
+    
+    @commands.command(name='calcapp', help='Links to Stand-Alone Calculator App')
+    async def calcapp(self, ctx):
+        response='https://github.com/SSpyR/BL3DamageCalculator'
+        await ctx.channel.send(response)
+
 
 def setup(bot):
     bot.add_cog(BLCalc(bot))
