@@ -41,9 +41,9 @@ def skillsSpec(skills, mods, gear):
     
     mults = [normal, v1, v2, splash, elemental, critical, bonus_fire]
 
-    response, body, crit = calcMain.calc_Damage(mults)
+    response, body, crit = calcMain.BLCalc.calc_Damage(mults)
 
-    bonus_ele, body_1, crit_1 = calcMain.calc_bonus_elements(mults, experimental_munitions)
+    bonus_ele, body_1, crit_1 = calcMain.BLCalc.calc_bonus_elements(mults, experimental_munitions)
     if crit_1 != 0: response = response + "\n" + bonus_ele
 
     if skag_den != 0: 
