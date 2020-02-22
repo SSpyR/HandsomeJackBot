@@ -1,14 +1,14 @@
 """
 Script to handle Zane related Math calculations
 
-Arguments for mod: {death_follows_close, kill_skill_stacks, active_action_skills, movement_speed_over_base}
+Arguments for mod: [Death Follows Close, Kill Skill Stacks, Active Action Skills, Movement Speed Over Base]
 
 @author Prismatic
 """
 
 
 def skillsSpec(skills, mods, gear):
-    import calcMain
+    from cogs import calcMain
     # Doubled Agent
     synchronicity = skills[0]
     donnybrook = skills[1]

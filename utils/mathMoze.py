@@ -10,7 +10,7 @@ Arguments for mod: {Click Click, Drowning in Brass, Desperate Measures, Phalanx 
 experimental_munitions = 0
 
 def skillsSpec(skills, mods, gear):
-    import calcMain
+    from cogs import calcMain
     
     selfless_vengeance = skills[0]
     armored_infantry = skills[1]

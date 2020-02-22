@@ -1,7 +1,6 @@
-# math.py
+# calcMain.py
 # base code provided by @Prismatic
 
-# FL4K Math is next
 # Clean up code to catch and explain exceptions/errors
 # Implement Official Website Trees
 
@@ -12,6 +11,7 @@ from utils import urlDecrypt as url
 from utils import mathMoze as Moze
 from utils import mathZane as Zane
 from utils import mathAmara as Amara
+from utils import mathFL4K as FL4K
 
 
 class BLCalc(commands.Cog):
@@ -38,8 +38,9 @@ class BLCalc(commands.Cog):
             if "A" == link[index-1]:
                 skills = url.zoneAmaraSpec(link[index:len(link)+1])
                 toReturn = Amara.skillsSpec(skills, mods, gear)
-            # elif "B" == link[index-1]:
-            #     skills = url.zoneFlakSpec(link[index:len(link)+1])
+            elif "B" == link[index-1]:
+                skills = url.zoneFlakSpec(link[index:len(link)+1])
+                toReturn = FL4K.skillsSpec(skills, mods, gear)
             elif "C" == link[index-1]:
                 skills = url.zoneMozeSpec(link[index:len(link)+1])
                 toReturn = Moze.skillsSpec(skills, mods, gear)
@@ -58,6 +59,9 @@ class BLCalc(commands.Cog):
             elif "siren" in link:
                 skills = url.skillsAmaraSpec(link[index:len(link)+1])
                 toReturn = Amara.skillsSpec(skills, mods, gear)
+            elif "beastmaster" in link:
+                skills = url.skillsFlakSpec(link[index:len(link)+1])
+                toReturn = FL4K.skillsSpec(skills, mods, gear)
         
         print(str(author) + "\n\n" + toReturn)
         return toReturn
@@ -108,21 +112,26 @@ class BLCalc(commands.Cog):
         await ctx.channel.send('```{}```'.format(response))
 
     
-    @commands.command(name='cmozehelp', help='Use for Further VH Calc Info')
+    @commands.command(name='mmozehelp', help='Use for Further VH Calc Info')
     async def cmozehelp(self, ctx):
         response='Arguments: [Click Click (0-1), DiB Stacks, DM (0-1), Phalanx]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
-    @commands.command(name='czanehelp', help='Use for Further VH Calc Info')
+    @commands.command(name='mzanehelp', help='Use for Further VH Calc Info')
     async def czanehelp(self, ctx):
         response='Arguments: [Bonus DFC Points, Kill Skill Stacks, Number of Active Action Skills, Movespeed Bonuses]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response))
 
     
-    @commands.command(name='camarahelp', help='Use for Further VH Calc Info')
+    @commands.command(name='mamarahelp', help='Use for Further VH Calc Info')
     async def camarahelp(self, ctx):
         response='Arguments: [Personal Space Strength (0-1), Samsara Stacks, unused, unused]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
+        await ctx.channel.send('```{}```'.format(response)) 
+
+    
+    @commands.command(name='mfl4khelp', help='Use for Further VH Calc Info')
+        response='Arguments: [Big Game Bonus Points, Furious Attack Stacks, Int Stalker Stacks, Full Health or Not (0-1, for Power Inside)]\n\n These Arguments Are Required. If They Dont Apply, Enter 0.'
         await ctx.channel.send('```{}```'.format(response)) 
 
 

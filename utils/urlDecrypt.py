@@ -22,6 +22,7 @@ def decode(skills, spec):
         n=n+1
     return skills
 
+
 """ Amara Skills [Transcend, Laid Bare, Wrath, Tempest, Dread, Forceful Expression, Personal Space, 
 Arms Deal, Samsara, Jab Cross] """
 def zoneAmaraSpec(spec):
@@ -45,7 +46,6 @@ def zoneAmaraSpec(spec):
     jab_cross = CL
     '''
 
-
 def skillsAmaraSpec(spec):
     skills = []
     skills.append(spec[18])
@@ -61,9 +61,55 @@ def skillsAmaraSpec(spec):
     return skills
 
 
+"""FL4K Skills [Furious Attack, Turn Tail and Run, Fast and Furryous, Hidden Machine, The Power Inside, Interplanetary Stalker, 
+Hunter's Eye, Ambush Predator, Big Game, Most Dangerous Game, Galactic Shadow, Grim Harvest, Persistence Hunter, Frenzy, Barbaric Yawp, Pack Tactics] """
 def zoneFlakSpec(spec):
-    pass
-    # ToDO Implement
+    skills = ["CQ", "CV", "CW", "CX", "CZ", "DA", "DD", "DF", "DH", "DI", "DJ", "DK", "DN", "DR", "DU", "DW"]
+    return decode(skills, spec)
+    '''
+    # Stalker
+    furious_attack = CQ
+    turn_tail_and_run = CV
+    fast_and_furryous = CW
+    hidden_machine = CX
+    the_power_inside = CZ
+
+    # Hunter
+    interplanetary_stalker = DA
+    hunter's_eye = DD
+    ambush_predator = DF
+    big_game = DH
+    most_dangerous_game = DI
+    galactic_shadow = DJ
+    grim_harvest = DK
+    
+    # Master
+    persistence_hunter = DN
+    frenzy = DR
+    barbaric_yawp = DU
+    pack_tactics = DW
+    '''
+
+def skillsFlakSpec(spec):
+    skills = []
+    skills.append(spec[3])
+    skills.append(spec[8])
+    skills.append(spec[9])
+    skills.append(spec[10])
+    skills.append(spec[12])
+    skills.append(spec[26])
+    skills.append(spec[29])
+    skills.append(spec[31])
+    skills.append(spec[33])
+    skills.append(spec[34])
+    skills.append(spec[35])
+    skills.append(spec[36])
+    skills.append(spec[14])
+    skills.append(spec[18])
+    skills.append(spec[21])
+    skills.append(spec[23])
+    return skills
+
     
 """ Moze Skills [Selfless Vengeance, Armored Infantry, Drowning in Brass, Experimental Munitions, Desperate Measures, Phalanx Doctrine, Tenacious Defence, 
 Cloud of Lead, Stoke the Embers, Scorching RPM's, Click, Click, Fire in the Skag Den, Stainless Steel Bear, Short Fuse] """
