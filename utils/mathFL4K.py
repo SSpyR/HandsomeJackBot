@@ -47,7 +47,7 @@ def skillsSpec(skills, mods, gear):
     critical=((0.03*float(hunters_eye)*bg)+(0.04*float(ambush_predator))+(0.033*float(most_dangerous_game)*bg)+(0.15*float(galactic_shadow))) + gear[5]
     bonus_element=0 + gear[6]
 
-    mults[normal, v1, v2, splash, elemental, critical, bonus_element]
+    mults = [normal, v1, v2, splash, elemental, critical, bonus_element]
 
     response, body, crit = calcMain.BLCalc.calc_Damage(mults)
 
