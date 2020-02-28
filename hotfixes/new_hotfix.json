@@ -2,5 +2,390 @@
     "service_name": "Micropatch",
     "configuration_group": "OakDefault",
     "configuration_version": "1.172.191",
-    "parameters": []
+    "parameters": [
+        {
+            "key": "SparkEarlyLevelPatchEntry9",
+            "value": "(1,1,1,TowerLair_P),/Dandelion/Maps/TowerLair/TowerLair_Mission.TowerLair_Mission:PersistentLevel.Spawner_HyperionSpawnAnchor_3.SpawnerComponent,SpawnDetails,165,(Critical=NotCritical,bOverrideCritical=False,RespawnStyle=Level,bOverrideRespawnStyle=True,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False),(Critical=Critical,bOverrideCritical=True,RespawnStyle=Level,bOverrideRespawnStyle=True,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=True)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry10",
+            "value": "(1,1,1,TowerLair_P),/Dandelion/Maps/TowerLair/TowerLair_Mission.TowerLair_Mission:PersistentLevel.Spawner_HyperionSpawnAnchor_4.SpawnerComponent,SpawnDetails,165,(Critical=NotCritical,bOverrideCritical=False,RespawnStyle=Level,bOverrideRespawnStyle=True,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False),(Critical=Critical,bOverrideCritical=True,RespawnStyle=Level,bOverrideRespawnStyle=True,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=True)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry11",
+            "value": "(1,1,1,TowerLair_P),/Dandelion/Maps/TowerLair/TowerLair_Mission.TowerLair_Mission:PersistentLevel.Spawner_HyperionSpawnAnchor_0.SpawnerComponent,SpawnDetails,165,(Critical=NotCritical,bOverrideCritical=False,RespawnStyle=Level,bOverrideRespawnStyle=True,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False),(Critical=Critical,bOverrideCritical=True,RespawnStyle=Level,bOverrideRespawnStyle=True,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=True)"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry443",
+            "value": "(1,1,0,BPChar_EnforcerBadass_Looter),/Dandelion/Enemies/Looters/Enforcer/Badass/_Design/Character/BPChar_EnforcerBadass_Looter.Default__BPChar_EnforcerBadass_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,205,(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry444",
+            "value": "(1,1,0,BPChar_EnforcerBasic_Looter),/Dandelion/Enemies/Looters/Enforcer/Basic/_Design/Character/BPChar_EnforcerBasic_Looter.Default__BPChar_EnforcerBasic_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,175,(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry445",
+            "value": "(1,1,0,BPChar_EnforcerBruiser_Looter),/Dandelion/Enemies/Looters/Enforcer/Bruiser/_Design/Character/BPChar_EnforcerBruiser_Looter.Default__BPChar_EnforcerBruiser_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,175,(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry446",
+            "value": "(1,1,0,BPChar_Enforcer_PrettyBoy),/Dandelion/Enemies/Looters/Enforcer/Bruiser/_Design/Character/BPChar_Enforcer_PrettyBoy.Default__BPChar_Enforcer_PrettyBoy_C:DefaultGameplayTagContainerComponent,TagContainer,175,(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry447",
+            "value": "(1,1,0,BPChar_GoliathBadass_Looter),/Dandelion/Enemies/Looters/Goliath/Badass/_Design/Character/BPChar_GoliathBadass_Looter.Default__BPChar_GoliathBadass_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,203,(GameplayTags=((TagName=\"Population.Army.CoV.Goliath\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Goliath\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry448",
+            "value": "(1,1,0,BPChar_GoliathBasic_Looter),/Dandelion/Enemies/Looters/Goliath/Basic/_Design/Character/BPChar_GoliathBasic_Looter.Default__BPChar_GoliathBasic_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry449",
+            "value": "(1,1,0,BPChar_GoliathMidget_Looter),/Dandelion/Enemies/Looters/Goliath/Midget/_Design/Character/BPChar_GoliathMidget_Looter.Default__BPChar_GoliathMidget_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,173,(GameplayTags=((TagName=\"Population.Army.CoV.Goliath\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Goliath\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry450",
+            "value": "(1,1,0,BPChar_GoonBadass_Looter),/Dandelion/Enemies/Looters/Goon/Badass/_Design/Character/BPChar_GoonBadass_Looter.Default__BPChar_GoonBadass_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,200,(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Army.CoV.Goon\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Army.CoV.Goon\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry451",
+            "value": "(1,1,0,BPChar_GoonBasic_Looter),/Dandelion/Enemies/Looters/Goon/Basic/_Design/Character/BPChar_GoonBasic_looter.Default__BPChar_GoonBasic_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry452",
+            "value": "(1,1,0,BPChar_GoonVortex_Looter),/Dandelion/Enemies/Looters/Goon/Vortex/_Design/Character/BPChar_GoonVortex_Looter.Default__BPChar_GoonVortex_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry453",
+            "value": "(1,1,0,BPChar_PsychoBadass_Looter),/Dandelion/Enemies/Looters/Psycho/Badass/_Design/Character/BPChar_PsychoBadass_Looter.Default__BPChar_PsychoBadass_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,202,(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Badass\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry454",
+            "value": "(1,1,0,BPChar_PsychoFirebrand_Looter),/Dandelion/Enemies/Looters/Psycho/Firebrand/_Design/Character/BPChar_PsychoFirebrand_Looter.Default__BPChar_PsychoFirebrand_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry455",
+            "value": "(1,1,0,BPChar_PsychoSlugger_Looter),/Dandelion/Enemies/Looters/Psycho/Slugger/_Design/Character/BPChar_PsychoSlugger_Looter.Default__BPChar_PsychoSlugger_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry456",
+            "value": "(1,1,0,BPChar_PsychoSuicide_Looter),/Dandelion/Enemies/Looters/Psycho/Suicide/_Design/Character/BPChar_PsychoSuicide_Looter.Default__BPChar_PsychoSuicide_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,204,(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Suicidal\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Suicidal\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry457",
+            "value": "(1,1,0,BPChar_PunkArmored_LooterVIP),/Dandelion/Enemies/Looters/Punk/ArmoredVIP/_Design/Character/BPChar_PunkArmored_LooterVIP.Default__BPChar_PunkArmored_LooterVIP_C:DefaultGameplayTagContainerComponent,TagContainer,219,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry458",
+            "value": "(1,1,0,BPChar_PunkAssaulter_Looter),/Dandelion/Enemies/Looters/Punk/Assaulter/_Design/Character/BPChar_PunkAssaulter_Looter.Default__BPChar_PunkAssaulter_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,124,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry459",
+            "value": "(1,1,0,BPChar_PunkBadass_Looter),/Dandelion/Enemies/Looters/Punk/Badass/_Design/Character/BPChar_PunkBadass_Looter.Default__BPChar_PunkBadass_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,219,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry460",
+            "value": "(1,1,0,BPChar_Punk_PrettyBoy),/Dandelion/Enemies/Looters/Punk/Basic/_Design/Character/BPChar_Punk_PrettyBoy.Default__BPChar_Punk_PrettyBoy_C:DefaultGameplayTagContainerComponent,TagContainer,206,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry461",
+            "value": "(1,1,0,BPChar_PunkShotgunner_Looter),/Dandelion/Enemies/Looters/Punk/Shotgunner/_Design/Character/BPChar_PunkShotgunner_Looter.Default__BPChar_PunkShotgunner_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,123,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Short\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry462",
+            "value": "(1,1,0,BPChar_PunkSniper_Looter),/Dandelion/Enemies/Looters/Punk/Sniper/_Design/Character/BPChar_PunkSniper_Looter.Default__BPChar_PunkSniper_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,122,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Long\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Long\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry463",
+            "value": "(1,1,0,BPChar_TinkBadassArmored_Looter),/Dandelion/Enemies/Looters/Tink/Badass/_Design/Character/BPChar_TinkBadassArmored_Looter.Default__BPChar_TinkBadassArmored_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,200,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry464",
+            "value": "(1,1,0,BPChar_TinkBadass_Looter),/Dandelion/Enemies/Looters/Tink/Badass/_Design/Character/BPChar_TinkBadass_Looter.Default__BPChar_TinkBadass_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,200,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry465",
+            "value": "(1,1,0,BPChar_TinkBasic_Looter),/Dandelion/Enemies/Looters/Tink/Basic/_Design/Character/BPChar_TinkBasic_Looter.Default__BPChar_TinkBasic_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,169,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry466",
+            "value": "(1,1,0,BPChar_Tink_PrettyBoy),/Dandelion/Enemies/Looters/Tink/Basic/_Design/Character/BPChar_Tink_PrettyBoy.Default__BPChar_Tink_PrettyBoy_C:DefaultGameplayTagContainerComponent,TagContainer,169,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry467",
+            "value": "(1,1,0,BPChar_TinkPsycho_Looter),/Dandelion/Enemies/Looters/Tink/Psycho/_Design/Character/BPChar_TinkPsycho_Looter.Default__BPChar_TinkPsycho_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,169,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry468",
+            "value": "(1,1,0,BPChar_TinkShotgun_Looter),/Dandelion/Enemies/Looters/Tink/Shotgun/_Design/Character/BPChar_TinkShotgun_Looter.Default__BPChar_TinkShotgun_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,169,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry469",
+            "value": "(1,1,0,BPChar_TinkSuicide_Looter),/Dandelion/Enemies/Looters/Tink/Suicide/_Design/Character/BPChar_TinkSuicide_Looter.Default__BPChar_TinkSuicide_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,201,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Suicidal\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Suicidal\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry470",
+            "value": "(1,1,0,BPChar_BigLeagueHugh),/Dandelion/Enemies/Looters/_Unique/BigLeagueHugh/_Design/Character/BPChar_BigLeagueHugh.Default__BPChar_BigLeagueHugh_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry471",
+            "value": "(1,1,0,BPChar_DoItForDigby_BloodBucket),/Dandelion/Enemies/Looters/_Unique/DoItForDigby_Part2/Character/BPChar_DoItForDigby_BloodBucket.Default__BPChar_DoItForDigby_BloodBucket_C:DefaultGameplayTagContainerComponent,TagContainer,202,(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Badass\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry472",
+            "value": "(1,1,0,BPChar_DoItForDigby_SteelDragon),/Dandelion/Enemies/Looters/_Unique/DoItForDigby_Part3/_Design/Character/BPChar_DoItForDigby_SteelDragon.Default__BPChar_DoItForDigby_SteelDragon_C:DefaultGameplayTagContainerComponent,TagContainer,219,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry473",
+            "value": "(1,1,0,BPChar_DoubleDown_DoubleDownDomina),/Dandelion/Enemies/Looters/_Unique/DoubleDown/_Design/Character/BPChar_DoubleDown_DoubleDownDomina.Default__BPChar_DoubleDown_DoubleDownDomina_C:DefaultGameplayTagContainerComponent,TagContainer,206,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry474",
+            "value": "(1,1,0,BPChar_DoubleDown_PsychoShark),/Dandelion/Enemies/Looters/_Unique/DoubleDown/_Design/Character/BPChar_DoubleDown_PsychoShark.Default__BPChar_DoubleDown_PsychoShark_C:DefaultGameplayTagContainerComponent,TagContainer,202,(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Badass\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Psycho\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry475",
+            "value": "(1,1,0,BPChar_GreatEscape_Rudy),/Dandelion/Enemies/Looters/_Unique/GreatEscape/_Design/Character/BPChar_GreatEscape_Rudy.Default__BPChar_GreatEscape_Rudy_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry476",
+            "value": "(1,1,0,BPChar_EnforcerBadass_Lawrence),/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_EnforcerBadass_Lawrence.Default__BPChar_EnforcerBadass_Lawrence_C:DefaultGameplayTagContainerComponent,TagContainer,205,(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry477",
+            "value": "(1,1,0,BPChar_GoonBadass_Coco),/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_GoonBadass_Coco.Default__BPChar_GoonBadass_Coco_C:DefaultGameplayTagContainerComponent,TagContainer,200,(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Army.CoV.Goon\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Size.Large\"),(TagName=\"Population.Army.CoV.Goon\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry478",
+            "value": "(1,1,0,BPChar_PunkBadass_Gaudy),/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_PunkBadass_Gaudy.Default__BPChar_PunkBadass_Gaudy_C:DefaultGameplayTagContainerComponent,TagContainer,219,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry479",
+            "value": "(1,1,0,BPChar_TinkBadass_Giorgio),/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_TinkBadass_Giorgio.Default__BPChar_TinkBadass_Giorgio_C:DefaultGameplayTagContainerComponent,TagContainer,200,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry480",
+            "value": "(1,1,0,BPChar_MeetTimothy_ThirdRail),/Dandelion/Enemies/Looters/_Unique/MeetTimothy/_Design/Character/BPChar_MeetTimothy_ThirdRail.Default__BPChar_MeetTimothy_ThirdRail_C:DefaultGameplayTagContainerComponent,TagContainer,219,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry481",
+            "value": "(1,1,0,BPChar_OneMansTrash_TonyBordel),/Dandelion/Enemies/Looters/_Unique/OneMansTrash/_Design/Character/BPChar_OneMansTrash_TonyBordel.Default__BPChar_OneMansTrash_TonyBordel_C:DefaultGameplayTagContainerComponent,TagContainer,175,(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry482",
+            "value": "(1,1,0,BPChar_RagingBot_BomberGary),/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_BomberGary.Default__BPChar_RagingBot_BomberGary_C:DefaultGameplayTagContainerComponent,TagContainer,219,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry483",
+            "value": "(1,1,0,BPChar_RagingBot_GorgeousRoger),/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_GorgeousRoger.Default__BPChar_RagingBot_GorgeousRoger_C:DefaultGameplayTagContainerComponent,TagContainer,200,(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Tink\"),(TagName=\"Population.Size.Small\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry484",
+            "value": "(1,1,0,BPChar_RagingBot_MachineGunMikey),/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_MachineGunMikey.Default__BPChar_RagingBot_MachineGunMikey_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Large\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry485",
+            "value": "(1,1,0,BPChar_RagingBot_Yvan),/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_Yvan.Default__BPChar_RagingBot_Yvan_C:DefaultGameplayTagContainerComponent,TagContainer,0,,(GameplayTags=((TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry486",
+            "value": "(1,1,0,BPChar_RegainingFeet_GoldenBullion),/Dandelion/Enemies/Looters/_Unique/RegainingOnesFeet/_Design/Character/BPChar_RegainingFeet_GoldenBullion.Default__BPChar_RegainingFeet_GoldenBullion_C:DefaultGameplayTagContainerComponent,TagContainer,205,(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Enforcer\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Badass\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry487",
+            "value": "(1,1,0,BPChar_ThePlan_HandsomeJacket),/Dandelion/Enemies/Looters/_Unique/ThePlan/JacksuitLooters/_Design/Character/BPChar_ThePlan_HandsomeJacket.Default__BPChar_ThePlan_HandsomeJacket_C:DefaultGameplayTagContainerComponent,TagContainer,206,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry488",
+            "value": "(1,1,0,BPChar_ThePlan_HandsomeSlacks),/Dandelion/Enemies/Looters/_Unique/ThePlan/JacksuitLooters/_Design/Character/BPChar_ThePlan_HandsomeSlacks.Default__BPChar_ThePlan_HandsomeSlacks_C:DefaultGameplayTagContainerComponent,TagContainer,206,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry489",
+            "value": "(1,1,0,BPChar_ThePlan_TricksyNick),/Dandelion/Enemies/Looters/_Unique/ThePlan/_Design/Character/BPChar_ThePlan_TricksyNick.Default__BPChar_ThePlan_TricksyNick_C:DefaultGameplayTagContainerComponent,TagContainer,219,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Badass\"),(TagName=\"Dialog.RocketPunk\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry490",
+            "value": "(1,1,0,BPChar_PunkBasic_Looter),/Dandelion/Enemies/Looters/Punk/Basic/_Design/Character/BPChar_PunkBasic_Looter.Default__BPChar_PunkBasic_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,206,(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"))),(GameplayTags=((TagName=\"Population.Army.CoV.Punk\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Range.Common\"),(TagName=\"Population.Range.Short\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry491",
+            "value": "(1,1,0,BPChar_PsychoBasic_Looter),/Dandelion/Enemies/Looters/Psycho/Basic/_Design/Character/BPChar_PsychoBasic_Looter.Default__BPChar_PsychoBasic_Looter_C:DefaultGameplayTagContainerComponent,TagContainer,176,(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"))),(GameplayTags=((TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Range.Melee\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Army.Looters.Looter\"),(TagName=\"Population.Army.Looters\")))"
+        },
+        {
+            "key": "SparkLevelPatchEntry960",
+            "value": "(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.OakMissionWaypointBox_14.CollisionComp,RelativeScale3D,34,(X=1.000000,Y=1.000000,Z=1.000000),(X=1.000000,Y=3.000000,Z=1.000000)"
+        },
+        {
+            "key": "SparkLevelPatchEntry961",
+            "value": "(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.OakMissionWaypointBox_10.CollisionComp,RelativeLocation,45,(X=-11045.605469,Y=2265.610596,Z=2605.000000),(X=-13665.605469,Y=5085.610352,Z=2605.000000)"
+        },
+        {
+            "key": "SparkLevelPatchEntry962",
+            "value": "(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.OakMissionWaypointBox_10.CollisionComp,RelativeScale3D,34,(X=1.000000,Y=1.000000,Z=1.000000),(X=1.000000,Y=100.000000,Z=1.000000)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry87",
+            "value": "(1,1,0,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.OakMissionWaypointBox_10.TriggerComponent.EnabledCondition_MissionEnableConditionObjective,ObjectiveRef.ObjectiveName,25,Obj_KillBadGuy1_Objective,Obj_INV_CraneSpawnSEQ_Objective"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry88",
+            "value": "(1,1,0,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.OakMissionWaypointBox_10.TriggerComponent.EnabledCondition_MissionEnableConditionObjective,ObjectiveRef.ObjectiveGuid,32,0A997821455883442DE372BF2A4F044D,F0F85B404F4A731E0760BAB6D9F7197C"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry578",
+            "value": "(1,2,0,BPChar_MansionBoss),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,MansionBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,8,1.250000,1.0000"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry579",
+            "value": "(1,1,0,BPChar_MansionBoss),/Game/Enemies/Goliath/Anointed/_Design/Projectiles/LightProj_Goliath_Anointed_180Wave.Default__LightProj_Goliath_Anointed_180Wave_C,BodyTransform,146,(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.250000,Z=2.000000)),(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.250000,Z=1.000000))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry580",
+            "value": "(1,1,0,BPChar_MansionBoss),/Game/Enemies/Goliath/Anointed/_Design/Projectiles/LightProj_Goliath_Anointed_180Wave.Default__LightProj_Goliath_Anointed_180Wave_C,TracerFXTransform,146,(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000)),(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=3.000000))"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry581",
+            "value": "(1,1,0,BPChar_MansionBoss),/Game/Enemies/Goliath/Anointed/_Design/Character/AITree_MansionBoss.Default__AITree_MansionBoss_C:Movement.RandomChild,Weight,8,1.000000,1.250000"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry582",
+            "value": "(1,1,0,BPChar_MansionBoss),/Game/Enemies/Goliath/Anointed/_Design/Character/AITree_MansionBoss.Default__AITree_MansionBoss_C:Movement.RandomChild_2,Weight,8,1.000000,1.250000"
+        },
+        {
+            "key": "SparkPatchEntry797",
+            "value": "(1,1,0,),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LeadSprinkler_AnointedIntro.ItemPool_LeadSprinkler_AnointedIntro,BalancedItems.BalancedItems[0].Weight.BaseValueConstant,8,0.200000,0.300000"
+        },
+        {
+            "key": "SparkCharacterLoadedEntry583",
+            "value": "(1,1,0,BPChar_MansionBoss),/Game/Enemies/Goliath/Anointed/_Design/Character/AITree_MansionBoss.Default__AITree_MansionBoss_C:Movement,bUseCumulativeInverseWeight,4,True,False"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry89",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round1Wave,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry90",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round1Wave_0,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry91",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round1Wave_5,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry92",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round2Wave,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry93",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round2Wave_1,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry94",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round2Wave_2,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry95",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round2Wave_3,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry96",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round3Wave,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry97",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round3Wave_4,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry98",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round3Wave_5,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry99",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round3Wave_6,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry100",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round4Wave,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry101",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round4Wave_7,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry102",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round4Wave_8,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry103",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round4Wave_9,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry104",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round5Wave,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry105",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round5Wave_10,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry106",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round5Wave_11,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry107",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round5Wave_12,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry108",
+            "value": "(1,1,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.OakMissionSpawner_Round5Wave_13,bSpawnerFailsafe,5,False,True"
+        },
+        {
+            "key": "SparkPatchEntry798",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Parts/Part_SG_Torgue_Barrel_ETech_TheLob.Part_SG_Torgue_Barrel_ETech_TheLob,InventoryAttributeEffects,1268,((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Torgue/Attributes/Att_TOR_ProjectileType.Att_TOR_ProjectileType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_CustomA_PartType.Att_Weapon_CustomA_PartType\"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=3.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_OverrideManufacturerDescription.Att_Weapon_OverrideManufacturerDescription\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(DataTableValue=(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR\"',RowName=\"SG_TheLob\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\")))),((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Torgue/Attributes/Att_TOR_ProjectileType.Att_TOR_ProjectileType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_CustomA_PartType.Att_Weapon_CustomA_PartType\"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=3.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_OverrideManufacturerDescription.Att_Weapon_OverrideManufacturerDescription\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(DataTableValue=(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR\"',RowName=\"SG_TheLob\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\"))),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo\"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.000000)))"
+        },
+        {
+            "key": "SparkPatchEntry799",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Proj_Weapon_TOR_SG_TheLob.Default__Proj_Weapon_TOR_SG_TheLob_C,Dot_DamageScale,8,0.600000,1.2"
+        },
+        {
+            "key": "SparkPatchEntry800",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Parts/Part_SG_Torgue_Barrel_ETech_TheLob.Part_SG_Torgue_Barrel_ETech_TheLob:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_Torgue,AutomaticBurstCount,13,(BaseValue=1),(BaseValue=3)"
+        },
+        {
+            "key": "SparkPatchEntry801",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Parts/Part_SG_Torgue_Barrel_ETech_TheLob.Part_SG_Torgue_Barrel_ETech_TheLob:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_Torgue,FireRate,20,(BaseValue=0.750000),(BaseValue=4.750000)"
+        },
+        {
+            "key": "SparkPatchEntry802",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Parts/Part_SG_Torgue_Barrel_ETech_TheLob.Part_SG_Torgue_Barrel_ETech_TheLob:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_Torgue,BurstFireDelay,20,(BaseValue=0.000000),(BaseValue=0.750000)"
+        },
+        {
+            "key": "SparkPatchEntry803",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,AssaultRifle,DAHL_59_150C89A04BB4FCF0061CAC86E39E1A39,8,1.000000,1.35"
+        },
+        {
+            "key": "SparkPatchEntry804",
+            "value": "(1,1,0,),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/MalaksBane/Parts/Part_SR_DAL_Barrel_ETech_MalaksBane.Part_SR_DAL_Barrel_ETech_MalaksBane,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[2].AttributeEffects.AttributeEffects[1].ModifierValue,158,(BaseValueConstant=4.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=2.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+        },
+        {
+            "key": "SparkPatchEntry805",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SR_MalaksBane,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.500000"
+        },
+        {
+            "key": "SparkPatchEntry806",
+            "value": "(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Woodblocks/Parts/Part_SR_HYP_Barrel_Woodblocks.Part_SR_HYP_Barrel_Woodblocks,InstigatorAttributeEffects,0,,((AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_CriticalHitDamageBonus.Att_CriticalHitDamageBonus\"',ModifierValue=(BaseValueConstant=1.000000)))"
+        },
+        {
+            "key": "SparkPatchEntry807",
+            "value": "(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Woodblocks/Parts/Part_SR_HYP_Barrel_Woodblocks.Part_SR_HYP_Barrel_Woodblocks,InventoryAttributeEffects,775,((AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.000000,DataTableValue=(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP\"',RowName=\"SR_Quad\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\"))),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo\"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=10.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_SwayZoomScale.Att_Weapon_SwayZoomScale\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.700000))),((AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.000000,DataTableValue=(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP\"',RowName=\"SR_Quad\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\"))),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo\"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=10.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_SwayZoomScale.Att_Weapon_SwayZoomScale\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.700000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.500000)))"
+        },
+        {
+            "key": "SparkPatchEntry808",
+            "value": "(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/_Unique/RubysWrath/Parts/Part_ATL_Marker_RubysWrath.Part_ATL_Marker_RubysWrath:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponAmmoPoolComponent,ConsumeAmmoRegenDelay,9,18.000000,9.000000"
+        },
+        {
+            "key": "SparkPatchEntry809",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,HW_RubysWrath,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.100000,1.6"
+        }
+    ]
 }
