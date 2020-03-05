@@ -1,6 +1,6 @@
 {
   "service_name": "Micropatch",
-  "configuration_group": "OakDefault",
+  "configuration_group": "Oak_Crossplay_Default",
   "configuration_version": "1.187.213",
   "parameters": [
     {

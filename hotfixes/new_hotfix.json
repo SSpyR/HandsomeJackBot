@@ -2,10 +2,5 @@
     "service_name": "Micropatch",
     "configuration_group": "OakDefault",
     "configuration_version": "1.172.191",
-    "parameters": [
-        {
-            "key": "SparkPatchEntry810",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,SG_TheLob,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.200000,1.800000"
-        }
-    ]
+    "parameters": []
 }
