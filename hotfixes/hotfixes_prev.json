@@ -2870,6 +2870,10 @@
     {
       "key": "SparkPatchEntry809",
       "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,HW_RubysWrath,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.100000,1.6"
+    },
+    {
+      "key": "SparkPatchEntry810",
+      "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,SG_TheLob,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.200000,1.800000"
     }
   ]
 }
