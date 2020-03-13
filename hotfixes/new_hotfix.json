@@ -4,132 +4,80 @@
     "configuration_version": "1.172.191",
     "parameters": [
         {
-            "key": "SparkEarlyLevelPatchEntry109",
-            "value": "(1,1,1,Strip_P),/Dandelion/Maps/Strip/Strip_PM_MeetCrad.Strip_PM_MeetCrad:PersistentLevel.OakMissionSpawner_Jerks_Female.SpawnerComponent,SpawnDetails,166,(Critical=NotCritical,bOverrideCritical=False,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False),(Critical=Critical,bOverrideCritical=True,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False)"
+            "key": "SparkPatchEntry840",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_Hellfire,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.650000,1.1000"
         },
         {
-            "key": "SparkEarlyLevelPatchEntry110",
-            "value": "(1,1,1,Strip_P),/Dandelion/Maps/Strip/Strip_PM_MeetCrad.Strip_PM_MeetCrad:PersistentLevel.OakMissionSpawner_Jerks_Male.SpawnerComponent,SpawnDetails,166,(Critical=NotCritical,bOverrideCritical=False,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False),(Critical=Critical,bOverrideCritical=True,RespawnStyle=Timed,bOverrideRespawnStyle=False,IrrelevantAction=Suspend,bOverrideIrrelevantAction=False,bCritical=False)"
+            "key": "SparkPatchEntry841",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_Hellfire,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,8,2.500000,3.75"
         },
         {
-            "key": "SparkLevelPatchEntry964",
-            "value": "(1,6,0,Strip_P),/Dandelion/Maps/Strip,/Engine/BasicShapes,Cube,93,\"3123.522217,-19515.697266,4760.809082|0.000000,-45.001770,0.000000|1.686496,2.251787,1.000000\",1"
+            "key": "SparkPatchEntry842",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,AR_SAWBAR,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.600000,1.00000"
         },
         {
-            "key": "SparkCharacterLoadedEntry584",
-            "value": "(1,1,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Projectile/JackBot_PalmBeamTornado.Default__JackBot_PalmBeamTornado_C,TraceChannel,8,ECC_Pawn,ECC_GameTraceChannel9"
+            "key": "SparkPatchEntry843",
+            "value": "(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/Sawbar/LightProjectile_Sawbar.Default__LightProjectile_Sawbar_C,Lifetime,8,4.000000,3.0000"
         },
         {
-            "key": "SparkLevelPatchEntry965",
-            "value": "(1,6,0,Strip_P),/Dandelion/Maps/Strip,/Engine/BasicShapes,Cube,93,\"-30757.490234,-19642.888672,9025.644531|0.000000,0.000000,0.000000|1.500000,1.500000,5.000000\",1"
+            "key": "SparkPatchEntry844",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,PS_Drill,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.500000,0.950000"
         },
         {
-            "key": "SparkPatchEntry811",
-            "value": "(1,1,0,),/Game/PlayerCharacters/_Customizations/Gunner/Skins/CustomSkin_Gunner_42.CustomSkin_Gunner_42,CustomizationTargetAssets.CustomizationTargetAssets[0].CustomizationAssetInfoReferences.CustomizationAssetInfoReferences[0].AssetReference,137,/Game/PlayerCharacters/Gunner/_Shared/Model/Materials/CustomSkins/Skin_42/MI_Char_CustomSkin42_GunnerBody.MI_Char_CustomSkin42_GunnerBody,/Game/PlayerCharacters/Gunner/_Shared/Model/Materials/CustomSkins/Skin_42/MI_Char_CustomSkin42_GunnerArms.MI_Char_CustomSkin42_GunnerArms"
+            "key": "SparkPatchEntry845",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,PS_SKEKSIS,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,8,0.750000,2.000000"
         },
         {
-            "key": "SparkEarlyLevelPatchEntry111",
-            "value": "(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_P.AtlasHQ_P:PersistentLevel.OakMissionSpawner_3.SpawnerComponent,bActivationUsesRadius,4,True,False"
+            "key": "SparkPatchEntry846",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,PS_Nemesis,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.60000"
         },
         {
-            "key": "SparkEarlyLevelPatchEntry112",
-            "value": "(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_P.AtlasHQ_P:PersistentLevel.OakMissionSpawner_3.SpawnerComponent,bAlwaysActive,5,False,True"
+            "key": "SparkPatchEntry847",
+            "value": "(1,2,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SM_Boomer,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.050000,1.330000"
         },
         {
-            "key": "SparkPatchEntry812",
-            "value": "(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod1,Secondary_13_BE03AB154A90401B6BFE67BB3B3554E0,8,0.300000,0.080000"
+            "key": "SparkPatchEntry848",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_XZ,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.800000,1.400000"
         },
         {
-            "key": "SparkPatchEntry813",
-            "value": "(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Railgun_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,8,0.500000,3.125000"
+            "key": "SparkPatchEntry849",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Garcia/Parts/Part_SG_JAK_Barrel_Garcia.Part_SG_JAK_Barrel_Garcia:AspectList_WeaponAttributeEffectsAspectData,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0].AttributeEffects.AttributeEffects[2].ModifierValue.BaseValueConstant,8,3.000000,4.30000"
         },
         {
-            "key": "SparkPatchEntry814",
-            "value": "(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Railgun_Mod3,Tertiary_14_F7F8785341E034348C7398B20AD7DA70,8,0.000000,0.500000"
+            "key": "SparkPatchEntry850",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Garcia/Parts/Part_SG_JAK_Barrel_Garcia.Part_SG_JAK_Barrel_Garcia,InventoryAttributeEffects.InventoryAttributeEffects[2].ModifierValue.BaseValueConstant,8,6.000000,9.000000"
         },
         {
-            "key": "SparkPatchEntry815",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Railgun_3.Augment_Mod_Railgun_3:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0,Initializer.DataTableValue,236,(DataTable=DataTable'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance\"',RowName=\"CoreStrength_Railgun_Mod3\",ValueName=\"DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD\"),(DataTable=DataTable'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance\"',RowName=\"CoreStrength_Railgun_Mod3\",ValueName=\"Tertiary_14_F7F8785341E034348C7398B20AD7DA70\")"
+            "key": "SparkPatchEntry851",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SG_NimbleJack,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.450000"
         },
         {
-            "key": "SparkLevelPatchEntry966",
-            "value": "(1,1,0,ProvingGrounds_Trial5_P),/Game/Maps/ProvingGrounds/Trial5/ProvingGrounds_Trial5_P.ProvingGrounds_Trial5_P:PersistentLevel.BP_Veins_Glowee_Evo2_Cluster_V_10,Tags,0,,(\"nomantle\")"
+            "key": "SparkPatchEntry852",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/NimbleJack/Parts/Part_SG_JAK_Barrel_Nimble.Part_SG_JAK_Barrel_Nimble,InventoryAttributeEffects,1428,((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Jakobs/Attributes/Att_JAK_BreakLoadShellAmount.Att_JAK_BreakLoadShellAmount\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=7.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.000000,DataTableValue=(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK\"',RowName=\"SG_NimbleJack\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\"))),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.300000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_CustomSightColorScheme.Att_Weapon_CustomSightColorScheme\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=6.000000))),((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.000000)),(AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Jakobs/Attributes/Att_JAK_BreakLoadShellAmount.Att_JAK_BreakLoadShellAmount\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=7.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.000000,DataTableValue=(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK\"',RowName=\"SG_NimbleJack\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\"))),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.300000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_CustomSightColorScheme.Att_Weapon_CustomSightColorScheme\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=6.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_CriticalHitDamageBonus.Att_CriticalHitDamageBonus\"',ModifierValue=(BaseValueConstant=1.000000)))"
         },
         {
-            "key": "SparkLevelPatchEntry967",
-            "value": "(1,6,0,ProvingGrounds_Trial5_P),/Game/Maps/ProvingGrounds/Trial5,/Engine/BasicShapes,Cube,93,\"-5120.717285,-31189.066406,814.038757|26.726200,46.037392,0.000098|1.000000,4.052462,2.887725\",1"
+            "key": "SparkPatchEntry853",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SG_OnePumpChump,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,9,10.000000,12.000000"
         },
         {
-            "key": "SparkPatchEntry816",
-            "value": "(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod3,Secondary_13_BE03AB154A90401B6BFE67BB3B3554E0,9,-0.500000,-0.330000"
+            "key": "SparkPatchEntry854",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Ogre,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.220000,1.60000"
         },
         {
-            "key": "SparkPatchEntry817",
-            "value": "(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,8,0.132000,0.264000"
+            "key": "SparkPatchEntry855",
+            "value": "(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/RoisensThorns/Parts/Part_PS_TOR_Barrel_RoisensThorns.Part_PS_TOR_Barrel_RoisensThorns:WeaponUseModeAspectData_0.WeaponUseComponent_BPWeaponFireProjectileComponent_Torgue_RoisensThorns,DamageFormula.BaseValueScale,8,1.000000,1.533333"
         },
         {
-            "key": "SparkPatchEntry818",
-            "value": "(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/Parts/Part_AR_VLA_Underbarrel_Faisor.Part_AR_VLA_Underbarrel_Faisor:WeaponUseModeSecondaryAspectData_1.WeaponAmmoPoolComponent_0,ConsumeAmmoRegenDelay,8,5.000000,1.00000"
+            "key": "SparkPatchEntry856",
+            "value": "(1,2,0,),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,Tankman,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,8,3.000000,6.000000"
         },
         {
-            "key": "SparkPatchEntry819",
-            "value": "(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/Parts/Part_AR_VLA_Underbarrel_Faisor.Part_AR_VLA_Underbarrel_Faisor:WeaponUseModeSecondaryAspectData_1.WeaponAmmoPoolComponent_0,AmmoRegenRate,8,0.500000,1.000000"
+            "key": "SparkPatchEntry857",
+            "value": "(1,2,0,),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,Tankman,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,8,0.200000,0.400000"
         },
         {
-            "key": "SparkPatchEntry820",
-            "value": "(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/Parts/Part_AR_VLA_Underbarrel_Faisor.Part_AR_VLA_Underbarrel_Faisor:WeaponUseModeAspectData_0.WeaponFireProjectileComponent_0,ProjectilesPerShot,13,(BaseValue=6),(BaseValue=8)"
-        },
-        {
-            "key": "SparkPatchEntry821",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Faisor,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.350000,1.8"
-        },
-        {
-            "key": "SparkPatchEntry822",
-            "value": "(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/Parts/Part_AR_VLA_Underbarrel_Faisor.Part_AR_VLA_Underbarrel_Faisor,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0].AttributeEffects.AttributeEffects[3].ModifierValue.BaseValueConstant,8,1.700000,2.50000"
-        },
-        {
-            "key": "SparkPatchEntry823",
-            "value": "(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Parts/Part_MAL_SR_Barrel_Storm.Part_MAL_SR_Barrel_Storm,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0].AttributeEffects.AttributeEffects[0].ModifierValue.BaseValueConstant,8,0.600000,2.50"
-        },
-        {
-            "key": "SparkPatchEntry824",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SR_Krakatoa,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,4.250000"
-        },
-        {
-            "key": "SparkPatchEntry825",
-            "value": "(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Parts/Part_AR_VLA_Underbarrel_Sickle.Part_AR_VLA_Underbarrel_Sickle:WeaponUseModeAspectData_0.WeaponFireProjectileComponent_0,FireRate,20,(BaseValue=1.500000),(BaseValue=3.500000)"
-        },
-        {
-            "key": "SparkPatchEntry826",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Sickle,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.500000,2.50000"
-        },
-        {
-            "key": "SparkPatchEntry827",
-            "value": "(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Parts/Part_MAL_SR_Barrel_FireStorm.Part_MAL_SR_Barrel_FireStorm,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0].AttributeEffects.AttributeEffects[0].ModifierValue.BaseValueConstant,8,0.700000,2.25"
-        },
-        {
-            "key": "SparkPatchEntry828",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TED.DataTable_WeaponBalance_Unique_TED,SM_SpiderMind,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,2.000000,3.250000"
-        },
-        {
-            "key": "SparkPatchEntry830",
-            "value": "(1,2,0,),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,CraderMP5,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,8,0.300000,0.800000"
-        },
-        {
-            "key": "SparkPatchEntry831",
-            "value": "(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Parts/Part_PS_MAL_Barrel_HellShock.Part_PS_MAL_Barrel_HellShock:WeaponUseModeAspectData_1.WeaponFireProjectileComponent_0,ProjectilesPerShot,13,(BaseValue=1),(BaseValue=2)"
-        },
-        {
-            "key": "SparkPatchEntry832",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,PS_Hellshock,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.850000,1.25"
-        },
-        {
-            "key": "SparkPatchEntry833",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,PS_ThunderballFists,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.250000,2.250000"
-        },
-        {
-            "key": "SparkPatchEntry834",
-            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_9Volt,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.625000,1.500000"
+            "key": "SparkPatchEntry858",
+            "value": "(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Parts/Part_AR_VLA_BoomSickle.Part_AR_VLA_BoomSickle,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0],242,(UseMode=(INVALID),UseModeBitmask=3,AttributeEffects=((AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=150.000000)))),(UseMode=(INVALID),UseModeBitmask=3,AttributeEffects=((AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=150.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(DataTableValue=(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA\"',RowName=\"AR_Sickle\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\")))))"
         }
     ]
 }
