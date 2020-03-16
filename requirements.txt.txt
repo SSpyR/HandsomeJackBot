@@ -1,4 +1,3 @@
 discord.py
 apscheduler
-git
-json
+gitpython
