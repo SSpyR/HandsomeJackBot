@@ -1,5 +1,7 @@
 # datamine.py
 
+# pull from google drive instead?
+# add in command for link to editor helper
 
 import os
 import sys
@@ -81,6 +83,12 @@ class Datamine(commands.Cog):
     async def bl_refget_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send('{} refget command requires a file name to search for.'.format(ctx.author.mention))
+
+    
+    @commands.command(name='helperapp', help='Links to Stand-Alone BL3 Editor Helper App')
+    async def helperapp(self, ctx):
+        response='https://github.com/SSpyR/BL3EditorHelper'
+        await ctx.channel.send(response)
         
 
 def setup(bot):
