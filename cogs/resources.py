@@ -1,6 +1,5 @@
 # resources.py
 
-
 import discord
 from discord.ext import commands
 
@@ -25,6 +24,12 @@ class Resources(commands.Cog):
     @commands.command(name='math', help='Formula Sheet for all of the Vault Hunters')
     async def bl_math(self, ctx):
         response='https://docs.google.com/document/d/1pnBcjHF3OuRItROdUPdBGw3vwC7v_5CB2pdJzj5wsb0/edit?usp=sharing'
+        await ctx.send(response)
+
+
+    @commands.command(name='splash', help='Forum Post for Tracking Splash Weapon Damage Information')
+    async def bl_splash(self, ctx):
+        response='https://forums.gearboxsoftware.com/t/list-of-all-splash-weapons/4399732'
         await ctx.send(response)
         
 
