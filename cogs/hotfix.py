@@ -52,73 +52,10 @@ class Hotfix(commands.Cog):
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
 
-        '''with open('hotfixes/new_hotfix.json', 'r') as f:
-            data=json.load(f)
-
-        await ctx.send('```Preparing Data Dump, See #handsome-jackbot for Results```')
-
-        for channel in ctx.guild.channels:
-            if channel.name=='handsome-jackbot':
-                destchat=channel
-        if destchat==None:
-            await ctx.send('handsome-jackbot channel not detected and is required.')
-        
-        for index in enumerate(data['parameters']):
-            response=("```{}```".format(index[1]))
-            if len(response)>=2000:
-                await destchat.send('```Data String too Long, Skipping...```')
-                continue
-            else:
-                await destchat.send(response)
-        await ctx.send('```Data Sent```')'''
-
-    
-    '''@commands.command(name='hfoptin', help='Command to Opt-In to Auto Hotfix Updates')
-    async def hotfix_optin(self, ctx):
-        if ctx.message.author.guild_permissions.kick_members:
-            sent=False
-            for channel in ctx.guild.channels:
-                if channel.name=='handsome-jackbot':
-                    if ctx.guild.id in self.optinguilds:
-                        await ctx.send('Server is Already Registered.')
-                        sent=True
-                    else:
-                        self.optinguilds.append(ctx.guild.id)
-                        self.optinchats.append(channel.id)
-                        await ctx.send('Server Has Been Registered for Hotfix Updates.')
-                        sent=True
-            if sent==False:
-                await ctx.send('Server Requires #handsome-jackbot Channel.')
-            with open('optinlistg.pkl', 'wb+') as foo:
-                pkl.dump(self.optinguilds, foo)
-            with open('optinlistc.pkl', 'wb+') as foo:
-                pkl.dump(self.optinchats, foo)
-        else:
-            await ctx.send('You Do Not Have Permission To Use That Command.')
-
-
-    @commands.command(name='hfoptout', help='Command to Opt-Out of Auto Hotfix Updates')
-    async def hotfix_optout(self, ctx):
-        if ctx.message.author.guild_permissions.kick_members:
-            for channel in ctx.guild.channels:
-                if channel.name=='handsome-jackbot':
-                    if ctx.guild.id in self.optinguilds:
-                        self.optinguilds.remove(ctx.guild.id)
-                        self.optinchats.remove(channel.id)
-                        await ctx.send('Server Has Been De-Registered.')
-                    else:
-                        await ctx.send('Server Isnt Registered.')
-            with open('optinlistg.pkl', 'wb+') as foo:
-                pkl.dump(self.optinguilds, foo)
-            with open('optinlistc.pkl', 'wb+') as foo:
-                pkl.dump(self.optinchats, foo)
-        else:
-            await ctx.send('You Do Not Have Permission To Use That Command.')'''
-
 
     async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
-        output_dir = "/home/sspyr/BL3/HandsomeJackBot/hotfixes"
+        output_dir = "/hotfixes"
         point_in_time_base = 'point_in_time'
         point_in_time_dir = os.path.join(output_dir, point_in_time_base)
         cumulative_file = 'hotfixes_current.json'
