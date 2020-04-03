@@ -119,11 +119,11 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Now also write out the hotfixes to a new repo file
-            now = datetime.datetime.utcnow()
+            '''now = datetime.datetime.utcnow()
             hotfix_filename = now.strftime('hotfixes_%Y_%m_%d_-_%H_%M_%S.json')
             print('Writing new hotfixes to {}'.format(hotfix_filename))
             with open(os.path.join(point_in_time_dir, hotfix_filename), 'w') as df:
-                df.write(hotfixes)
+                df.write(hotfixes)'''
 
             # Now write to our cumulative file
             print('Writing new hotfixes to {}'.format(cumulative_file))
