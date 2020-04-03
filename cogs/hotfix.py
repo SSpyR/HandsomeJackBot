@@ -131,13 +131,13 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Do the git interaction
-            print('Pushing to git')
+            '''print('Pushing to git')
             repo = git.Repo('/app/')
             repo.git.pull()
             #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', os.path.join(output_dir, cumulative_file))
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-            repo.git.push()
+            repo.git.push()'''
 
             # Split the new data out
             startindex=None
