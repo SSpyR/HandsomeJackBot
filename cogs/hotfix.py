@@ -105,6 +105,7 @@ class Hotfix(commands.Cog):
         else:
             do_write = True
 
+        do_write = True
         # Do the write, if we have to
         if do_write:
 
@@ -118,11 +119,11 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Now also write out the hotfixes to a new repo file
-            now = datetime.datetime.utcnow()
+            '''now = datetime.datetime.utcnow()
             hotfix_filename = now.strftime('hotfixes_%Y_%m_%d_-_%H_%M_%S.json')
             print('Writing new hotfixes to {}'.format(hotfix_filename))
             with open(os.path.join(point_in_time_dir, hotfix_filename), 'w') as df:
-                df.write(hotfixes)
+                df.write(hotfixes)'''
 
             # Now write to our cumulative file
             print('Writing new hotfixes to {}'.format(cumulative_file))
@@ -133,7 +134,7 @@ class Hotfix(commands.Cog):
             print('Pushing to git')
             repo = git.Repo('/home/sspyr/BL3/HandsomeJackBot/')
             repo.git.pull()
-            repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
+            #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', os.path.join(output_dir, cumulative_file))
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
             repo.git.push()
