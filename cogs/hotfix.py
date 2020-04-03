@@ -132,7 +132,7 @@ class Hotfix(commands.Cog):
 
             # Do the git interaction
             print('Pushing to git')
-            repo = git.Repo('/home/sspyr/BL3/HandsomeJackBot/')
+            repo = git.Repo('/app/')
             repo.git.pull()
             #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', os.path.join(output_dir, cumulative_file))
