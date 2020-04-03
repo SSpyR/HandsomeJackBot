@@ -119,25 +119,25 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Now also write out the hotfixes to a new repo file
-            '''now = datetime.datetime.utcnow()
+            now = datetime.datetime.utcnow()
             hotfix_filename = now.strftime('hotfixes_%Y_%m_%d_-_%H_%M_%S.json')
             print('Writing new hotfixes to {}'.format(hotfix_filename))
             with open(os.path.join(point_in_time_dir, hotfix_filename), 'w') as df:
-                df.write(hotfixes)'''
+                df.write(hotfixes)
 
             # Now write to our cumulative file
             print('Writing new hotfixes to {}'.format(cumulative_file))
             with open(os.path.join(output_dir, cumulative_file), 'w') as df:
                 df.write(hotfixes)
 
-            '''# Do the git interaction
+            # Do the git interaction
             print('Pushing to git')
             repo = git.Repo('/home/sspyr/BL3/HandsomeJackBot/')
             repo.git.pull()
             #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', os.path.join(output_dir, cumulative_file))
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-            repo.git.push()'''
+            repo.git.push()
 
             # Split the new data out
             startindex=None
@@ -206,7 +206,7 @@ class Hotfix(commands.Cog):
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=10)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=5)
         
 
 def setup(bot):
