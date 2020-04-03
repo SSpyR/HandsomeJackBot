@@ -55,7 +55,7 @@ class Hotfix(commands.Cog):
 
     async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
-        output_dir = "/app/.cache/hotfixes"
+        output_dir = "/app/.cache/hotfixes/"
         point_in_time_base = 'point_in_time'
         point_in_time_dir = os.path.join(output_dir, point_in_time_base)
         cumulative_file = 'hotfixes_current.json'
