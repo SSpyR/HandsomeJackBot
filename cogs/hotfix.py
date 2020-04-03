@@ -105,7 +105,6 @@ class Hotfix(commands.Cog):
         else:
             do_write = True
 
-        do_write = True
         # Do the write, if we have to
         if do_write:
 
@@ -206,7 +205,7 @@ class Hotfix(commands.Cog):
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=5)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=30)
         
 
 def setup(bot):
