@@ -222,7 +222,7 @@ class Hotfix(commands.Cog):
     @commands.command(name='test')
     async def test(self, ctx):
         print('Pushing to git')
-        now = datetime.datetime.utcnow()
+        #now = datetime.datetime.utcnow()
         #repo = git.Repo('/app/')
         #remote_repo='https://github.com/SSpyR/HandsomeJackBot.git'
         #repo=git.Repo.clone_from(remote_repo, 'heroku')
@@ -230,7 +230,8 @@ class Hotfix(commands.Cog):
         #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
         #Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current'))
         Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current')
-        Hotfix.repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
+        Hotfix.repo.git.commit('-a', '-m', 'Auto Update')
+        #Hotfix.repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
         Hotfix.repo.git.push()
 
 
