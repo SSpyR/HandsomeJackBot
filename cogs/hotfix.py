@@ -106,6 +106,7 @@ class Hotfix(commands.Cog):
         else:
             do_write = True
 
+        do_write = True
         # Do the write, if we have to
         if do_write:
 
@@ -131,13 +132,13 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Do the git interaction
-            '''print('Pushing to git')
+            print('Pushing to git')
             repo = git.Repo('/app/')
             repo.git.pull()
             #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', os.path.join(output_dir, cumulative_file))
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-            repo.git.push()'''
+            repo.git.push()
 
             # Split the new data out
             startindex=None
@@ -204,14 +205,14 @@ class Hotfix(commands.Cog):
                     await destchat.send('```Use ~hotfix To View More Specific Change History With This Hotfix```')
 
     
-    @commands.command(name='test')
+    '''@commands.command(name='test')
     async def test(self, ctx):
-        await ctx.send(file=discord.File('/app/hotfixes/hotfixes_current.json'))
+        await ctx.send(file=discord.File('/app/hotfixes/hotfixes_current.json'))'''
 
 
     def start_sched(self):
         self.sched.start()
-        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=30)
+        self.sched.add_job(self.bl_hotfix, trigger='interval', minutes=5)
         
 
 def setup(bot):
