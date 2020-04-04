@@ -46,7 +46,7 @@ class Hotfix(commands.Cog):
                 destchat=channel
                 await destchat.send('{}'.format(ctx.author.mention))
                 await destchat.send('Go To This Link And View The Lastest Commit History To Show Everything Changed With The Latest Hotfix')
-                await destchat.send('Handsome JackBot Auto Commits Are Not Functional, Linking to apocalyptechs Repo for Viewing Changes.)
+                await destchat.send('Handsome JackBot Auto Commits Are Not Functional, Linking to apocalyptechs Repo for Viewing Changes.')
                 await destchat.send('https://github.com/BLCM/bl3hotfixes/commits/master/hotfixes_current.json')
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')

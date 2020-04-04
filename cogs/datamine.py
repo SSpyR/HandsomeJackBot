@@ -63,7 +63,7 @@ class Datamine(commands.Cog):
                         await destchat.send('```{}```'.format(response.replace('lavoiet2', 'USER')))
             await destchat.send('```SEARCH DONE```')
         else:
-            print ('Directory Not Found')'      
+            print ('Directory Not Found')      
 
 
     @bl_ref.error
