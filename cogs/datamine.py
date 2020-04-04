@@ -3,6 +3,8 @@
 # pull from google drive instead?
 # google drive option proving difficult, will just link for now, will have work it out later
 # Google Drive: https://drive.google.com/drive/u/2/folders/12hivF6YFDncMIWw5RwYaV5u_ql-R3GqK
+# AWS S3 instead?
+# tempory solution of just partsets and balance files to send with heroku
 
 import os
 import sys
@@ -36,11 +38,10 @@ class Datamine(commands.Cog):
         self.bot=bot
             
 
-    '''@commands.command(name='ref', help='Command for searching through the in-game files, auto-directs to bot specific chat')
+    @commands.command(name='ref', help='Command for searching through the in-game files, auto-directs to bot specific chat')
     async def bl_ref(self, ctx, *, queryname: str):
         destchat=None
-        #fileFolder='/home/sspyr/BL3/FoundFiles'
-        folder_id='12hivF6YFDncMIWw5RwYaV5u_ql-R3GqK'
+        fileFolder='/app/utils/Game'
 
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
@@ -48,22 +49,11 @@ class Datamine(commands.Cog):
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
 
-        await destchat.send('{}'.format(ctx.author.mention))
-        await destchat.send('```RESULTS```')
         queryname=queryname.replace(' ', '_')
-        file1=drive.CreateFile()
-        file1['title']=queryname
 
-        query="name contains '{}'".format(queryname)
-
-        q={'{}': "'{}' in parents and trashed=false".format(query, folder_id)}
-
-        file_list = drive.ListFile(q).GetList()
-        for file1 in file_list:
-            print('title: %s, id: %s' % (file1['title'], file1['id']))
-
-        'if os.path.isdir(fileFolder):
+        if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))
+            await destchat.send('```Only Balance and PartSet Files Are Currently Availabe```')
             await destchat.send('```RESULTS```')
             queryname=queryname.replace(' ', '_')
             for root, dirs, files in os.walk(fileFolder):
@@ -85,7 +75,7 @@ class Datamine(commands.Cog):
     @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name (does not require caps or ".json"), auto-directs to bot specific chat')
     async def bl_refget(self, ctx, *, filename: str):
         destchat=None
-        fileFolder='/home/sspyr/BL3/FoundFiles'
+        fileFolder='/app/utils/Game'
 
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
@@ -113,7 +103,7 @@ class Datamine(commands.Cog):
     @bl_refget.error
     async def bl_refget_error(self, ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send('{} refget command requires a file name to search for.'.format(ctx.author.mention))'''
+            await ctx.send('{} refget command requires a file name to search for.'.format(ctx.author.mention))
 
     
     @commands.command(name='helperapp', help='Links to Stand-Alone BL3 Editor Helper App')
@@ -122,7 +112,7 @@ class Datamine(commands.Cog):
         await ctx.channel.send(response)
 
 
-    @commands.command(name='database', help='Links to Personal Google Drive Storage of Game Files (Temporary Solution to Ref)')
+    @commands.command(name='database', help='Links to Personal Google Drive Storage of Game Files (Temporary Solution to Full Ref)')
     async def database(self, ctx):
         await ctx.channel.send('Google Drive Folder of Game Files')
         response='https://drive.google.com/drive/u/2/folders/12hivF6YFDncMIWw5RwYaV5u_ql-R3GqK'
