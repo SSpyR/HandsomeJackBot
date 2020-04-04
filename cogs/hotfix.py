@@ -39,17 +39,17 @@ class Hotfix(commands.Cog):
         except EOFError:
             print('File Was Empty')'''
 
-    empty_repo = git.Repo.init(os.path.join('/app/', 'empty'))
-    origin = empty_repo.create_remote('origin', 'https://github.com/SSpyR/HandsomeJackBot.git')
+    repo = git.Repo.init(os.path.join('/app/', 'empty'))
+    origin = repo.create_remote('origin', 'https://github.com/SSpyR/HandsomeJackBot.git')
     assert origin.exists()
-    assert origin == empty_repo.remotes.origin == empty_repo.remotes['origin']
+    assert origin == repo.remotes.origin == repo.remotes['origin']
     origin.fetch()                  # assure we actually have data. fetch() returns useful information
     # Setup a local tracking branch of a remote branch
-    empty_repo.create_head('master', origin.refs.master)  # create local branch "master" from remote "master"
-    empty_repo.heads.master.set_tracking_branch(origin.refs.master)  # set local "master" to track remote "master
-    empty_repo.heads.master.checkout()  # checkout local "master" to working tree
+    repo.create_head('master', origin.refs.master)  # create local branch "master" from remote "master"
+    repo.heads.master.set_tracking_branch(origin.refs.master)  # set local "master" to track remote "master
+    repo.heads.master.checkout()  # checkout local "master" to working tree
     # Three above commands in one:
-    empty_repo.create_head('master', origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
+    repo.create_head('master', origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
     # rename remotes
     origin.rename('new_origin')
 
@@ -225,11 +225,11 @@ class Hotfix(commands.Cog):
         #repo = git.Repo('/app/')
         #remote_repo='https://github.com/SSpyR/HandsomeJackBot.git'
         #repo=git.Repo.clone_from(remote_repo, 'heroku')
-        repo.git.pull()
+        Hotfix.repo.git.pull()
         #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
-        repo.git.add('--', os.path.join(output_dir, cumulative_file))
-        repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-        repo.git.push()
+        Hotfix.repo.git.add('--', os.path.join(output_dir, cumulative_file))
+        Hotfix.repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
+        Hotfix.repo.git.push()
 
 
     def start_sched(self):
