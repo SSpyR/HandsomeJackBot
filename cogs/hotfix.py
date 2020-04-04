@@ -227,7 +227,7 @@ class Hotfix(commands.Cog):
         #repo=git.Repo.clone_from(remote_repo, 'heroku')
         Hotfix.repo.git.pull()
         #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
-        Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', cumulative_file))
+        Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current'))
         Hotfix.repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
         Hotfix.repo.git.push()
 
