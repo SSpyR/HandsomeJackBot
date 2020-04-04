@@ -3,10 +3,7 @@
 # see https://github.com/apocalyptech/
 
 # detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
-# parsed summary of each changed item ("Changed [Print affected item] [print affected property] to [print new effect]")?
-# cant do auto git update with heroku nor point in time, took out for now
-
-# <a:rooHack:652663804840247316> meme emote to add in?
+# cant do auto git update with heroku nor point in time, took out for now, linked to apocs archives for temp fix to ~hotfix
 
 import os
 import sys
@@ -39,19 +36,6 @@ class Hotfix(commands.Cog):
         except EOFError:
             print('File Was Empty')'''
 
-    repo = git.Repo.init(os.path.join('/app/hotfixes/', 'empty'))
-    origin = repo.create_remote('origin', 'https://github.com/SSpyR/HandsomeJackBot.git')
-    assert origin.exists()
-    assert origin == repo.remotes.origin == repo.remotes['origin']
-    origin.fetch()                  # assure we actually have data. fetch() returns useful information
-    # Setup a local tracking branch of a remote branch
-    repo.create_head('master', origin.refs.master)  # create local branch "master" from remote "master"
-    repo.heads.master.set_tracking_branch(origin.refs.master)  # set local "master" to track remote "master
-    repo.heads.master.checkout()  # checkout local "master" to working tree
-    # Three above commands in one:
-    repo.create_head('master', origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
-    # rename remotes
-    origin.rename('new_origin')
 
     @commands.command(name='hotfix', help='Links to the Commit History Page of the Latest Hotfix to View All Changes')
     async def bl_current_hotfix(self, ctx):
@@ -62,7 +46,8 @@ class Hotfix(commands.Cog):
                 destchat=channel
                 await destchat.send('{}'.format(ctx.author.mention))
                 await destchat.send('Go To This Link And View The Lastest Commit History To Show Everything Changed With The Latest Hotfix')
-                await destchat.send('https://github.com/SSpyR/HandsomeJackBot/commits/master/hotfixes/hotfixes_current.json')
+                await destchat.send('Handsome JackBot Auto Commits Are Not Functional, Linking to apocalyptechs Repo for Viewing Changes.)
+                await destchat.send('https://github.com/BLCM/bl3hotfixes/commits/master/hotfixes_current.json')
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
 
@@ -219,6 +204,21 @@ class Hotfix(commands.Cog):
                     await destchat.send('```Use ~hotfix To View More Specific Change History With This Hotfix```')
 
     
+    #Auto Commit Shite
+    '''
+    repo = git.Repo.init(os.path.join('/app/hotfixes/', 'empty'))
+    origin = repo.create_remote('origin', 'https://github.com/SSpyR/HandsomeJackBot.git')
+    assert origin.exists()
+    assert origin == repo.remotes.origin == repo.remotes['origin']
+    origin.fetch()                  # assure we actually have data. fetch() returns useful information
+    # Setup a local tracking branch of a remote branch
+    repo.create_head('master', origin.refs.master)  # create local branch "master" from remote "master"
+    repo.heads.master.set_tracking_branch(origin.refs.master)  # set local "master" to track remote "master
+    repo.heads.master.checkout()  # checkout local "master" to working tree
+    # Three above commands in one:
+    repo.create_head('master', origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
+    # rename remotes
+    origin.rename('new_origin')
     @commands.command(name='test')
     async def test(self, ctx):
         print('Pushing to git')
@@ -232,7 +232,7 @@ class Hotfix(commands.Cog):
         Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current'))
         Hotfix.repo.git.commit('-a', '-m', 'Auto Update')
         #Hotfix.repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-        Hotfix.repo.git.push()
+        Hotfix.repo.git.push()'''
 
 
     def start_sched(self):
