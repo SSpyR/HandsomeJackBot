@@ -4,6 +4,7 @@
 
 # detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
 # parsed summary of each changed item ("Changed [Print affected item] [print affected property] to [print new effect]")?
+# cant do auto git update with heroku nor point in time, took out for now
 
 # <a:rooHack:652663804840247316> meme emote to add in?
 
@@ -55,7 +56,7 @@ class Hotfix(commands.Cog):
 
     async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
-        output_dir = "/app/.cache/hotfixes/"
+        output_dir = "/app/hotfixes/"
         point_in_time_base = 'point_in_time'
         point_in_time_dir = os.path.join(output_dir, point_in_time_base)
         cumulative_file = 'hotfixes_current.json'
@@ -201,6 +202,11 @@ class Hotfix(commands.Cog):
                             await destchat.send(response)
                     await destchat.send('```Data Sent```')
                     await destchat.send('```Use ~hotfix To View More Specific Change History With This Hotfix```')
+
+    
+    @commands.command(name='test')
+    async def test(self, ctx):
+        await ctx.send(file=discord.File('/app/hotfixes/hotfixes_current.json'))
 
 
     def start_sched(self):
