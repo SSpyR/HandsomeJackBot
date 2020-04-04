@@ -133,12 +133,14 @@ class Hotfix(commands.Cog):
 
             # Do the git interaction
             print('Pushing to git')
-            repo = git.Repo('/app/')
+            #repo = git.Repo('/app/')
+            remote_repo='https://github.com/SSpyR/HandsomeJackBot.git'
+            repo=git.Repo.clone_from(remote_repo, 'heroku')
             repo.git.pull()
             #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', os.path.join(output_dir, cumulative_file))
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-            repo.git.push()
+            repo.git.push("origin", "master")
 
             # Split the new data out
             startindex=None
