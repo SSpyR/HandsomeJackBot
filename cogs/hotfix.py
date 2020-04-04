@@ -222,6 +222,7 @@ class Hotfix(commands.Cog):
     @commands.command(name='test')
     async def test(self, ctx):
         print('Pushing to git')
+        now = datetime.datetime.utcnow()
         #repo = git.Repo('/app/')
         #remote_repo='https://github.com/SSpyR/HandsomeJackBot.git'
         #repo=git.Repo.clone_from(remote_repo, 'heroku')
