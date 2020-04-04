@@ -39,7 +39,7 @@ class Hotfix(commands.Cog):
         except EOFError:
             print('File Was Empty')'''
 
-    repo = git.Repo.init(os.path.join('/app/', 'empty'))
+    repo = git.Repo.init(os.path.join('/app/hotfixes/', 'empty'))
     origin = repo.create_remote('origin', 'https://github.com/SSpyR/HandsomeJackBot.git')
     assert origin.exists()
     assert origin == repo.remotes.origin == repo.remotes['origin']
@@ -227,7 +227,8 @@ class Hotfix(commands.Cog):
         #repo=git.Repo.clone_from(remote_repo, 'heroku')
         Hotfix.repo.git.pull()
         #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
-        Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current'))
+        #Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current'))
+        Hotfix.repo.git.add('--', 'hotfixes_current.json')
         Hotfix.repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
         Hotfix.repo.git.push()
 
