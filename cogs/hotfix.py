@@ -39,7 +39,7 @@ class Hotfix(commands.Cog):
         except EOFError:
             print('File Was Empty')'''
 
-    empty_repo = git.Repo.init(os.path.join(rw_dir, 'empty'))
+    empty_repo = git.Repo.init(os.path.join('/app/', 'empty'))
     origin = empty_repo.create_remote('origin', 'https://github.com/SSpyR/HandsomeJackBot.git')
     assert origin.exists()
     assert origin == empty_repo.remotes.origin == empty_repo.remotes['origin']
