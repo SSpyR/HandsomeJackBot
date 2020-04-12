@@ -5,7 +5,6 @@
 # detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
 # amazon S3 integration for auto hotfix update
 # moved to local hosting to fix for now
-# test
 
 import os
 import sys
