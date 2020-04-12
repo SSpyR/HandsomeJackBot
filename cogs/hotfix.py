@@ -3,7 +3,6 @@
 # see https://github.com/apocalyptech/
 
 # detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
-# cant do auto git update with heroku nor point in time, took out for now, linked to apocs archives for temp fix to ~hotfix
 # amazon S3 integration for auto hotfix update
 # moved to local hosting to fix for now
 
