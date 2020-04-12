@@ -5,6 +5,7 @@
 # detect additions and removals in hotfix data and state both as such in new hotfix file? (difflib python)
 # cant do auto git update with heroku nor point in time, took out for now, linked to apocs archives for temp fix to ~hotfix
 # amazon S3 integration for auto hotfix update
+# moved to local hosting to fix for now
 
 import os
 import sys
@@ -47,15 +48,14 @@ class Hotfix(commands.Cog):
                 destchat=channel
                 await destchat.send('{}'.format(ctx.author.mention))
                 await destchat.send('Go To This Link And View The Lastest Commit History To Show Everything Changed With The Latest Hotfix')
-                await destchat.send('Handsome JackBot Auto Commits Are Not Functional, Linking to apocalyptechs Repo for Viewing Changes.')
-                await destchat.send('https://github.com/BLCM/bl3hotfixes/commits/master/hotfixes_current.json')
+                await destchat.send('https://github.com/SSpyR/HandsomeJackBot/commits/master/hotfixes/hotfixes_current.json')
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
 
 
     async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
-        output_dir = "/app/hotfixes/"
+        output_dir = "C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes"
         point_in_time_base = 'point_in_time'
         point_in_time_dir = os.path.join(output_dir, point_in_time_base)
         cumulative_file = 'hotfixes_current.json'
@@ -118,11 +118,11 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Now also write out the hotfixes to a new repo file
-            '''now = datetime.datetime.utcnow()
+            now = datetime.datetime.utcnow()
             hotfix_filename = now.strftime('hotfixes_%Y_%m_%d_-_%H_%M_%S.json')
             print('Writing new hotfixes to {}'.format(hotfix_filename))
             with open(os.path.join(point_in_time_dir, hotfix_filename), 'w') as df:
-                df.write(hotfixes)'''
+                df.write(hotfixes)
 
             # Now write to our cumulative file
             print('Writing new hotfixes to {}'.format(cumulative_file))
@@ -130,15 +130,13 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Do the git interaction
-            '''print('Pushing to git')
-            #repo = git.Repo('/app/')
-            remote_repo='https://github.com/SSpyR/HandsomeJackBot.git'
-            repo=git.Repo.clone_from(remote_repo, 'heroku')
+            print('Pushing to git')
+            repo = git.Repo(output_dir)
             repo.git.pull()
-            #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
+            repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
             repo.git.add('--', os.path.join(output_dir, cumulative_file))
             repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-            repo.git.push("origin", "master")'''
+            repo.git.push("origin", "master")
 
             # Split the new data out
             startindex=None
@@ -204,37 +202,6 @@ class Hotfix(commands.Cog):
                     await destchat.send('```Data Sent```')
                     await destchat.send('```Use ~hotfix To View More Specific Change History With This Hotfix```')
 
-    
-    #Auto Commit Shite
-    '''
-    repo = git.Repo.init(os.path.join('/app/hotfixes/', 'empty'))
-    origin = repo.create_remote('origin', 'https://github.com/SSpyR/HandsomeJackBot.git')
-    assert origin.exists()
-    assert origin == repo.remotes.origin == repo.remotes['origin']
-    origin.fetch()                  # assure we actually have data. fetch() returns useful information
-    # Setup a local tracking branch of a remote branch
-    repo.create_head('master', origin.refs.master)  # create local branch "master" from remote "master"
-    repo.heads.master.set_tracking_branch(origin.refs.master)  # set local "master" to track remote "master
-    repo.heads.master.checkout()  # checkout local "master" to working tree
-    # Three above commands in one:
-    repo.create_head('master', origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
-    # rename remotes
-    origin.rename('new_origin')
-    @commands.command(name='test')
-    async def test(self, ctx):
-        print('Pushing to git')
-        #now = datetime.datetime.utcnow()
-        #repo = git.Repo('/app/')
-        #remote_repo='https://github.com/SSpyR/HandsomeJackBot.git'
-        #repo=git.Repo.clone_from(remote_repo, 'heroku')
-        Hotfix.repo.git.pull()
-        #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
-        #Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current'))
-        Hotfix.repo.git.add('--', os.path.join('/app/hotfixes/', 'hotfixes_current'))
-        Hotfix.repo.git.commit('-a', '-m', 'Auto Update')
-        #Hotfix.repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-        Hotfix.repo.git.push()'''
-
 
     def start_sched(self):
         self.sched.start()
@@ -242,5 +209,5 @@ class Hotfix(commands.Cog):
         
 
 def setup(bot):
-    #Hotfix(bot).start_sched()
+    Hotfix(bot).start_sched()
     bot.add_cog(Hotfix(bot))

@@ -1,10 +1,9 @@
 # datamine.py
 
-# pull from google drive instead?
-# google drive option proving difficult, will just link for now, will have work it out later
 # Google Drive: https://drive.google.com/drive/u/2/folders/12hivF6YFDncMIWw5RwYaV5u_ql-R3GqK
 # AWS S3 instead?
 # tempory solution of just partsets and balance files to send with heroku
+# moved to local hosting to fix for now
 
 import os
 import sys
@@ -16,21 +15,7 @@ import time
 import discord
 
 from discord.ext import commands
-'''from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
 
-gauth=GoogleAuth()
-gauth.LocalWebserverAuth()
-gauth.LoadCredentialsFile("mycreds.txt")
-if gauth.credentials is None:
-    gauth.LocalWebserverAuth()
-elif gauth.access_token_expired:
-    gauth.Refresh()
-else:
-    gauth.Authorize()
-gauth.SaveCredentialsFile("mycreds.txt")
-
-drive=GoogleDrive(gauth)'''
 
 class Datamine(commands.Cog):
 
@@ -41,7 +26,7 @@ class Datamine(commands.Cog):
     @commands.command(name='ref', help='Command for searching through the in-game files, auto-directs to bot specific chat')
     async def bl_ref(self, ctx, *, queryname: str):
         destchat=None
-        fileFolder='/app/utils/Game'
+        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3'
 
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
@@ -53,7 +38,7 @@ class Datamine(commands.Cog):
 
         if os.path.isdir(fileFolder):
             await destchat.send('{}'.format(ctx.author.mention))
-            await destchat.send('```Only Balance and PartSet Files Are Currently Availabe```')
+            #await destchat.send('```Only Balance and PartSet Files Are Currently Availabe```')
             await destchat.send('```RESULTS```')
             queryname=queryname.replace(' ', '_')
             for root, dirs, files in os.walk(fileFolder):
@@ -75,7 +60,7 @@ class Datamine(commands.Cog):
     @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name (does not require caps or ".json"), auto-directs to bot specific chat')
     async def bl_refget(self, ctx, *, filename: str):
         destchat=None
-        fileFolder='/app/utils/Game'
+        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3'
 
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
@@ -112,7 +97,7 @@ class Datamine(commands.Cog):
         await ctx.channel.send(response)
 
 
-    @commands.command(name='database', help='Links to Personal Google Drive Storage of Game Files (Temporary Solution to Full Ref)')
+    @commands.command(name='database', help='Links to Personal Google Drive Storage of Game Files')
     async def database(self, ctx):
         await ctx.channel.send('Google Drive Folder of Game Files')
         response='https://drive.google.com/drive/u/2/folders/12hivF6YFDncMIWw5RwYaV5u_ql-R3GqK'
