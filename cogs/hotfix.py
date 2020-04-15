@@ -51,6 +51,20 @@ class Hotfix(commands.Cog):
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
 
+    
+    @commands.command(name='newhfixfile', help='Sends the New Hotfix File to View New Data in Editors')
+    async def bl_new_hotfix_file(self, ctx):
+        destchat=None
+
+        for channel in ctx.guild.channels:
+            if channel.name=='handsome-jackbot':
+                destchat=channel
+                await destchat.send('{}'.format(ctx.author.mentioh))
+                await destchat.send('Here is the New Hotfix File (This File Contains What JackBot Sends Out in Updates, Just Optional to View as a File)')
+                await destchat.send(file=discord.File('C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes\\new_hotfix.json'))
+        if destchat==None:
+            await ctx.send('handsome-jackbot channel not detected and is required.')
+
 
     async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
