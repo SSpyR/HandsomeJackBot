@@ -1,7 +1,7 @@
 {
   "service_name": "Micropatch",
   "configuration_group": "Oak_Crossplay_Default",
-  "configuration_version": "1.194.220",
+  "configuration_version": "1.195.221",
   "parameters": [
     {
       "key": "SparkLevelPatchEntry3",
@@ -3002,6 +3002,34 @@
     {
       "key": "SparkPatchEntry834",
       "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_9Volt,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,0.625000,1.500000"
+    },
+    {
+      "key": "SparkPatchEntry794",
+      "value": "(1,1,0,),/Game/Missions/Side/Zone_4/Desolate/Mission_BetterTimes.Default__Mission_BetterTimes_C:RewardData_OakMissionRewardData,Region,76,/Game/GameData/Regions/Zone4/Region_Zone4_Desolate_A.Region_Zone4_Desolate_A,/Game/GameData/Regions/Zone4/Region_Zone4_Beach.Region_Zone4_Beach"
+    },
+    {
+      "key": "SparkPatchEntry835",
+      "value": "(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,8,0.079919,0.077919"
+    },
+    {
+      "key": "SparkPatchEntry836",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1,StatDataItems,889,(UIStatData_OakPassiveAbilityAttributeInitializer'\"/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer\"',UIStatData_OakPassiveAbilityAttributeInitializer'\"/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0\"',UIStatData_OakPassiveAbilityAttributeInitializer'\"/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_1\"',UIStatData_OakPassiveAbilityAttributeInitializer'\"/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1:UIStatData_OakPassiveAbilityAttributeInitializer_0\"'),(UIStatData_OakPassiveAbilityAttributeInitializer'\"/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer\"',UIStatData_OakPassiveAbilityAttributeInitializer'\"/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0\"',UIStatData_OakPassiveAbilityAttributeInitializer'\"/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_1.Augment_Mod_Minigun_1:UIStatData_OakPassiveAbilityAttributeInitializer_0\"')"
+    },
+    {
+      "key": "SparkPatchEntry837",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Minigun_3.Augment_Mod_Minigun_3:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0,Initializer,305,(BaseValueConstant=0.000000,DataTableValue=(DataTable=DataTable'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SimpleFormulas.DataTable_Gunner_SimpleFormulas\"',RowName=\"Minigun_Mod3_Damage_P\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=2.320000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkPatchEntry838",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun1/Passive_Beastmaster_HitAndRun_1.Default__Passive_Beastmaster_HitAndRun_1_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,RoundingMode,10,RoundToInt,None"
+    },
+    {
+      "key": "SparkPatchEntry839",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged4/Att_Calc_Ranged4_DmgDealthVsRobot.Att_Calc_Ranged4_DmgDealthVsRobot:ValueResolver_ModifierMathAttributeValueResolver,ModifierStack.ModifierStack[0].ModifierValue,345,(BaseValueConstant=0.000000,DataTableValue=(DataTable=DataTable'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance\"',RowName=\"P_Ranged4\",ValueName=\"Scalar_5_230D633C4A306BF04AB690B7CD89D6AA\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=0.000000,DataTableValue=(DataTable=DataTable'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance\"',RowName=\"P_Ranged4\",ValueName=\"Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkCharacterLoadedEntry585",
+      "value": "(1,7,0,BPChar_Ape_Hunt01),/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01.BPChar_Ape_Hunt01_C,0,1,ExecuteUbergraph_BPChar_Ape_Hunt01,1,1309,1:0,1:1"
     },
     {
       "key": "SparkPatchEntry840",
