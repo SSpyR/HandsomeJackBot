@@ -11,7 +11,10 @@ class Resources(commands.Cog):
 
     @commands.command(name='builds', help='Imgur Album of Borderlands 3 Builds, Updated to Current Content')
     async def bl_builds(self, ctx):
-        response='https://imgur.com/a/6yfA9oo'
+        response='**Amara Builds:** <https://docs.google.com/document/d/1rpIwTi2hrWywgB42_I2mCjLqZ72r-n1FAoA2w8LGoGA/edit?usp=sharing> \n \n'
+        response+='**FL4K Builds:** <https://docs.google.com/document/d/1MiGGa_HDpm_IzHWgfhIDkLxzqiL_7O5HRC8E8ICerQg/edit?usp=sharing> \n \n'
+        response+='**Moze Builds:** <https://docs.google.com/document/d/10nJUJxvTmYP4k8bOrb_FaVVdouozwiqAZ0A-EzIENMo/edit?usp=sharing> \n \n' 
+        response+='**Zane Builds:** <https://docs.google.com/document/d/1p9tA92kJx2ZOKJG8r7G2yEQi6XE9p8qjlWvJWoNgfu4/edit?usp=sharing>'
         await ctx.send(response)
 
 
