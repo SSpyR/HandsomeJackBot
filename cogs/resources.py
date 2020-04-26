@@ -34,6 +34,12 @@ class Resources(commands.Cog):
     async def bl_splash(self, ctx):
         response='https://forums.gearboxsoftware.com/t/list-of-all-splash-weapons/4399732'
         await ctx.send(response)
+
+    
+    @commands.command(name='itemeditor', help='Web-based Item Editor for Borderlands 3, Courtesy of Baysix')
+    async def bl_itemedit(self, ctx):
+        response='Courtesy of Baysix: https://www.bl3editor.com/#/'
+        await ctx.send(response)
         
 
 def setup(bot):
