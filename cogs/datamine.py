@@ -41,11 +41,17 @@ class Datamine(commands.Cog):
             #await destchat.send('```Only Balance and PartSet Files Are Currently Availabe```')
             await destchat.send('```RESULTS```')
             queryname=queryname.replace(' ', '_')
+            counter=0
             for root, dirs, files in os.walk(fileFolder):
                 for name in files:
                     if (queryname.lower() in name.lower()) and name.endswith('.json'):
                         response=os.path.join(root, name)
                         await destchat.send('```{}```'.format(response.replace('lavoiet2', 'USER')))
+                        counter+=1
+                    if counter > 25:
+                        await destchat.send('```ONLY A MAXIMUM OF 25 QUERY RESULTS CAN BE DISPLAYED WITH ONE SEARCH```')
+                        break
+                        break
             await destchat.send('```SEARCH DONE```')
         else:
             print ('Directory Not Found')      
