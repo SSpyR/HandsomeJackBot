@@ -48,10 +48,11 @@ class Datamine(commands.Cog):
                         response=os.path.join(root, name)
                         await destchat.send('```{}```'.format(response.replace('lavoiet2', 'USER')))
                         counter+=1
-                    if counter > 25:
-                        await destchat.send('```ONLY A MAXIMUM OF 25 QUERY RESULTS CAN BE DISPLAYED WITH ONE SEARCH```')
+                    if counter >= 25:
                         break
-                        break
+                if counter >= 25:
+                    await destchat.send('```ONLY A MAXIMUM OF 25 QUERY RESULTS CAN BE DISPLAYED WITH ONE SEARCH```')
+                    break
             await destchat.send('```SEARCH DONE```')
         else:
             print ('Directory Not Found')      
