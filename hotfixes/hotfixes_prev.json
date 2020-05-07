@@ -2944,6 +2944,38 @@
       "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_01,PlaythroughTwoAndBeyond,0,,(BaseValueConstant=1.500000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
     },
     {
+      "key": "SparkPatchEntry1100",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver,ConditionalValues.ConditionalValues[1].ValueIfAllConditionsAreTrue.DataTableValue,185,(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance\"',RowName=\"NoneChance_Mayhem_01\",ValueName=\"\"),(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance\"',RowName=\"NoneChance_Mayhem_03\",ValueName=\"\")"
+    },
+    {
+      "key": "SparkPatchEntry1101",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver,ConditionalValues.ConditionalValues[3].ValueIfAllConditionsAreTrue.DataTableValue,185,(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance\"',RowName=\"NoneChance_Mayhem_03\",ValueName=\"\"),(DataTable=DataTable'\"/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance\"',RowName=\"NoneChance_Mayhem_01\",ValueName=\"\")"
+    },
+    {
+      "key": "SparkPatchEntry1102",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver.Conditions_GbxCondition_Comparison,Operator,7,EqualTo,GreaterThanOrEqual"
+    },
+    {
+      "key": "SparkPatchEntry1103",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver.Conditions_GbxCondition_Comparison,OperandB.BaseValueConstant,8,1.000000,8.0"
+    },
+    {
+      "key": "SparkPatchEntry1104",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver.Conditions_GbxCondition_Comparison_0,Operator,7,EqualTo,GreaterThanOrEqual"
+    },
+    {
+      "key": "SparkPatchEntry1105",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver.Conditions_GbxCondition_Comparison_0,OperandB.BaseValueConstant,8,2.000000,5.0"
+    },
+    {
+      "key": "SparkPatchEntry1106",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver.Conditions_GbxCondition_Comparison_1,Operator,7,EqualTo,GreaterThanOrEqual"
+    },
+    {
+      "key": "SparkPatchEntry1107",
+      "value": "(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/Att_EndGame_NoneChanceShields.Att_EndGame_NoneChanceShields:ValueResolver_ConditionalAttributeValueResolver.Conditions_GbxCondition_Comparison_1,OperandB.BaseValueConstant,8,3.000000,1.0"
+    },
+    {
       "key": "SparkLevelPatchEntry1053",
       "value": "(1,1,0,Outskirts_P),/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All.ItemPool_Guns_All,BalancedItems,0,,((ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Common.ItemPool_Guns_Common\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_01_Common.Att_RarityWeight_01_Common\"')),(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Uncommon.ItemPool_Guns_Uncommon\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_02_Uncommon.Att_RarityWeight_02_Uncommon\"')),(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Rare.ItemPool_Guns_Rare\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_03_Rare.Att_RarityWeight_03_Rare\"')),(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare.Att_RarityWeight_04_VeryRare\"')),(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary\"')),(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary\"',BaseValueScale=20.000000)))"
     },
