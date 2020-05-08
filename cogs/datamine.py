@@ -26,7 +26,7 @@ class Datamine(commands.Cog):
     @commands.command(name='ref', help='Command for searching through the in-game files, auto-directs to bot specific chat')
     async def bl_ref(self, ctx, *, queryname: str):
         destchat=None
-        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3'
+        fileFolder='C:\\Users\\lavoiet2\\Downloads\\Game'
 
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
@@ -46,7 +46,8 @@ class Datamine(commands.Cog):
                 for name in files:
                     if (queryname.lower() in name.lower()) and name.endswith('.json'):
                         response=os.path.join(root, name)
-                        await destchat.send('```{}```'.format(response.replace('lavoiet2', 'USER')))
+                        response=response.replace('\\', '/')
+                        await destchat.send('```{}```'.format(response.replace('C:/Users/lavoiet2/Downloads', '')))
                         counter+=1
                     if counter >= 25:
                         break
@@ -67,7 +68,7 @@ class Datamine(commands.Cog):
     @commands.command(name='refget', help='Command for displaying in-game files, must enter full file name (does not require caps or ".json"), auto-directs to bot specific chat')
     async def bl_refget(self, ctx, *, filename: str):
         destchat=None
-        fileFolder='C:\\Users\\lavoiet2\\Downloads\\BL3'
+        fileFolder='C:\\Users\\lavoiet2\\Downloads\\Game'
 
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
