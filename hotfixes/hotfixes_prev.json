@@ -1,7 +1,7 @@
 {
   "service_name": "Micropatch",
   "configuration_group": "Oak_Crossplay_Default",
-  "configuration_version": "1.211.308",
+  "configuration_version": "1.212.310",
   "parameters": [
     {
       "key": "SparkPatchEntry665",
@@ -2970,6 +2970,14 @@
     {
       "key": "SparkLevelPatchEntry1103",
       "value": "(1,2,0,MatchAll),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,159,(BaseValueConstant=10.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry1104",
+      "value": "(1,1,1,Sacrifice_P),/Game/Maps/Zone_0/Sacrifice/Sacrifice_M_PandorasNextTopMouthpiece.Sacrifice_M_PandorasNextTopMouthpiece:PersistentLevel.OakTriggerBox-PandorasNTM-Puttergunk.CollisionComp,BoxExtent,41,(X=998.889709,Y=1545.956421,Z=336.885284),(X=5000.000000,Y=6000.000000,Z=1200.000000)"
+    },
+    {
+      "key": "SparkLevelPatchEntry1105",
+      "value": "(1,1,1,Sacrifice_P),/Game/Maps/Zone_0/Sacrifice/Sacrifice_M_PandorasNextTopMouthpiece.Sacrifice_M_PandorasNextTopMouthpiece:PersistentLevel.OakTriggerBox-PandorasNTM-Puttergunk_0.CollisionComp,RelativeLocation,46,(X=59353.242188,Y=14595.060547,Z=11538.951172),(X=56533.242188,Y=15265.060547,Z=11538.951172)"
     }
   ]
 }
