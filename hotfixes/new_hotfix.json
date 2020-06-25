@@ -4,16 +4,324 @@
     "configuration_version": "1.172.191",
     "parameters": [
         {
-            "key": "SparkPatchEntry1188",
-            "value": "(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/Parts/Part_AR_VLA_Barrel_WebSlinger.Part_AR_VLA_Barrel_WebSlinger,InventoryAttributeEffects,197,((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=5.000000))),((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=5.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.600000)))"
+            "key": "SparkPatchEntry1183",
+            "value": "(1,1,0,),/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceReceiverMultiplier_Environmental.Att_DamageSourceReceiverMultiplier_Environmental:AttributePropertyValueResolver_1,Property,393,(ParsedPath[0]=(PropertyName=\"SourceRecieverMultipliers\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[1]=(PropertyName=\"Environmental\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[2]=(PropertyName=\"\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[3]=(PropertyName=\"\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[4]=(PropertyName=\"\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPathLength=2),(ParsedPath[0]=(PropertyName=\"SourceReceiverMultipliers\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[1]=(PropertyName=\"Environmental\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[2]=(PropertyName=\"\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[3]=(PropertyName=\"\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPath[4]=(PropertyName=\"\",bUsesArrayIndex=False,ArrayIndex=0),ParsedPathLength=2)"
         },
         {
-            "key": "SparkPatchEntry1189",
-            "value": "(1,2,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,AR_WebSlinger,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.80000"
+            "key": "SparkEarlyLevelPatchEntry230",
+            "value": "(1,1,0,Town_P),/Geranium/Maps/Town/Town_M_NPC.Town_M_NPC:PersistentLevel.IO_NPC_MissionDeco_60,RequireSecondaryEnableState,5,False,True"
         },
         {
-            "key": "SparkPatchEntry1190",
-            "value": "(1,2,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,AR_Webslinger_Underbarrel,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,2.250000"
+            "key": "SparkEarlyLevelPatchEntry231",
+            "value": "(1,1,0,Town_P),/Geranium/Maps/Town/Town_M_NPC.Town_M_NPC:PersistentLevel.IO_NPC_MissionDeco_62,RequireSecondaryEnableState,5,False,True"
+        },
+        {
+            "key": "SparkLevelPatchEntry1137",
+            "value": "(1,1,0,Lodge_P),/Geranium/Maps/Lodge/Lodge_TheLegendOfMcSmugger_Geo.Lodge_TheLegendOfMcSmugger_Geo:PersistentLevel.BPIO_JumpPad_Geranium_4,Destination,41,(X=-38.868813,Y=-10.239765,Z=2871.799316),(X=-38.868813,Y=-10.239765,Z=3021.799316)"
+        },
+        {
+            "key": "SparkLevelPatchEntry1138",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,317,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1139",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,3130,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1140",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,5204,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1141",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,5559,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1142",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,5910,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1143",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,6593,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1144",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,4342,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1145",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,738,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1146",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,1098,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1147",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,1453,1:0,1:1"
+        },
+        {
+            "key": "SparkLevelPatchEntry1148",
+            "value": "(1,7,0,Town_P),/Geranium/Maps/Town/Town_M_Ep03ObsidianForest.Town_M_Ep03ObsidianForest_C,0,1,ExecuteUbergraph_Town_M_Ep03ObsidianForest,1,1804,1:0,1:1"
+        },
+        {
+            "key": "SparkPatchEntry1191",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,SMG,Tediore_64_177AD05C46493B9713642FA9EEDB6DDC,8,0.900000,1.800000"
+        },
+        {
+            "key": "SparkPatchEntry1192",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Pistol,Maliwan_76_93DF9FBB4DB223F6D5697180435918B2,8,1.200000,1.50000"
+        },
+        {
+            "key": "SparkPatchEntry1193",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,AssaultRifle,CoV_65_A2A97C764F97EC46B630BB9F944FE44E,8,0.800000,1.15000"
+        },
+        {
+            "key": "SparkPatchEntry1194",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Shotgun,Hyperion_61_03553D4547FA30186E792BA391B2FFDE,8,0.900000,1.300000"
+        },
+        {
+            "key": "SparkPatchEntry1195",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Shotgun,Maliwan_76_93DF9FBB4DB223F6D5697180435918B2,8,1.200000,1.550000"
+        },
+        {
+            "key": "SparkPatchEntry1196",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Shotgun,Jakobs_60_F95FBBA045F4F1899B3F7AB7A2CF0F22,8,0.950000,1.400000"
+        },
+        {
+            "key": "SparkPatchEntry1197",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Heavy,Atlas_78_8B8B7B8741EFF37DAC0B5D8739B6F0E4,8,1.100000,1.60000"
+        },
+        {
+            "key": "SparkPatchEntry1198",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,SM_Earthbound,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,2.5000"
+        },
+        {
+            "key": "SparkPatchEntry1199",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,SM_Earthbound,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,8,1.000000,1.5"
+        },
+        {
+            "key": "SparkPatchEntry1200",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,SM_Flipper,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.600000"
+        },
+        {
+            "key": "SparkPatchEntry1201",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,SM_Copybeast,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.8000"
+        },
+        {
+            "key": "SparkPatchEntry1202",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Rose,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.50000"
+        },
+        {
+            "key": "SparkPatchEntry1203",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Lasocannon,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,2.00000"
+        },
+        {
+            "key": "SparkPatchEntry1204",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Gargoyle,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,2.000000,2.50000"
+        },
+        {
+            "key": "SparkPatchEntry1205",
+            "value": "(1,2,0,),Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Miscreant,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,2.000000,2.300000"
+        },
+        {
+            "key": "SparkPatchEntry1206",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Decoupler,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,2.0000"
+        },
+        {
+            "key": "SparkPatchEntry1207",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Parts/Part_PS_MAL_Barrel_Decoupler.Part_PS_MAL_Barrel_Decoupler:WeaponUseModeAspectData_1.WeaponFireProjectileComponent_0,FireRate,20,(BaseValue=4.000000),(BaseValue=6.500000)"
+        },
+        {
+            "key": "SparkPatchEntry1208",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Parts/Part_PS_MAL_Barrel_Decoupler.Part_PS_MAL_Barrel_Decoupler,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0].AttributeEffects,551,((AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=60.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(DataTableValue=(DataTable=DataTable'\"/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium\"',RowName=\"PS_Decoupler\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\")))),((AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=60.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',ModifierType=ScaleSimple,ModifierValue=(DataTableValue=(DataTable=DataTable'\"/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium\"',RowName=\"PS_Decoupler\",ValueName=\"DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53\"))),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.000000)))"
+        },
+        {
+            "key": "SparkPatchEntry1209",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,HW_Satistfaction,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.450000"
+        },
+        {
+            "key": "SparkPatchEntry1210",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,SG_Brightside,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.60000"
+        },
+        {
+            "key": "SparkPatchEntry1211",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,SG_Brightside,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,8,1.000000,4.00000"
+        },
+        {
+            "key": "SparkPatchEntry1212",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,AR_StoneThrow,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.60000"
+        },
+        {
+            "key": "SparkPatchEntry1213",
+            "value": "(1,2,0,),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,AR_Dowsing,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.55000"
+        },
+        {
+            "key": "SparkPatchEntry1214",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Base_Data.DataTable_Weapon_Base_Data,Pistol,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,8,0.900000,1.300000"
+        },
+        {
+            "key": "SparkPatchEntry1215",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Pistol,Jakobs_60_F95FBBA045F4F1899B3F7AB7A2CF0F22,8,1.600000,1.300000"
+        },
+        {
+            "key": "SparkPatchEntry1216",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,AssaultRifle,Jakobs_60_F95FBBA045F4F1899B3F7AB7A2CF0F22,8,1.800000,2.40000"
+        },
+        {
+            "key": "SparkPatchEntry1217",
+            "value": "(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,AssaultRifle,DAHL_59_150C89A04BB4FCF0061CAC86E39E1A39,8,1.350000,1.725000"
+        },
+        {
+            "key": "SparkPatchEntry1218",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Operative_DLC3_1.CustomEmote_Operative_DLC3_1,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Cheer.EmoteIcon_Cheer"
+        },
+        {
+            "key": "SparkPatchEntry1219",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Beastmaster_DLC3_1.CustomEmote_Beastmaster_DLC3_1,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Cheer.EmoteIcon_Cheer"
+        },
+        {
+            "key": "SparkPatchEntry1220",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Siren_DLC3_1.CustomEmote_Siren_DLC3_1,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Cheer.EmoteIcon_Cheer"
+        },
+        {
+            "key": "SparkPatchEntry1221",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Gunner_DLC3_1.CustomEmote_Gunner_DLC3_1,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Cheer.EmoteIcon_Cheer"
+        },
+        {
+            "key": "SparkPatchEntry1222",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Operative_DLC3_2.CustomEmote_Operative_DLC3_2,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Death.EmoteIcon_Death"
+        },
+        {
+            "key": "SparkPatchEntry1223",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Beastmaster_DLC3_2.CustomEmote_Beastmaster_DLC3_2,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Death.EmoteIcon_Death"
+        },
+        {
+            "key": "SparkPatchEntry1224",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Siren_DLC3_2.CustomEmote_Siren_DLC3_2,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Death.EmoteIcon_Death"
+        },
+        {
+            "key": "SparkPatchEntry1225",
+            "value": "(1,1,0,),/Game/PatchDLC/Geranium/Customizations/PlayerEmote/CustomEmote_Gunner_DLC3_2.CustomEmote_Gunner_DLC3_2,PreviewImage,4,None,/Game/UI/_Shared/EmoteIcons/EmoteIcon_Death.EmoteIcon_Death"
+        },
+        {
+            "key": "SparkPatchEntry1226",
+            "value": "(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/DamageSources/DamageSource_Skill_Phasetrance_Link.Default__DamageSource_Skill_Phasetrance_Link_C,ModifierAttributes,357,(InstigatedModifier=GbxAttributeData'\"/Game/PlayerCharacters/_Shared/_Design/Attributes/Siren/Att_DamageSourceInstigatorMultiplier_Phasetrance.Att_DamageSourceInstigatorMultiplier_Phasetrance\"',ReceivedModifier=GbxAttributeData'\"/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceReceiverMultiplier_Skill.Att_DamageSourceReceiverMultiplier_Skill\"'),(InstigatedModifier=GbxAttributeData'/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Passive_Skill.Att_DamageSourceInstigatorMultiplier_Passive_Skill',ReceivedModifier=GbxAttributeData'/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceReceiverMultiplier_Passive_Skill.Att_DamageSourceReceiverMultiplier_Passive_Skill')"
+        },
+        {
+            "key": "SparkPatchEntry1227",
+            "value": "(1,2,0,),/Game/Gear/ClassMods/_Design/Balance/Table_ClassMod_Stats2.Table_ClassMod_Stats2,ActionSkill_Damage,Multiplier,158,(BaseValueConstant=0.002350,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=0.005670,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry232",
+            "value": "(1,1,1,Town_P),/Geranium/Maps/Town/Town_Interior.Town_Interior:PersistentLevel.OakSpawnPoint_1.SceneComp,RelativeLocation,43,(X=8321.956055,Y=31223.904297,Z=244.998230),(X=7661.026367,Y=32858.121094,Z=122.989899)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry233",
+            "value": "(1,1,1,Town_P),/Geranium/Maps/Town/Town_Interior.Town_Interior:PersistentLevel.OakSpawnPoint_0.SceneComp,RelativeLocation,44,(X=10266.605469,Y=32409.310547,Z=244.998291),(X=10001.732422,Y=32319.074219,Z=165.101837)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry234",
+            "value": "(1,1,1,Town_P),/Geranium/Maps/Town/Town_Interior.Town_Interior:PersistentLevel.OakSpawnPoint_0.SceneComp,RelativeRotation,44,(Pitch=0.000000,Yaw=10.296414,Roll=0.000000),(Pitch=0.000000,Yaw=-6.305575,Roll=0.000000)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry235",
+            "value": "(1,1,1,Town_P),/Geranium/Maps/Town/Town_Interior.Town_Interior:PersistentLevel.OakSpawnPoint_2.SceneComp,RelativeLocation,44,(X=10785.227539,Y=29918.417969,Z=219.998260),(X=10813.980469,Y=30204.257813,Z=200.981140)"
+        },
+        {
+            "key": "SparkEarlyLevelPatchEntry236",
+            "value": "(1,1,1,Town_P),/Geranium/Maps/Town/Town_Interior.Town_Interior:PersistentLevel.OakSpawnPoint_2.SceneComp,RelativeRotation,44,(Pitch=0.000000,Yaw=26.649094,Roll=0.000000),(Pitch=0.000000,Yaw=-17.017452,Roll=0.000000)"
+        },
+        {
+            "key": "SparkPatchEntry1228",
+            "value": "(1,7,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/ShieldOfThought/PassiveSkill_Siren_ShieldOfThought.PassiveSkill_Siren_ShieldOfThought_C,0,1,ExecuteUbergraph_PassiveSkill_Siren_ShieldOfThought,1,2105,68:/Game/GameData/DamageSources/DamageSource_Skill.DamageSource_Skill_C,84:/Game/GameData/DamageSources/DamageSource_Passive_Skill.DamageSource_Passive_Skill_C"
+        },
+        {
+            "key": "SparkPatchEntry1229",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,1.050000,1.3"
+        },
+        {
+            "key": "SparkPatchEntry1230",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,1.100000,1.6"
+        },
+        {
+            "key": "SparkPatchEntry1231",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,1.150000,1.9"
+        },
+        {
+            "key": "SparkPatchEntry1232",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,1.200000,2.2"
+        },
+        {
+            "key": "SparkPatchEntry1233",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,1.375000,3.25"
+        },
+        {
+            "key": "SparkPatchEntry1234",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,1.750000,5.5"
+        },
+        {
+            "key": "SparkPatchEntry1235",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,2.125000,7.75"
+        },
+        {
+            "key": "SparkPatchEntry1236",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,2.500000,10.0"
+        },
+        {
+            "key": "SparkPatchEntry1237",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,3.000000,13.0"
+        },
+        {
+            "key": "SparkPatchEntry1238",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,8,3.500000,16.0"
+        },
+        {
+            "key": "SparkPatchEntry1239",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,8,1.400000,1.600000"
+        },
+        {
+            "key": "SparkPatchEntry1240",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,8,1.800000,2.200000"
+        },
+        {
+            "key": "SparkPatchEntry1241",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,8,2.200000,2.800000"
+        },
+        {
+            "key": "SparkPatchEntry1242",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,8,2.600000,3.400000"
+        },
+        {
+            "key": "SparkPatchEntry1243",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,8,4.000000,5.500000"
+        },
+        {
+            "key": "SparkPatchEntry1244",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,8,7.000000,10.000000"
+        },
+        {
+            "key": "SparkPatchEntry1245",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,9,10.000000,14.500000"
+        },
+        {
+            "key": "SparkPatchEntry1246",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,9,13.000000,19.000000"
+        },
+        {
+            "key": "SparkPatchEntry1247",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,9,17.000000,25.000000"
+        },
+        {
+            "key": "SparkPatchEntry1248",
+            "value": "(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF,9,21.000000,31.000000"
+        },
+        {
+            "key": "SparkPatchEntry1249",
+            "value": "(1,1,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Player/SE_Mayhem2_Player_CoreMod_1.SE_Mayhem2_Player_CoreMod_1,AttributeEffects.AttributeEffects[7].BaseModifierValue.DataTableValue.RowName,1,6,1"
+        },
+        {
+            "key": "SparkPatchEntry1250",
+            "value": "(1,1,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Player/SE_Mayhem2_Player_CoreMod_6.SE_Mayhem2_Player_CoreMod_6,AttributeEffects.AttributeEffects[7].BaseModifierValue.DataTableValue.RowName,1,1,6"
         }
     ]
 }
