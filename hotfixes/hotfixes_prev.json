@@ -1,7 +1,7 @@
 {
   "service_name": "Micropatch",
   "configuration_group": "Oak_Crossplay_Default",
-  "configuration_version": "1.214.312",
+  "configuration_version": "1.215.313",
   "parameters": [
     {
       "key": "SparkPatchEntry665",
@@ -3198,6 +3198,18 @@
     {
       "key": "SparkCharacterLoadedEntry893",
       "value": "(1,2,0,BPChar_Nekrobug_BadassTD2),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/_Shared/_Design/Balance/Table_Balance_NekrobugTD2.Table_Balance_NekrobugTD2,Nekrobug_BadassTD2,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,8,3.000000,1.5"
+    },
+    {
+      "key": "SparkPatchEntry1188",
+      "value": "(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/Parts/Part_AR_VLA_Barrel_WebSlinger.Part_AR_VLA_Barrel_WebSlinger,InventoryAttributeEffects,197,((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=5.000000))),((AttributeToModify=GbxAttributeData'\"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType\"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=5.000000)),(AttributeToModify=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo\"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.600000)))"
+    },
+    {
+      "key": "SparkPatchEntry1189",
+      "value": "(1,2,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,AR_WebSlinger,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,1.80000"
+    },
+    {
+      "key": "SparkPatchEntry1190",
+      "value": "(1,2,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,AR_Webslinger_Underbarrel,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,8,1.000000,2.250000"
     }
   ]
 }
