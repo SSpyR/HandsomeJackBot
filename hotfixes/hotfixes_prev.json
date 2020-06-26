@@ -3522,6 +3522,14 @@
     {
       "key": "SparkPatchEntry1250",
       "value": "(1,1,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Player/SE_Mayhem2_Player_CoreMod_6.SE_Mayhem2_Player_CoreMod_6,AttributeEffects.AttributeEffects[7].BaseModifierValue.DataTableValue.RowName,1,1,6"
+    },
+    {
+      "key": "SparkPatchEntry1184",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_Base.Default__BPChar_DigiClone_Base_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+    },
+    {
+      "key": "SparkPatchEntry1185",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/BPChar_IronBear.Default__BPChar_IronBear_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
     }
   ]
 }
