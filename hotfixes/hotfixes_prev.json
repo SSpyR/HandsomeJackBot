@@ -1,7 +1,7 @@
 {
   "service_name": "Micropatch",
   "configuration_group": "Oak_Crossplay_Default",
-  "configuration_version": "1.216.314",
+  "configuration_version": "1.218.316",
   "parameters": [
     {
       "key": "SparkPatchEntry665",
@@ -1884,7 +1884,7 @@
       "value": "(1,1,0,BPChar_ZealotExplosiveTrailClone),/Hibiscus/Enemies/Zealot/Clone/_Design/Character/BPChar_ZealotExplosiveTrailClone.Default__BPChar_ZealotExplosiveTrailClone_C:DefaultGameplayTagContainerComponent,TagContainer,211,(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Occultist.Zealot\"),(TagName=\"Population.Suicidal\"))),(GameplayTags=((TagName=\"Population.Range.Common\"),(TagName=\"Population.Size.Medium\"),(TagName=\"Population.Classification.Humanoid\"),(TagName=\"Population.Army.Occultist.Zealot\"),(TagName=\"Population.Suicidal\")))"
     },
     {
-      "key": "SparkPatchEntry1032",
+      "key": "SparkPatchEntry1028",
       "value": "(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Parts/Part_AR_COV_Barrel_SparkyBoom.Part_AR_COV_Barrel_SparkyBoom:AspectList_InventoryAbilityAspectData,Abilities.Abilities[0].Ability,4,None,BlueprintGeneratedClass'/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Ability_SparkyBoom.Ability_SparkyBoom_v2_C'"
     },
     {
@@ -1896,15 +1896,15 @@
       "value": "(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/Sequences/SEQ_KatawagaJrTC/SEQ_TC_KatagawaJr_01.SEQ_TC_KatagawaJr_01:MovieScene_0,PlaybackRange,35,Inclusive:-176000:Exclusive:2392239,Inclusive:-176000:Exclusive:1250000"
     },
     {
-      "key": "SparkPatchEntry1033",
+      "key": "SparkPatchEntry1029",
       "value": "(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/CloneTree/MultiTasker/StatusEffect_Operative_Multitasker.StatusEffect_Operative_Multitasker,GameplayTags,15,(GameplayTags=),(GameplayTags=((TagName=\"StatusEffect.NonTransient\")))"
     },
     {
-      "key": "SparkPatchEntry1036",
+      "key": "SparkPatchEntry1032",
       "value": "(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Defs/EQS/EQS_Siren_Phasetrance_Sap.EQS_Siren_Phasetrance_Sap:EnvQueryTest_ActorHealth_0,TestPurpose,5,Score,FilterAndScore"
     },
     {
-      "key": "SparkPatchEntry1037",
+      "key": "SparkPatchEntry1033",
       "value": "(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Defs/EQS/EQS_Siren_Phasetrance_Sap.EQS_Siren_Phasetrance_Sap:EnvQueryTest_ActorHealth_0,FloatValueMin,109,(DefaultValue=0.000000,PropertyType=Class'\"/Script/CoreUObject.FloatProperty\"',DataBinding=None,DataField=\"\"),(DefaultValue=0.010000,PropertyType=Class'\"/Script/CoreUObject.FloatProperty\"',DataBinding=None,DataField=\"\")"
     },
     {
@@ -1912,11 +1912,11 @@
       "value": "(1,1,1,Cartels_P),/Game/PatchDLC/Event2/Maps/Cartels_Mission.Cartels_Mission:PersistentLevel.OakMissionWaypointBox_ACtivateStairSlide.CollisionComp,RelativeScale3D,34,(X=1.000000,Y=1.000000,Z=1.000000),(X=1.000000,Y=1.000000,Z=1.600000)"
     },
     {
-      "key": "SparkPatchEntry1038",
+      "key": "SparkPatchEntry1034",
       "value": "(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_Hard.ModSet_Mayhem2_Hard,ModifierSets.ModifierSets[4].Weight,8,1.000000,0.0"
     },
     {
-      "key": "SparkPatchEntry1039",
+      "key": "SparkPatchEntry1035",
       "value": "(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_Hard.ModSet_Mayhem2_Hard,ModifierSets.ModifierSets[2].Weight,8,1.000000,0.0"
     },
     {
@@ -3530,6 +3530,14 @@
     {
       "key": "SparkPatchEntry1185",
       "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/BPChar_IronBear.Default__BPChar_IronBear_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+    },
+    {
+      "key": "SparkPatchEntry1030",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/CloneTree/SupersonicMan/StatusEffect_Operative_SupersonicMan.StatusEffect_Operative_SupersonicMan,GameplayTags,15,(GameplayTags=),(GameplayTags=((TagName=\"StatusEffect.NonTransient\")))"
+    },
+    {
+      "key": "SparkPatchEntry1031",
+      "value": "(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/CloneTree/BorrowedTime/StatusEffect_Operative_BorrowedTime.StatusEffect_Operative_BorrowedTime,GameplayTags,15,(GameplayTags=),(GameplayTags=((TagName=\"StatusEffect.NonTransient\")))"
     }
   ]
 }
