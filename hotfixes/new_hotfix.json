@@ -4,12 +4,24 @@
     "configuration_version": "1.172.191",
     "parameters": [
         {
-            "key": "SparkPatchEntry1030",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/CloneTree/SupersonicMan/StatusEffect_Operative_SupersonicMan.StatusEffect_Operative_SupersonicMan,GameplayTags,15,(GameplayTags=),(GameplayTags=((TagName=\"StatusEffect.NonTransient\")))"
+            "key": "SparkPatchEntry1251",
+            "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/BPChar_IronBear_DakkaBear.Default__BPChar_IronBear_DakkaBear_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
         },
         {
-            "key": "SparkPatchEntry1031",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/CloneTree/BorrowedTime/StatusEffect_Operative_BorrowedTime.StatusEffect_Operative_BorrowedTime,GameplayTags,15,(GameplayTags=),(GameplayTags=((TagName=\"StatusEffect.NonTransient\")))"
+            "key": "SparkPatchEntry1252",
+            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_Normal.Default__BPChar_DigiClone_Normal_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+        },
+        {
+            "key": "SparkPatchEntry1253",
+            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_Badass.Default__BPChar_DigiClone_Badass_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+        },
+        {
+            "key": "SparkPatchEntry1254",
+            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_SuperBadass.Default__BPChar_DigiClone_SuperBadass_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+        },
+        {
+            "key": "SparkPatchEntry1255",
+            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_UltimateSuperBadass.Default__BPChar_DigiClone_UltimateSuperBadass_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
         }
     ]
 }
