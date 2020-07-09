@@ -4,24 +4,44 @@
     "configuration_version": "1.172.191",
     "parameters": [
         {
-            "key": "SparkPatchEntry1251",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/BPChar_IronBear_DakkaBear.Default__BPChar_IronBear_DakkaBear_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+            "key": "SparkPatchEntry1186",
+            "value": "(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_Glamour.Augment_PhaseTrance_Effect_Glamour,RejectionTags,112,(GameplayTags=((TagName=\"Players.Siren.Thoughtlocked\"),(TagName=\"Population.ImmuneTo.SirenSkills.Thoughtlock\"))),(GameplayTags=((TagName=\"Players.Siren.Thoughtlocked\"),(TagName=\"Population.ImmuneTo.SirenSkills.Thoughtlock\"),(TagName=\"Population.ImmuneTo._Global.TeamSwap\")))"
         },
         {
-            "key": "SparkPatchEntry1252",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_Normal.Default__BPChar_DigiClone_Normal_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+            "key": "SparkLevelPatchEntry1131",
+            "value": "(1,1,0,Frontier_P),/Geranium/Vehicles/Horse/Vehicle/Vehicle_Horse_Biobeast.Default__Vehicle_Horse_Biobeast_C,VehicleInputModes.VehicleInputModes[0].DriverSeatCameraModeOptionsOverride.PersistentMode,27,OutrunnerDriver_CamRelative,RevolverDriver_CamRelative"
         },
         {
-            "key": "SparkPatchEntry1253",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_Badass.Default__BPChar_DigiClone_Badass_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+            "key": "SparkLevelPatchEntry1132",
+            "value": "(1,1,0,Town_P),/Geranium/Vehicles/Horse/Vehicle/Vehicle_Horse_Biobeast.Default__Vehicle_Horse_Biobeast_C,VehicleInputModes.VehicleInputModes[0].DriverSeatCameraModeOptionsOverride.PersistentMode,27,OutrunnerDriver_CamRelative,RevolverDriver_CamRelative"
         },
         {
-            "key": "SparkPatchEntry1254",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_SuperBadass.Default__BPChar_DigiClone_SuperBadass_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+            "key": "SparkLevelPatchEntry1133",
+            "value": "(1,1,0,Facility_P),/Geranium/Vehicles/Horse/Vehicle/Vehicle_Horse_Biobeast.Default__Vehicle_Horse_Biobeast_C,VehicleInputModes.VehicleInputModes[0].DriverSeatCameraModeOptionsOverride.PersistentMode,27,OutrunnerDriver_CamRelative,RevolverDriver_CamRelative"
         },
         {
-            "key": "SparkPatchEntry1255",
-            "value": "(1,1,0,),/Game/PlayerCharacters/Operative/DigiClone/_Design/Character/BPChar_DigiClone_UltimateSuperBadass.Default__BPChar_DigiClone_UltimateSuperBadass_C:DefaultDamageCauserComponent,bApplyInstigatorSkillDamageModifier,5,False,True"
+            "key": "SparkLevelPatchEntry1134",
+            "value": "(1,1,0,Lodge_P),/Geranium/Vehicles/Horse/Vehicle/Vehicle_Horse_Biobeast.Default__Vehicle_Horse_Biobeast_C,VehicleInputModes.VehicleInputModes[0].DriverSeatCameraModeOptionsOverride.PersistentMode,27,OutrunnerDriver_CamRelative,RevolverDriver_CamRelative"
+        },
+        {
+            "key": "SparkLevelPatchEntry1135",
+            "value": "(1,1,0,Forest_P),/Geranium/Vehicles/Horse/Vehicle/Vehicle_Horse_Biobeast.Default__Vehicle_Horse_Biobeast_C,VehicleInputModes.VehicleInputModes[0].DriverSeatCameraModeOptionsOverride.PersistentMode,27,OutrunnerDriver_CamRelative,RevolverDriver_CamRelative"
+        },
+        {
+            "key": "SparkLevelPatchEntry1136",
+            "value": "(1,1,0,CraterBoss_P),/Geranium/Vehicles/Horse/Vehicle/Vehicle_Horse_Biobeast.Default__Vehicle_Horse_Biobeast_C,VehicleInputModes.VehicleInputModes[0].DriverSeatCameraModeOptionsOverride.PersistentMode,27,OutrunnerDriver_CamRelative,RevolverDriver_CamRelative"
+        },
+        {
+            "key": "SparkPatchEntry1262",
+            "value": "(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Gunner/_Unique/Unique_03/OakAbility_Gunner_Unique03.Default__OakAbility_Gunner_Unique03_C,AbilityEffects.AbilityEffects[0],388,(StatusEffectData=StatusEffectData'\"/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Beastmaster/_Unique/Beastmaster_Unique_03/Status_Beastmaster_ClassMod_Unique03.Status_Beastmaster_ClassMod_Unique03\"',TargetResolutionStrategies=(GbxAbilityEffectTargetResolutionData_Owner'\"/Game/PlayerCharacters/_Shared/_Design/Skills/TargetResolution_Owner.TargetResolution_Owner\"'),Condition=None),(StatusEffectData=None,TargetResolutionStrategies=,Condition=None)"
+        },
+        {
+            "key": "SparkPatchEntry1260",
+            "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Missiles_3.Augment_Mod_Missiles_3:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,bDisplayPlusSign,4,True,False"
+        },
+        {
+            "key": "SparkPatchEntry1263",
+            "value": "(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Sala_3.Augment_Mod_Sala_3:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0,Initializer,355,(BaseValueConstant=0.000000,DataTableValue=(DataTable=DataTable'\"/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance\"',RowName=\"CoreStrength_Salamander_Mod3\",ValueName=\"Secondary_13_BE03AB154A90401B6BFE67BB3B3554E0\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000),(BaseValueConstant=1.000000,DataTableValue=(DataTable=None,RowName=\"\",ValueName=\"\"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)"
         }
     ]
 }

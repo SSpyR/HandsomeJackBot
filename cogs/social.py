@@ -71,6 +71,9 @@ class Social(commands.Cog):
             if 'RANDY' in message.content:
                 response='<:4hed:662477280034947072>'
                 await message.channel.send(response)
+            if 'fuck you' in message.content.lower():
+                response='Nou <:ritsupunch:726145739306303539>'
+                await message.channel.send(response)
 
 
 def setup(bot):
