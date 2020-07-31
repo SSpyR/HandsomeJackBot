@@ -1,0 +1,748 @@
+Mobile,Excel,"m6+ | m4+
+light = not anointable",,O = Cryo, WD = World Drop,,7/23 Patch,,Online Spreadsheet,,,,Re-copy to update,,
+,,,,,,,,,,,,,,,
+Brand,Type,Name,,Element,WD,Can drop from,Quest / Challenge,Location,Summary,Main,Alternate,a/s,Red Text,,Reference
+,,,,,,,,,,,,,,,
+"A
+T
+L
+A
+S",AR,Carrier,,N,TRUE,Judge Hightower,Crew Challenge,Lectra City,Splits in 2 and homing on impact,,,,I have arrived.,,Carrier from StarCraft
+,,O.P.Q. System,,N,,Josie / Franco / Joey,Revenge of the Cartels,Villa Ultraviolet,Drone copy shoots where you aim,Default,Drone,,B.Y.O.B.B.,,The Simpsons S7E5
+,,Portals and Shite,,N,,[Found in game files],,,,,,,,,
+,,Rebel Yell,,N/S,TRUE,Sky Bullies,Crew Challenge,The Anvil,Trackers are shock dmg,Default,Tracker,,"When you charge, yell like Furies.",,American Civil War battlecry
+,Pistol,Linc,,N,,Anointed Alpha,Malevolent Practice,The Anvil,Fast fire rate & bullet speed,,,,Power is pizza.,,Parks & Recreation S6E10
+,,Multi-tap,,N,,Katagawa Ball,Space-Laser Tag,Skywell-27,Reload fires cryo rocket that homes in on tracked,,Tracker,,Double the fun,,
+,RPG,Freeman,,N,,Warden,Hammerlocked,The Anvil,Laser guided missiles,,,,The right man in the wrong place can make all the difference in the world.,,Half-Life 2
+,,Plumage,,N,TRUE,Wrendon Esk,Crew Challenge,The Blastplains,Marked enemies drop free tracking grenade on kill,8 rockets,Tracker,,Quit peacocking around.,,
+,,Ruby's Wrath,,N,TRUE,Chonk Stomp,Crew Challenge,Floodmoor Basin,Rockets home in on vortex,7 rockets,Vortex,,No one can escape.,,
+,,,,,,,,,,,,,,,
+"C
+O
+V",AR,Embrace the Pain,,F,TRUE,?,?,?,Chance to light player on fire,,,,"It hurts, HAHAHAHAHA! IT HURTS!!",,Borderlands 2 Krieg Quote
+,,NoPewPew,,F,,Roaster / Tenderizer / Joey,Revenge of the Cartels,Villa Ultraviolet,3 projectiles/shot. Gradual increase in fire rate,,,,"Extra, extra spicy",,
+,,Pain is Power,,F,TRUE,Hot Karl,Crew Challenge,Devil's Razor,Damages player when fired. Lights player on fire when overheated,,,,Nobody kills me but ME!,,Borderlands 2 Krieg Quote
+,,Sawbar,,F,TRUE,Borman Nates,Rare Enemy,Meridian Outskirts,Bullets split into 3 projectiles. Extra projectiles explode,,,,Supressing Fires!!!,,Fire Water Burn by Bloodhound Gang
+,,Seeryul Killur,,F,TRUE,World Drop Only,,Xylourgos,"Kill grants increased dmg, fire rate & reduces heat. Stacks 3x",,,,Look at that unsubtle blood-red coloring...,,American Psycho (2000)
+,,Stauros' Burn,,F,,Wendigo,Horror in the Woods,The Cankerwood,Chance on break to combust. Combust guarantees crit & +fire dmg,,,,A long sigh was heard...,,
+,,Zheitsev's Eruption,,Any,,Raging Titan,The Slaughter Shaft,The Slaughter Shaft,Launches homing projectiles when overheating that debuff enemies,,,,Pain and Misery erupt in the Void.,,
+,Pistol,Gargoyle,,C,TRUE,Dickon Goyle,Crew Challenge,Bloodsun Canyon,Rapidly shoots projectiles and occasional globs of corrosive. [x1-x3 rollable],,,2-4,Defender of the night.,,Gargoyles (1994) Disney
+,,Hydrafrost,,O,,Shiverous the Unscathed,Rare Enemy,Negul Neshai,"After a kill, every 2nd shot deals 200% shock/fire dmg for 6 sec",,,,Tell your heads to chill.,,
+,,Linoge,,F C,TRUE,Lavender Crawly,Crew Challenge,The Droughts,Hail of slow ricocheting bullets,,,4,"My name is legion, for we are many",,Bible - Mark 5:9
+,,Pestilence,,R,,Heckle/Hyde,Crew Challenge,Jakobs Estate,Releases self-damaging radiation explosion when broken. High fire rate,,,,"Go forth conquering, and to conquer.",,Bible - Revelation 6:2
+,,Psycho Stabber,,N,,Borman Nates,Rare Enemy,Meridian Outskirts, +120% melee damage,,,,"Fa fa fa fa, fa fa fa fa fa fa...",,Psycho Killer by Talking Heads
+,,SkekSil,,F C S,,Skrakk,Crew Challenge,Ascension Bluff,Burst-fire. Sends out 1-3 rockets after burst,,,,"Get back, splithead!",,The Dark Crystal (1982)
+,RPG,Globetrottr,,Any N,,Scourge the Invincible,Guardian Takedown,Minos Prime,Launches 3 bouncing rockets [x6 variant possible],,,,"Um allen heim, styttur hrynja fyrir mig.",,"Icelandic - Translation: Around the world, statues collapse for me."
+,,Yellowcake,,R,,Fish slap / Tyrone / Joey,Revenge of the Cartels,Villa Ultraviolet,Splits into 4 balls that drop and explode. High splash radius,,,,I'm really more of a pie person.,,Yellowcake
+,,,,,,,,,,,,,,,
+"D
+A
+H
+L",AR,Barrage,,N C R,TRUE,Buttmunch,Skag Dog Days,The Droughts,Very high accuracy. Very low recoil. High fire rate,3-r burst,Zoom,,Quick maths.,,Man's Not Hot by Big Shaq
+,,Breath of the Dying,,C,TRUE,Blinding Banshee,Crew Challenge,Desolation's Edge,Radial burst of orbs on kill that explode,Full-Auto,5-r burst,,VexHeIEIEIdZodEth,,Diablo II: Lord of Destruction
+,,Good Juju,,Any,,The Rampager,Beneath the Meridian,Forgotten Basilica,Refills mag on kill. Non-crits grant +20% crit. stacks 25x,3-r burst,3-r burst,,"Kinda, sorta wants to end all existence.",,Bad Juju from Destiny
+,,Kaos,,F C S O,TRUE,Psychobillies,Crew Challenge,Ambermire,Enemies explode & can chain to nearby enemies,,,,Grants the mystical art of exploding smallhands.,,"Grant Kao, game designer at Gearbox"
+,,Star Helix,,N S R O,TRUE,Power Troopers,Rare Enemy,Atlas HQ,Shoots 2 weaving bullets,Full-Auto,4-r burst,,The stars are better off without us.,,"The Expanse author, James S.A. Corey Quote"
+,,Soulrender,,Any,,Tom & Xam,The Call of Gythian,Heart's Desire,Homing purple ghosts that explode on impact,,,,Picture a soul. Now REND that thing!,,
+,,Warlord,,N F C S,TRUE,Queen Ant Wanette,Rare Enemy,The Splinterlands,30% chance to not consume ammo,Full-Auto,Zoom,,My gun sings for your blood.,,Diablo Warlord of Blood Quote
+,Pistol,AAA,,S,TRUE,Wick and Warty,Rare Enemy,Lectra City,A-shape of shock projectiles,3-r burst,Zoom,,Hold on! They're lithium!,,The Office (US) S6E12 Quote
+,,Hornet,,C,TRUE,Mother of Grogans,Rare Enemy,The Anvil,High splash radius,6-r burst,Zoom,,Fear the Swarm!,,
+,,Nemesis,,F C,TRUE,Mouthpiece,Cult Following,Ascension Bluff,Deals additional shock dmg,Semi-Auto,3-r burst,,A righteous infliction of retribution.,,Snatch (2000) Quote
+,,Night Flyer,,N,,Rakkman,Rare Enemy,Carnivora,Full-Auto while airborne. Dmg's enemy to 1HP,2-r burst,Zoom,,I have one rule,,Batman
+,,The Blanc,,Any,TRUE,Ipswitch Dunne,Crew Challenge,The Blastplains,Hits grant +35% dmg on mode switch. Stacks 10x,,,,This machine unerringly arrives at the truth.,,Knives Out (2019) Benoit Blanc Quote
+,SMG,9-Volt,,S,,Killavolt,Kill Killavolt,Lectra City,V-shape of shock projectiles,3-r burst,Zoom,,Contact.,,
+,,Boomer,,N F,TRUE,Scraptrap Prime,One Man's Treasure,The Compactor,Explosive shots,Full-Auto,5-r burst,2,Some like it hot.,,
+,,Crader's EM-P5,,N,,Agonizer 9000,Blood Drive,Guts of Carnivora, +movement speed. +80% crit & +acc while airborne,Full-Auto,,,Dust off the beta EMP5.,,
+,,Hellfire,,F,,Jabbermogwai,Crew Challenge,Voracious Canopy,High status effect chance & dmg,Full-Auto,Zoom,,We don't need no... something...,,The Roof is on Fire by Rock Master Scott & The Dynamic Three
+,,Kaoson,,Any,,Captain Traunt,The Impending Storm,Athenas,Sticky explosive. Splash on impact & explode,,,,Small but packs a punch.,,
+,,Night Hawkin,,F/O,TRUE,Demoskaggons,Rare Enemy,The Droughts,Cryo during the day. Fire & extra projectiles at night,Auto,4-r burst,,Stranger than things.,,Stranger Things
+,,Ripper,,Any,TRUE,Shiv,Children of the Vault,Covenant Pass,Enemies you melee take x2 bullet dmg from ripper,Auto,5-r burst,,They say I'm a doctor now.,,Jack the Ripper
+,,Sleeping Giant,,N F C S,TRUE,One Punch,Rare Enemy,Lectra City,Reload has chance to grant weapon bonuses,Full-Auto,4-r burst,,Infinite path carved with unrivaled skill.,,Sleeping Giant by Mastodon
+,,Vanquisher,,Any,TRUE,Power Troopers,Rare Enemy,Atlas HQ, x2 fire rate while sliding. +20% slide speed,Full-Auto,4-r burst,,Slide forward into your cave.,,Fight Club
+,Sniper,AutoAimè,,N F C S,TRUE,Freddie the Traitor,All Bets Off,VIP Tower,Shoots homing lasers,Full-Auto,2-r burst,,OGC HOOKED.,,
+,,Sand Hawk,,Any N,,Katagawa Jr.,"Atlas, At Last",Atlas HQ,Line of 7 projectiles that move like the wings of a bird,Semi-Auto,3-r burst,3,Wedge a pig.,,
+,,Stalker,,O,,Loot Ghosts,Bloody Harvest,The Heck Hole, +projectile per terror stack. 3-round burst,Vertical,Horizontal,,All that remains is an icy husk.,,World of Warcraft Lich King Quote
+,,Malak's Bane,,F O,TRUE,Phoenix,Crew Challenge,The Splinterlands,Ricochets. Shotgun mode fires balls of >element<,Semi-Auto,Shotgun,,Welcome to the end.,,Welcome to the End by Celldweller
+,,,,,,,,,,,,,,,
+"H
+Y
+P
+E
+R
+I
+O
+N",Shotgun,Brainstormer,,S,TRUE,Katagawa Ball,Space-Laser Tag,Skywell-27,Chains shock with nearby enemies. Lightning Bolt spread pattern,,,,Let's put our heads together.,,Common phrase
+,,Conference Call,,Any,TRUE,Judge Hightower,Crew Challenge,Lectra City,Spawns horizontal side-swiping pellets,,,,Let's just ping everyone all at once,,
+,,Face-puncher,,N,TRUE,"Muldock, the Anointed",The Guns of Reliance,Floodmoor Basin,Shoots your melee dmg,,,,Man your own jackhammer.,,In Keeping Secrets of Silent Earth: 3 by Coheed and Cambria
+,,Fearmonger,,Any N,,Loot Ghosts,Bloody Harvest,The Heck Hole, +pellets per terror level up to 7. Sticky exploding projectiles,,,,"I can't control their fear, only my own.",,Avengers: Endgame Scarlet Witch Quote
+,,Heart Breaker,,F C S O,TRUE,Georgous Armada,Crew Challenge,The Compactor,Heals you when damaging enemy. Heart shaped projectile pattern,,,,I don't want to set the world on fire...,,I Don't Want to Set the World on Fire by The Ink Spots
+,,Iceburger,,F,,Roaster / Tenderizer / Joey,Revenge of the Cartels,Villa Ultraviolet,Shoots continuous fire laser and frozen burgers,,,,90% of the flavor is under the bun.,,
+,,Phebert,,Any,,Wick and Warty,Rare Enemy,Lectra City,Shoots 2 slug rounds,,,2,Faster than all estimates.,,Rick and Morty TV Series
+,,Reflux,,C,,GenIVIV,The Family Jewel,Voracious Canopy,Corrodes nearby enemies. Biohazard projectile pattern (similar to the Brainstormer),,,,That's gotta burn.,,
+,,Slow Hand,,Any N,TRUE,DEGEN-3,Crew Challenge,Impound Deluxe,Heals you when damaging enemy. Slow explosive projectiles,,,,"Take your time, sugar...",,
+,,The Butcher,,Any,TRUE,Raging Titan,The Slaughter Shaft,The Slaughter Shaft,Chance for free shot. Full auto. Very high fire rate & accuracy,,,,Fresh Meat!,,Diablo
+,SMG,Bitch,,Any,TRUE,Tyreen the Destroyer,Divine Retribution,Destroyer's Rift,"High crit modifier, accuracy and fire rate",,,,If you can't handle me at my worst...,,Common phrase
+,,Cheap Tips,,Any,TRUE,Jackpot,All Bets Off,VIP Tower,Hits have 10% chance to drop chips that grant +10% wpn dmg for 12s,,,,I'll get home early from work.,,
+,,Crossroad,,Any N,TRUE,Big Donny,Blood Drive,The Splinterlands,6-round burst. Alternating diagonal spread pattern,,,2,Open the gate for me.,,"Papa Legba, West African & Carribean voodoo god"
+,,Handsome Jackhammer,,Any,TRUE,Handsome Jackie,Crew Challenge,Skywell-27,"Reload bounces, releasing novas & shooting. HJ voice randomly plays",,,,Everyone thinks they are the heroes of their own stories.,,Tales from the Borderlands - Handsome Jack Quote
+,,Hyperfocus XZ41,,Any,TRUE,Power Troopers,Rare Enemy,Atlas HQ,Front shield reflects bullets. T-shaped projectile pattern,,,,My line has ended.,,Lord of the Rings: The Return of the King Quote
+,,Oldridian,,[Any],TRUE,World Drop Only,,Xylourgos,Switches element on reload. Wpn shield reduces elemental dmg 20%,,,,They bound the ones they knew of. There were more.,,
+,,Predatory Lending,,N F S R,,Lavender Crawly,Crew Challenge,The Droughts,Uses cash instead of ammo. $1/shot low acc. to $3/shot max acc.,,,0,"Bullets are cheap, but not that cheap.",,
+,,Proprietary License,,Any N,TRUE,Hydragoian,Crew Challenge,Obsidian Forest,Crit ricochets. Body shots apply stickies. 5-round burst. ADS Increases fire rate,,,,"A little from Column A, a little from Column B.",,
+,,Redistributor,,Any N,,Wotan the Invincible,Maliwan Takedown,Midnight's Cairn,Every 7th shot is Amped. Amped shots chain to nearby enemies,,,,Man's reach exceeds his imagination.,,The Prestige (2006)
+,,Smog,,Any,,Scourge the Invincible,Guardian Takedown,Minos Prime,Damage is amplified while Weapon Shield is Active & at Max Capacity,,,,Haze amaze.,,
+,Sniper,Crossbow,,N,,Urist McEnforcer,Rare Enemy,Lectra City,Explosive bolt. One shot mag size,,,,All craftsdwarfship is of the highest quality.,,Dwarf Fortress
+,,Narp,,Any,,Haddon Marr,Crew Challenge,Ashfall Peaks,Remaining mag grants bonus to the next mag on reload. Dmg up to +200%,,,,What happened to your peace lily?,,Hot Fuzz (2007)
+,,Tankman's Shield,,Any,,Captain Traunt,The Impending Storm,Athenas,Every kill adds weapon dmg to next magazine,,,,You ever seen this dude tank anything ever?,,
+,,Woodblocker,,Any N,TRUE,Indo Tyrant,Rare Enemy,Floodmoor Basin,4-round burst,,,,You don't get into woodblocks unless you are ready to f***.,,
+,,,,,,,,,,,,,,,
+"J
+A
+K
+O
+B
+S ",AR,Bekah,,N,,Sir Hammerlock Mail,Hammerlock's Legendary Hunt 100%,,Splits into 3 projectiles. Hits twice,,,,Shoot them in the face. Twice.,,South Park S10E10
+,,Clairvoyance,,O,,Kritchy,Crew Challenge,Cursehaven,Crit sticks projectiles which later explode,,,,A broken smile beneath her whispered wings.,,The Mothman Prophecies by John Keel
+,,Gatling Gun,,N,TRUE,Sheega,Sheega's All That,Devil's Razor,Full-Auto. Increases fire rate the longer you shoot. +Crit% bonus,,,,"Watch me crank it, watch me roll.",,Crank That (Soulja Boy) by Soulja Boy
+,,Hand of Glory,,N,,Quest Reward,The Guns of Reliance,Floodmoor Basin,2-Round burst,,,,"By one, by two, by three!",,The Ingoldsby Legends by Thomas Ingoldsby
+,,Lead Sprinkler,,N,TRUE,"Billy, The Anointed",Lair of the Harpy,Jakobs Estate,Hits spawn explosive projectiles that rain down. Ricochets off enemy,,,,Splish splash.,,Splish Splash by Bobby Darin
+,,Mutanat,,N,,Fungal Gorger,Rare Enemy,The Cankerwood,Full-Auto laser,,,,Super unnatural.,,
+,,Rowan's Call,,F S R,TRUE,Red Rain,Slaughterstar 3000,Slaughterstar 3000,Crit ricochets 2 bullets & returns 2 bullets to mag. Lasers,,,,Uh-oh!,,
+,,Stonethrower,,N,,Kormash,The Name of the Law,Ashfall Peaks,Ricochets several times off enemy hit. Semi-Auto,,,,Everywhere is nearby.,,
+,Pistol,Amazing Grace,,N,,Quest Reward,Life of the Party,Devil's Razor,Crit returns bullet to mag. Low fire rate. High dmg,,,,Memento mori.,,"Latin Phrase, translation: ""Remember that you must die"""
+,,Bite Size,,N,,[Found in game files],,,"Sticky explosive shots. Explode deals [very high] dmg. +crit, dmg, splash radius",,,,And yet so filling!,,
+,,Bloom,,N,,The Ruiner,Riding to Ruin,Crater's Edge,"""Hold trigger to charge burst fire shots""",,,,A thorn by any other name would probably still hurt.,,
+,,King's/Queen's Call,,F S/C R O,,Tyreen the Destroyer,Divine Retribution,Destroyer's Rift,"Crit ricochets 3 homing & returns 3 to mag. Heals for ~3% hit, 20% for homing",,,,"Life is ours, we live it our way.",,Nothing Else Matters by Metallica
+,,Maggie,,N,TRUE,Turnkey Tim,The Guns of Reliance,Floodmoor Basin,6 pellets per shot. Low accuracy,,,,Monty's wife don't take no guff.,,"Borderlands - Montgomery Jakobs & his wife, Maggie"
+,,Little Yeeti,,N,,Yeti,Crew Challenge,Skittermaw Basin,Multiple projectiles. Chance to knockback enemies,,,,Yeet 'em if you got 'em!,,
+,,Love Drill,,N,,Eleanor and the Heart,The Call of Gythian,Heart's Desire,20% chance to deal double dmg as shock dmg. Very high crit,,,,...till death us depart.,,
+,,Lucky 7,,N,TRUE,Scraptrap Prime,One Man's Treasure,The Compactor,"25% chance for: crit, explosive, full-auto, ricochet, amp, or 7 projectiles",,,,O Fortuna.,,"Translation: ""Oh Fate"". Warframe"
+,,Seventh Sense,,O,,Quest Reward,CC: Forgotten Answers,The Cankerwood,Reloading causes all spawned projectiles to hit the original target,,,,"Something so close, and yet... so distant.",,
+,,The Companion,,F,TRUE,Anointed X-2/Anointed X-3,Malevolent Practice,The Anvil,Crit ignites enemy. Very High elemental dmg,,,,You can't take the sky from me.,,Firefly (2002) TV Series
+,,The Duc,,N,TRUE,The Rampager,Beneath the Meridian,Forgotten Basilica,Sticky explosive rounds. Crit ricochets 2 bullets to nearest enemy,,,,Fire that off to me real quick.,,Kevin Duc from Gearbox
+,,The Flood,,N,TRUE,Lagromar,The Demon in the Dark,Konrad's Hold,Full-Auto. Incredibly fast fire rate,,,,Take us.,,Floods by Pantera
+,,Unforgiven,,N,TRUE,Indo Tyrant,Rare Enemy,Floodmoor Basin, +432% crit dmg. Unique reload animation,,,,It's a helluva thing...,,Unforgiven (1992)
+,,Wagon Wheel,,N,TRUE,Tink Train,Rare Enemy,Guts of Carnivora,Ricochets 6 bullets off enemy,,,,Keep them doggies rollin'.,,Rawhide (1959) Theme Song Lyric
+,Shotgun,Hellwalker,,F,TRUE,Road Dog,Rare Enemy,The Splinterlands,Guitar riff plays when shot. Pentagram or Sigil of Lucifer spread pattern.,,,,"So, my demons. Your time has come.",,"Video game - Doom & Song - Concealing Fate, Part 2: Deception by TesseracT"
+,,Nimble Jack,,N,,Handsome Jackie,Crew Challenge,Skywell-27,Tight spread. 1 shot capacity,,,,"Jack be nimble, Jack be quick, Jack jump and kill lunatics.",,Jack Be Nimble nursery rhyme
+,,One Pump Chump,,N,,One Punch,Rare Enemy,Lectra City,Fires single slug. Very high damage. 50% chance to not consume ammo,,,,"I swear, that has never happened before.",,Premature ejaculation
+,,Robin's Call,,N,TRUE,Garriden Loch,Crew Challenge,Ashfall Peaks,Crit ricochets 1 bullet at nearest enemy & returns 1 bullet to mag,,,4,Are you not he?,,
+,,Sledge's Shotgun,,N,,Hot Karl,Crew Challenge,Devil's Razor,Fires in bursts. High mag size,,,2,The Legend Lives (still),,
+,,T.K's Wave,,N F S,TRUE,Dumptruck,Dump on Dumptruck,The Droughts,Wave pattern. Ricochets off surfaces.,,,,"Ride the wave, dude!",,
+,,The Garcia,,N,,Chonk Stomp,Crew Challenge,Floodmoor Basin,High mag size,,,2,"Rooty-tooty, pointy-shooty.",,"""Rooty tooty point and shooty"""
+,,The Tidal Wave,,N,TRUE,Dumptruck,Dump on Dumptruck,The Droughts,Tidal wave pattern. Ricochets off surfaces. ,,,,"Flee the wave, dude!",,
+,Sniper,Cocky Bastard,,N,,Eista,We Slass!,Skittermaw Basin,Crit deals additional +100% dmg as shock dmg,,,,"Great, kid.",,Star Wars VII Han Solo Quote
+,,Headsplosion,,N,,King Bobo,Rumble in the Jungle,Voracious Canopy,Shots explode on impact. Ricochets 3 times on crit,,,,That happens all the time.,,Master Exploder by Tenacious D
+,,Monocle ,,N,TRUE,Demoskaggon,Rare Enemy,The Droughts,High crit dmg bonus while ADS ~350%.,,,,One is enough.,,
+,,Skullmasher,,N,,Eista,We Slass!,Skittermaw Basin,x5 projectiles per shot. Extremely fast fire rate,,,,Makes your brain hurt.,,
+,,Unseen Threat,,N,,Amach,Rare Enemy,Cursehaven,Crit ricochets 3 homing projectiles,,,,Taste their fear.,,Kha'Zix from League of Legends
+,,Wedding Invitation,,F/O,,100 Broken Hearts,Broken Hearts,,"Shoots as fire, ricochets as cryo. Crit returns 1 bullet",,,,Will you be the rest of my life?,,Meet Me Where You're Going by Cloud Cult
+,,,,,,,,,,,,,,,
+"M
+A
+L
+I
+W
+A
+N",Pistol,Beacon,,Any N,TRUE,Jerrick Logan,Crew Challenge,Bloodsun Canyon,Reload triggers nova of current element,,,,This little light of mine...,,
+,,Frozen Devil,,O,,Kukuwajack,Crew Challenge,Negul Neshai,Bonus crit for Spike / Freeze,,,,"Not sorry, not sorry, not sorry.",,Overwatch - Mei Voice line
+,,Grease Trap,,F,,Roaster / Tenderizer / Joey,Revenge of the Cartels,Villa Ultraviolet,Hot Grease (spread shot) / Fire Starter (fireballs),,,,"""EXTREMELY FLAMMABLE!""",,
+,,Hellshock,,F/S,TRUE,Vermilingua,The Homestead [Pt. 2],The Splinterlands,2 Projectiles/shot. Ricochet switches projectile element,,,,I had not thought death had undone so many.,,Inferno Dante Alighieri Quote
+,,Hyper-Hydrator,,S,,Deluxe Edition,,,Water gun / Taser. Wet enemies take increased shock dmg,,,,Moister is noice-ter,,Super Soaker water guns
+,,Sellout,,F/C,,Suicide option,Sellout,Ambermire,Quick laser that explodes as an orb on impact. Damages user,,,,"Hey there, superfan!",,Tyreen Calypso
+,,Superball,,F,TRUE,Baron Noggin,Crew Challenge,Meridian Metroplex,Shoots fire balls that bounce along the ground,,,,Flower power.,,Super Mario Bros. 
+,,Thunderball Fists,,S,TRUE,Power Troopers,Rare Enemy,Atlas HQ,Shock orb that bounces once before exploding,,,2,I can have such a thing?,,The Super Inframan (1975)
+,Shotgun,Chandelier,,Any N,,Bellik Primis,Off the Rails,Obisidian Forest,Shoots disk projectiles. Splash. Ricochet off non-enemy surface. [x4-x8 rollable],,,4-5,It will not last the night.,,First Fig by Edna St. Vincent Millay
+,,Frequency,,Any N,TRUE,Lectrikor,Crew Challenge,Obsidian Forest,Kills increase burst count for a short time. Shoots rift-shaped projectile,,,,Hertz so good.,,
+,,Insider,,Any N,TRUE,World Drop Only,,Xylourgos,No charge time. Shots penetrate enemies. Very high splash dmg,,,,"You can run, but you can't hide.",,"Common Phrase, attributed to American boxer Joe Louis in 1940"
+,,Kill-o'-the-Wisp,,S,TRUE,Under Taker,Under Taker,The Droughts,Large slow shock orb,,,4,Some say it can lead you to your fate.,,Brave (2012)
+,,Mind-Killer,,N,,Mouthpiece,Cult Following,Ascension Bluff,Equalizer visualizer projectile,,,,I must not fear. Fear is the mind-killer,,Dune by Frank Herbert
+,,Nothingness,,Any N,,Gmork,Crew Challenge,The Cankerwood,Charged shot for several consecutive explosions (similar to the Flakker),,,,A hole would be something.,,The Neverending Story (1984) Quote
+,,Recursion,,Any N,TRUE,General Traunt,Footsteps of Giants,Desolation's Edge,Shoots a ricocheting disk,,,3-4,See green text for description | See red text for description,,Programming function
+,,Trevonator,,Any N,TRUE,Private Beans,Invasion of Privacy,Athenas,Very low charge time. 3-round burst,,,,Trev is gunna get you!,,"Trevor Eastman, Borderlands Fan"
+,,Vosk's Deathgrip,,Any N,,Troy Calypso,The Great Vault,The Great Vault,Vosk's deathgrip: large singularity. 6-shot laser grid,Singularity,6-shot grid,,A good death is its own reward.,,Man of Steel (2013) Quote
+,SMG,Cloud Kill,,C,,Talk to Ava,Beneath the Meridian,Forgotten Basilica,Produces a corrosive cloud on hit. High fire rate,,,,"Now, you will rise.",,Borderlands 2 - Maya Skill & Quote
+,,Cutsman,,F C S,TRUE,Borman Nates,Rare Enemy,Meridian Outskirts,Shoots 2 projectiles connected by a beam. Bladed,,,2,"Little android man, born without a soul.",,Cutsman by Horse the Band
+,,Destructo Spinner,,Any N,TRUE,Power Troopers,Rare Enemy,Atlas HQ,Shoots both elements at once. Splash dmg is of opposite element. Projectiles spin,,,,I've been hired for destruction.,,Destructo Spin by Between the Buried and Me
+,,Devoted,,Any N,TRUE,Brood Mother,Crew Challenge,The Pyre of Stars,Increases fire rate the longer you shoot. High mag size,,,,This is your champion.,,Apex Legends
+,,D.N.A.,,N [All R],,General Traunt,Footsteps of Giants,Desolation's Edge,Shoots random elemental pairs of projectiles. Double helix pattern,,,,Death cannot be contained.,,
+,,Ember's Purge,,F,,Ember Mail,Ember Challenge 100%,,10% chance to create elemental puddle on enemy impact,,,,She's the only one who knows what it is to burn.,,What It is to Burn by Finch
+,,Flipper,,Any N,TRUE,Minosaur,Crew Challenge,Bloodsun Canyon,Starts as 1 projectile increasing to 9 as trigger is held. Ammo/shot stays same,,,,Put one foot in front of the other.,,[song by Fred Astaire]
+,,ION LASER,,Any N,TRUE,Evil Saint Lawrence,Crew Challenge,The Spendopticon,"Continuous beam. Stop firing shoots orbs, count based on beam duration",,,,Particles unite!,,
+,,Kyb's Worth,,Any N,,Wotan the Invincible,Maliwan Takedown,Midnight's Cairn,Projectile-killed enemies spawn a Healing Aura once every 10 seconds,,,,Stand in the f****** circle.,,Destiny
+,,P2P Networker,,,,[Found in game files],,,Shots chain elemental to nearby enemies,,,,You wouldn't download a car.,,'Piracy it's a crime' Public Service Announcement made in 2004
+,,Polyaimorous,,F/S,,50 Broken Hearts,Broken Hearts,,Shoots a continuous beam. Chains to nearby enemies,,,,Spread the love.,,Polyamory
+,,SF Force,,Any N,,DJ Spinsmouth,Sinister Sounds,Skittermaw Basin,Shoots musical notes of both elements,,,,Flavor-blast them all.,,
+,,Tsunami,,N [C/S],,Vermilingua,The Homestead [Pt. 2],The Splinterlands,Alternating diagonal rows of shock & corrosive,,,,You can't explain that.,,Bill O'Reilly's response to an atheist about why God must exist
+,,Vault Hero,,C/S,,VIP Insider Reward,,,Max lvl: 12,,,,,,
+,,Westergun,,Any N,,King Gnasher,Raiders of the Lost Rock,Ambermire,Splash dmg on impact,,,,"I believe ya, but my tommy gun don't.",,Home Alone 2: Lost in New York Quote
+,Sniper,ASMD,,S,TRUE,Maxitrillion,Rare Enemy,Voracious Canopy,Orb can be shot w/ energy to explode,Energy,Orb,,You planning a follow up?,,"Acronym for ""...and suck my dick."" from Fear of a Black Hat (1993)"
+,,Firestorm,,F,TRUE,Katagawa Jr.,"Atlas, At Last",Atlas HQ,Spawns fireballs that rain down on projectile hit. High splash radius,,,2,Seek shelter immediately.,,
+,,Krakatoa,,F,TRUE,Tumorhead,Proof of Wife,Lectra City,Turns killed grounded enemies into mini volcanoes,,,,Get him angry and he's bound to erupt,,Spongebob S1E12: Mermaid Man and Barnacle Boy Quote
+,,Complex Root,,Any N,TRUE,Lani Dixon,Crew Challenge,Ashfall Peaks,Shoots sporadic zig-zagging projectiles. 2-round burst,,,,Your brain is a creative computer.,,
+,,Storm,,S,TRUE,Red Jabber,Rare Enemy,Ambermire,Shock orb on impact. High splash radius,,,2,"Tut, Tut, it looks like rain.",,Winnie-the-Pooh Quote
+,,,,,,,,,,,,,,,
+"T
+E
+D
+I
+O
+R
+E",Pistol,Baby Maker ++,,Any,TRUE,Brood Mother,Crew Challenge,The Pyre of Stars,Reload spawns 4 shooting pistols on impact,,,,Safety off.,,Reproductive organ
+,,Bangarang XL,,Any,TRUE,Thunk,Rare Enemy,Konrad's Hold,Reload flies around continuously spinning & shooting rapidly,,,,To die would be a grand adventure.,,Hook (1991)
+,,Gunerang XL,,Any,TRUE,Indo Tyrant,Rare Enemy,Floodmoor Basin,Reload flies around like a Boomerang,,,,Give it a burl.,,"Australian slang for ""have a go"" / ""try it"""
+,,S3RV-8OS-EXECUTE,,Any,,Anointed X-2,Malevolent Practice,The Anvil,Reload on empty debuffs enemy for 50% increased dmg for 12 seconds,,,,Touch of death requires mastery of combo strikes.,,
+,,Scorpio XL,,N,,Lt. Preston,Footsteps of Giants,Tazendeer Ruins,Reload creates scorpio turret,,,,Mobile oppression for pennies a day.,,Futurama S5E4: Bender's Big Score Part 4
+,Shotgun,Anarchy,,Any,TRUE,Kukuwajack,Crew Challenge,Negul Neshai,Auto-reload/kill grants +30% dmg & reduces accuracy. Max 10 stacks.,,,,The stacks... THE STACKS!,,Borderlands 2 - Gaige Quote
+,,Brightside,,Any,TRUE,Bronsons,Crew Challenge,The Blastplains,Reload becomes drone that splits into 4 different elemental drones (F C R O),,,,It's killing me.,,Mr. Brightside by The Killers
+,,Creeping Death,,C,,Mother of Grogans,Rare Enemy,The Anvil,Reload creates target for homing projectiles the gun shoots,,,,I creep across the land.,,Creeping Death by Metallica
+,,Flama Diddle,,F,TRUE,World Drop Only,,Xylourgos,Reload shoots twice & explodes on impact. Oscilating projectiles that ricochet once,,,,VIII. Never turn your back on the Monster!,,
+,,The Horizon,,Any,,Maxitrillion,Rare enemy,Voracious Canopy,Reload projects target that can be shot to create a singularity,,,,You can't leave. She wont let you.,,Event Horizon (1997)
+,,Pixie Dream Gun,,Any,,[Found in game files],,,,,,,It's all in your head.,,
+,,Polybius,,Any N,TRUE,GenIVIV,The Family Jewel,Voracious Canopy,Reload becomes a crab turret. Spread forms a square,,,,21. 11. 33. 14. 24. 42.,,"Polybius Square cryptography. Translation: ""Fandir"""
+,SMG,Long Musket ++,,F,TRUE,Lagromar,The Demon in the Dark,Konrad's Hold,Reload becomes a legged flamethrower that can stick to walls,,,,"Say ""cryptocurrency""!",,Elon Musk
+,,Needle Gun,,Any,,Josie / Franco / Joey,Revenge of the Cartels,Villa Ultraviolet,Shooting applies debuff on enemy. Damage boost on reload,,,,Not your average needle.,,
+,,Mother Too,,Any,TRUE,Slithermaw,Crew Challenge,The Blastplains,Shoots continuous laser. Reload becomes a laser-shooting levitating grenade,,,,Thank you for taking the time to read this flavor text. This flavor text loves you.,,
+,,Smart Gun XXL,,C,,Gigamind,Hostile Takeover,Meridian Metroplex,Reload becomes a sticky turret ,,,,Busy getting brain like Krang.,,Backpackers by Donald Glover
+,,Ten Gallon,,Any,TRUE,GenIVIV,The Family Jewel,Voracious Canopy,"Reload becomes a drone. If already drone, reload refills drone's mag",,,,Let me tell you about my best friend.,,Best Friend by Harry Nilsson
+,,,,,,,,,,,,,,,
+"T
+O
+R
+G
+U
+E",AR,Alchemist,,F/S,TRUE,Heckle/Hyde,Crew Challenge,Jakobs Estate,"Sticks as shock, explodes as fire. Deals shock dmg to user",,,,You can't gain something without giving something in return.,,Fullmetal Alchemist
+,,Bearcat,,Any,TRUE,Trufflemunch,Skag Dog Days,The Droughts,Horizontal row of grenades,,,4,I love the smell of popcorn in the morning,,Apocalypse Now Quote
+,,Contained Blast,,Any,TRUE,Abbadoxis,Crew Challenge,Ashfall Peaks,"1 projectile explodes on impact, other projectiles are sticky. Semi-Auto",,,2-3,Put a lid on it.,,"Synonymous with ""shut up"""
+,,Juliet's Dazzle,,N O,,Aurelia Hammerlock,Cold as the Grave,Blackbarrel Cellars,Killing an enemy automatically refills the magazine. Full-Auto,,,,Lights up the world.,,
+,,Laser-Sploder,,Any N,TRUE,King Bobo,Rumble in the Jungle,Voracious Canopy,Constant laser of elemental damage and rockets,,,,LASERS ≠ EXPLOSIONS!?,,Borderlands: The Pre-Sequel - Mr. Torgue
+,,Try-Bolt,,Any,TRUE,Manvark,Crew Challenge,Konrad's Hold,3 round grenade launcher,,,,Do... or do not-bolt.,,"Tri-Bolt from Quake Champions & Yoda, Star Wars"
+,Pistol,Breeder,,Any,TRUE,Psychobillies,Crew Challenge,Ambermire,Shoots sticky that spawns small mirv grenades,,,,Man hands on misery to man.,,This Be The Verse by Philip Larkin
+,,Craps,,Any,TRUE,Jackpot,All Bets Off,VIP Tower,Chance to fire a circle of projectiles,,,,"Oh, me.",,
+,,Devastator,,N,TRUE,Unstoppable,Rare Enemy,Ambermire,2-round burst. +292 splash radius,,,,Hail.,,Duke Nukem
+,,Devils Foursum,,Any,TRUE,Psychobillies,Crew Challenge,Ambermire,3 explosive shots that come together at a single point,,,,I love it when a plan comes together.,,"""Devil's three-way"" common phrase & Hannibal's catchphrase in The A-Team"
+,,Echo,,Any,TRUE,The Big-D,Blood Drive,The Splinterlands,Sticky shot that explodes 3 times,,,,Don't make me repeat myself.,,
+,,Girth Blaster Elite,,N,,Deluxe Edition,,,Toy gun that shoots foam darts,,,,Don't go to pieces on me.,,Nerf toy guns. Don't Go To Pieces by the Cars
+,,Moonfire,,Any,,Wotan the Invincible,Maliwan Takedown,Midnight's Cairn,Every 3rd shot is a powerful shot that deals x2 bonus dmg,,,,Meet your destiny.,,Destiny
+,,Occultist,,F,,Troy Calypso,The Great Vault,The Great Vault,Shoots swirling fireballs,,,,The only way you can control people is to lie to them.,,"L. Ron Hubbard, founder of Scientology Quote"
+,,Roisen's Thorns,,C,TRUE,Princess Tarantella II,Rare Enemy,The Splinterlands,5th rocket & sticky is corrosive,5 rockets,1 Sticky,,"Where there is pleasure, there is pain.",,
+,,Scoville,,N F,,Torgue Mail,Torgue Challenge 100%,,High splash radius,,,5,Put a little pepper on the end of it.,,Scoville scale is used to measure the spice level of peppers
+,,Unkempt Harold,,Any,TRUE,Caber Dawd,Crew Challenge,Bloodsun Canyon,Narrow spread of explosive projectiles [x3-x4 rollable] +4,,,3-4,I wasn't counting either.,,
+,RPG,Creamer,,N,TRUE,Junpai Goat Eater,Crew Challenge,The Spendopticon,Heals HP when damaging enemy. Projectile nova & split into 2 after a distance,,,,Non-dairy.,,
+,,Hive,,C R,,Princess Tarantella II,Rare Enemy,The Splinterlands,Launches hovering ball that shoots many rockets before exploding,,,,Full of bees.,,"Euphamism for someone who is ""full of energy"""
+,,Nukem,,N,TRUE,Loco Chantelle,Crew Challenge,VIP Tower,Mortar rockets with large splash radius,,,,Name dropper.,,
+,,Plaguebearer,,Any N,,Warden,Hammerlocked,The Anvil,Large slow moving orb that spawns additional orbs. Creates singularity,,,3,Glad you could make it.,,
+,,Quadomizer,,FCR,,Dreg & Rage (Grogans),Rare Enemy,The Anvil,Shoots 4 Massive Rockets. Alternates elements,,,2,Damn near killed 'em.,,Black Sheep (1996) Quote
+,,R.Y.N.A.H. ,,R,,[Found in game files],,,,,,,You've had this one coming a long time.,,R.Y.N.O rocket launchers in Ratchet and Clank
+,,Satisfaction,,Any,TRUE,Vorducken,Crew Challenge,The Blastplains,Shoots 4 sticky explosive orbs,,,,Thirty minutes or less.,,
+,,Scourge,,Any,TRUE,Brood Mother,Crew Challenge,The Pyre of Stars,Shoots 1 large rocket with 3 smaller swirling around it,,,4,Or am I?,,
+,,Tunguska,,N,TRUE,Mincemeat,Skag Dog Days,The Droughts,Fires rocket that rises on impact before detonating,,,,Crack the skye.,,"The ""Tunguska event"" in 1908 / Crack the Skye by Mastadon"
+,Shotgun,Flakker,,N F R,TRUE,Manvark,Crew Challenge,Konrad's Hold,Shoots Flak,,,,Flak the world.,,"Battlestar Galactica ""Frak the world"""
+,,Redline,,Any,,Road Dog,Rare Enemy,The Splinterlands,Stuck gyrojets increase dmg by 5% each. Full-Auto. High fire rate,,,2,I live my life a quarter mag at a time.,,"The Fast and the Furious ""I live my life a quarter mile at a time."""
+,,Shocker,,S,TRUE,Voltborn,Rare Enemy,Negul Neshai,Shock orb that splits into 3 orbs horizontally,,,,Everything has to be magical. Surprise!,,
+,,Spade,,Any,TRUE,Waylon Hurd,Crew Challenge,Obsidian Forest,Gyrojets penetrate targets leaving stickies on all enemies they pass through,,,,"Lucille, God gave me a gift.",,Mystery Men (1999) Quote
+,,The Boring Gun,,Any,TRUE,Antalope,Crew Challenge,Devil's Razor,Shoots 3 grounded sawblades that dig in fired direction,,,2,This is beyond science.,,2.0 (2018 Bollywood Film) Quote
+,,The Lob,,Any N,TRUE,Graveward,Cold as the Grave,The Floating Tomb,Shoots big slow orbs. Goes through enemies and explodes. High splash,,,,Everything has to be magical.,,
+,,Tiggs' Boom,,Any N,,Wotan the Invincible,Maliwan Takedown,Midnight's Cairn,Shots pierce enemies. Makes meteors fall from the sky,,,2,A gaping hole in the sky.,,
+,,,,,,,,,,,,,,,
+"V
+L
+A
+D
+O
+F",AR,Damned,,Any,TRUE,Agonizer 9000,Blood Drive,Guts of Carnivora,Weapon shield,,,,"Well, I'll be...",,Common phrase
+,,Dowsing Rod,,Any,TRUE,Pteradomini,Crew Challenge,The Blastplains,Full-Auto. High fire rate,,x3 (Nades),,"It's down there somewhere, lemme take another look.",,The Big Lebowski (1998) Quote
+,,Faisor,,Any,TRUE,Atomic,Crew Challenge,Tazendeer Ruins,Full-Auto lasers / Shotgun plasma bolts,,,,Set Faisors to kill.,,"Star Trek ""Set faisors to stun"""
+,,Lucian's Call,,F C O,TRUE,Blue Fire,Slaughterstar 3000,Slaughterstar 3000,Crit returns 2 bullets to mag & ricochets 2 bullets,,,,What happened?,,
+,,Ogre,,N,TRUE,Anointed Alpha,Malevolent Practice,The Anvil,Shots explode on impact. High magazine size,,,,It's all ogre now.,,"""Shrek is love, Shrek is life"" by YouTuber TehAwooga"
+,,The Dictator,,Any,TRUE,Agonizer 9000 & Terror,Blood Drive,Guts of Carnivora,Full-Auto. Horizontal spread. Bipod adds projectiles,3x,7x (Bipod),,"Let them hate me, so that they will but fear me.",,"Quote from Roman Empoeror, Caligula"
+,,The Monarch,,Any,,Killavolt,Kill Killavolt,Lectra City,Shotgun AR (x4 or x8). Bipod doubles damage,,2x (Bipod),,The deadly sting of the monarch!,,The Venture Bros. (2003)
+,,Shredifier,,Any,TRUE,Raging Titan,The Slaughter Shaft,The Slaughter Shaft,Full-Auto. High fire rate. Always 100 base mag size,,,,Speed Kills.,,Speed Kills by Michael Angelo Batio
+,,Sickle,,Any,TRUE,Anointed X-4,Malevolent Practice,The Anvil,Full-Auto shotgun. Spread forms a sickle,,,2,Swing the sickle!,,Hammer & Sickle. In combination with legendary Hammer from Borderlands (2009)
+,,Web Slinger,,Any N,,Scourge the Invincible,Guardian Takedown,Minos Prime,Shoots web-like projectiles,,Launcher,,Let's do this one last time.,,Spider-Man: Into the Spider-Verse (2018) Quote
+,Pistol,Infinity,,Any,TRUE,Anointed Alpha,Malevolent Practice,The Anvil,Infinite Ammo. Full-Auto. Spray pattern resembles infinity symbol,,,0,It's closer than you think! (no it isn't),,The Jaunt by Stephen King
+,,Light Show,,Any,,Lasodactyl,Crew Challenge,Obsidian Forest,4 projectiles/shot. Forms rotating curcular pattern,,,,"Give me some light, away!",,Hamlet by Shakespeare Quote (Act III Scene II) 
+,,Magnificent,,N F C S,TRUE,Jabbermogwai,Crew Challenge,Voracious Canopy,High mag size & fire rate. Low dmg & accuracy,,,,"Yedesh na den', khleba beri na nedelyu.",,"Russian, translation: ""Going somewhere for a day, take bread for a week."""
+,,Miscreant,,Any,,The Quartermaster,Where It all Started,Bloodsun Canyon,Full-Auto rockets,,2x (Barrel),,Why waste time shoot lot gun when few gun do trick?,,"The Office US Kevin Quote, ""Why waste time say lot word when few word do trick?"""
+,RPG,BackBurner,,Any N,,Agonizer 9000,Blood Drive,Guts of Carnivora,Lob-style orbs with singularity. Spawns non-singularity mirv orbs,,,3,We'll get to it eventually.,,"procrastination / ""put it on the back burner"""
+,,Jericho,,R,TRUE,Crushjaw,Crew Challenge,C. of the Twin Gods,Explodes into mirv grenades,Launcher,Mortar,,I prefer the weapon you only need to fire once.,,Iron Man (2008)
+,,Mongol,,Any,,Thunk & Sloth,Crew Challenge,Konrad's Hold,Splits into more rockets. Fast fire rate,,,2,Man is a horde animal.,,Mongol military tactics
+,,ION CANNON,,Any,,Fabricator,Jack's Wild,Jack's Secret,Charging shot releases fast rocket,,,6,Fun Detected: Obliterate.,,"Ion Hazzikostas, World of Warcraft dev"
+,Sniper,Lyuda,,Any,TRUE,Tremendous Rex,Cistern of Slaughter,Cistern of Slaughter,Splits into 3 projectiles,,,,Man killer.,,"Lyudmila Pavlichenko, WW2 Sniper"
+,,,,,,,,,,,,,,,
+"A
+N
+S
+H
+I
+N",Shield,Asclepius,,Any,,Anathema the Relentless,Guardian Takedown,Minos Prime, +50% resistance to elemental effects while depleted,,,,Always carry a small snake.,,"Quote by comedian, WC Fields"
+,,Back Ham,,N,TRUE,Archer Rowe,Dynasty Diner,Meridian Metroplex,Damage taken from behind is reduced by 56%,,,,Synthetic Vercuvian ham. Typhon DeLeon approved.,,Typhon DeLeon
+,,Badass Combustor,,N,,Deluxe Edition,,, +10% XP boost & Loot Rarity Boost (≤lvl10),,Nova,,Take it up to eleven!,,This is Spinal Tap (1984)
+,,Frozen Heart,,O,,Aurelia Hammerlock,Cold as the Grave,Blackbarrel Cellars,Nova always freezes if possible. 30% nova dmg returned as HP,,Nova,,I feel... cold.,,Pirates of the Caribbean: The Curse of the Black Pearl Quote
+,,Version 0.m,,Any,,Valkyrie Squad,Maliwan Takedown,Midnight's Cairn,Drains 25% shield for ~125% dmg. Deplete spawns bonus circle,,Amp,,Stand and Clap.,,
+,,Messy Breakup,,C S,,Rax,Maliwannabees,Meridian Outskirts,Drone elemental dmg is same as shields elemental resist,,Drone,,It's complicated.,,Common phrase
+,,Nova Berner,,F,TRUE,Power Troopers,Rare Enemy,Atlas HQ,Very high Nova dmg on depletion and fill,,Nova,,Feel the Bern.,,"Bernie Sanders, US Politician"
+,,Red Card,,Any,TRUE,Gigamind,Hostile Takeover,Meridian Metroplex,"Drains all shield, dealing dmg based on capacity",,Sliding,,All studs.,,Soccer & studs on soccer cleats
+,,Red Card Re-Charger,,Any N,,Valkyrie Squad,Maliwan Takedown,Midnight's Cairn,Mix of Red Card & Re-Charger shields,,,,"One more kick, with feeling",,Soccer
+,,Re-Router,,Any,TRUE,Princess Tarantella II,Rare Enemy,The Splinterlands,Drains 50% shield for 120% dmg. Dmg returned as HP,,Amp,,,,
+,,Rico,,N,,Quest Reward,All Bets Off,VIP Tower,50% chance to reflect while shielded. 80% while not shielded,,,,You wanna live forever?,,Starship Troopers (1997)
+,,Rough Rider,,Any,TRUE,Red Jabber,Rare Enemy,Ambermire,0 capacity. -23% incoming dmg & +35% Max HP,,,,It takes more than that to kill a Bull Moose.,,"Theodore Roosevelt, 26th US President"
+,,Scream of Terror,,O,,Loot Ghosts,Bloody Harvest,The Heck Hole,Can pacify enemies when stacked w/ terror. 14872 dmg (lvl50),,Nova,,Behold the flesh and power it holds.,,The Flesh and the Power It Holds by Death
+,,Snowshoe,,O,,Valkyrie Squad,Maliwan Takedown,Midnight's Cairn,"Drains all shields, dealing up to +5949 cryo. +Frozen Heart effects",,Sliding,,Give em' the cold toelder.,,"""Give em' the cold shoulder"""
+,,Wattson,,N,,Fish Slap / Tyrone / Joey,Revenge of the Cartels,Villa Ultraviolet,Recieving dmg spawns grenade of that element,,,,"It's all quite arbitrary, my dear boy.",,"Sherlock Holmes Catchrphrase: ""Elementary, my dear Watson"""
+,,Whiskey Tango Foxtrot,,F C S,TRUE,Crushjaw,Crew Challenge,C. of the Twin Gods,25% chance to drop IEDs when damaged,,Nova,,Situation normal.,,Acronym: WTF
+"P
+A
+N
+G
+O
+L
+I
+N",,Black Hole,,S,TRUE,Wick and Warty,Rare Enemy,Lectra City,Nova & Black Hole (singularity),,Nova,,She's gone from suck to blow.,,Spaceballs Quote
+,,Band of Sitorak,,Any,,The Unstoppable,Rare Enemy,Ambermire, +22% wpn dmg while depleted. Low cap & Very high r rate,,,,"I said ""biiiiiiiiiiiitttccchhhh...""",,"""I said Bitch"" by Keye & Peele"
+,,Big Boom Blaster,,Any,TRUE,The Unstoppable,Rare Enemy,Ambermire,"Boosters restore 60% shield, grenade, & heavy ammo",,Booster,,For all your big boom blasting needs!,,
+,,Impaler,,C,TRUE,Antalope,Crew Challenge,Devil's Razor,Homing corrosive spikes to attackers when taking bullet dmg,,Spike,,"Out for a walk, bitch.",,Buffy the Vampire Slayer S5E5: No Place like Home Quote
+,,Red Suit,,R,,Atomic,Crew Challenge,Tazendeer Ruins,100% Radiation resistance Nearby enemies take rad dmg,,,,Warning. Containment failure.,,Hazmat suit / Radiation containment failure
+,,Shooting Star,,Any,,Turnkey Tim,The Guns of Reliance,Floodmoor Basin,"While depleted, successful melee summons a projectile",,,,Don't look up.,,
+,,Stinger,,Any,,Anathema the Relentless,Guardian Takedown,Minos Prime,"While full, melee dmg is increased by 50%",,,,They don't let you use that no more.,,The Simpsons S8E3 Quote
+,,Torch,,F,TRUE,World Drop Only,,Xylourgos,"On depletion, fireballs around self that deal 10195 dmg (lvl 57)",,,,Inflammable means flammable?!,,The Simpsons S12E18 Qoute
+,,Void Rift,,O,,Empowered Scholar,Case of Wainwright,Dustbound Archives,"Homing spikes, Singularity, & Nova on break",,,,Be careful what comes out.,,
+"H
+Y
+P
+E
+R
+I
+O
+N",,Firewall,,N,,Josie / Franco / Joey,Revenge of the Cartels,Villa Ultraviolet,Front Shield has chance to fire projectiles that restore shield on dmg,,,,Initiate countermeasures.,,
+,,Front Loader,,Any,TRUE,Private Beans,Invasion of Privacy,Athenas,Reserves 60% max hp returned as shield capacity,,,,You could always use a little more life insurance.,,
+,,Old God,,Any N,TRUE,World Drop Only,,Xylourgos, +20% >element< dmg & +25% elemental resistance,,,,The end comes from within.,,
+,,Re-Charger,,Any,TRUE,Urist McEnforcer,Rare Enemy,Lectra City,Fortify drop chance. Instant recharge w/ cooldown,,Absorb,,"Once more, with feeling.",,Common phrase
+,,Re-Charge Berner,,F C R,,Valkyrie Squad,Maliwan Takedown,Midnight's Cairn,16730 dmg on break & fill. Instant recharge w/ 20s cooldown,,Nova,,Feelin' the Bern.,,
+,,Rectifier,,S,TRUE,"Muldock, the Anointed",The Guns of Reliance,Floodmoor Basin,Shocks nearby enemies while depleted,,Nova,,You conduit.,,Water Boy Quote
+,,Stop-Gap,,Any,TRUE,El Dragon Jr.,Rare Enemy,Jakobs Estate,Immune to dmg on depletion for 5 sec. Must refill before use,,,,"The process is called ""living"".",,Terry Pratchett Quote
+,,The Transformer,,S,TRUE,Queen Ant Wanette,Rare Enemy,The Splinterlands,100% Shock resistance 40% chance to absorb bullets,,Absorb,,There's more than your eye can see.,,"Transformers ""More than meets the eye"""
+,,Ward,,Any,,Graveward ,Cold as the Grave,The Floating Tomb, +25% wpn dmg. Roll: [+80 to +300%] melee while depleted. +2%hp/sec while active,,,,"Free me master, see me shiver",,Aquarium by Haken
+,,,,,,,,,,,,,,,
+"E
+R
+I
+D
+I
+A
+N",Artifact,Commander Planetoid,,Any,TRUE,Sheega,Sheega's All That,Devil's Razor, +77% elemental melee damage (lvl60). Element type changes every 5 sec,,,,The power is YOURS!,,Captain Planet
+,,Cosmic Crater,,Any,TRUE,Artemis,Irregular Customers,Floodmoor Basin,Slam creates a random elemental puddle that lasts for 5 seconds,,,,Come on and SLAM!,,Space Jam (1996)
+,,Deathless,,Any,TRUE,Phoenix,Crew Challenge,The Splinterlands,Reserves all but 1 HP. +100% shield cap. +25% r rate. -20% r delay,,,,What do we say to the God of Death?,,Game of Thrones Quote
+,,Electric Banjo,,No prefix,,Psychobillies,Crew Challenge,Ambermire,20% bullet proc chance to chain electric,,,,We never could have foreseen the success.,,Risk of Rain & Quote by Ted Dwane of Mumford and Sons
+,,Grave,,No prefix,,Graveward,Cold as the Grave,The Floating Tomb, +melee < 50% HP. +weapon dmg < 20% HP. +splash dmg < 5% HP,,,,Pain becomes power.,,
+,,Launch Pad,,Any,TRUE,Red Rain,Slaughterstar 3000,Slaughterstar 3000,Slam Launches a barrage of homing rockets,,,,Pocket Rockets.,,
+,,Loaded Dice,,Any,TRUE,Pain,Blood Drive,Guts of Carnivora,-75% Max HP. Increases Luck,,,,Feelin' Lucky?,,
+,,Lunacy,,No prefix,,Empowered Grawn,Mountain of Mayhem,Negul Neshai,Double your shield's capacity but greatly increases recharge delay,,,,Equivalent Exchange,,
+,,Moxxi's Endowment,,Any,TRUE,Tink Train,Rare Enemy,Guts of Carnivora, +11% Combat XP (lvl 60),,,,"Hey, sugar. I got somethin' for ya",,Moxxi
+,,Otto Idol,,Any,TRUE,"Rachel, the Anointed",The Great Vault,C. of the Twin Gods,Restores +21% max HP per kill (lvl60),,,,Every man for himself.,,
+,,Phoenix Tears,,No prefix,,Phoenix,Crew Challenge,The Splinterlands,Gain 100% HP on second wind,,,,Rise from the ashes.,,"Pheonix, a mythical incendiary creature that is reborn from it's own ash"
+,,Pull Out Method,,Any,TRUE,DJ Deadsk4g,Crew Challenge,The Splinterlands,"Slam generates a singularity effect, pulling enemies toward you",,,,Doesn't work how you think it does...,,Birth control (Withdrawel Method)
+,,Rocket Boots,,Any,TRUE,Blue Fire,Slaughterstar 3000,Slaughterstar 3000,Slide launches homing rockets that deal incendiary dmg,,,,Not that kind.,,
+,,Safeguard,,Any,TRUE,Big Donny,Blood Drive,The Splinterlands,Slam triggers a shield that reduces dmg taken by +57%. Lasts 5 sec,,,,My own little bubble.,,
+,,Splatter Gun,,Any,TRUE,Road Dog,Rare Enemy,The Splinterlands, +50% Shotgun damage while sliding,,,,This Is My BOOMSTICK!,,Army of Darkness (1992) Quote
+,,Static Charge,,Any,TRUE,Artemis,Irregular Customers,Floodmoor Basin,Slide builds next melee to deal 50% bonus shock dmg. Chains to nearby enemies,,,,Shock me like an electric eel.,,Electric Feel by MGMT
+,,...Ineffable Knowledge,,No prefix,,Quest Reward,The Call of Gythian,The Lodge,Consec. hits grant +1% dmg per hit up to 15 times. At max add +90%,,,,Knowing is half the battle.,,G.I. Joe (1985) Cartoon Series Quote
+,,Unleash the Dragon,,No prefix,,El Dragon Jr.,Rare Enemy,Jakobs Estate,"Melee, slide, & ground slam have 100% chance to ignite enemy",,,,En fuego!,,"Battleborn, El Dragón / ""En fuego"" is spanish for ""On fire"""
+,,Victory Rush,,Any,TRUE,Azalea,Witch's Brew,Jakobs Estate, +18% movement speed and dmg on badass kill for 60 seconds ,,,,Another one.,,"DJ Khaled catchphrase, ""Another one"""
+,,White Elephant,,Any,TRUE,Agonizer 9000 & Terror,Blood Drive,Guts of Carnivora,Melee attacks have a 30% chance to attach a sticky bomb of a random element,,,,It's a SURPRISE!,,"""White elephant"" is a game/method for exchanging gifts"
+,,,,,,,,,,,,,,,
+A H,"Grenade
+Mod",Chupa's Organ,,N,,Chupacabratch,Crew Challenge,Athenas,Leeches onto enemy dealing HP damage-over-time. Also explodes,,,,Cabrón.,,"Chupacabra translation ""goat sucker"". Cabron translation ""male goat""."
+H,,EMP,,S,,Atomic,Crew Challenge,Tazendeer Ruins,Massively increased shield dmg. Reduced dmg to HP/Armor,,,,Drop the shields.,,
+V,,Epicenter,,F,TRUE,DJ Deadsk4g,Crew Challenge,The Splinterlands,Explodes twice releasing radial burst of orbs,,,,"It burns, burns, burns",,Ring of Fire by Johnny Cash
+t,,Fastball,,Any,TRUE,Thunk,Rare Enemy,Konrad's Hold,Throws the grenade like a fast baseball. Explodes on impact,,,,"Forget the curveball Ricky, give him the heater.",,Major League (1989)
+H t V,,Firestorm,,F,TRUE,,,,"Rains fireballs down from the sky. Count increased with ""Rain"" prefix",,,,"Soon afterwards, the cloud descended upon the earth",,Pliny the Younger quote about the eruption of Mount Vesuvius AD 79
+P,,Fish Slap,,Any,,Fish Slap / Tyrone / Joey,Revenge of the Cartels,Villa Ultraviolet,Fishslap's damage is Melee Damage. Heals shields for 30% of shield dmg dealt,,,,Say hello to my little fish!,,
+T,,Ghast Call,,C,,Loot Ghosts,Bloody Harvest,The Heck Hole,Explosions of ghosts. High corrosive damage,,,,"To you I am past, a story to tell.",,Story to Tell by Death
+A,,Hex,,S R O,TRUE,Sky Bullies,Crew Challenge,The Anvil,Hovers around releasing beams of damage to nearby enemies,,,,"Keeper of the stars, I hope to never find...",,All Bodies by Between the Buried and Me
+t,,Hunter-Seeker,,Any,TRUE,Dreg & Rage (Grogans),Rare Enemy,The Anvil,Splits into [Prefix Rolls: 1-3] slow drones that shoot before exploding,,,,Grip tightly.,,Dune (Novel) Quote
+V,,It's Piss,,N,,Sloth,Rare Enemy,Konrad's Hold,Removes stat effects on allies. Piss-covered enemies take +20% dmg,,,,Hey you guys!,,The Goonies (1985) Quote
+H,,Lightspeed,,Any,,Anathema the Relentless,Guardian Takedown,Minos Prime,Extremely fast longbow. Explodes into fast ricocheting projectiles,,,,Gimme a parsec.,,
+P,,Moxxi's Bouncing Pair,,FS,TRUE,Shiv,Children of the Vault,Covenant Pass,Rubberized. Throws 2 grenades at once. Increased dmg every bounce,,,,"Prepare for trouble, and make it double.",,Pokemon Team Rocket's catchphrase
+H,,Nagata,,N,TRUE,Chupacabratch,Crew Challenge,Athenas,Spawns circle of longbow grenades that target one spot,,,,Beltalowda!,,The Expanse 
+A H t,,Quasar,,S,TRUE,Wick and Warty,Rare Enemy,Lectra City,Hovers & singularity. Continuous shock teslas to nearby enemies,,,,E=mc^(OMG)/wtf,,E=mc^2
+V,,Red Queen,,N,TRUE,Blinding Banshee,Crew Challenge,Desolation's Edge,Rubberized. Splits into 2 laser-connected grenades. ,,,,OFF WITH THEIR HEADS!,,Red Queen from Resident Evil (Movie). Alice's Adventures in Wonderland Quote
+H t V,,Storm Front,,S,TRUE,Under Taker,Under Taker,The Droughts,Splits into 4 grenades that deal continuous shock teslas to nearby enemies,,,,"Very, very frightening.",,Bohemian Rhapsody by Queen
+T,,Surge,,Any,TRUE,Power Troopers,Rare Enemy,Atlas HQ,Rubberized. Releases 3 mirv grenades every bounce,,,,Thar she blows!,,Moby Dick
+T,,Tina's Hippity Hopper,,Any,TRUE,Raging Titan,The Slaughter Shaft,The Slaughter Shaft,Rubberized. Releases 2 mirv grenades every bounce,,,,"Hare today, bomb tomorrow.",,"Denis Hornsey ""Here today, bomb tomorrow"""
+A H t,,Tran-fusion,,Any,TRUE,Power Troopers,Rare Enemy,Atlas HQ,Heals for 120% of hp dmg dealt. Heals shields for 60% shield dmg,,,,"Here go, hell come.",,The Fashion Show (2009) Quote
+H T t V,,Widowmaker,,Any,TRUE,Max,Maliwannabees,Meridian Outskirts,Proximity grenade. Spawns homing rockets,,,,"À la vie, à la mort.",,Overwatch Character & Quote
+t,,Cheddar Shredder,,N,,Deluxe Edition,,,"""Enemies drop a holy metric buttload of cash when damaged""",,,,Make it rain.,,
+V,,Diamond Butt Bomb,,N,,Deluxe Edition,,,Throw Buttstallion model that explodes with rainbows,,,,"Bye bye, Li'l Butt Stallion!",,Parks & Recreation S3E16
+T,,Ultraball,,N,,Deluxe Edition,,,Explodes into bouncing grenades & bouncy balls,,,,Do not taunt Happy Fun Ball.,,SNL Season 16: Happy Fun Ball (1991)
+,,,,,,,,,,,,,,,
+"C
+O
+M",Amara,Breaker,,TRUE,Skag of Survival,,Survival,Gradient of Dawn,Up to 29% dmg reduction while close to enemy,,,,"The closer we are to danger, the further we are from harm.",,Lord of the Rings: The Two Towers Pippin
+,,Dragon,,TRUE,Tink of Cunning,,Cunning,Ghostlight Beacon,Melee kill triggers Amara's action skill augment,,,,Fatality.,,Mortal Kombat
+,,Elementalist,,TRUE,Sera of Supremacy,,Supremacy,Hall Obsidian,Phasegrasp applies Action Skill Element to nearby enemies,,,,Firmly grasp it.,,Spongbob S1E3: Jellyfishing Quote
+,,Golden Rule,,TRUE,Jackpot,,All Bets Off,VIP Tower,Increases Action skill cooldown rate [5%] for 8s when taking damage,,,,I can do this all day.,,Captain America: The First Avenger Quote
+,,Nimbus,,TRUE,Sera of Supremacy,,Supremacy,Hall Obsidian,First dmg from Action Skill creates cloud of Action Skill Element,,,,It's a terrible day for rain.,,Fullmetal Alchemist: Brotherhood Quote
+,,Phasezerker,,TRUE,Hag of Fervor,,Fervor,Skydrowned Pulpit,"On AS, gain max Rush stacks, but decay over time. +3%dmg & +10% cooldown/stack",,,,I'm always angry.,,The Avengers (2012) Quote
+,,Spiritual Driver,,,Sylestro,,Crew Challenge,Tazandeer Ruins,"On Action Skill, apply skill element to self. +Gun dmg while moving",,,,Only on the brink can we see so clearly.,,Nocturne by Tesseract
+,,Stone,,TRUE,World Drop Only,,,Xylourgos,"When hurt, +10% chance to gain Rush stack. +3% dmg reduction/stack",,,,She's mighty mighty.,,Brick House by The Commodores
+,Fl4k,Bounty Hunter,,TRUE,Lt. Preston,,Footsteps of Giants,Tazendeer Ruins,3% Hunt Kill Skill chance / Bosses as regular enemies,,,,The world is made up of two classes — the hunters and the huntees.,,The Most Dangerous Game Quote
+,,Cosmic Stalker,,TRUE,Tyrant of Instinct,,Instinct,Wayward Tether,FL4K's Hunt Skill Power is increased by 25%,,,,Like a bird from the snare of the fowler...,,Bible - Psalm 124:7 Quote
+,,DE4DEYE,,TRUE,Vice (Grogan),,Rare Enemy,The Anvil,FL4K & their pets deal +35% dmg against enemies above 75% HP,,,,Cut them down to size.,,
+,,Friend-Bot,,TRUE,Arbalest of Discipline,,Discipline,Precipice Anchor,On enemy kill pet gains Second Wind. Pet dmg +20%,,,,"Don't worry, the dog lives.",,
+,,R4kk P4k,,,Tink of Cunning,,Cunning,Ghostlight Beacon,"Whenever Fl4k's Rakk hits an enemy, they split into two more Rakk",,,,Hail and well met!,,
+,,Rakk Commander,,TRUE,Azalea,,Witch's Brew,Jakobs Estate,Rakk Attack! gains 1 extra charge,,,,Get ready to rakk.,,
+,,Red Fang,,TRUE,Tyrant of Instinct,,Instinct,Wayward Tether,"While Gamma Burst is active, FL4K's pet taunts all enemies",,,,Mean and green.,,
+,,St4ckbot,,TRUE,Jackpot,,All Bets Off,VIP Tower,"On critical hit, gain +5% wpn dmg until miss on crit. Effect stacks",,,,"If you can make God bleed, people will cease to believe in them.",,Iron Man 2 Quote
+,,Tr4iner,,TRUE,World Drop Only,,,Xylourgos,25% chance for pet to confuse enemy for 20 sec instead of kill,,,,This is my cause.,,
+,Moze,Bear Trooper,,TRUE,Anointed X-4,,Malevolent Practice,The Anvil,"Decreases fuel use, increases Iron Bear's duration",,,,Rocket 'til the wheels fall off.,,
+,,Blast Master,,TRUE,King Gnasher,,Raiders of the Lost Rock,Ambermire,"The longer going without reloading, the more splash dmg Moze deals",,,,Slow and steady wins the arms race.,,"The Tortoise and the Hare ""Slow and steady wins the race"""
+,,Bloodletter,,TRUE,Skag of Survival,,Survival,Gradient of Dawn,"If Moze is healed, she gains shields instead",,,,Ideas are bulletproof.,,V is for Vendetta Quote
+,,Sapper,,TRUE,World Drop Only,,,Xylourgos,"Gain up to 12% Life Steal. Longer fire duration, greater the lifesteal",,,,To each according to their needs.,,
+,,Green Monster,,TRUE,Jackpot,,All Bets Off,VIP Tower,Bonus corrosive dmg to weapons after firing for a few seconds,,,,We often smilin' at sights of violence.,,Run the Jewels by Run the Jewels
+,,Mind Sweeper,,TRUE,Archer Rowe,,Dynasty Diner,Meridian Metroplex,Crit hit has 25% chance to drop Micro grenade that explodes,,,,Brain blast!,,Jimmy Neutron catchphrase
+,,Raging Bear,,,"Billy, The Anointed",,Lair of the Harpy,Jakobs Estate,"IB kills decreases Fuel Usage. IB takes damage, +IB dmg",,,,You won't just be strong. You'll be unbeatable.,,The Adventure Zone podcast E68
+,,Rocketeer,,TRUE,Tumorhead,,Proof of Wife,Lectra City,Auto bear lasts remaining duration. Removes refunded cooldown,,,,Chew 'em up!,,Borderlands 2 Axton Quote
+,Zane,Antifreeze,,,Arbalest of Discipline,,Discipline,Precipice Anchor,"While sliding or airborne, gain +40% wpn dmg and +20% dmg reduction",,,,Jet propulsion disengage.,,Silent Flight Parliment by Between the Buried and Me
+,,Cold Warrior,,TRUE,Tremendous Rex,,Cistern of Slaughter,Cistern of Slaughter,Random Status Effect applied to enemies Zane freezes,,,,A song of ice and radiation and acid and lightning and fire,,Game of Thrones Novels: A Song of Ice and Fire
+,,Conductor,,TRUE,World Drop Only,,,Xylourgos,Gain up to 25% bonus shock dmg based on remaining AS duration,,,,Half a league onward.,,The Charge of the Light Brigade (1854) poem by Alfred Tennyson
+,,Executor,,TRUE,Baron Noggin,,Crew Challenge,Meridian Metroplex," Kill skill: On kill +Accuracy, Handling, Crit, Status Effect dmg & chance",,,,Have a plan to kill everyone you meet.,,"US Government official, James Norman Matthis Quote"
+,,Infiltrator,,TRUE,Skrakk,,Crew Challenge,Ascension Bluff,Weapon dmg & shield increase ~20%. Higher bonus with low shield,,,,"When the leaves hang trembling, the wind is passing through.",,The Wind by Christina Rossetti
+,,Seein' Dead,,TRUE,Jackpot,,All Bets Off,VIP Tower,4% chance to auto activ. all kill skills on wpn dmg. +25% Kill skill effect,,,,"Musha rain dum a doo, dum a da.",,Whiskey in the Jar by Metallica
+,,Shockerator,,TRUE,Hag of Fervor,,Fervor,Skydrowned Pulpit, +Binary System augment. Shock Nova on getting meleed,,,,"There's a spark between us, can you feel it?",,
+,,Techspert,,TRUE,"Rachel, the Anointed",,The Great Vault,C. of the Twin Gods,Kill skill: +5% chance on kill to recharge SNTNL cooldown & duration,,,,"If you love something, set it free.",,
+,,,,,,,,,,,,,,,
+Legendaries (A - Z) (2560x1440),,,,,,,,,,,,,,,
+9-Volt,,,60 m10,,,,,,,,,,,,
+AAA,,,60 m10,,,,,,,,,,,,
+Aesclepius,,,,,,,,,,,,,,,
+Alchemist,,,60 m10,,,,,,,,,,,,
+Amazing Grace,,,60 m10,,,,,,,,,,,,
+Anarchy,,,60 m10,,,,,,,,,,,,
+Antifreeze,,,,,,,,,,,,,,,
+ASMD,,,60 m10,,,,,,,,,,,,
+AutoAimè,,,60 m10,,,,,,,,,,,,
+Baby Maker++,,,60 m10,,,,,,,,,,,,
+Back Ham,,,60,,,,,,,,,,,,
+BackBurner,,,60 m10,,,,,,,,,,,,
+Badass Combustor,,,60,,,,,,,,,,,,
+Band of Sitorak,,,60,,,,,,,,,,,,
+Bangarang XL,,,60 m10,,,,,,,,,,,,
+Barrage,,,60 m10,,,,,,,,,,,,
+Beacon,,,60 m10,,,,,,,,,,,,
+Bear Trooper,,,60,,,,,,,,,,,,
+Bearcat,,,60 m10,,,,,,,,,,,,
+Bekah,,,60 m10,,,,,,,,,,,,
+Big Boom Blaster,,,60,,,,,,,,,,,,
+Bitch,,,60 m10,,,,,,,,,,,,
+Bite Size,,,,,,,,,,,,,,,
+Black Hole,,,60,,,,,,,,,,,,
+Blast Master,,,60,,,,,,,,,,,,
+Bloodletter,,,60,,,,,,,,,,,,
+Bloom,,,60 m10,,,,,,,,,,,,
+Boomer,,,60 m10,,,,,,,,,,,,
+Bounty Hunter,,,60,,,,,,,,,,,,
+Brainstormer,,,60 m10,,,,,,,,,,,,
+Breaker,,,60,,,,,,,,,,,,
+Breath of the Dying,,,60 m10,,,,,,,,,,,,
+Breeder,,,60 m10,,,,,,,,,,,,
+Brightside,,,60 m10,,,,,,,,,,,,
+Carrier,,,60 m10,,,,,,,,,,,,
+Chandelier,,,60 m10,,,,,,,,,,,,
+Cheap Tips,,,60 m10,,,,,,,,,,,,
+Cheddar Shredder,,,60 m10,,,,,,,,,,,,
+Chupa's Organ,,,60 m10,,,,,,,,,,,,
+Clairvoyance,,,60 m10,,,,,,,,,,,,
+Cloud Kill,,,60 m10,,,,,,,,,,,,
+Cocky Bastard,,,60 m10,,,,,,,,,,,,
+Cold Warrior,,,60,,,,,,,,,,,,
+Commander Planetoid,,,60,,,,,,,,,,,,
+Complex Root,,,60 m10,,,,,,,,,,,,
+Conductor,,,,,,,,,,,,,,,
+Conference Call,,,60 m10,,,,,,,,,,,,
+Contained Blast,,,60 m10,,,,,,,,,,,,
+Cosmic Crater,,,60,,,,,,,,,,,,
+Cosmic Stalker,,,60,,,,,,,,,,,,
+Crader's EM-P5,,,60 m10,,,,,,,,,,,,
+Craps,,,60 m10,,,,,,,,,,,,
+Creamer,,,60 m10,,,,,,,,,,,,
+Creeping Death,,,60 m10,,,,,,,,,,,,
+Crossbow,,,,,,,,,,,,,,,
+Crossroad,,,60 m10,,,,,,,,,,,,
+Cutsman,,,60 m10,,,,,,,,,,,,
+Damned,,,60 m10,,,,,,,,,,,,
+DE4DEYE,,,60,,,,,,,,,,,,
+Deathless,,,60,,,,,,,,,,,,
+Destructo Spinner,,,60 m10,,,,,,,,,,,,
+Devastator,,,60 m10,,,,,,,,,,,,
+Devils Foursum,,,60 m10,,,,,,,,,,,,
+Devoted,,,60 m10,,,,,,,,,,,,
+Diamond Butt Bomb,,,60 m10,,,,,,,,,,,,
+D.N.A.,,,60 m10,,,,,,,,,,,,
+Dowsing Rod,,,60 m10,,,,,,,,,,,,
+Dragon,,,60,,,,,,,,,,,,
+Echo,,,60 m10,,,,,,,,,,,,
+Electric Banjo,,,60,,,,,,,,,,,,
+Elementalist,,,60,,,,,,,,,,,,
+Ember's Purge,,,60 m10,,,,,,,,,,,,
+Embrace the Pain,,,60 m10,,,,,,,,,,,,
+EMP,,,,,,,,,,,,,,,
+Epicenter,,,60 m10,,,,,,,,,,,,
+Eridian Fabricator,,,,,,,,,,,,,,,
+Executor,,,60,,,,,,,,,,,,
+Face-puncher,,,60 m10,,,,,,,,,,,,
+Faisor,,,60 m10,,,,,,,,,,,,
+Fastball,,,60 m10,,,,,,,,,,,,
+Fearmonger,,,,,,,,,,,,,,,
+Firestorm (grenade),,,60 m10,,,,,,,,,,,,
+Firestorm (sniper),,,60 m10,,,,,,,,,,,,
+Firewall,,,limited,,,,,,,,,,,,
+Fish Slap,,,limited,,,,,,,,,,,,
+Flakker,,,60 m10,,,,,,,,,,,,
+Flama Diddle,,,60 m10,,,,,,,,,,,,
+Flipper,,,60 m10,,,,,,,,,,,,
+Freeman,,,,,,,,,,,,,,,
+Frequency,,,60 m10,,,,,,,,,,,,
+Friend-Bot,,,60,,,,,,,,,,,,
+Front Loader,,,60,,,,,,,,,,,,
+Frozen Devil,,,60 m10,,,,,,,,,,,,
+Frozen Heart,,,60,,,,,,,,,,,,
+Gargoyle,,,60 m10,,,,,,,,,,,,
+Gatling Gun,,,60 m10,,,,,,,,,,,,
+Ghast Call,,,limited,,,,,,,,,,,,
+Girth Blaster Elite,,,60 m10,,,,,,,,,,,,
+Globetrottr,,,,,,,,,,,,,,,
+Golden Rule,,,60,,,,,,,,,,,,
+Good Juju,,,60 m10,,,,,,,,,,,,
+Grave,,,60,,,,,,,,,,,,
+Grease Trap,,,limited,,,,,,,,,,,,
+Green Monster,,,,,,,,,,,,,,,
+Gunerang XL,,,60 m10,,,,,,,,,,,,
+Hand of Glory,,,60 m10,,,,,,,,,,,,
+Handsome Jackhammer,,,60 m10,,,,,,,,,,,,
+Headsplosion,,,,,,,,,,,,,,,
+Heart Breaker,,,60 m10,,,,,,,,,,,,
+Hellfire,,,60 m10,,,,,,,,,,,,
+Hellshock,,,60 m10 godroll,,,,,,,,,,,,
+Hellwalker,,,60 m10,,,,,,,,,,,,
+Hex,,,60 m10,,,,,,,,,,,,
+Hive,,,,,,,,,,,,,,,
+Hornet,,,60 m10,,,,,,,,,,,,
+Hunter-Seeker,,,60 m10,,,,,,,,,,,,
+Hydrafrost,,,60 m10,,,,,,,,,,,,
+Hyper-Hydrator,,,60 m10,,,,,,,,,,,,
+Hyperfocus XZ41,,,60 m10,,,,,,,,,,,,
+Iceburger,,,limited,,,,,,,,,,,,
+Impaler,,,60,,,,,,,,,,,,
+Infiltrator,,,60,,,,,,,,,,,,
+Infinity,,,60 m10,,,,,,,,,,,,
+Insider,,,,,,,,,,,,,,,
+ION CANNON,,,60 m10,,,,,,,,,,,,
+ION LASER,,,,,,,,,,,,,,,
+It's Piss,,,low lvl favorable,,,,,,,,,,,,
+Jericho,,,60 m10,,,,,,,,,,,,
+Juliet's Dazzle,,,60 m10,,,,,,,,,,,,
+Kaos,,,60 m10,,,,,,,,,,,,
+Kaoson,,,60 m10,,,,,,,,,,,,
+Kill-o'-the-Wisp,,,60 m10,,,,,,,,,,,,
+King's Call / Queen's Call,,,60 m10,,,,,,,,,,,,
+Krakatoa,,,60 m10,,,,,,,,,,,,
+Kyb's Worth,,,60 m10,,,,,,,,,,,,
+Laser-Sploder,,,60 m10,,,,,,,,,,,,
+Launch Pad,,,60,,,,,,,,,,,,
+Lead Sprinkler,,,60 m10,,,,,,,,,,,,
+Light Show,,,60 m10,,,,,,,,,,,,
+Lightspeed,,,,,,,,,,,,,,,
+Linc,,,60 m10,,,,,,,,,,,,
+Linoge,,,60 m10,,,,,,,,,,,,
+Little Yeeti,,,,,,,,,,,,,,,
+Loaded Dice,,,60,,,,,,,,,,,,
+Long Musket,,,60 m10,,,,,,,,,,,,
+Love Drill,,,60 m10,,,,,,,,,,,,
+Lucian's Call,,,60 m10,,,,,,,,,,,,
+Lucky 7,,,60 m10,,,,,,,,,,,,
+Lunacy,,,60 m10,,,,,,,,,,,,
+Lyuda,,,60 m10,,,,,,,,,,,,
+Maggie,,,60 m10,,,,,,,,,,,,
+Magnificent,,,60 m10,,,,,,,,,,,,
+Malak's Bane,,,60 m10,,,,,,,,,,,,
+Messy Breakup,,,60,,,,,,,,,,,,
+Mind-Killer,,,,,,,,,,,,,,,
+Mind Sweeper,,,60,,,,,,,,,,,,
+Miscreant,,,60 m10,,,,,,,,,,,,
+Mongol,,,,,,,,,,,,,,,
+Monocle,,,60 m10,,,,,,,,,,,,
+Moonfire,,,60 m10,,,,,,,,,,,,
+Mother Too,,,60 m10,,,,,,,,,,,,
+Moxxi's Bouncing Pair,,,60 m10,,,,,,,,,,,,
+Moxxi's Endowment,,,60 m10,,,,,,,,,,,,
+Multi-tap,,,,,,,,,,,,,,,
+Mutant,,,60 m10,,,,,,,,,,,,
+Nagata,,,60 m10,,,,,,,,,,,,
+Narp,,,60 m10,,,,,,,,,,,,
+Needle Gun,,,limited,,,,,,,,,,,,
+Nemesis,,,60 m10,,,,,,,,,,,,
+Night Flyer,,,,,,,,,,,,,,,
+Night Hawkin,,,60 m10,,,,,,,,,,,,
+Nimble Jack,,,,,,,,,,,,,,,
+Nimbus,,,60,,,,,,,,,,,,
+NoPewPew,,,limited,,,,,,,,,,,,
+Nothingness,,,,,,,,,,,,,,,
+Nova Berner,,,60,,,,,,,,,,,,
+Nukem,,,60 m10,,,,,,,,,,,,
+Occultist,,,60 m10,,,,,,,,,,,,
+Ogre,,,60 m10,,,,,,,,,,,,
+Old God,,,60 m10,,,,,,,,,,,,
+Oldridian,,,60 m10,,,,,,,,,,,,
+One Pump Chump,,,60 m10,,,,,,,,,,,,
+O.P.Q System,,,limited,,,,,,,,,,,,
+Otto Idol,,,60,,,,,,,,,,,,
+P2P Networker,,,,,,,,,,,,,,,
+Pain is Power,,,60 m10,,,,,,,,,,,,
+Pestilence,,,,,,,,,,,,,,,
+Phasezerker,,,60,,,,,,,,,,,,
+Phebert,,,,,,,,,,,,,,,
+Phoenix Tears,,,,,,,,,,,,,,,
+Pixie Dream Gun,,,,,,,,,,,,,,,
+Plaguebearer,,,,,,,,,,,,,,,
+Plumage,,,60 m10,,,,,,,,,,,,
+Polyaimorous,,,limited,,,,,,,,,,,,
+Polybius,,,60 m10,,,,,,,,,,,,
+Portals and Shite,,,,,,,,,,,,,,,
+Predatory Lending,,,,,,,,,,,,,,,
+Proprietary License,,,60 m10,,,,,,,,,,,,
+Psycho Stabber,,,,,,,,,,,,,,,
+Pull Out Method,,,60,,,,,,,,,,,,
+Quadomizer,,,,,,,,,,,,,,,
+Quasar,,,60 m10,,,,,,,,,,,,
+R4kk P4k,,,,,,,,,,,,,,,
+Raging Bear,,,,,,,,,,,,,,,
+Rakk Commander,,,60,,,,,,,,,,,,
+Re-Charge Berner,,,,,,,,,,,,,,,
+Re-Charger,,,60,,,,,,,,,,,,
+Re-Router,,,60,,,,,,,,,,,,
+Rebel Yell,,,60 m10,,,,,,,,,,,,
+Rectifier,,,60,,,,,,,,,,,,
+Recursion,,,60 m10,,,,,,,,,,,,
+Red Card,,,60,,,,,,,,,,,,
+Red Card Re-Charger,,,,,,,,,,,,,,,
+Red Fang,,,60,,,,,,,,,,,,
+Red Queen,,,60 m10,,,,,,,,,,,,
+Red Suit,,,60,,,,,,,,,,,,
+Redistributor,,,,,,,,,,,,,,,
+Redline,,,,,,,,,,,,,,,
+Reflux,,,60 m10,,,,,,,,,,,,
+Rico,,,60,,,,,,,,,,,,
+Ripper,,,60 m10,,,,,,,,,,,,
+Robin's Call,,,60 m10,,,,,,,,,,,,
+Rocket Boots,,,60,,,,,,,,,,,,
+Rocketeer,,,60,,,,,,,,,,,,
+Roisen's Thorns,,,60 m10,,,,,,,,,,,,
+Rough Rider,,,60,,,,,,,,,,,,
+Rowan's Call,,,60 m10,,,,,,,,,,,,
+Ruby's Wrath,,,60 m10,,,,,,,,,,,,
+R.Y.N.A.H.,,,,,,,,,,,,,,,
+S3RV-8OS-EXECUTE+,,,60 m10,,,,,,,,,,,,
+Safeguard,,,60,,,,,,,,,,,,
+Sand Hawk,,,60 m10,,,,,,,,,,,,
+Sapper,,,60,,,,,,,,,,,,
+Sawbar,,,60 m10,,,,,,,,,,,,
+Scorpio XL,,,,,,,,,,,,,,,
+Scourge,,,60 m10,,,,,,,,,,,,
+Scoville,,,60 m10,,,,,,,,,,,,
+Scream of Terror,,,limited,,,,,,,,,,,,
+Seein' Dead,,,60,,,,,,,,,,,,
+Seeryul Killer,,,60 m10,,,,,,,,,,,,
+Sellout,,,60 m10,,,,,,,,,,,,
+Seventh Sense,,,60 m10,,,,,,,,,,,,
+SF Force,,,,,,,,,,,,,,,
+Shocker,,,60 m10,,,,,,,,,,,,
+Shockerator,,,60,,,,,,,,,,,,
+Shooting Star,,,,,,,,,,,,,,,
+Shredifier,,,60 m10,,,,,,,,,,,,
+Sickle,,,60 m10,,,,,,,,,,,,
+SkekSil,,,,,,,,,,,,,,,
+Skullmasher,,,60 m10,,,,,,,,,,,,
+Sledge's Shotgun,,,,,,,,,,,,,,,
+Sleeping Giant,,,60 m10,,,,,,,,,,,,
+Slow Hand,,,,,,,,,,,,,,,
+Smart-Gun XXL,,,60 m10,,,,,,,,,,,,
+Smog,,,,,,,,,,,,,,,
+Snowshoe,,,,,,,,,,,,,,,
+Soulrender,,,60 m10,,,,,,,,,,,,
+Spade,,,60 m10,,,,,,,,,,,,
+Spiritual Driver,,,,,,,,,,,,,,,
+Splatter Gun,,,60,,,,,,,,,,,,
+St4ckbot,,,60,,,,,,,,,,,,
+Stalker,,,,,,,,,,,,,,,
+Star Helix,,,60 m10,,,,,,,,,,,,
+Static Charge,,,60,,,,,,,,,,,,
+Stauros' Burn,,,,,,,,,,,,,,,
+Stinger,,,,,,,,,,,,,,,
+Stone,,,60,,,,,,,,,,,,
+Stonethrower,,,60 m10,,,,,,,,,,,,
+Stop-Gap,,,60,,,,,,,,,,,,
+Storm,,,60 m10,,,,,,,,,,,,
+Storm Front,,,60 m10,,,,,,,,,,,,
+Superball,,,60 m10,,,,,,,,,,,,
+Surge,,,60 m10,,,,,,,,,,,,
+Tankman's Shield,,,60 m10,,,,,,,,,,,,
+Techspert,,,60,,,,,,,,,,,,
+Ten Gallon,,,60 m10,,,,,,,,,,,,
+The Blanc,,,60 m10,,,,,,,,,,,,
+The Boring Gun,,,60 m10,,,,,,,,,,,,
+The Butcher,,,60 m10,,,,,,,,,,,,
+The Companion,,,60 m10,,,,,,,,,,,,
+The Dictator,,,60 m10,,,,,,,,,,,,
+The Duc,,,60 m10,,,,,,,,,,,,
+The Flood,,,60 m10,,,,,,,,,,,,
+The Garcia,,,,,,,,,,,,,,,
+The Horizon,,,,,,,,,,,,,,,
+The Lob,,,60 m10,,,,,,,,,,,,
+The Monarch,,,60 m10,,,,,,,,,,,,
+The Pearl of Ineffable Knowledge,,,60,,,,,,,,,,,,
+The Tidal Wave,,,60 m10,,,,,,,,,,,,
+The Transformer,,,60,,,,,,,,,,,,
+Thunderball Fists,,,60 m10,,,,,,,,,,,,
+Tiggs' Boom,,,60 m10,,,,,,,,,,,,
+Tina's Hippity Hopper,,,60 m10,,,,,,,,,,,,
+T.K's Wave,,,60 m10,,,,,,,,,,,,
+Torch,,,,,,,,,,,,,,,
+Tr4iner,,,,,,,,,,,,,,,
+Tran-fusion,,,60 m10,,,,,,,,,,,,
+Trevonator,,,60 m10,,,,,,,,,,,,
+Try-Bolt,,,60 m10,,,,,,,,,,,,
+Tsunami,,,60 m10,,,,,,,,,,,,
+Tunguska,,,60 m10,,,,,,,,,,,,
+Ultraball,,,,,,,,,,,,,,,
+Unforgiven,,,60 m10,,,,,,,,,,,,
+Unkempt Harold,,,60 m10,,,,,,,,,,,,
+Unleash the Dragon,,,,,,,,,,,,,,,
+Unseen Threat,,,,,,,,,,,,,,,
+Vanquisher,,,60 m10,,,,,,,,,,,,
+Vault Hero,,,limited,,,,,,,,,,,,
+Version 0.m,,,,,,,,,,,,,,,
+Victory Rush,,,60,,,,,,,,,,,,
+Void Rift,,,,,,,,,,,,,,,
+Vosk's Deathgrip,,,60 m10,,,,,,,,,,,,
+Wagon Wheel,,,60 m10,,,,,,,,,,,,
+Ward,,,,,,,,,,,,,,,
+Warlord,,,60 m10,,,,,,,,,,,,
+Wattson,,,,,,,,,,,,,,,
+Web Slinger,,,,,,,,,,,,,,,
+Wedding Invitation,,,limited,,,,,,,,,,,,
+Westergun,,,60 m10,,,,,,,,,,,,
+Whiskey Tango Foxtrot,,,60,,,,,,,,,,,,
+White Elephant,,,60,,,,,,,,,,,,
+Widowmaker,,,60 m10,,,,,,,,,,,,
+Woodblocker,,,60 m10,,,,,,,,,,,,
+Yellowcake,,,limited,,,,,,,,,,,,
+Zheitsev's Eruption,,,,,,,,,,,,,,,
+Total: 325,,,,,,,,,,,,,,,
+Imgur Album,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,Main game,205,,,,,,,
+,,,,,,,DLC,68,,,,,,,
+,,,,,,,Events,40,,,,,,,
+,,,,,,,Deluxe / VIP,7,,,,,,,
+,,,,,,,Game files,5,"(Rynah)(Bite Size, Portals and Shite, Dream Gun, P2P Networker)",,,,,,

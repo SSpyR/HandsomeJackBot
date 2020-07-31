@@ -50,3 +50,4 @@ quickstart.py
 token.pickle
 credentials.json
 settings.yaml
+.vs/
