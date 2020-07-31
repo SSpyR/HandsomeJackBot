@@ -59,9 +59,10 @@ class Hotfix(commands.Cog):
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
                 destchat=channel
+                dir=os.path.dirname(__file__)
                 await destchat.send('{}'.format(ctx.author.mention))
                 await destchat.send('Here is the New Hotfix File (This File Contains What JackBot Sends Out in Updates, Just Optional to View as a File)')
-                await destchat.send(file=discord.File('C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes\\new_hotfix.json'))
+                await destchat.send(file=discord.File(os.path.join(dir,'hotfixes\\new_hotfix.json')))
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
 
@@ -73,16 +74,17 @@ class Hotfix(commands.Cog):
         for channel in ctx.guild.channels:
             if channel.name=='handsome-jackbot':
                 destchat=channel
+                dir.os.path.dirname(__file__)
                 await destchat.send('{}'.format(ctx.author.mention))
                 await destchat.send('Here is the Current Hotfix File (This File Contains All Hotfixes that are Active as of Current, Just Optional to View as a File)')
-                await destchat.send(file=discord.File('C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes\\hotfixes_current.json'))
+                await destchat.send(file=discord.File(os.path.join(dir,'hotfixes\\hotfixes_current.json')))
         if destchat==None:
             await ctx.send('handsome-jackbot channel not detected and is required.')
 
 
     async def bl_hotfix(self):
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
-        output_dir = "C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot\\hotfixes"
+        output_dir = "hotfixes"
         point_in_time_base = 'point_in_time'
         point_in_time_dir = os.path.join(output_dir, point_in_time_base)
         cumulative_file = 'hotfixes_current.json'
@@ -157,13 +159,13 @@ class Hotfix(commands.Cog):
                 df.write(hotfixes)
 
             # Do the git interaction
-            print('Pushing to git')
-            repo = git.Repo("C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot")
-            repo.git.pull()
-            repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
-            repo.git.add('--', os.path.join(output_dir, cumulative_file))
-            repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
-            repo.git.push("origin", "master")
+            #print('Pushing to git')
+            #repo = git.Repo("C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot")
+            #repo.git.pull()
+            #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
+            #repo.git.add('--', os.path.join(output_dir, cumulative_file))
+            #repo.git.commit('-a', '-m', now.strftime('Auto-update with new hotfixes - %Y-%m-%d %H:%M:%S'))
+            #repo.git.push("origin", "master")
 
             # Split the new data out
             startindex=None

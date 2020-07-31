@@ -1,5 +1,6 @@
 # resources.py
 
+import os
 import discord
 from discord.ext import commands
 import csv
@@ -53,8 +54,9 @@ class Resources(commands.Cog):
     async def bl_droprate(self, ctx, *, queryname: str):
         response=''
         name=''
-        with open('C:/Users/Angel LaVoie/Downloads/Coding/HandsomeJackbot/utils/droplocations.csv', newline='') as csvfile:
-            with open('C:/Users/Angel LaVoie/Downloads/Coding/HandsomeJackbot/utils/droprates.csv', newline='') as csvfile2:
+        dir=os.path.dirname(__file__)
+        with open(os.path.join(dir, 'utils/droplocations.csv'), newline='') as csvfile:
+            with open(os.path.join(dir, 'utils/droprates.csv'), newline='') as csvfile2:
                 lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
                 for row in lreader:
                     if len(row) > 6:
@@ -63,7 +65,7 @@ class Resources(commands.Cog):
                             response+="**Drop Location for {}:** ".format(name)+row[6]+" ("+row[8]+")"
                 rreader=csv.reader(csvfile2, delimiter=',', quotechar='|')
                 for row2 in rreader:
-                    if queryname.lower() == row2[0].lower():
+                    if queryname.lower() in row2[0].lower():
                         response+="\n**Drop Rate and Notes for {}:** ".format(name)+row2[2]+" ("+row2[3]+")"
         await ctx.send(response)
         
