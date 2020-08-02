@@ -83,6 +83,7 @@ class Hotfix(commands.Cog):
 
 
     async def bl_hotfix(self):
+        dir=os.path.dirname(__file__)
         hotfix_url = 'https://discovery.services.gearboxsoftware.com/v2/client/epic/pc/oak/verification'
         output_dir = "hotfixes"
         point_in_time_base = 'point_in_time'
@@ -138,7 +139,7 @@ class Hotfix(commands.Cog):
         if do_write:
 
             # update previous content file
-            with open("hotfixes/hotfixes_current.json", "r") as new, open("hotfixes/hotfixes_prev.json", "w") as old:
+            with open(os.path.join(dir, "hotfixes/hotfixes_current.json"), "r") as new, open(os.path.join(dir, "hotfixes/hotfixes_prev.json"), "w") as old:
                 old.write(new.read())
 
             # First write the new file to the cache
@@ -169,8 +170,8 @@ class Hotfix(commands.Cog):
 
             # Split the new data out
             startindex=None
-            with open('hotfixes/hotfixes_current.json', "r") as f1:
-                with open('hotfixes/hotfixes_prev.json', "r") as f2:
+            with open(os.path.join(dir, 'hotfixes/hotfixes_current.json'), "r") as f1:
+                with open(os.path.join(dir, 'hotfixes/hotfixes_prev.json'), "r") as f2:
                     newdata=json.load(f1)
                     olddata=json.load(f2)
                     for index in reversed(list(enumerate(olddata["parameters"]))):
@@ -180,8 +181,8 @@ class Hotfix(commands.Cog):
                             if str(value) in str(lastline):
                                 startindex=newdata["parameters"].index(value)
                                 break
-            with open('hotfixes/hotfixes_current.json', "r") as f1:
-                with open('hotfixes/new_hotfix.json', "r") as f2:
+            with open(os.path.join(dir, 'hotfixes/hotfixes_current.json'), "r") as f1:
+                with open(os.path.join(dir, 'hotfixes/new_hotfix.json'), "r") as f2:
                     currentdata=json.load(f1)
                     newdata=json.load(f2)
                     newdata["parameters"].clear()
@@ -193,7 +194,7 @@ class Hotfix(commands.Cog):
                                 newdata["parameters"].append(newvalue)
                         else:
                             print('startindex not assigned')
-            with open('hotfixes/new_hotfix.json', "w") as fp:
+            with open(os.path.join(dir, 'hotfixes/new_hotfix.json'), "w") as fp:
                 json.dump(newdata, fp, indent=4)
             print('New Data Split From Exisiting, Sending..')
 
@@ -214,7 +215,7 @@ class Hotfix(commands.Cog):
                     else:
                         continue
 
-                    with open('hotfixes/new_hotfix.json') as f:
+                    with open(os.path.join(dir, 'hotfixes/new_hotfix.json')) as f:
                         data=json.load(f)
 
                     await destchat.send('```NEW HOTFIX DATA INCOMING```')
