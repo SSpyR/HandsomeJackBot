@@ -11,7 +11,7 @@ Ruby's Wrath,RPG,10%,
 Embrace the Pain,Assault Rifle,13.20%,
 Pain is Power,Assault Rifle,13.20%,
 Sawbar,Assault Rifle,10%,
-Zheitsev's Eruption,Assault Rifle,12.50%,Mayhem 4+
+Zheitsev's Eruption,Assault Rifle,25.00%,Mayhem 4+
 Linoge,Pistol,3.75%,Per Crawly Varkid Larva
 Pestilence,Pistol,15.00%,Only from Heckle
 Psycho Stabber,Pistol,10%,
@@ -41,7 +41,7 @@ Conference Call,Shotgun,15%,
 Face-puncher,Shotgun,15%,
 Phebert,Shotgun,15%,Only from Wick
 Reflux,Shotgun,11.40%,Mayhem 6+
-The Butcher,Shotgun,12.5%/16.7%,12.5% on Mayhem 4+; 16.7% Otherwise
+The Butcher,Shotgun,25%/33.3%,25% on Mayhem 4+; 33.3% Otherwise
 Bitch,Submachine Gun,15%,
 Crossroad,Submachine Gun,9.3%/15%,9.3% on Mayhem 6+; 15% Otherwise (also drops from Big Donny at 15%)
 Handsome Jackhammer,Submachine Gun,15%,
@@ -54,7 +54,7 @@ Bekah,Assault Rifle,N/A,Only From Mail
 Gatling Gun,Assault Rifle,15%,
 Hand of Glory,Assault Rifle,N/A,Mission Reward
 Lead Sprinkler,Assault Rifle,20%,
-Rowan's Call,Assault Rifle,25%,
+Rowan's Call,Assault Rifle,50%,
 Amazing Grace,Pistol,N/A,Mission Reward
 King's/Queen's Call,Pistol,15%,
 Maggie,Pistol,15%,
@@ -125,18 +125,18 @@ The Boring Gun,Shotgun,10%,
 The Lob,Shotgun,10%,
 Damned,Assault Rifle,5.7%/7.5%/10%,5.7% on Mayhem 6+; 7.5% on Mayhem 4 and 5; 10% Otherwise
 Faisor,Assault Rifle,10%,
-Lucian's Call,Assault Rifle,25%,
+Lucian's Call,Assault Rifle,50%,
 Ogre,Assault Rifle,10%,
 The Dictator,Assault Rifle,1.20%,Can Drop Alongside Backburner; EM-P5; Damned; and Loaded Dice
 The Monarch,Assault Rifle,16.50%,Mayhem 6+
-Shredifier,Assault Rifle,12.5%/16.7%,12.5% on Mayhem 4+; 16.5% Otherwise
+Shredifier,Assault Rifle,25%/33.3%,25% on Mayhem 4+; 33.3% Otherwise
 Sickle,Assault Rifle,15%,
 Infinity,Pistol,10%,
 Magnificent,Pistol,15%,
 BackBurner,RPG,6.90%,Mayhem 6+
 Jericho,RPG,10%,
 Mongol,RPG,15%,
-Lyuda,Sniper Rifle,25%,
+Lyuda,Sniper Rifle,50%,
 Frozen Heart,Shield,30%,
 Messy Breakup,Shield,30%,
 Nova Berner,Shield,2.50%,Per Power Trooper; Only from Force Trooper Onyx; Ruby; and Citrine
@@ -162,13 +162,13 @@ Cosmic Crater,Artifact,15%,
 Deathless,Artifact,10%,
 Electric Banjo,Artifact,10%,Only from Billy
 Grave,Artifact,10%,
-Launch Pad,Artifact,25%,
+Launch Pad,Artifact,50%,
 Loaded Dice,Artifact,5.7%/7.5%/10%,5.7% on Mayhem 6+; 7.5% on Mayhem 4 and 5; 10% Otherwise
 Moxxi's Endowment,Artifact,15%,
 Otto Idol,Artifact,15%,
 Phoenix Tears,Artifact,10%,
 Pull Out Method,Artifact,10%,
-Rocket Boots,Artifact,25%,
+Rocket Boots,Artifact,50%,
 Safeguard,Artifact,15%,
 Splatter Gun,Artifact,10%,
 Static Charge,Artifact,15%,
@@ -189,42 +189,42 @@ Quasar,Grenade Mod,15%,Only from Warty
 Red Queen,Grenade Mod,10%,
 Storm Front,Grenade Mod,15%,
 Surge,Grenade Mod,2.50%,Per Power Trooper; Only from Force Trooper Onyx; Ruby; and Citrine
- Tina's Hippity Hopper,Grenade Mod,12.5%/16.7%%,12.5% on Mayhem 4+; 16.7% Otherwise
+ Tina's Hippity Hopper,Grenade Mod,25%/33.3%,25% on Mayhem 4+; 33.3% Otherwise
 Tran-fusion,Grenade Mod,2.50%,Per Power Trooper; Only from Force Trooper Sapphire and Tourmaline
 Widowmaker,Grenade Mod,30%,
-Breaker,Class Mod,20%,
-Dragon,Class Mod,10%,
-Elementalist,Class Mod,20%,
-Nimbus,Class Mod,20%,
-Phasezerker,Class Mod,20%,
+Breaker,Class Mod,50%,
+Dragon,Class Mod,50%/100%,50% on Mayhem 4+: 100% Otherwise
+Elementalist,Class Mod,50%,
+Nimbus,Class Mod,50%,
+Phasezerker,Class Mod,50%,
 Spiritual Driver,Class Mod,30%,Mayhem 4+
 Bounty Hunter,Class Mod,15%,
-Cosmic Stalker,Class Mod,20%,
+Cosmic Stalker,Class Mod,50%,
 DE4DEYE,Class Mod,30%,
-Friend-Bot,Class Mod,20%,
-R4kk P4k,Class Mod,10%,Mayhem 4+
+Friend-Bot,Class Mod,50%/100%,50% on Mayhem 4+: 100% Otherwise
+R4kk P4k,Class Mod,50%,Mayhem 4+
 Rakk Commander,Class Mod,15%,
-Red Fang,Class Mod,20%,
+Red Fang,Class Mod,50%,
 Bear Trooper,Class Mod,15%,
 Blast Master,Class Mod,15%,
-Bloodletter,Class Mod,20%,
+Bloodletter,Class Mod,50%,
 Mind Sweeper,Class Mod,15%,
 Raging Bear,Class Mod,30%?,Not Exactly Sure?; Mayhem 4+
 Rocketeer,Class Mod,15%,
-Antifreeze,Class Mod,20%,Mayhem 4+
-Cold Warrior,Class Mod,25%,
+Antifreeze,Class Mod,50%,Mayhem 4+
+Cold Warrior,Class Mod,50%,
 Executor,Class Mod,15%,
 Infilitrator,Class Mod,15%,
-Shockerator,Class Mod,20%,
+Shockerator,Class Mod,50%,
 Techspert,Class Mod,15%,
-Moonfire,Pistol,7%,
-Tiggs' Boom,Shotgun,7%,
-Kyb's Worth,Submachine Gun,7%,
-Redistributor,Submachine Gun,7%,
-Re-Charge Berner,Shield,1.7%/11%,Lower Rate is from Wotan
-Red Card Re-Charger,Shield,1.7%/11%,Lower Rate is from Wotan
-Snowshoe,Shield,1.7%/11%,Lower Rate is from Wotan
-Version 0.m,Shield,7%,
+Moonfire,Pistol,14%,
+Tiggs' Boom,Shotgun,14%,
+Kyb's Worth,Submachine Gun,14%,
+Redistributor,Submachine Gun,14%,
+Re-Charge Berner,Shield,3.4%/22%,Lower Rate is from Wotan
+Red Card Re-Charger,Shield,3.4%/22%,Lower Rate is from Wotan
+Snowshoe,Shield,3.4%/22%,Lower Rate is from Wotan
+Version 0.m,Shield,14.%/22%,Lower Rate is from Wotan
 Craps,Pistol,33.30%,
 Lucky 7,Pistol,50%,
 Nukem,RPG,10%,
@@ -272,12 +272,12 @@ Sapper,Class Mod,N/A,World Drop Only
 Conductor,Class Mod,N/A,World Drop Only
 Lunacy,Artifact,15%,
 Pearl of Ineffable Knowledge,Artifact,N/A,Mission Reward
-Web Slinger,Assault Rifle,12%,
-Globetrottr,RPG,12%,
-Smog,Submachine Gun,12%,
-Aesclepius,Shield,14%,
-Stinger,Shield,14%,
-Lightspeed,Grenade Mod,14%,
+Web Slinger,Assault Rifle,25%,
+Globetrottr,RPG,25%,
+Smog,Submachine Gun,25%,
+Aesclepius,Shield,29%,
+Stinger,Shield,29%,
+Lightspeed,Grenade Mod,29%,
 Contained Blast,Assault Rifle,33%,
 Dowsing Rod,Assault Rifle,33%,
 Stonethrower,Assault Rifle,50%,
