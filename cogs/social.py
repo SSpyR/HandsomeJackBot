@@ -76,5 +76,22 @@ class Social(commands.Cog):
                 await message.channel.send(response)
 
 
+    @commands.command(name='raid', help='Ignore this Dumb Meme')
+    async def raid(self, ctx, *, name: str):
+        lads=self.bot.get_guild(97342233241464832)
+        bois=self.bot.get_guild(632633098584064018)
+
+        if ctx.guild==lads or ctx.guild==bois:
+            name=name.split(' ')
+            name=name[0]
+            await ctx.send("I've never been much of a mobile gamer, but, forget everything you think you know about mobile games because Raid Shadow Legends is one of the most ambitious RPG projects of 2019 has just been released and will change everything. Just look at the level of detail of these characters! If you use the code " + name + " you can start with 50,000 silver and join the Special Launch Tournament, and you better hurry because it's getting big fast! You can play for totally free with the link: raidshadowlegends.com/" + name)
+
+
+    @raid.error
+    async def raid_error(self, ctx, error):
+        if isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send('{} raid command requires a name to use (should do a mention for memes).'.format(ctx.author.mention))
+
+
 def setup(bot):
     bot.add_cog(Social(bot))
