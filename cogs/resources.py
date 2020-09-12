@@ -62,10 +62,12 @@ class Resources(commands.Cog):
                     if len(row) > 6:
                         if queryname.lower() in row[2].lower():
                             name=row[2]
-                            if row[6] == "":
-                                response+="**Drop Location for {}:** ".format(name)+row[5]+" ("+row[8]+")"
+                            if row[6] == "TRUE" or row[6] == "" and row[7] != "":
+                                response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
+                            elif row[8] == "":
+                                response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
                             else:
-                                response+="**Drop Location for {}:** ".format(name)+row[6]+" ("+row[8]+")"
+                                response+="**Drop Location for {}:** ".format(name)+row[6]+" ("+row[9]+")"
                 rreader=csv.reader(csvfile2, delimiter=',', quotechar='|')
                 for row2 in rreader:
                     if queryname.lower() in row2[0].lower():
