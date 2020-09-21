@@ -74,6 +74,9 @@ class Social(commands.Cog):
             if 'fuck you' in message.content.lower():
                 response='Nou <:ritsupunch:726145739306303539>'
                 await message.channel.send(response)
+            if 'randall' in message.content.lower():
+                response='<:Randall:757085563214889011>'
+                await message.channel.send(response)
 
 
     @commands.command(name='raid', help='Ignore this Dumb Meme')
