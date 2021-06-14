@@ -1,7 +1,5 @@
 # social.py
 
-# look at mee6 bot to see how they get twitter updates to post (for keeping us up to date on randy)
-
 import discord
 from discord.ext import commands
 
@@ -19,10 +17,10 @@ class Social(commands.Cog):
         await ctx.author.send(response)
 
     
-    @commands.command(name='tutorial', help='Tutorial Video for the Bot')
-    async def video_link(self, ctx):
-        response='https://youtu.be/rTVcSizSIQQ'
-        await ctx.send(response)
+    #@commands.command(name='tutorial', help='Tutorial Video for the Bot')
+    #async def video_link(self, ctx):
+    #    response='https://youtu.be/rTVcSizSIQQ'
+    #    await ctx.send(response)
 
 
     @commands.command(name='github', help='Github Repository for the Bot')

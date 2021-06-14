@@ -10,7 +10,6 @@ class Resources(commands.Cog):
     def __init__(self, bot):
         self.bot=bot
 
-
     @commands.command(name='builds', help='Google Docs of Borderlands 3 Builds, Updated to Current Content')
     async def bl_builds(self, ctx):
         response='**Amara Builds:** <https://docs.google.com/document/d/1rpIwTi2hrWywgB42_I2mCjLqZ72r-n1FAoA2w8LGoGA/edit?usp=sharing> \n \n'
@@ -38,42 +37,57 @@ class Resources(commands.Cog):
         await ctx.send(response)
 
     
-    @commands.command(name='itemeditor', help='Web-based Item Editor for Borderlands 3, Courtesy of Baysix')
+    @commands.command(name='itemeditor', help='Web-based Item Editor for Borderlands 3. Courtesy of Baysix')
     async def bl_itemedit(self, ctx):
         response='Courtesy of Baysix: https://www.bl3editor.com/#/'
         await ctx.send(response)
 
 
-    @commands.command(name='bl3drop', help='Spreadsheet for Drop Rates of BL3 Unique Items')
+    @commands.command(name='bl3drop', help='Website for Drop Rates, Locations. and many more of BL3 Unique Items. Courtesy of Levin')
     async def bl_bl3drop(self, ctx):
-        response='Drop Rate Table: <https://docs.google.com/spreadsheets/d/e/2PACX-1vRUVAWx2LtfOENd61Xt_PJl95Qn0r1nhAGjwHCUnh3YZ_kWSN7xjgs9INgKjxGTA7Ug-odHRddUXRZP/pubhtml#>'
+        response='Find Drop Rates and Locations Here: https://www.lootlemon.com/'
         await ctx.send(response)
 
-
-    @commands.command(name='dropinfo', help='Search Command for Finding the Drop Rate and Location of an Item')
-    async def bl_droprate(self, ctx, *, queryname: str):
-        response=''
-        name=''
-        dir=os.path.dirname(__file__)
-        with open(os.path.join(dir, 'utils/droplocations.csv'), newline='') as csvfile:
-            with open(os.path.join(dir, 'utils/droprates.csv'), newline='') as csvfile2:
-                lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
-                for row in lreader:
-                    if len(row) > 6:
-                        if queryname.lower() in row[2].lower():
-                            name=row[2]
-                            if row[6] == "TRUE" or row[6] == "" and row[7] != "":
-                                response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
-                            elif row[8] == "":
-                                response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
-                            else:
-                                response+="**Drop Location for {}:** ".format(name)+row[6]+" ("+row[9]+")"
-                rreader=csv.reader(csvfile2, delimiter=',', quotechar='|')
-                for row2 in rreader:
-                    if queryname.lower() in row2[0].lower():
-                        response+="\n**Drop Rate and Notes for {}:** ".format(name)+row2[2]+" ("+row2[3]+")"
-        await ctx.send(response)
         
+    @commands.command(name='bl3modding', help='Nexus Mods Page for the BL3 Hotfix Merger. Courtesy of c0dycode')
+    async def bl_bl3modding(self, ctx):
+        response='Get Started with BL3 Hotfix Modding Here: https://www.nexusmods.com/borderlands3/mods/244'
+        await ctx.send(response)
+
+
+    @commands.command(name='database', help='Links to the Nexus Mods Page of Serialized Game Files. Courtesy of Grimm')
+    async def database(self, ctx):
+        await ctx.channel.send('Nexus Mods Page of Serialized Game Files')
+        response='https://www.nexusmods.com/borderlands3/mods/247'
+        await ctx.channel.send(response)
+
+
+    #@commands.command(name='dropinfo', help='Search Command for Finding the Drop Rate and Location of an Item')
+    #async def bl_droprate(self, ctx, *, queryname: str):
+    #    response=''
+    #    name=''
+    #    dir=os.path.dirname(__file__)
+    #    with open(os.path.join(dir, 'utils/droplocations.csv'), newline='') as csvfile:
+    #        with open(os.path.join(dir, 'utils/droprates.csv'), newline='') as csvfile2:
+    #            lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
+    #            for row in lreader:
+    #                if len(row) > 6:
+    #                    if queryname.lower() in row[2].lower():
+    #                        name=row[2]
+    #                        if row[6] == "TRUE" or row[6] == "" and row[7] != "":
+    #                            response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
+    #                        elif row[8] == "":
+    #                            response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
+    #                        else:
+    #                            response+="**Drop Location for {}:** ".format(name)+row[6]+" ("+row[9]+")"
+    #            rreader=csv.reader(csvfile2, delimiter=',', quotechar='|')
+    #            for row2 in rreader:
+    #                if queryname.lower() in row2[0].lower():
+    #                    response+="\n**Drop Rate and Notes for {}:** ".format(name)+row2[2]+" ("+row2[3]+")"
+    #    await ctx.send(response)
+        
+
+    #Setup Links to Modding Here
 
 def setup(bot):
     bot.add_cog(Resources(bot))

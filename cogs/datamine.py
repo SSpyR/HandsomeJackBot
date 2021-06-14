@@ -1,12 +1,5 @@
 # datamine.py
 
-# Should update the stuff in here, maybe soon, all these comments are out of date
-
-# Google Drive: https://drive.google.com/drive/folders/17LO_KzBlA_uxe-5X_QLf2b47LuZuS6Xg?usp=sharing
-# AWS S3 instead?
-# tempory solution of just partsets and balance files to send with heroku
-# moved to local hosting to fix for now
-
 import os
 import sys
 import json
@@ -101,17 +94,17 @@ class Datamine(commands.Cog):
     #        await ctx.send('{} refget command requires a file name to search for.'.format(ctx.author.mention))
 
     
-    @commands.command(name='helperapp', help='Links to Stand-Alone BL3 Editor Helper App')
-    async def helperapp(self, ctx):
-        response='https://github.com/SSpyR/BL3EditorHelper'
-        await ctx.channel.send(response)
+    #@commands.command(name='helperapp', help='Links to Stand-Alone BL3 Editor Helper App')
+    #async def helperapp(self, ctx):
+    #    response='https://github.com/SSpyR/BL3EditorHelper'
+    #    await ctx.channel.send(response)
 
 
-    @commands.command(name='database', help='Links to Personal Google Drive Storage of Game Files')
-    async def database(self, ctx):
-        await ctx.channel.send('Google Drive Folder of Game Files')
-        response='https://drive.google.com/drive/folders/17LO_KzBlA_uxe-5X_QLf2b47LuZuS6Xg?usp=sharing'
-        await ctx.channel.send(response)
+    #@commands.command(name='database', help='Links to Personal Google Drive Storage of Game Files')
+    #async def database(self, ctx):
+    #    await ctx.channel.send('Nexus Mods Page of Serialized Game Files')
+    #    response='https://www.nexusmods.com/borderlands3/mods/247'
+    #    await ctx.channel.send(response)
 
 
 def setup(bot):

@@ -1,12 +1,18 @@
 # bot.py
 # Creator: SSpyR
 
-#Retire datamine.py and calcMain.py for now
-#Getting rid of ref stuff
-#PartChecker Stuff?
-#Implement Command to Get Drop Rates Directly
-#Fix the math stuff maybe
-#Get the Google Drive database backup
+#TODO FIX AND NEATEN UP EVERYTHING FOR OFFICIAL SERVER
+#TODO Lock Official Server out of Joke Commands
+#TODO Fix up drop rate & location command, maybe find a better way to do it too
+#TODO Hotfix stuff is fine probably, get opinions
+#TODO Embed fanciness for drop info
+#TODO Lock Commands behind certain Roles in Official (Badass + most likely)
+#TODO Change database to the nexus link for in-game files
+#TODO Axe useless or un-updated shit (update build doc links)
+#TODO Add mod info to resources
+#TODO Update with link to Announcements Server
+
+#Change bot status (set this to "for Hotfixes" for now)
 
 import os
 import discord
@@ -19,7 +25,8 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 logging.basicConfig(level=logging.INFO)
 
-startup_extensions=['cogs.resources', 'cogs.social', 'cogs.hotfix', 'cogs.datamine'] #, 'cogs.hotfix' keep out while testing and fixing
+startup_extensions=['cogs.resources', 'cogs.social', 'cogs.hotfix']
+#['cogs.resources', 'cogs.social', 'cogs.hotfix'] #, 'cogs.hotfix' keep out while testing and fixing
 token = os.getenv('DISCORD_TOKEN')
 owner_id = os.getenv('OWNER_ID')
 bot = commands.Bot(command_prefix='~')
@@ -37,7 +44,7 @@ async def on_ready():
     print('SSpyR')
     print('<',owner_id,'>')
 
-    activity=discord.Activity(name='for Randy', type=discord.ActivityType.watching)
+    activity=discord.Activity(name='for Hotfixes', type=discord.ActivityType.watching)
     await bot.change_presence(activity=activity)
 
 
@@ -69,6 +76,20 @@ async def shutdown(ctx):
         print (type(ctx.author.id),'{}'.format(ctx.author.id))
         print (type(owner_id),owner_id)
         print('Shutdown Command Execution Attempted by Non-Owner')
+
+
+#@bot.command(name='prune', help='only usable by owner')
+#@bot.is_owner
+#async def blprune(ctx):
+#    official=bot.get_guild(132671445376565248)
+#    if ctx.author.id==int(owner_id) and ctx.guild==official:
+#        for channel in ctx.guild:
+#            if channel.name=="join-leave-log":
+#                for message in channel.history(limit=2000):
+#                    if message.content.contains('bailo'):
+#                        print('found')
+#    else:
+#        await ctx.send('permission denied to perform this command')
 
 
 @bot.event
