@@ -75,11 +75,16 @@ class Resources(commands.Cog):
             lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
             for row in lreader:
                 queryname=queryname.replace("'","")
+                if 'pat' in queryname.lower():
+                    queryname='p.a.t'
                 if found is False:
                     if queryname.lower() in row[0].lower():
                         name=row[0]
-                        response+="Drop Location for {}: ".format(name)+row[2]
-                        response+="\nDrop Rate and Notes for {}: ".format(name)+row[3]+" ("+row[4]+")"
+                        response+="Drop Source: "+row[2]
+                        if row[4]!='':
+                            response+="\nDrop Rate/Notes: "+row[3]+" ("+row[4]+")"
+                        else:
+                            response+="\nDrop Rate/Notes: "+row[3]
                         if "grenade mod" in row[1].lower():
                             itemtype='grenade-mod'
                         elif "class mod" in row[1].lower():
@@ -89,16 +94,17 @@ class Resources(commands.Cog):
                         elif "artifact" in row[1].lower():
                             itemtype='bonus-item'
                         linkname=name.lower()
+                        if 'seventh sense' in linkname:
+                            linkname='seventh sense legendary'
                         linkname=linkname.replace(' ', '-')
+                        linkname=linkname.replace('.','-')
                         lootlemon='https://lootlemon.com/{}/{}-bl3'.format(itemtype, linkname)
                         embed=discord.Embed(
                             title='Drop Info for {}'.format(name),
                             description=response,
-                            color=discord.Color.blue()
+                            color=discord.Color.purple()
                         )
-                        embed.set_footer(text='Further Information on Lootlemon')
-                        embed.set_author(name='Handsome JackBot')
-                        embed.add_field(name='Link to Lootlemon Page for More Info', value=lootlemon, inline=True)
+                        embed.add_field(name='\u200B', value='[Further Information on Lootlemon]({})'.format(lootlemon), inline=True)
                         found=True
         await ctx.send(embed=embed)
         
