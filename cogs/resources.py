@@ -43,10 +43,10 @@ class Resources(commands.Cog):
         await ctx.send(response)
 
 
-    @commands.command(name='bl3drop', help='Website for Drop Rates, Locations. and many more of BL3 Unique Items. Courtesy of Levin')
-    async def bl_bl3drop(self, ctx):
-        response='Find Drop Rates and Locations Here: https://www.lootlemon.com/'
-        await ctx.send(response)
+    #@commands.command(name='bl3drop', help='Website for Drop Rates, Locations. and many more of BL3 Unique Items. Courtesy of Levin')
+    #async def bl_bl3drop(self, ctx):
+    #    response='Find Drop Rates and Locations Here: https://www.lootlemon.com/'
+    #    await ctx.send(response)
 
         
     @commands.command(name='bl3modding', help='Nexus Mods Page for the BL3 Hotfix Merger. Courtesy of c0dycode')
@@ -62,32 +62,46 @@ class Resources(commands.Cog):
         await ctx.channel.send(response)
 
 
-    #@commands.command(name='dropinfo', help='Search Command for Finding the Drop Rate and Location of an Item')
-    #async def bl_droprate(self, ctx, *, queryname: str):
-    #    response=''
-    #    name=''
-    #    dir=os.path.dirname(__file__)
-    #    with open(os.path.join(dir, 'utils/droplocations.csv'), newline='') as csvfile:
-    #        with open(os.path.join(dir, 'utils/droprates.csv'), newline='') as csvfile2:
-    #            lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
-    #            for row in lreader:
-    #                if len(row) > 6:
-    #                    if queryname.lower() in row[2].lower():
-    #                        name=row[2]
-    #                        if row[6] == "TRUE" or row[6] == "" and row[7] != "":
-    #                            response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
-    #                        elif row[8] == "":
-    #                            response+="**Drop Location for {}:** ".format(name)+row[7]+" ("+row[9]+")"
-    #                        else:
-    #                            response+="**Drop Location for {}:** ".format(name)+row[6]+" ("+row[9]+")"
-    #            rreader=csv.reader(csvfile2, delimiter=',', quotechar='|')
-    #            for row2 in rreader:
-    #                if queryname.lower() in row2[0].lower():
-    #                    response+="\n**Drop Rate and Notes for {}:** ".format(name)+row2[2]+" ("+row2[3]+")"
-    #    await ctx.send(response)
+    @commands.command(name='dropinfo', help='Search Command for Finding the Drop Rate and Location of an Item')
+    async def bl_droprate(self, ctx, *, queryname: str):
+        found=False
+        embed=None
+        response=''
+        name=''
+        itemtype='weapon'
+        lootlemon=''
+        dir=os.path.dirname(__file__)
+        with open(os.path.join(dir, 'utils/droprates.csv'), newline='') as csvfile:
+            lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
+            for row in lreader:
+                queryname=queryname.replace("'","")
+                if found is False:
+                    if queryname.lower() in row[0].lower():
+                        name=row[0]
+                        response+="Drop Location for {}: ".format(name)+row[2]
+                        response+="\nDrop Rate and Notes for {}: ".format(name)+row[3]+" ("+row[4]+")"
+                        if "grenade mod" in row[1].lower():
+                            itemtype='grenade-mod'
+                        elif "class mod" in row[1].lower():
+                            itemtype='class-mod'
+                        elif "shield" in row[1].lower():
+                            itemtype='shield'
+                        elif "artifact" in row[1].lower():
+                            itemtype='bonus-item'
+                        linkname=name.lower()
+                        linkname=linkname.replace(' ', '-')
+                        lootlemon='https://lootlemon.com/{}/{}-bl3'.format(itemtype, linkname)
+                        embed=discord.Embed(
+                            title='Drop Info for {}'.format(name),
+                            description=response,
+                            color=discord.Color.blue()
+                        )
+                        embed.set_footer(text='Further Information Provided by Levin from Lootlemon')
+                        embed.set_author(name='Handsome JackBot')
+                        embed.add_field(name='Link to Lootlemon Page for More Info', value=lootlemon, inline=True)
+                        found=True
+        await ctx.send(embed=embed)
         
-
-    #Setup Links to Modding Here
 
 def setup(bot):
     bot.add_cog(Resources(bot))

@@ -53,7 +53,7 @@ class Hotfix(commands.Cog):
                         colour=discord.Color.blue()
                     )
                     embed.set_footer(text='Repository Provided by apocaplyptech')
-                    embed.set_author(name='HandsomeJackbot', icon_url='https://cdn.2kgames.com/borderlands/news/Article+Embeds/PAXE20/steam-art_560.jpg')
+                    embed.set_author(name='Handsome JackBot')
                     embed.add_field(name='Link to Changes', value=link, inline=True)
                     await ctx.send(embed=embed)
                     found=True
@@ -75,7 +75,7 @@ class Hotfix(commands.Cog):
                         colour=discord.Color.blue()
                     )
                     embed.set_footer(text='Repository Provided by apocaplyptech')
-                    embed.set_author(name='HandsomeJackbot', icon_url='https://cdn.2kgames.com/borderlands/news/Article+Embeds/PAXE20/steam-art_560.jpg')
+                    embed.set_author(name='Handsome JackBot')
                     embed.add_field(name='Link to Changes', value=link, inline=True)
                     for guild in self.bot.guilds:
                         for channel in guild.channels:

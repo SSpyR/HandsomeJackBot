@@ -3,16 +3,10 @@
 
 #TODO FIX AND NEATEN UP EVERYTHING FOR OFFICIAL SERVER
 #TODO Lock Official Server out of Joke Commands
-#TODO Fix up drop rate & location command, maybe find a better way to do it too
-#TODO Hotfix stuff is fine probably, get opinions
-#TODO Embed fanciness for drop info
 #TODO Lock Commands behind certain Roles in Official (Badass + most likely)
-#TODO Change database to the nexus link for in-game files
-#TODO Axe useless or un-updated shit (update build doc links)
-#TODO Add mod info to resources
 #TODO Update with link to Announcements Server
-
-#Change bot status (set this to "for Hotfixes" for now)
+#TODO Do BL2 stuff?
+#TODO Consider Raptors save editor instead: https://github.com/cfi2017/bl3-save/releases
 
 import os
 import discord
