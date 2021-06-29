@@ -7,6 +7,7 @@
 #TODO Update with link to Announcements Server
 #TODO Do BL2 stuff?
 #TODO Consider Raptors save editor instead: https://github.com/cfi2017/bl3-save/releases
+#TODO Add auto randy emote to Official but locked behind invinc and up
 
 import os
 import discord

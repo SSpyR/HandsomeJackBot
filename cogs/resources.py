@@ -96,7 +96,7 @@ class Resources(commands.Cog):
                             description=response,
                             color=discord.Color.blue()
                         )
-                        embed.set_footer(text='Further Information Provided by Levin from Lootlemon')
+                        embed.set_footer(text='Further Information on Lootlemon')
                         embed.set_author(name='Handsome JackBot')
                         embed.add_field(name='Link to Lootlemon Page for More Info', value=lootlemon, inline=True)
                         found=True
