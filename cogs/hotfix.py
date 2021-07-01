@@ -53,9 +53,12 @@ class Hotfix(commands.Cog):
                         colour=discord.Color.blue()
                     )
                     embed.set_footer(text='Repository Provided by apocaplyptech')
-                    embed.set_author(name='Handsome JackBot')
-                    embed.add_field(name='Link to Changes', value=link, inline=True)
-                    await ctx.send(embed=embed)
+                    embed.add_field(name='\u200B', value='[See Changes Here]({})'.format(link), inline=True)
+                    officialguild=self.bot.get_guild(132671445376565248)
+                    if ctx.guild==officialguild:
+                        await officialguild.get_channel(860249638531498004).send(embed=embed)
+                    else:
+                        await ctx.send(embed=embed)
                     found=True
 
 
@@ -75,8 +78,7 @@ class Hotfix(commands.Cog):
                         colour=discord.Color.blue()
                     )
                     embed.set_footer(text='Repository Provided by apocaplyptech')
-                    embed.set_author(name='Handsome JackBot')
-                    embed.add_field(name='Link to Changes', value=link, inline=True)
+                    embed.add_field(name='\u200B', value='[See Changes Here]({})'.format(link), inline=True)
                     for guild in self.bot.guilds:
                         for channel in guild.channels:
 

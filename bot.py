@@ -6,8 +6,13 @@
 #TODO Lock Commands behind certain Roles in Official (Badass + most likely)
 #TODO Update with link to Announcements Server
 #TODO Do BL2 stuff?
-#TODO Consider Raptors save editor instead: https://github.com/cfi2017/bl3-save/releases
 #TODO Add auto randy emote to Official but locked behind invinc and up
+#TODO Embed Pretty Up Stuff (with Hyperlinks)
+#TODO Remove some commands from Help
+#TODO Make a special Bearcat Response for Drop Info Command
+#TODO Probs have to make personal help command so that it sends in the right chat for Official
+
+## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=0&scope=bot
 
 import os
 import discord

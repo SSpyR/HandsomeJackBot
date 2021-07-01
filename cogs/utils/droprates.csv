@@ -28,7 +28,7 @@ Nemesis,Pistol,Mouthpiece,15%,
 Night Flyer,Pistol,Rakkman,15%,
 9-Volt,Submachine Gun,Killavolt,13.5%/30%,13.5% on Mayhem 6+; 30% Otherwise
 Craders EM-P5,Submachine Gun,Agonizer 9000,5.7%/7.5%,5.7% on Mayhem 6+; 7.5% on Mayhem 4 and 5; Mayhem 4+ Drop
-Hellfire,Submachine Gun,Jabbermogwai,100%,(Should be) 100% When Killing Jabbermogwai with Fire
+Hellfire,Submachine Gun,Jabbermogwai,10%+,Only Drops if Killed with Fire; Base 10%; Scales with Legendary Drop Weights (Higher in Mayhems Basically)
 Kaoson,Submachine Gun,Captain Traunt,16.50%,
 Night Hawkin,Submachine Gun,Demoskaggons,15%/6.7%,Lower Rate is from Demoskaggon
 Ripper,Submachine Gun,Shiv,15%,
@@ -87,7 +87,7 @@ Destructo Spinner,Submachine Gun,Power Troopers,2.50%,Per Power Trooper; Only fr
 Devoted,Submachine Gun,Brood Mother,10%,
 D.N.A.,Submachine Gun,General Traunt,16.50%,Mayhem 6+
 Tsunami,Submachine Gun,Vermilingua,15%,
-Westergun,Submachine Gun,King Gnasher,15%/50%,Higher Rate from Private Beans
+Westergun,Submachine Gun,King Gnasher/Private Beans,15%/100%-,Higher Rate from Private Beans; Base 100% from Beans but Scales with Legendary Drop Weights (more like 50% in no Mayhem vs 100% in M10)
 ASMD,Sniper Rifle,Maxitrillion,10%,
 Firestorm,Sniper Rifle,Katagawa Jr.,13.5%/30%,13.5% on Mayhem 6+; 30% Otherwise
 Krakatoa,Sniper Rifle,Tumorhead,15%,
@@ -319,6 +319,7 @@ R.Y.N.A.H.,RPG,Loot Enemies,11%,Only From Loot Enemies
 Hotfoot Teddy,Assault Rifle,Seepage & Creepage Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
 Trickshot,Pistol,Hunker Bunker Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
 Firefly,Pistol,Shipping Encouraged Loot-Room/Heavyweight Harker,4.2%/12.5%,Lower Rate from Harker
+Tizzy,Pistol,Hunker Bunker Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
 Res ,Pistol,Shipping Encouraged Loot-Room/Heavyweight Harker,4.2%/12.5%,Lower Rate from Harker
 Kickcharger,RPG,Dam Loot-Room/Heavyweight Harker,4.2%/6.25%,Lower Rate from Harker
 Critical Thug,Shotgun,Seepage & Creepage Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
@@ -340,18 +341,33 @@ Kensei,Class Mod,Drydock Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from 
 Eternal Flame,Class Mod,Dam Loot-Room/Heavyweight Harker,4.2%/6.25%,Lower Rate from Harker
 Spy,Class Mod,Madwidth Power Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
 Free Radical,Pistol,Beef Plisskon,30%,
-Atlas Replay,Pistol,Hemovorous,25%,"25% on Mayhem 10/11, 2.5%-22.5% on Mayhem 1 - Mayhem 9"
+Atlas Replay,Pistol,Hemovorous,25%,25% on Mayhem 10/11; 2.5%-22.5% on Mayhem 1 - Mayhem 9
 Redeye Rocket Pod,RPG,The Seer,41%,
 Mechanic,RPG,Vault Card,N/A,
 Guardian 4N631,Shotgun,Vault Card,N/A,
-Ionic Disruptor,Sniper Rifle,Hemovorous,25%,"25% on Mayhem 10/11, 2.5%-22.5% on Mayhem 1 - Mayhem 9"
+Ionic Disruptor,Sniper Rifle,Hemovorous,25%,25% on Mayhem 10/11; 2.5%-22.5% on Mayhem 1 - Mayhem 9
 Bird of Prey,Sniper Rifle,Vault Card,N/A,
 Super Soldier,Shield,Vault Card,N/A,
 Re-Volter,Shield,Sumo,30%,
-Company Man,Artifact,Hemovorous,25%,"25% on Mayhem 10/11, 2.5%-22.5% on Mayhem 1 - Mayhem 9 (Rates for a 2nd Drop)"
+Company Man,Artifact,Hemovorous,25%,25% on Mayhem 10/11; 2.5%-22.5% on Mayhem 1 - Mayhem 9 (Rates for a 2nd Drop)
 Mesmer,Grenade Mod,The Gravekeeper,30%,
-Ringer,Grenade Mod,Hemovorous,25%,"25% on Mayhem 10/11, 2.5%-22.5% on Mayhem 1 - Mayhem 9"
+Ringer,Grenade Mod,Hemovorous,25%,25% on Mayhem 10/11; 2.5%-22.5% on Mayhem 1 - Mayhem 9
 Deaths Blessing,Class Mod,The Seer,6%,
 Roll Reversal,Class Mod,The Seer,6%,
 Heat Exchanger,Class Mod,The Seer,6%,
 Critical Mass,Class Mod,The Seer,6%,
+Fearmonger,Shotgun,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Stalker,Sniper Rifle,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Scream of Terror,Shield,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Ghast Call,Grenade Mod,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Polyaimourous,Submachine Gun,Challenge Reward/Loot Hearts,16%,Rate is from Loot Hearts
+Wedding Invitation,Sniper Rifle,Challenge Reward/Loot Hearts,16%,Rate is from Loot Hearts
+NoPewPew,Assault Rifle,Joey Ultraviolet/Roaster/The Tenderizer,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+OPQ System,Assault Rifle,Joey Ultraviolet/Josie Byte/Franco Firewall,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+Grease Trap,Pistol,Joey Ultraviolet/Roaster/The Tenderizer,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+Yellowcake,RPG,Joey Ultraviolet/FISH SLAPP!!!/Tyrone Smallums,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+Iceburger,Shotgun,Joey Ultraviolet/Roaster/The Tenderizer,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+Needle Gun,Submachine Gun,Joey Ultraviolet/Josie Byte/Franco Firewall,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+Firewall,Shield,Joey Ultraviolet/Josie Byte/Franco Firewall,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+Wattson,Shield,Joey Ultraviolet/FISH SLAPP!!!/Tyrone Smallums,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
+Fish Slap,Grenade Mod,Joey Ultraviolet/FISH SLAPP!!!/Tyrone Smallums,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey
