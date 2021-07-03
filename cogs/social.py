@@ -16,7 +16,7 @@ class Social(commands.Cog):
     #@commands.command(name='invite', help='Invite Link for the Bot')
     @cog_ext.cog_slash(name='invite', description='Invite Link for the Bot')
     async def server_invite(self, ctx: SlashContext):
-        response='https://discord.com/api/oauth2/authorize?client_id=660646451273007127&permissions=2147576848&scope=applications.commands%20bot'
+        response='https://discord.com/api/oauth2/authorize?client_id=660646451273007127&permissions=8&scope=applications.commands%20bot'
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
             if ctx.channel!=officialguild.get_channel(jackbotChatID):
