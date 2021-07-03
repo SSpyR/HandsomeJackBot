@@ -13,7 +13,6 @@ import requests
 import datetime
 import time
 import asyncio
-import git
 import pickle as pkl
 import discord
 
