@@ -18,7 +18,9 @@ import pickle as pkl
 import discord
 
 from discord.ext import commands
+from discord_slash import cog_ext, SlashContext
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID
 
 
 class Hotfix(commands.Cog):
@@ -37,8 +39,9 @@ class Hotfix(commands.Cog):
         #    print('File Was Empty')
 
     
-    @commands.command(name='hotfix', help='Links to the History View of the Latest Hotfix to View All Changes')
-    async def bl_hotfix(self, ctx):
+    #@commands.command(name='hotfix', help='Links to the History View of the Latest Hotfix to View All Changes')
+    @cog_ext.cog_slash(name='hotfix', description='Links to the History View of the Latest Hotfix to View All Changes')
+    async def bl_hotfix(self, ctx: SlashContext):
         guild=self.bot.get_guild(632633098584064018)
         chat=guild.get_channel(661350189696811094)
         found=False
@@ -54,15 +57,24 @@ class Hotfix(commands.Cog):
                     )
                     embed.set_footer(text='Repository Provided by apocaplyptech')
                     embed.add_field(name='\u200B', value='[See Changes Here]({})'.format(link), inline=True)
-                    officialguild=self.bot.get_guild(132671445376565248)
+                    officialguild=self.bot.get_guild(officialServerID)
                     if ctx.guild==officialguild:
-                        await officialguild.get_channel(860249638531498004).send(embed=embed)
+                        if ctx.channel!=officialguild.get_channel(jackbotChatID):
+                            return
+                        perms=False
+                        await ctx.send('Request Retrieved')
+                        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+                            perms=True
+                        if perms==True:
+                            await officialguild.get_channel(jackbotChatID).send(embed=embed)
+                        else:
+                            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
                     else:
                         await ctx.send(embed=embed)
                     found=True
 
 
-
+    #TODO Might have to adjust this for Official if the channel name changes
     @commands.Cog.listener()
     async def on_message(self, message):
         guild=self.bot.get_guild(632633098584064018)

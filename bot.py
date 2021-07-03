@@ -1,35 +1,71 @@
 # bot.py
 # Creator: SSpyR
 
-#TODO FIX AND NEATEN UP EVERYTHING FOR OFFICIAL SERVER
-#TODO Lock Official Server out of Joke Commands
-#TODO Lock Commands behind certain Roles in Official (Badass + most likely)
 #TODO Update with link to Announcements Server
 #TODO Do BL2 stuff?
 #TODO Add auto randy emote to Official but locked behind invinc and up
-#TODO Embed Pretty Up Stuff (with Hyperlinks)
 #TODO Remove some commands from Help
-#TODO Make a special Bearcat Response for Drop Info Command
-#TODO Probs have to make personal help command so that it sends in the right chat for Official
 
-## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=0&scope=bot
+## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=2147532800&scope=bot%20applications.commands
+
+## OFFICIAL IDS
+## INVINCIBLE: 561841778395840523
+## CONTENT CREATOR: 790139584025591819
+## TUBBY: 464235639584587787
+## BADASS: 453875267782443010
 
 import os
 import discord
 import logging
-import math
 from discord.ext import commands
+from discord_slash import SlashCommand, SlashContext
 from dotenv import load_dotenv
 
-dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+dotenv_path=os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 logging.basicConfig(level=logging.INFO)
 
-startup_extensions=['cogs.resources', 'cogs.social', 'cogs.hotfix']
+startup_extensions=['cogs.resources', 'cogs.social', 'cogs.hotfix', 'cogs.official']
 #['cogs.resources', 'cogs.social', 'cogs.hotfix'] #, 'cogs.hotfix' keep out while testing and fixing
-token = os.getenv('DISCORD_TOKEN')
-owner_id = os.getenv('OWNER_ID')
-bot = commands.Bot(command_prefix='~')
+token=os.getenv('DISCORD_TOKEN')
+owner_id=os.getenv('OWNER_ID')
+bot=commands.Bot(command_prefix='~')
+slash=SlashCommand(bot, sync_commands=True, sync_on_cog_reload=True)
+
+officialServerID=132671445376565248
+jackbotChatID=860249638531498004
+invincibleRoleID=561841778395840523
+ccRoleID=790139584025591819
+tubbyRoleID=464235639584587787
+badassRoleID=453875267782443010
+
+##Dont need if using slash commands
+# class helpCommand(commands.MinimalHelpCommand):
+#     def add_bot_commands_formatting(self, commands, heading):
+#             if commands:
+#                 if 'Official' not in str(heading):
+#                     # U+2002 Middle Dot
+#                     joined = '\u2002'.join(c.name for c in commands)
+#                     self.paginator.add_line('__**%s**__' % heading)
+#                     self.paginator.add_line(joined)
+#     async def send_pages(self):
+#         dest=None
+#         officialguild=bot.get_guild(officialServerID)
+#         if self.context.guild==officialguild:
+#             if self.context.channel!=officialguild.get_channel(jackbotChatID):
+#                 return
+#             dest=officialguild.get_channel(jackbotChatID)
+#         else:
+#             dest=self.get_destination()
+#         embed=discord.Embed(
+#             color=discord.Color.blurple(),
+#             description=''
+#         )
+#         print(self.paginator.pages)
+#         for page in self.paginator.pages:
+#             embed.description+=page
+        
+#         await dest.send(embed=embed)
 
 
 @bot.event
@@ -46,6 +82,9 @@ async def on_ready():
 
     activity=discord.Activity(name='for Hotfixes', type=discord.ActivityType.watching)
     await bot.change_presence(activity=activity)
+
+
+#bot.help_command=helpCommand()
 
 
 @bot.command
@@ -119,7 +158,6 @@ if __name__=="__main__":
             print('Extension could not be loaded {}\n{}'.format(extension,exception))
     
     bot.run(token)
-
 
 
 

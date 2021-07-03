@@ -4,6 +4,8 @@
 
 import discord
 from discord.ext import commands
+from discord_slash import cog_ext, SlashContext
+from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID
 
 class Social(commands.Cog):
 
@@ -11,15 +13,27 @@ class Social(commands.Cog):
         self.bot=bot
 
 
-    @commands.command(name='invite', help='Invite Link for the Bot')
-    async def server_invite(self, ctx):
-        response='https://discordapp.com/api/oauth2/authorize?client_id=660646451273007127&permissions=8&scope=bot'
-        officialguild=self.bot.get_guild(132671445376565248)
+    #@commands.command(name='invite', help='Invite Link for the Bot')
+    @cog_ext.cog_slash(name='invite', description='Invite Link for the Bot')
+    async def server_invite(self, ctx: SlashContext):
+        response='https://discord.com/api/oauth2/authorize?client_id=660646451273007127&permissions=2147576848&scope=applications.commands%20bot'
+        officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            await officialguild.get_channel(860249638531498004).send('{} A Direct Message has Been Sent You.'.format(ctx.author.mention))
+            if ctx.channel!=officialguild.get_channel(jackbotChatID):
+                return
+            perms=False
+            await ctx.send('Request Retrieved')
+            if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+                perms=True
+            if perms==True:
+                await officialguild.get_channel(jackbotChatID).send('{} A Direct Message has Been Sent You.'.format(ctx.author.mention))
+                await ctx.author.send('Here is the link to invite Handsome JackBot to your Discord. Make sure to grant it Manage Channel and Slash Command Privileges.')
+                await ctx.author.send(response)
+            else:
+                await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
         else:
             await ctx.send('{} A Direct Message has Been Sent You.'.format(ctx.author.mention))
-            await ctx.author.send('Here is the link to invite Handsome JackBot to your Discord. Make sure to grant it Admin privileges.')
+            await ctx.author.send('Here is the link to invite Handsome JackBot to your Discord. Make sure to grant it Manage Channel and Slash Command Privileges.')
             await ctx.author.send(response)
 
     
@@ -29,12 +43,24 @@ class Social(commands.Cog):
     #    await ctx.send(response)
 
 
-    @commands.command(name='github', help='Github Repository for the Bot')
-    async def github_link(self, ctx):
+    #@commands.command(name='github', help='Github Repository for the Bot')
+    @cog_ext.cog_slash(name='github', description='Github Repository for the Bot')
+    async def github_link(self, ctx: SlashContext):
         response='https://github.com/SSpyR/HandsomeJackBot.git'
-        officialguild=self.bot.get_guild(132671445376565248)
+        officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            await officialguild.get_channel(860249638531498004).send('{} A Direct Message has Been Sent You.'.format(ctx.author.mention))
+            if ctx.channel!=officialguild.get_channel(jackbotChatID):
+                return
+            perms=False
+            await ctx.send('Request Retrieved')
+            if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+                perms=True
+            if perms==True:
+                await officialguild.get_channel(jackbotChatID).send('{} A Direct Message has Been Sent You.'.format(ctx.author.mention))
+                await ctx.author.send('Here is the link to the Github Repo.')
+                await ctx.author.send(response)
+            else:
+                await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
         else:
             await ctx.send('{} A Direct Message has Been Sent You.'.format(ctx.author.mention))
             await ctx.author.send('Here is the link to the Github Repo.')
@@ -51,11 +77,15 @@ class Social(commands.Cog):
     #        await ctx.send(response)
 
 
-    @commands.command(name='channel', help='Creates the Handsome JackBot Channel')
-    async def channel_create(self, ctx):
-        officialguild=self.bot.get_guild(132671445376565248)
+    #@commands.command(name='channel', help='Creates the Handsome JackBot Channel')
+    @cog_ext.cog_slash(name='channel', description='Creates the Handsome JackBot Channel')
+    async def channel_create(self, ctx: SlashContext):
+        officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            officialguild.get_channel(860249638531498004).send('Command Disabled for this Server.')
+            if ctx.channel!=officialguild.get_channel(jackbotChatID):
+                return
+            await ctx.send('Request Retrieved')
+            await officialguild.get_channel(jackbotChatID).send('Command Disabled for this Server.')
         else:
             channel=False
             if 'handsome-jackbot' in ctx.guild.channels:
