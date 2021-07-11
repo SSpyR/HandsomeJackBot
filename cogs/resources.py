@@ -140,11 +140,18 @@ class Resources(commands.Cog):
             if ctx.channel!=officialguild.get_channel(jackbotChatID):
                 return
             perms=False
+            if len(queryname)<3:
+                await officialguild.get_channel(jackbotChatID).send('Name {} too short for searching. Please use at least 3 characters.'.format(queryname))
+                return
             await ctx.send('Request Retrieved')
             if ctx.author.top_role>=officialguild.get_role(badassRoleID):
                 perms=True
             if perms==False:
                 await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+        else:
+            if len(queryname)<3:
+                await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
+                return
         if perms==True:
             found=False
             embed=None
@@ -199,7 +206,7 @@ class Resources(commands.Cog):
                                 await ctx.send(':pray:')
                             found=True
                 if found==False:
-                    await ctx.send('No Item with Name {} could be found.'.format(queryname))
+                    await ctx.send('No Item with Name \'{}\' could be found.'.format(queryname))
         
 
 def setup(bot):
