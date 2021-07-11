@@ -36,7 +36,8 @@ class Official(commands.Cog):
     #@commands.command(name='lfg')
     @cog_ext.cog_slash(name='lfg', description='LFG Redirection Message', guild_ids=[officialServerID], options=[create_option(name='user', description='Specific User to Mention with Message', option_type=6, required=False)])
     async def lfg(self, ctx: SlashContext, user: discord.User=None):
-        response='If you plan to play, boost, or trade with someone, please read <#574884110904852480> to get set up! This channel has all the information you\'ll need about our LFG channels! Getting started is as simple as assigning yourself a platform role in <#548843527082213376>! Enjoy yourselves Vault Hunters!'
+        response='If you plan to play, boost, or trade with someone, please read <#574884110904852480> to get set up! This channel has all the information you\'ll need about our LFG channels! Getting started is as simple as assigning yourself a platform role in <#548843527082213376>! Enjoy yourselves Vault Hunters! \n\n'
+        response+='To embed links or upload images in our trading channels, you\'ll need the Minion role! You earn this at Arcane level 2. You gain XP through talking in the chat.'
         perms=False
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
