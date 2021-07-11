@@ -25,7 +25,7 @@ dotenv_path=os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 logging.basicConfig(level=logging.INFO)
 
-startup_extensions=['cogs.resources', 'cogs.social', 'cogs.hotfix', 'cogs.official']
+startup_extensions=['cogs.resources', 'cogs.social', 'cogs.hotfix', 'cogs.official'] #, 'cogs.official' <- put back in before shipping
 #['cogs.resources', 'cogs.social', 'cogs.hotfix'] #, 'cogs.hotfix' keep out while testing and fixing
 token=os.getenv('DISCORD_TOKEN')
 owner_id=os.getenv('OWNER_ID')

@@ -1,5 +1,5 @@
 Created By: SSpyR or u/Keiosuu,,,,
-"Items Are Sorted Via Stage Of Game (Base, DLC1, etc), and then Manufacturer of each Game Stage . COMs Dont Include Character Weighting, Event Items not Included World Drop Viability Not Noted",,,,
+"Items Are Sorted Via Stage Of Game (Base, DLC1, etc), and then Manufacturer of each Game Stage . COMs Dont Include Character Weighting,  World Drop Viability Not Noted",,,,
 "For Drop Locations and Other Information, See the Main Loot Spreadsheet made by TonyDML or Lootlemon by Levin",,,,
 Name,Type,Enemy/Quest,Drop Rate,Notes
 Carrier,Assault Rifle,Judge Hightower,15%,
@@ -38,7 +38,7 @@ Sand Hawk,Sniper Rifle,Katagawa Jr.,16.50%,Mayhem 6+
 Malaks Bane,Sniper Rifle,Phoenix,10%,
 Brainstormer,Shotgun,Katagawa Ball,13.5%/30%,13.5% on Mayhem 6+; 30% Otherwise
 Conference Call,Shotgun,Judge Hightower,15%,
-Face-puncher,Shotgun,"Muldock, the Anointed",15%,
+Face-puncher,Shotgun,Muldock the Anointed,15%,
 Phebert,Shotgun,Wick and Warty,15%,Only from Wick
 Reflux,Shotgun,GenIVIV,11.40%,Mayhem 6+
 The Butcher,Shotgun,Raging Titan,25%/33.3%,25% on Mayhem 4+; 33.3% Otherwise
@@ -51,9 +51,9 @@ Crossbow,Sniper Rifle,Urist McEnforcer,15%,
 Tankmans Shield,Sniper Rifle,Captain Traunt,13.5%/30%,13.5% on Mayhem 6+; 30% on Mayhem 4 and 5; Mayhem 4+ Drop
 Woodblocker,Sniper Rifle,Indo Tyrant,10%,
 Bekah,Assault Rifle,Sir Hammerlock Mail,N/A,Only From Mail
-Gatling Gun,Assault Rifle,"Billy, the Anointed",15%,
+Gatling Gun,Assault Rifle,Billy the Anointed,15%,
 Hand of Glory,Assault Rifle,Guns of Reliance,N/A,Mission Reward
-Lead Sprinkler,Assault Rifle,"Billy, the Anointed",20%,
+Lead Sprinkler,Assault Rifle,Billy the Anointed,20%,
 Rowans Call,Assault Rifle,Red Rain,50%,
 Amazing Grace,Pistol,Life of the Party,N/A,Mission Reward
 Kings/Queens Call,Pistol,Tyreen the Destroyer,15%,
@@ -112,7 +112,7 @@ Breeder,Pistol,Psychobillies,30%,
 Devastator,Pistol,Unstoppable,10%,
 Devils Foursum,Pistol,Psychobillies,10%,Only from Billy
 Occultist,Pistol,The Big-D,30%,
-Roisens Thorns,Pistol,Troy Calypso,10%,
+Roisens Thorns,Pistol,Princess Tarantella II,10%,
 Echo,Pistol,Princess Tarantella II,30%,
 Hive,RPG,Princess Tarantella II,10%,
 Plaguebearer,RPG,Warden,16.50%,Mayhem 6+
@@ -153,7 +153,7 @@ Red Suit,Shield,Atomic,10%,
 Shooting Star,Shield,Turnkey Tim,15%,
 Front Loader,Shield,Private Beans,15%,
 Re-Charger,Shield,Urist McEnforcer,15%,
-Rectifier,Shield,"Muldock, the Anointed",15%,
+Rectifier,Shield,Muldock the Anointed,15%,
 Stop-Gap,Shield,El Dragon Jr.,15%,
 The Transformer,Shield,Queen Ant Wanette,15%,
 Ward,Shield,Graveward,10%,
@@ -209,22 +209,22 @@ Bear Trooper,Class Mod,Anointed X-4,15%,
 Blast Master,Class Mod,King Gnasher,15%,
 Bloodletter,Class Mod,Skag of Survival,50%,
 Mind Sweeper,Class Mod,Archer Rowe,15%,
-Raging Bear,Class Mod,"Billy, the Anointed",30%?,Not Exactly Sure?; Mayhem 4+
+Raging Bear,Class Mod,Billy the Anointed,30%?,Not Exactly Sure?; Mayhem 4+
 Rocketeer,Class Mod,Tumorhead,15%,
 Antifreeze,Class Mod,Arbalest of Discipline,50%,Mayhem 4+
 Cold Warrior,Class Mod,Tremendous Rex,50%,
 Executor,Class Mod,Baron Noggin,15%,
 Infilitrator,Class Mod,Skrakk,15%,
 Shockerator,Class Mod,Hag of Fervor,50%,
-Techspert,Class Mod,"Rachel, the Anointed",15%,
-Moonfire,Pistol,Wotan the Invincible,14%,
-Tiggs Boom,Shotgun,Wotan the Invincible,14%,
-Kybs Worth,Submachine Gun,Wotan the Invincible,14%,
-Redistributor,Submachine Gun,Wotan the Invincible,14%,
-Re-Charge Berner,Shield,Valkyrie Squad,3.4%/22%,Lower Rate is from Wotan
-Red Card Re-Charger,Shield,Valkyrie Squad,3.4%/22%,Lower Rate is from Wotan
-Snowshoe,Shield,Valkyrie Squad,3.4%/22%,Lower Rate is from Wotan
-Version 0.m,Shield,Valkyrie Squad,14.%/22%,Lower Rate is from Wotan
+Techspert,Class Mod,Rachel the Anointed,15%,
+Moonfire,Pistol,Wotan the Invincible,18%,
+Tiggs Boom,Shotgun,Wotan the Invincible,18%,
+Kybs Worth,Submachine Gun,Wotan the Invincible,18%,
+Redistributor,Submachine Gun,Wotan the Invincible,18%,
+Re-Charge Berner,Shield,Valkyrie Squad,22%,
+Red Card Re-Charger,Shield,Valkyrie Squad,22%,
+Snowshoe,Shield,Valkyrie Squad,22%,
+Version 0.m,Shield,Valkyrie Squad,22%,
 Craps,Pistol,Jackbot,33.30%,
 Lucky 7,Pistol,Scraptrap,50%,
 Nukem,RPG,Loco Chantelle,10%,

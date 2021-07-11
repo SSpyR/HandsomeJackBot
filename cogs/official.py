@@ -20,15 +20,17 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send('If you\'re seeing unusual stats on your gear (incorrect values, incorrect rarities) or experiencing bugs that have been fixed according to patch notes, you may not have let hotfixes apply. To let them apply go to the main menu and wait for the "Hotfixes Applied" sign to appear. You must be online for this to happen and it can take anywhere between 5 seconds to a minute depending on your connection strength')
+            await ctx.send('If you\'re seeing unusual stats on your gear (incorrect values, incorrect rarities) or experiencing bugs that have been fixed according to patch notes, you may not have let hotfixes apply. To let them apply go to the main menu and wait for the "Hotfixes Applied" sign to appear. You must be online for this to happen and it can take anywhere between 5 seconds to a minute depending on your connection strength')
+            # await officialguild.get_channel(jackbotChatID).send('If you\'re seeing unusual stats on your gear (incorrect values, incorrect rarities) or experiencing bugs that have been fixed according to patch notes, you may not have let hotfixes apply. To let them apply go to the main menu and wait for the "Hotfixes Applied" sign to appear. You must be online for this to happen and it can take anywhere between 5 seconds to a minute depending on your connection strength')
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='lfg')
@@ -39,21 +41,24 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
             if user is None:
-                await officialguild.get_channel(jackbotChatID).send(response)
+                await ctx.send(response)
+                # await officialguild.get_channel(jackbotChatID).send(response)
                 #await ctx.message.delete()
             else:
                 response=str(user.mention)+'\n'+response
-                await officialguild.get_channel(jackbotChatID).send(response)
+                await ctx.send(response)
+                # await officialguild.get_channel(jackbotChatID).send(response)
                 #await ctx.message.delete()
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='support')
@@ -70,15 +75,17 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send(response)
+            await ctx.send(response)
+            # await officialguild.get_channel(jackbotChatID).send(response)
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='splash')
@@ -91,15 +98,17 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send(response)
+            await ctx.send(response)
+            # await officialguild.get_channel(jackbotChatID).send(response)
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='bl3who')
@@ -112,15 +121,17 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send(response)
+            await ctx.send(response)
+            # await officialguild.get_channel(jackbotChatID).send(response)
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='bl2who')
@@ -133,15 +144,17 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send(response)
+            await ctx.send(response)
+            # await officialguild.get_channel(jackbotChatID).send(response)
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='tpswho')
@@ -154,15 +167,17 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send(response)
+            await ctx.send(response)
+            # await officialguild.get_channel(jackbotChatID).send(response)
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='bl1who')
@@ -175,33 +190,37 @@ class Official(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send(response)
+            await ctx.send(response)
+            # await officialguild.get_channel(jackbotChatID).send(response)
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='event')
     @cog_ext.cog_slash(name='event', description='Helpful Information About BL3 Events', guild_ids=[officialServerID])
-    async def bl3_event(self, ctx):
+    async def bl3_event(self, ctx: SlashContext):
         perms=False
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
             return
-        if ctx.channel!=officialguild.get_channel(jackbotChatID):
-            return
-        await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
             perms=True
         if perms==True:
-            await officialguild.get_channel(jackbotChatID).send('In order to activate any event (Cartels, Broken Hearts or Bloody Harvest) go to main menu, click play and new option will show up on the bottom of menu to enable it')
+            await ctx.send('In order to activate any event (Cartels, Broken Hearts or Bloody Harvest) go to main menu, click play and new option will show up on the bottom of menu to enable it')
+            # await officialguild.get_channel(jackbotChatID).send('In order to activate any event (Cartels, Broken Hearts or Bloody Harvest) go to main menu, click play and new option will show up on the bottom of menu to enable it')
         else:
-            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
 def setup(bot):

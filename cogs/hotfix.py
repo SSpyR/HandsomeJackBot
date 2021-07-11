@@ -62,7 +62,7 @@ class Hotfix(commands.Cog):
                             return
                         perms=False
                         await ctx.send('Request Retrieved')
-                        if ctx.author.top_role>=officialguild.get_role(tubbyRoleID):
+                        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
                             perms=True
                         if perms==True:
                             await officialguild.get_channel(jackbotChatID).send(embed=embed)
