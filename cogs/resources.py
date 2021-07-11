@@ -140,10 +140,10 @@ class Resources(commands.Cog):
             if ctx.channel!=officialguild.get_channel(jackbotChatID):
                 return
             perms=False
-            if len(queryname)<3:
-                await officialguild.get_channel(jackbotChatID).send('Name {} too short for searching. Please use at least 3 characters.'.format(queryname))
-                return
             await ctx.send('Request Retrieved')
+            if len(queryname)<3:
+                await officialguild.get_channel(jackbotChatID).send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
+                return
             if ctx.author.top_role>=officialguild.get_role(badassRoleID):
                 perms=True
             if perms==False:
