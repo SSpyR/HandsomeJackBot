@@ -53,6 +53,7 @@ class Resources(commands.Cog):
         response+='[BL3 Loot Information](https://www.lootlemon.com/) \n'
         response+='[BL3 Save Editor](https://github.com/cfi2017/bl3-save) \n'
         response+='[BL3 Modding](https://www.nexusmods.com/borderlands3/mods/244) \n'
+        response+='[BL3 Max Damage Roll Sheet](https://docs.google.com/spreadsheets/d/1L-BU-n9gGdXvXl41RE25ZsXfEqamgBymP9E5qhEQVFo/edit#gid=0) \n'
         embed=discord.Embed(
             title='BL3 Useful Links',
             description=response,

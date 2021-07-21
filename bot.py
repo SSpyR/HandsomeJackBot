@@ -2,9 +2,9 @@
 # Creator: SSpyR
 
 #TODO Update with link to Announcements Server
-#TODO Do BL2 stuff?
+#TODO Do BL2 & TPS stuff?
 #TODO Add auto randy emote to Official but locked behind invinc and up
-#TODO Remove some commands from Help
+#TODO Pins Command for Official with how to Check Pins (see Frank Command)
 
 ## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=2147532800&scope=bot%20applications.commands
 
