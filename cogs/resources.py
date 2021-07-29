@@ -30,7 +30,7 @@ class Resources(commands.Cog):
         embed.add_field(name='\u200B', value='[Submit a Build Here](https://docs.google.com/forms/d/e/1FAIpQLSe_RkUKIvzHoRXlHgQh4TnERgQK6H-yXW2RJkUmn7sFUn4x0Q/viewform)', inline=True)
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 print('Hey you fucked up')
                 return
             perms=False
@@ -63,7 +63,7 @@ class Resources(commands.Cog):
         embed.set_footer(text='')
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
             await ctx.send('Request Retrieved')
@@ -118,7 +118,7 @@ class Resources(commands.Cog):
         embed.set_footer(text='Courtesy of Grimm')
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
             await ctx.send('Request Retrieved')
@@ -140,7 +140,7 @@ class Resources(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         perms=True
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
             await ctx.send('Request Retrieved')

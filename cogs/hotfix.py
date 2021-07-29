@@ -58,7 +58,7 @@ class Hotfix(commands.Cog):
                     embed.add_field(name='\u200B', value='[See Changes Here]({})'.format(link), inline=True)
                     officialguild=self.bot.get_guild(officialServerID)
                     if ctx.guild==officialguild:
-                        if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
+                        if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
                             return
                         perms=False
                         await ctx.send('Request Retrieved')
