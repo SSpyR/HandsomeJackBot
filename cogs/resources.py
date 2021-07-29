@@ -7,7 +7,7 @@ from discord_slash import cog_ext, SlashContext
 import csv
 
 from discord_slash.utils.manage_commands import create_option
-from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID
+from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
 class Resources(commands.Cog):
 
@@ -30,16 +30,16 @@ class Resources(commands.Cog):
         embed.add_field(name='\u200B', value='[Submit a Build Here](https://docs.google.com/forms/d/e/1FAIpQLSe_RkUKIvzHoRXlHgQh4TnERgQK6H-yXW2RJkUmn7sFUn4x0Q/viewform)', inline=True)
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            await ctx.send('Request Retrieved')
-            if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+            #await ctx.send('Request Retrieved')
+            if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                 perms=True
             if perms==True:
-                await officialguild.get_channel(jackbotChatID).send(embed=embed)
+                await ctx.send(embed=embed)
             else:
-                await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+                await ctx.send('Oops! You do not have the proper permissions for that.')
         else:
             await ctx.send(embed=embed)
 
@@ -62,16 +62,16 @@ class Resources(commands.Cog):
         embed.set_footer(text='')
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            await ctx.send('Request Retrieved')
-            if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+            #await ctx.send('Request Retrieved')
+            if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                 perms=True
             if perms==True:
-                await officialguild.get_channel(jackbotChatID).send(embed=embed)
+                await ctx.send(embed=embed)
             else:
-                await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+                await ctx.send('Oops! You do not have the proper permissions for that.')
         else:
             await ctx.send(embed=embed)
 
@@ -117,38 +117,39 @@ class Resources(commands.Cog):
         embed.set_footer(text='Courtesy of Grimm')
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            await ctx.send('Request Retrieved')
-            if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+            #await ctx.send('Request Retrieved')
+            if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                 perms=True
             if perms==True:
-                await officialguild.get_channel(jackbotChatID).send(embed=embed)
+                await ctx.send(embed=embed)
             else:
-                await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+                await ctx.send('Oops! You do not have the proper permissions for that.')
         else:
             await ctx.channel.send(embed=embed)
 
 
     #TODO Edit Agonizer rates for various Mayhem Levels
+    #TODO Some repetetive code for sending with the change to Official commands
     #@commands.command(name='dropinfo', help='Search Command for Finding the Drop Rate and Location of an Item')
     @cog_ext.cog_slash(name='dropinfo', description='Search Command for Finding the Drop Rate and Location of an Item', options=[create_option(name='queryname', description='Name of Item to Search For', option_type=3, required=True)])
     async def bl_droprate(self, ctx: SlashContext, queryname: str):
         officialguild=self.bot.get_guild(officialServerID)
         perms=True
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            await ctx.send('Request Retrieved')
+            #await ctx.send('Request Retrieved')
             if len(queryname)<3:
-                await officialguild.get_channel(jackbotChatID).send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
+                await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
                 return
-            if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+            if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                 perms=True
             if perms==False:
-                await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+                await ctx.send('Oops! You do not have the proper permissions for that.')
         else:
             if len(queryname)<3:
                 await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
@@ -197,9 +198,9 @@ class Resources(commands.Cog):
                         )
                         embed.add_field(name='\u200B', value='[Further Information on Lootlemon]({})'.format(lootlemon), inline=True)
                         if ctx.guild==officialguild:
-                            await officialguild.get_channel(jackbotChatID).send(embed=embed)
+                            await ctx.send(embed=embed)
                             if name.lower()=='bearcat':
-                                await officialguild.get_channel(jackbotChatID).send(':pray:')
+                                await ctx.send(':pray:')
                             found=True
                         else:
                             await ctx.send(embed=embed)

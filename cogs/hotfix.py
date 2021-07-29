@@ -19,7 +19,7 @@ import discord
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID
+from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
 
 class Hotfix(commands.Cog):
@@ -58,16 +58,16 @@ class Hotfix(commands.Cog):
                     embed.add_field(name='\u200B', value='[See Changes Here]({})'.format(link), inline=True)
                     officialguild=self.bot.get_guild(officialServerID)
                     if ctx.guild==officialguild:
-                        if ctx.channel!=officialguild.get_channel(jackbotChatID):
+                        if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                             return
                         perms=False
-                        await ctx.send('Request Retrieved')
-                        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+                        #await ctx.send('Request Retrieved')
+                        if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                             perms=True
                         if perms==True:
-                            await officialguild.get_channel(jackbotChatID).send(embed=embed)
+                            await ctx.send(embed=embed)
                         else:
-                            await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+                            await ctx.send('Oops! You do not have the proper permissions for that.')
                     else:
                         await ctx.send(embed=embed)
                     found=True

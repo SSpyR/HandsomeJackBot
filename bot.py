@@ -5,6 +5,7 @@
 #TODO Do BL2 & TPS stuff?
 #TODO Add auto randy emote to Official but locked behind invinc and up
 #TODO Pins Command for Official with how to Check Pins (see Frank Command)
+#TODO Get rid of help command
 
 ## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=2147532800&scope=bot%20applications.commands
 
@@ -13,6 +14,7 @@
 ## CONTENT CREATOR: 790139584025591819
 ## TUBBY: 464235639584587787
 ## BADASS: 453875267782443010
+## RABID: 453875169207910406
 
 import os
 import discord
@@ -34,10 +36,14 @@ slash=SlashCommand(bot, sync_commands=True, sync_on_cog_reload=True)
 
 officialServerID=132671445376565248
 jackbotChatID=860249638531498004
+bl3ChatID=560903030137159711
+bl3BuildsChatID=614575671884251141
+bl3LootChatID=618688011009261568
 invincibleRoleID=561841778395840523
 ccRoleID=790139584025591819
 tubbyRoleID=464235639584587787
 badassRoleID=453875267782443010
+rabidRoleID=453875169207910406
 
 ##Dont need if using slash commands
 # class helpCommand(commands.MinimalHelpCommand):
