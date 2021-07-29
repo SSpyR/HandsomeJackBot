@@ -33,7 +33,7 @@ class Resources(commands.Cog):
             if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            #await ctx.send('Request Retrieved')
+            await ctx.send('Request Retrieved')
             if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                 perms=True
             if perms==True:
@@ -65,7 +65,7 @@ class Resources(commands.Cog):
             if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            #await ctx.send('Request Retrieved')
+            await ctx.send('Request Retrieved')
             if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                 perms=True
             if perms==True:
@@ -120,7 +120,7 @@ class Resources(commands.Cog):
             if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            #await ctx.send('Request Retrieved')
+            await ctx.send('Request Retrieved')
             if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                 perms=True
             if perms==True:
@@ -142,7 +142,7 @@ class Resources(commands.Cog):
             if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
                 return
             perms=False
-            #await ctx.send('Request Retrieved')
+            await ctx.send('Request Retrieved')
             if len(queryname)<3:
                 await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
                 return
