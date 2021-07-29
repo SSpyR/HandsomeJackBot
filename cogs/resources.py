@@ -31,6 +31,7 @@ class Resources(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
             if ctx.channel!=officialguild.get_channel(jackbotChatID) or ctx.channel!=officialguild.get_channel(bl3ChatID) or ctx.channel!=officialguild.get_channel(bl3BuildsChatID) or ctx.channel!=officialguild.get_channel(bl3LootChatID):
+                print('Hey you fucked up')
                 return
             perms=False
             await ctx.send('Request Retrieved')
