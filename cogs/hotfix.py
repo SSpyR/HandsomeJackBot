@@ -61,7 +61,7 @@ class Hotfix(commands.Cog):
                         if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
                             return
                         perms=False
-                        await ctx.send('Request Retrieved')
+                        #await ctx.send('Request Retrieved')
                         if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
                             perms=True
                         if perms==True:

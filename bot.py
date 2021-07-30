@@ -6,6 +6,7 @@
 #TODO Add auto randy emote to Official but locked behind invinc and up
 #TODO Pins Command for Official with how to Check Pins (see Frank Command)
 #TODO Get rid of help command
+#TODO Maybe can get rid of "Request Retrieved" for BL3 related commands now?
 
 ## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=2147532800&scope=bot%20applications.commands
 
@@ -44,6 +45,8 @@ ccRoleID=790139584025591819
 tubbyRoleID=464235639584587787
 badassRoleID=453875267782443010
 rabidRoleID=453875169207910406
+
+bot=commands.Bot(help_command=None)
 
 ##Dont need if using slash commands
 # class helpCommand(commands.MinimalHelpCommand):
