@@ -46,7 +46,6 @@ tubbyRoleID=464235639584587787
 badassRoleID=453875267782443010
 rabidRoleID=453875169207910406
 
-bot=commands.Bot(help_command=None)
 
 ##Dont need if using slash commands
 # class helpCommand(commands.MinimalHelpCommand):
@@ -93,7 +92,7 @@ async def on_ready():
     await bot.change_presence(activity=activity)
 
 
-#bot.help_command=helpCommand()
+bot.help_command=None
 
 
 @bot.command
