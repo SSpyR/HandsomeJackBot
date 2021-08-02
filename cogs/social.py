@@ -5,7 +5,7 @@
 import discord
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
-from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
+from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
 class Social(commands.Cog):
 

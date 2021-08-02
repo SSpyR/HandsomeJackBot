@@ -109,6 +109,36 @@ class Official(commands.Cog):
         else:
             await ctx.send('Oops! You do not have the proper permissions for that.')
             # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+    
+
+    #@commands.command(name='parts')
+    @cog_ext.cog_slash(name='parts', description='Part Guides for BL1, BL2, and TPS', guild_ids=[officialServerID])
+    async def parts(self, ctx: SlashContext):
+        response='**BL2 + TPS Weapons Parts (including stats): ** \n https://imgur.com/gallery/IE53Z \n \n'
+        response+='**BL1 + BL2 Weapon Parts (visuals, no stats): ** \n https://borderlands.fandom.com/wiki/Gun_Component_Charts \n \n'
+        response+='**BL2 Grenade Parts (visuals, somewhat stats): ** \n https://apple1417.github.io/bl2/grenades/ \n \n'
+        response+='**BL2 Shield Parts (including stats): ** \n https://apple1417.github.io/bl2/shields/'
+        embed=discord.Embed(
+            title='Borderlands 1, 2 and TPS parts',
+            description=response,
+            color=discord.Color.red()
+        )
+        embed.set_footer(text='')
+        perms=False
+        officialguild=self.bot.get_guild(officialServerID)
+        if ctx.guild!=officialguild:
+            return
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+            perms=True
+        if perms==True:
+            await ctx.send(embed=embed)
+            # await officialguild.get_channel(jackbotChatID).send(response)
+        else:
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
 
 
     #@commands.command(name='bl3who')

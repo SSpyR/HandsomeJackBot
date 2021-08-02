@@ -6,7 +6,7 @@ import csv
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
-from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
+from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
 class Resources(commands.Cog):
 
@@ -101,12 +101,17 @@ class Resources(commands.Cog):
             await ctx.channel.send(embed=embed)
 
     
-    #TODO Get links to add here
-    # https://bl2.parts/
-    # https://github.com/gibbed/Gibbed.Borderlands2/releases
     @cog_ext.cog_slash(name='bl2info', description='Various Useful Links for BL2')
     async def bl2_info(self, ctx: SlashContext):
-        response='[]() \n'
+        response='[BL2 Basics Guide](https://forums.gearboxsoftware.com/t/guide-borderlands-2-basics-for-new-players/1248201) \n'
+        response+='[BL2 UVHM Survival Guide](https://forums.gearboxsoftware.com/t/100-ways-to-stay-alive-in-uvhm/77751) \n'
+        response+='[BL2 Splash Damage Guide](https://forums.gearboxsoftware.com/t/complete-splash-damage-guide/1553510) \n'
+        response+='[BL2 Critical Hits Guide](https://forums.gearboxsoftware.com/t/guide-critical-hit-bonus-sources-bl2-version/617954) \n'
+        response+='[BL2 Parts Guide](https://bl2.parts/) \n'
+        response+='[BL2 Save Editor](https://github.com/gibbed/Gibbed.Borderlands2/releases) \n'
+        response+='[BL2 Loot Information](https://www.lootlemon.com/) \n'
+        response+='[BL2 Tediore Reload Guide](https://forums.gearboxsoftware.com/t/complete-tediore-reload-guide/1591640) \n'
+        response+='[BL2 Digistruct Peak Resistances Guide](https://forums.gearboxsoftware.com/t/digistruct-peak-enemy-typing-issue-and-why-your-fire-guns-suck-there/1119745) \n'
         embed=discord.Embed(
             title='BL2 Useful Links',
             description=response,
@@ -115,7 +120,7 @@ class Resources(commands.Cog):
         embed.set_footer(text='')
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl2ChatID):
                 return
             perms=False
             #await ctx.send('Request Retrieved')
@@ -139,7 +144,7 @@ class Resources(commands.Cog):
         embed.set_footer(text='Courtesy of LightChaosman')
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl2ChatID):
                 return
             perms=False
             #await ctx.send('Request Retrieved')
@@ -154,34 +159,34 @@ class Resources(commands.Cog):
 
     
     #TODO Turn this into a thing for all the BL2 Character Guides pinned in #borderlands-2
-    # @cog_ext.cog_slash(name='bl3builds', description='Google Docs of Borderlands 3 Builds, Updated to Current Content')
-    # async def bl3_builds(self, ctx: SlashContext):
-    #     response=':purple_heart:[Amara Builds](https://docs.google.com/document/d/1rpIwTi2hrWywgB42_I2mCjLqZ72r-n1FAoA2w8LGoGA/edit?usp=sharing>) \n \n'
-    #     response+=':green_heart:[FL4K Builds](https://docs.google.com/document/d/1MiGGa_HDpm_IzHWgfhIDkLxzqiL_7O5HRC8E8ICerQg/edit?usp=sharing>) \n \n'
-    #     response+=':heart:[Moze Builds](https://docs.google.com/document/d/1hLiqOQ3PcA2oPVqaXuq2cU09EvLwoZx2KADgP6GwZ1A/edit>) \n \n' 
-    #     response+=':yellow_heart:[Zane Builds](https://docs.google.com/document/d/1p9tA92kJx2ZOKJG8r7G2yEQi6XE9p8qjlWvJWoNgfu4/edit?usp=sharing>)'
-    #     embed=discord.Embed(
-    #         title='BL3 Build Compendiums',
-    #         description=response,
-    #         color=discord.Color.dark_gold()
-    #     )
-    #     embed.set_footer(text='')
-    #     embed.add_field(name='\u200B', value='[Submit a Build Here](https://docs.google.com/forms/d/e/1FAIpQLSe_RkUKIvzHoRXlHgQh4TnERgQK6H-yXW2RJkUmn7sFUn4x0Q/viewform)', inline=True)
-    #     officialguild=self.bot.get_guild(officialServerID)
-    #     if ctx.guild==officialguild:
-    #         if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
-    #             print('Hey you fucked up')
-    #             return
-    #         perms=False
-    #         #await ctx.send('Request Retrieved')
-    #         if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
-    #             perms=True
-    #         if perms==True:
-    #             await ctx.send(embed=embed)
-    #         else:
-    #             await ctx.send('Oops! You do not have the proper permissions for that.')
-    #     else:
-    #         await ctx.send(embed=embed)
+    @cog_ext.cog_slash(name='bl2chars', description='Google Docs of Borderlands 2 Vault Hunter Guides')
+    async def bl2_vhguides(self, ctx: SlashContext):
+        response=':purple_heart:[Zer0 Guide](https://docs.google.com/document/d/1PEenTeIMyiTyniphG4Kwq7coQz2ZRxJm0HorcXp6ZVU/edit) \n \n'
+        response+=':green_heart:[Axton Guide](https://docs.google.com/document/d/1Ogjsyad8chlCQeFnB_KuWkgHqQFVNdTcgWWfijml-4s/edit) \n \n'
+        response+=':heart:[Krieg Guide](https://docs.google.com/document/d/1RIIZ5IVaDBtxKdcBdd-SiudTUgTVwuNa88Zi-qVSIOI/edit) \n \n' 
+        response+=':brown_heart:[Salvador Guide](https://docs.google.com/document/d/1fK9w9ZmgSvXl-Dq7ICaxA5rBbX4JYlk6KSAldjTIIyU/edit) \n \n' 
+        response+=':yellow_heart:[Maya Guide](https://docs.google.com/document/d/17gqutA_GEFFvyV2W-kxoWVLf2TOLmFv9xkfBFVkF3uk/edit)'
+        embed=discord.Embed(
+            title='BL2 VH Guides',
+            description=response,
+            color=discord.Color.dark_gold()
+        )
+        embed.set_footer(text='')
+        officialguild=self.bot.get_guild(officialServerID)
+        if ctx.guild==officialguild:
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl2ChatID):
+                print('Hey you fucked up')
+                return
+            perms=False
+            #await ctx.send('Request Retrieved')
+            if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
+                perms=True
+            if perms==True:
+                await ctx.send(embed=embed)
+            else:
+                await ctx.send('Oops! You do not have the proper permissions for that.')
+        else:
+            await ctx.send(embed=embed)
 
 
     #TODO Edit Agonizer rates for various Mayhem Levels
@@ -192,7 +197,7 @@ class Resources(commands.Cog):
         officialguild=self.bot.get_guild(officialServerID)
         perms=True
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(bl2ChatID):
                 return
             perms=False
             #await ctx.send('Request Retrieved')
@@ -253,7 +258,7 @@ class Resources(commands.Cog):
                             found=True
             if '2' in game:
                 with open(os.path.join(dir, 'utils/droprates2.csv'), newline='') as csvfile:
-                    lreader-csv.reader(csvfile, delimiter=',', quotechar='|')
+                    lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
                     for row in lreader:
                         response=''
                         queryname=queryname.replace("'","")
