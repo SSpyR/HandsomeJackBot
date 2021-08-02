@@ -1,21 +1,9 @@
 # hotfix.py
-# original code for def bl_hotfix by apocalyptech on GitHub, thanks to him
-# see https://github.com/apocalyptech/
+# Original Code for def bl_hotfix by apocalyptech on GitHub, Thanks to Him
+# See https://github.com/apocalyptech/
 
-# Just Gonna Embed and Send Out the Auto Update Link From Webhook
-# Ctrl+C+K to Mass Comment, Ctrl+K+U to Mass UnComment
 
-import os
-import sys
-import json
-import appdirs
-import requests
-import datetime
-import time
-import asyncio
-import pickle as pkl
 import discord
-
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -26,16 +14,6 @@ class Hotfix(commands.Cog):
 
     def __init__(self, bot):
         self.bot=bot
-        #self.sched=AsyncIOScheduler()
-        #self.optinguilds=[]
-        #self.optinchats=[]
-        #try:
-        #    with open('utils/optinlistg.pkl', 'rb') as foo:
-        #        self.optinguilds=pkl.load(foo)
-        #    with open('utils/optinlistc.pkl', 'rb') as foo:
-        #        self.optinchats=pkl.load(foo)
-        #except EOFError:
-        #    print('File Was Empty')
 
     
     #@commands.command(name='hotfix', help='Links to the History View of the Latest Hotfix to View All Changes')
