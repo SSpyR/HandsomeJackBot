@@ -7,10 +7,20 @@ from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
 from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID
 
+#TODO Replace "bl1+2 visual parts" with a separate commands for these links instead:
+# https://borderlands.fandom.com/wiki/Combat_Rifle/parts
+# https://borderlands.fandom.com/wiki/Repeater/parts
+# https://borderlands.fandom.com/wiki/Rocket_Launcher/parts
+# https://borderlands.fandom.com/wiki/Shotgun/parts
+# https://borderlands.fandom.com/wiki/Sniper_Rifle/parts
+# https://borderlands.fandom.com/wiki/Submachine_Gun/parts
+
+
 class Official(commands.Cog):
 
     def __init__(self, bot):
         self.bot=bot
+
 
     #@commands.command(name='hotfixes')
     @cog_ext.cog_slash(name='hotfixes', description='Helpful Information About BL3 Hotfixes', guild_ids=[officialServerID])
