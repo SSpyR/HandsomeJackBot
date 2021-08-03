@@ -141,12 +141,12 @@ class Resources(commands.Cog):
 
 
 	#TODO Base command works reading from that JSON, find a way to edit it while the bot is up, and only you are able to use it
-	@cog_ext.cog_slash(name='bmupdate', description='Command for Spy to Update Black Market', guild_ids=[632633098584064018], 
+	@cog_ext.cog_slash(name='bmupdate', description='Command for Spy to Update Black Market', guild_ids=[officialServerID], 
 	options=[create_option(name='location', description='Location of Black Market', option_type=3, required=True),
 	create_option(name='item1', description='Item 1 in Shop', option_type=3, required=True),
 	create_option(name='item2', description='Item 2 in Shop', option_type=3, required=True),
 	create_option(name='item3', description='Item 3 in Shop', option_type=3, required=True)],
-	permissions={632633098584064018: [create_permission(98200921950920704, SlashCommandPermissionType.USER, True), create_permission(632633098584064018, SlashCommandPermissionType.ROLE, False)]})
+	permissions={officialServerID: [create_permission(98200921950920704, SlashCommandPermissionType.USER, True), create_permission(officialServerID, SlashCommandPermissionType.ROLE, False)]})
 	async def bl3_bmupdate(self, ctx: SlashContext, location:str, item1:str, item2:str, item3:str):
 		print('{} {} {} {}'.format(location, item1, item2, item3))
 		items=None
