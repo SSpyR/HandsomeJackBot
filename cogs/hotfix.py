@@ -40,7 +40,7 @@ class Hotfix(commands.Cog):
                             return
                         perms=False
                         #await ctx.send('Request Retrieved')
-                        if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
+                        if officialguild.get_role(rabidRoleID) in ctx.author.roles:
                             perms=True
                         if perms==True:
                             await ctx.send(embed=embed)

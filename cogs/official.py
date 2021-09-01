@@ -5,7 +5,7 @@ import random
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
-from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID
+from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, modRoleID
 
 #TODO Replace "bl1+2 visual parts" with a separate commands for these links instead:
 # https://borderlands.fandom.com/wiki/Combat_Rifle/parts
@@ -32,7 +32,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send('If you\'re seeing unusual stats on your gear (incorrect values, incorrect rarities) or experiencing bugs that have been fixed according to patch notes, you may not have let hotfixes apply. To let them apply go to the main menu and wait for the "Hotfixes Applied" sign to appear. You must be online for this to happen and it can take anywhere between 5 seconds to a minute depending on your connection strength')
@@ -46,7 +46,7 @@ class Official(commands.Cog):
     @cog_ext.cog_slash(name='lfg', description='LFG Redirection Message', guild_ids=[officialServerID], options=[create_option(name='user', description='Specific User to Mention with Message', option_type=6, required=False)])
     async def lfg(self, ctx: SlashContext, user: discord.User=None):
         response='If you plan to play, boost, or trade with someone, please read <#574884110904852480> to get set up! This channel has all the information you\'ll need about our LFG channels! Getting started is as simple as assigning yourself a platform role in <#548843527082213376>! Enjoy yourselves Vault Hunters! \n\n'
-        response+='To embed links or upload images in our trading channels, you\'ll need the Minion role! You earn this at Arcane level 2. You gain XP through talking in the chat.'
+        response+='To embed links or upload images in our trading channels, you\'ll need the Minion role! You earn this at Pepe Manager level 2. You gain XP through talking in the chat.'
         perms=False
         officialguild=self.bot.get_guild(officialServerID)
         if ctx.guild!=officialguild:
@@ -54,7 +54,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             if user is None:
@@ -88,7 +88,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send(response)
@@ -111,7 +111,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send(response)
@@ -141,7 +141,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send(embed=embed)
@@ -164,7 +164,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send(response)
@@ -187,7 +187,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send(response)
@@ -210,7 +210,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send(response)
@@ -233,7 +233,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send(response)
@@ -253,7 +253,7 @@ class Official(commands.Cog):
         # if ctx.channel!=officialguild.get_channel(jackbotChatID):
         #     return
         # await ctx.send('Request Retrieved')
-        if ctx.author.top_role>=officialguild.get_role(badassRoleID):
+        if officialguild.get_role(badassRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
             perms=True
         if perms==True:
             await ctx.send('In order to activate any event (Cartels, Broken Hearts or Bloody Harvest) go to main menu, click play and new option will show up on the bottom of menu to enable it')

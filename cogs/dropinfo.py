@@ -9,7 +9,8 @@ from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
 from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
-#TODO Turn this into its own class for Drop Information
+#TODO Clean up inconsistencies with dots in names
+#TODO Do sources as well as gear names
 
 class DropInfo(commands.Cog):
 
@@ -27,7 +28,7 @@ class DropInfo(commands.Cog):
                 return
             perms=False
             #await ctx.send('Request Retrieved')
-            if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
+            if officialguild.get_role(rabidRoleID) in ctx.author.roles:
                 perms=True
             if perms==False:
                 await ctx.send('Oops! You do not have the proper permissions for that.')
@@ -53,6 +54,8 @@ class DropInfo(commands.Cog):
                     queryname=queryname.replace("'","")
                     if 'pat' in queryname.lower():
                         queryname='p.a.t'
+                    if 'rynah' in queryname.lower():
+                        queryname='r.y.n.a.h.'
                     if 'o.p.q.' in queryname.lower():
                         queryname='opq'
                     if queryname.lower() in row[0].lower():

@@ -3,6 +3,7 @@
 import os
 import discord
 import json
+import requests
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option, create_permission
@@ -36,7 +37,7 @@ class Resources(commands.Cog):
 				return
 			perms=False
 			#await ctx.send('Request Retrieved')
-			if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
+			if officialguild.get_role(rabidRoleID) in ctx.author.roles:
 				perms=True
 			if perms==True:
 				await ctx.send(embed=embed)
@@ -68,7 +69,7 @@ class Resources(commands.Cog):
 				return
 			perms=False
 			#await ctx.send('Request Retrieved')
-			if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
+			if officialguild.get_role(rabidRoleID) in ctx.author.roles:
 				perms=True
 			if perms==True:
 				await ctx.send(embed=embed)
@@ -93,7 +94,7 @@ class Resources(commands.Cog):
 				return
 			perms=False
 			#await ctx.send('Request Retrieved')
-			if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
+			if officialguild.get_role(rabidRoleID) in ctx.author.roles:
 				perms=True
 			if perms==True:
 				await ctx.send(embed=embed)
@@ -108,9 +109,9 @@ class Resources(commands.Cog):
 		officialguild=self.bot.get_guild(officialServerID)
 		location=''
 		items=None
-		dir=os.path.dirname(__file__)
-		with open(os.path.join(dir, 'utils/blackmarket.json'), 'r') as foo:
-			bmData=json.load(foo)
+		url='https://raw.githubusercontent.com/SSpyR/HandsomeJackBot/master/cogs/utils/blackmarket.json'
+		r=requests.get(url)
+		bmData=r.json()
 		location=bmData['location']
 		items=bmData['items']
 		item1=items[0]['name']
@@ -130,7 +131,7 @@ class Resources(commands.Cog):
 				return
 			perms=False
 			#await ctx.send('Request Retrieved')
-			if ctx.author.top_role>=officialguild.get_role(rabidRoleID):
+			if officialguild.get_role(rabidRoleID) in ctx.author.roles:
 				perms=True
 			if perms==True:
 				await ctx.send(embed=embed)
@@ -140,40 +141,39 @@ class Resources(commands.Cog):
 			await ctx.send(embed=embed)
 
 
-	#TODO Base command works reading from that JSON, find a way to edit it while the bot is up, and only you are able to use it
-	@cog_ext.cog_slash(name='bmupdate', description='Command for Spy to Update Black Market', guild_ids=[officialServerID], 
-	options=[create_option(name='location', description='Location of Black Market', option_type=3, required=True),
-	create_option(name='item1', description='Item 1 in Shop', option_type=3, required=True),
-	create_option(name='item2', description='Item 2 in Shop', option_type=3, required=True),
-	create_option(name='item3', description='Item 3 in Shop', option_type=3, required=True)],
-	permissions={officialServerID: [create_permission(98200921950920704, SlashCommandPermissionType.USER, True), create_permission(officialServerID, SlashCommandPermissionType.ROLE, False)]})
-	async def bl3_bmupdate(self, ctx: SlashContext, location:str, item1:str, item2:str, item3:str):
-		print('{} {} {} {}'.format(location, item1, item2, item3))
-		items=None
-		dir=os.path.dirname(__file__)
-		json_data={
-			'location': location,
-			'items': [
-				{
-					'name': item1
-				},
-				{
-					'name': item2
-				},
-				{
-					'name': item3
-				}
-			]
-		}
-		with open(os.path.join(dir, 'utils/blackmarket.json'), 'w') as foo2:
-			json.dump(json_data, foo2, indent=4)
-		embed=discord.Embed(
-			title='Maurice\'s Black Market Update:',
-			description='**Location:** {} \n \n **Item 1:** {} \n \n **Item 2:** {} \n \n **Item 3:** {} \n \n'.format(location, item1, item2, item3),
-			color=discord.Color.magenta()
-		)
-		embed.set_footer(text='Information Successfully Updated')
-		await ctx.send(embed=embed)
+	# @cog_ext.cog_slash(name='bmupdate', description='Command for Spy to Update Black Market', guild_ids=[officialServerID], 
+	# options=[create_option(name='location', description='Location of Black Market', option_type=3, required=True),
+	# create_option(name='item1', description='Item 1 in Shop', option_type=3, required=True),
+	# create_option(name='item2', description='Item 2 in Shop', option_type=3, required=True),
+	# create_option(name='item3', description='Item 3 in Shop', option_type=3, required=True)],
+	# permissions={officialServerID: [create_permission(98200921950920704, SlashCommandPermissionType.USER, True), create_permission(officialServerID, SlashCommandPermissionType.ROLE, False)]})
+	# async def bl3_bmupdate(self, ctx: SlashContext, location:str, item1:str, item2:str, item3:str):
+	# 	print('{} {} {} {}'.format(location, item1, item2, item3))
+	# 	items=None
+	# 	dir=os.path.dirname(__file__)
+	# 	json_data={
+	# 		'location': location,
+	# 		'items': [
+	# 			{
+	# 				'name': item1
+	# 			},
+	# 			{
+	# 				'name': item2
+	# 			},
+	# 			{
+	# 				'name': item3
+	# 			}
+	# 		]
+	# 	}
+	# 	with open(os.path.join(dir, 'utils/blackmarket.json'), 'w') as foo2:
+	# 		json.dump(json_data, foo2, indent=4)
+	# 	embed=discord.Embed(
+	# 		title='Maurice\'s Black Market Update:',
+	# 		description='**Location:** {} \n \n **Item 1:** {} \n \n **Item 2:** {} \n \n **Item 3:** {} \n \n'.format(location, item1, item2, item3),
+	# 		color=discord.Color.magenta()
+	# 	)
+	# 	embed.set_footer(text='Information Successfully Updated')
+	# 	await ctx.send(embed=embed)
 
 	
 	@cog_ext.cog_slash(name='bl2info', description='Various Useful Links for BL2')

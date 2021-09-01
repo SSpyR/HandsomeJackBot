@@ -3,7 +3,6 @@
 
 #TODO Do BL1 & TPS stuff?
 #TODO Will actually have to start thinking about Wonderlands soon
-#TODO Can probably clean up utils folder?
 
 ## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=2147532800&scope=bot%20applications.commands
 ## Ctrl+C+K to Mass Comment, Ctrl+K+U to Mass UnComment
@@ -37,6 +36,7 @@ ccRoleID=790139584025591819
 tubbyRoleID=464235639584587787
 badassRoleID=453875267782443010
 rabidRoleID=453875169207910406
+modRoleID=562095691053400084
 
 
 @bot.event
