@@ -11,6 +11,7 @@ from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3
 
 #TODO Clean up inconsistencies with dots in names
 #TODO Do sources as well as gear names
+#TODO Storm/Firestorm, Pain is Power/Embrace the Pain drop rate accuracy fixes
 
 class DropInfo(commands.Cog):
 
