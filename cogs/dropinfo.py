@@ -9,10 +9,6 @@ from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
 from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
-#TODO Clean up inconsistencies with dots in names
-#TODO Do sources as well as gear names
-#TODO Storm/Firestorm, Pain is Power/Embrace the Pain drop rate accuracy fixes
-
 class DropInfo(commands.Cog):
 
     def __init__(self, bot):
@@ -55,11 +51,7 @@ class DropInfo(commands.Cog):
                     queryname=queryname.replace("'","")
                     if 'pat' in queryname.lower():
                         queryname='p.a.t'
-                    if 'rynah' in queryname.lower():
-                        queryname='r.y.n.a.h.'
-                    if 'o.p.q.' in queryname.lower():
-                        queryname='opq'
-                    if queryname.lower() in row[0].lower():
+                    if queryname.lower() in row[0].lower() or queryname.lower() in row[2].lower():
                         name=row[0]
                         response+="Drop Source: "+row[2]
                         if row[4]!='':
@@ -93,7 +85,7 @@ class DropInfo(commands.Cog):
                         if name.lower()=='bearcat':
                             await ctx.send(':pray:')
             if found==False:
-                await ctx.send('No Item with Name \'{}\' could be found.'.format(queryname))
+                await ctx.send('No Item or Source with Name \'{}\' could be found.'.format(queryname))
 
 
 def setup(bot):

@@ -8,8 +8,8 @@ Linc,Pistol,Anointed Alpha,10%,
 Multi-Tap,Pistol,Katagawa Ball,16.50%,Mayhem 6+
 Freeman,RPG,Warden,13.5%/30%,13.5% on Mayhem 6+; 30% Otherwise
 Rubys Wrath,RPG,Chonk Stomp,10%,
-Embrace the Pain,Assault Rifle,Hot Karl,13.20%,
-Pain is Power,Assault Rifle,Hot Karl,13.20%,
+Embrace the Pain,Assault Rifle,Hot Karl,6.6%,
+Pain is Power,Assault Rifle,Hot Karl,6.6%,
 Sawbar,Assault Rifle,Borman Nates,10%,
 Zheitsevs Eruption,Assault Rifle,Raging Titan,25.00%,Mayhem 4+
 Linoge,Pistol,Lavender Crawly,3.75%,Per Crawly Varkid Larva
@@ -47,7 +47,7 @@ Crossroad,Submachine Gun,Big Donny,15%,
 Handsome Jackhammer,Submachine Gun,Handsome Jackie,15%,
 Hyperfocus XZ41,Submachine Gun,Power Troopers,2.50%,Per Power Trooper; Only from Force Trooper Sapphire and Tourmaline
 Predatory Lending,Submachine Gun,Lavender Crawly,3.75%,Per Crawly Varkid Larva
-Crossbow,Sniper Rifle,Urist McEnforcer,15%,
+Masterwork Crossbow,Sniper Rifle,Urist McEnforcer,15%,
 Tankmans Shield,Sniper Rifle,Captain Traunt,13.5%/30%,13.5% on Mayhem 6+; 30% on Mayhem 4 and 5; Mayhem 4+ Drop
 Woodblocker,Sniper Rifle,Indo Tyrant,10%,
 Bekah,Assault Rifle,Sir Hammerlock Mail,N/A,Only From Mail
@@ -67,7 +67,7 @@ Hellwalker,Shotgun,Road Dog,10%,
 Nimble Jack,Shotgun,Handsome Jackie,15%,
 One Pump Chump,Shotgun,One Punch,15%,
 Sledges Shotgun,Shotgun,Hot Karl,13.20%,
-T.Ks Wave,Shotgun,Dumptruck,30%,
+TKs Wave,Shotgun,Dumptruck,30%,
 The Garcia,Shotgun,Chonk Stomp,10%,
 The Tidal Wave,Shotgun,Dumptruck,30%,
 Headsplosion,Sniper Rifle,King Bobo,15%,
@@ -85,13 +85,13 @@ Cloud Kill,Submachine Gun,Beneath the Meridian,N/A,Mission Reward
 Cutsman,Submachine Gun,Borman Nates,10%,
 Destructo Spinner,Submachine Gun,Power Troopers,2.50%,Per Power Trooper; Only from Force Trooper Sapphire and Tourmaline
 Devoted,Submachine Gun,Brood Mother,10%,
-D.N.A.,Submachine Gun,General Traunt,16.50%,Mayhem 6+
+DNA,Submachine Gun,General Traunt,16.50%,Mayhem 6+
 Tsunami,Submachine Gun,Vermilingua,15%,
 Westergun,Submachine Gun,King Gnasher/Private Beans,15%/100%-,Higher Rate from Private Beans; Base 100% from Beans but Scales with Legendary Drop Weights (more like 50% in no Mayhem vs 100% in M10)
 ASMD,Sniper Rifle,Maxitrillion,10%,
-Firestorm,Sniper Rifle,Katagawa Jr.,13.5%/30%,13.5% on Mayhem 6+; 30% Otherwise
+Firestorm,Sniper Rifle,Red Jabber/Katagawa Jr.,5%/4.5%/10%,5% from Red Jabber; 4.5% on Mayhem 6+; 10% Otherwise
 Krakatoa,Sniper Rifle,Tumorhead,15%,
-Storm,Sniper Rifle,Red Jabber,13.5%/30%,13.5% on Mayhem 6+; 30% Otherwise
+Storm,Sniper Rifle,Red Jabber/Katagawa Jr.,10%/9%/20%,10% from Red Jabber; 9% on Mayhem 6+; 20% Otherwise
 Baby Maker ++,Pistol,Brood Mother,10%,
 Bangarang XL,Pistol,Thunk,15%,
 Gunerang XL,Pistol,Indo Tyrant,10%,
@@ -189,7 +189,7 @@ Quasar,Grenade Mod,Wick and Warty,15%,Only from Warty
 Red Queen,Grenade Mod,Blinding Banshee,10%,
 Storm Front,Grenade Mod,Under Taker,15%,
 Surge,Grenade Mod,Power Troopers,2.50%,Per Power Trooper; Only from Force Trooper Onyx; Ruby; and Citrine
- Tinas Hippity Hopper,Grenade Mod,Raging Titan,25%/33.3%,25% on Mayhem 4+; 33.3% Otherwise
+Tinas Hippity Hopper,Grenade Mod,Raging Titan,25%/33.3%,25% on Mayhem 4+; 33.3% Otherwise
 Tran-fusion,Grenade Mod,Power Troopers,2.50%,Per Power Trooper; Only from Force Trooper Sapphire and Tourmaline
 Widowmaker,Grenade Mod,Max ,30%,
 Breaker,Class Mod,Skag of Survival,50%,
@@ -284,7 +284,7 @@ Stonethrower,Assault Rifle,Kormash,50%,
 Bloom,Pistol,The Ruiner,50%,
 Gargoyle,Pistol,Dickon Goyle,33%,
 Beacon,Pistol,Jerrick Logan,33%,
-Light Show,Pistol,Lasodactly,33%,
+Light Show,Pistol,Lasodactyl,33%,
 Miscreant,Pistol,Quartermaster,50%,
 The Blanc,Pistol,Ipswitch Dunne,33%,
 Unkempt Harold,Pistol,Caber Dawd,33%,
@@ -315,7 +315,7 @@ Muse,Class Mod,Evil Lilith,10%,
 Peregrine,Class Mod,Dr. Benedict,10%,
 Flare,Class Mod,Evil Mordecai,15%,
 Hustler,Class Mod,Locomobius,10%,
-R.Y.N.A.H.,RPG,Loot Enemies,11%,Only From Loot Enemies
+RYNAH.,RPG,Loot Enemies,11%,Only From Loot Enemies
 Hotfoot Teddy,Assault Rifle,Seepage & Creepage Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
 Trickshot,Pistol,Hunker Bunker Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
 Firefly,Pistol,Shipping Encouraged Loot-Room/Heavyweight Harker,4.2%/12.5%,Lower Rate from Harker
@@ -356,10 +356,10 @@ Deaths Blessing,Class Mod,The Seer,6%,
 Roll Reversal,Class Mod,The Seer,6%,
 Heat Exchanger,Class Mod,The Seer,6%,
 Critical Mass,Class Mod,The Seer,6%,
-Fearmonger,Shotgun,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
-Stalker,Sniper Rifle,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
-Scream of Terror,Shield,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
-Ghast Call,Grenade Mod,Captain Haunt/Loot Ghosts,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Fearmonger,Shotgun,Loot Ghosts/Captain Haunt,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Stalker,Sniper Rifle,Loot Ghosts/Captain Haunt,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Scream of Terror,Shield,Loot Ghosts/Captain Haunt,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
+Ghast Call,Grenade Mod,Loot Ghosts/Captain Haunt,0.12%/24%,Lower Rate from Loot Ghosts (Although Loot Ghosts Drop 5 Dedicated Drops)
 Polyaimourous,Submachine Gun,Challenge Reward/Loot Hearts,16%,Rate is from Loot Hearts
 Wedding Invitation,Sniper Rifle,Challenge Reward/Loot Hearts,16%,Rate is from Loot Hearts
 NoPewPew,Assault Rifle,Joey Ultraviolet/Roaster/The Tenderizer,6.6%/11%/11.55%,6.6% from Respective Underboss; 11% from Joey; 11.55% from Underboss when with Joey

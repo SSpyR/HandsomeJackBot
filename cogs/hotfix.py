@@ -9,6 +9,7 @@ from discord_slash import cog_ext, SlashContext
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
+#TODO Ability to search through Hotfix spreadsheet?
 
 class Hotfix(commands.Cog):
 
