@@ -15,7 +15,7 @@ class DropInfo(commands.Cog):
         self.bot=bot
 
 
-    @cog_ext.cog_slash(name='dropinfo', description='Search Command for Finding the Drop Rate and Location of an Item', options=[create_option(name='game', description='Name of Which Game to Search for Drop Rates (BL2/BL3)', option_type=3, required=True),create_option(name='queryname', description='Name of Item to Search For', option_type=3, required=True)])
+    @cog_ext.cog_slash(name='dropinfo', description='Search Command for Finding the Drop Rate and Location of an Item', options=[create_option(name='game', description='Name of Which Game to Search for Drop Rates (BL2/BL3)', option_type=3, required=True),create_option(name='queryname', description='Name of Item or Drop Source to Search For', option_type=3, required=True)])
     async def bl_droprate(self, ctx: SlashContext, game:str, queryname: str):
         officialguild=self.bot.get_guild(officialServerID)
         embed=None
