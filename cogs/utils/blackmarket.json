@@ -1,5 +1,7 @@
 {
-    "location": "Neon Arterial"
+    "location": "Neon Arterial",
+    "items": [
+        {
             "name": "Queens/Kings Call"
         },
         {
