@@ -1,14 +1,12 @@
 {
-    "location": "Floodmoor Basin",
-    "items": [
-        {
-            "name": "Lead Sprinkler"
+    "location": "Neon Arterial"
+            "name": "Queens/Kings Call"
         },
         {
-            "name": "Hellfire"
+            "name": "Handsome Jackhammer"
         },
         {
-            "name": "Messy Breakup"
+            "name": "Sledges Shotgun"
         }
     ]
 }
