@@ -1,14 +1,14 @@
 {
-    "location": "Neon Arterial",
+    "location": "Lectra City",
     "items": [
         {
-            "name": "Queens or Kings Call"
+            "name": "Moonfire"
         },
         {
-            "name": "Handsome Jackhammer"
+            "name": "ASMD"
         },
         {
-            "name": "Sledges Shotgun"
+            "name": "Barrage"
         }
     ]
 }
