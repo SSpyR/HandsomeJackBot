@@ -1,14 +1,14 @@
 {
-    "location": "Lectra City",
+    "location": "Ascension Bluff",
     "items": [
         {
-            "name": "Moonfire"
+            "name": "Reflux"
         },
         {
-            "name": "ASMD"
+            "name": "Damned"
         },
         {
-            "name": "Barrage"
+            "name": "Smart Gun XXL"
         }
     ]
 }
