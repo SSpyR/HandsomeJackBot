@@ -117,6 +117,9 @@ class Social(commands.Cog):
             if 'randall' in message.content:
                 response='<:Randall:757085563214889011>'
                 await message.channel.send(response)
+            if 'randalf' in message.content.lower() or 'rayndalf' in message.content.lower():
+                response='<:Randalf:887495989936668773>\n<:Randalf2:887496038645108757>\n<:Rayndalf:887504920125767680>'
+                await message.channel.send(response)
 
 
     #@commands.command(name='raid', help='Ignore this Dumb Meme')

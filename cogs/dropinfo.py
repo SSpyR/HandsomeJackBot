@@ -7,13 +7,12 @@ from discord import file
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
-from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
+from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, blMediaChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
 class DropInfo(commands.Cog):
 
     def __init__(self, bot):
         self.bot=bot
-
 
     @cog_ext.cog_slash(name='dropinfo', description='Search Command for Finding the Drop Rate and Location of an Item', options=[create_option(name='game', description='Name of Which Game to Search for Drop Rates (BL2/BL3)', option_type=3, required=True),create_option(name='queryname', description='Name of Item or Drop Source to Search For', option_type=3, required=True)])
     async def bl_droprate(self, ctx: SlashContext, game:str, queryname: str):
@@ -21,7 +20,7 @@ class DropInfo(commands.Cog):
         embed=None
         perms=True
         if ctx.guild==officialguild:
-            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(bl2ChatID):
+            if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(bl2ChatID) and ctx.channel!=officialguild.get_channel(blMediaChatID):
                 return
             perms=False
             #await ctx.send('Request Retrieved')
@@ -84,6 +83,8 @@ class DropInfo(commands.Cog):
                         await ctx.send(embed=embed)
                         if name.lower()=='bearcat':
                             await ctx.send(':pray:')
+                        if name.lower()=='hive':
+                            break
             if found==False:
                 await ctx.send('No Item or Source with Name \'{}\' could be found.'.format(queryname))
 
