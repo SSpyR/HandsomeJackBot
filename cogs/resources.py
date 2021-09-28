@@ -144,6 +144,7 @@ class Resources(commands.Cog):
 
 
 	#TODO What do I do about things that by default are listed as no splash damage, but do get anoint?
+	#TODO Find all the weapons that get Splash Anoint but dont do splash and add them to the list?
 	@cog_ext.cog_slash(name='splashinfo', description='Command to see what weapons in Borderlands 3 do Splash and/or get the Splash Anoint', options=[create_option(name='queryname' ,description='Name of Weapon to Search For', option_type=3, required=True)])
 	async def bl3_splashinfo(self, ctx:SlashContext, queryname:str):
 		officialguild=self.bot.get_guild(officialServerID)
@@ -167,20 +168,15 @@ class Resources(commands.Cog):
 			with open(os.path.join(dir, filepath), newline='') as csvfile:
 				lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
 				for row in lreader:
-					splash=False
-					anoint=False
 					response=''
 					notes=''
 					splashemote=':x:'
 					anointemote=':x:'
 					if queryname.lower() in row[0].lower():
-						splash=True
 						splashemote=':white_check_mark:'
 						if len(row[3])>0 and row[3]=='Yes':
-							splash=False
 							splashemote=':x:'
 						if row[1]=='Yes':
-							anoint=True
 							anointemote=':white_check_mark:'
 						response=f'Does it do Splash: {splashemote}\n\nDoes it get Splash Anoint: {anointemote}'
 						if len(row[2])>0:
