@@ -1,14 +1,14 @@
 {
-    "location": "Ascension Bluff",
+    "location": "Pyre of Stars",
     "items": [
         {
-            "name": "Reflux"
+            "name": "TK/Tidal Wave"
         },
         {
-            "name": "Damned"
+            "name": "Rubys Wrath"
         },
         {
-            "name": "Smart Gun XXL"
+            "name": "Horizon"
         }
     ]
 }
