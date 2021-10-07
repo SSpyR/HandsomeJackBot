@@ -1,14 +1,14 @@
 {
-    "location": "Pyre of Stars",
+    "location": "Ambermire",
     "items": [
         {
-            "name": "TK/Tidal Wave"
+            "name": "Mongol"
         },
         {
-            "name": "Rubys Wrath"
+            "name": "Warlord"
         },
         {
-            "name": "Horizon"
+            "name": "Surge"
         }
     ]
 }
