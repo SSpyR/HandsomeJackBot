@@ -1,14 +1,14 @@
 {
-    "location": "Ambermire",
+    "location": "Konrad's Hold",
     "items": [
         {
-            "name": "Mongol"
+            "name": "Scourge"
         },
         {
-            "name": "Warlord"
+            "name": "Juliet's Dazzle"
         },
         {
-            "name": "Surge"
+            "name": "Woodblocker"
         }
     ]
 }
