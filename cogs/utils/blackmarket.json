@@ -1,14 +1,14 @@
 {
-    "location": "Konrad's Hold",
+    "location": "Droughts",
     "items": [
         {
-            "name": "Plaguebearer"
+            "name": "Kaoson"
         },
         {
-            "name": "Juliet's Dazzle"
+            "name": "Dictator"
         },
         {
-            "name": "Woodblocker"
+            "name": "Storm/Firestorm"
         }
     ]
 }
