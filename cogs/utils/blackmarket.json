@@ -1,14 +1,14 @@
 {
-    "location": "Droughts",
+    "location": "Jakobs Estate",
     "items": [
         {
-            "name": "Kaoson"
+            "name": "Hellwalker"
         },
         {
-            "name": "Dictator"
+            "name": "Creeping Death"
         },
         {
-            "name": "Storm/Firestorm"
+            "name": "Firestorm (Grenade Mod)"
         }
     ]
 }
