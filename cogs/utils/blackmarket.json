@@ -1,14 +1,14 @@
 {
-    "location": "Jakobs Estate",
+    "location": "The Anvil",
     "items": [
         {
-            "name": "Hellwalker"
+            "name": "Sand Hawk"
         },
         {
-            "name": "Creeping Death"
+            "name": "Red Queen"
         },
         {
-            "name": "Firestorm (Grenade Mod)"
+            "name": "Embrace the Pain/Pain is Power"
         }
     ]
 }
