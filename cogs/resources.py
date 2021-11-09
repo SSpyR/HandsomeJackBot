@@ -145,67 +145,68 @@ class Resources(commands.Cog):
 
 	#TODO What do I do about things that by default are listed as no splash damage, but do get anoint?
 	#TODO Find all the weapons that get Splash Anoint but dont do splash and add them to the list?
-	@cog_ext.cog_slash(name='splashinfo', description='Command to see what weapons in Borderlands 3 do Splash and/or get the Splash Anoint', options=[create_option(name='queryname' ,description='Name of Weapon to Search For', option_type=3, required=True)])
-	async def bl3_splashinfo(self, ctx:SlashContext, queryname:str):
-		officialguild=self.bot.get_guild(officialServerID)
-		embed=None
-		perms=True
-		if ctx.guild==officialguild:
-			if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(blMediaChatID):
-				return
-			perms=False
-			if officialguild.get_role(rabidRoleID) in ctx.author.roles:
-				perms=True
-			if perms==False:
-				await ctx.send('Oops! You do not have the proper permissions for that.')
-		if len(queryname)<3:
-			await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
-			return
-		if perms==True:
-			found=False
-			dir=os.path.dirname(__file__)
-			filepath='utils/splashinfo3.csv'
-			with open(os.path.join(dir, filepath), newline='') as csvfile:
-				lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
-				for row in lreader:
-					response=''
-					notes=''
-					splashemote=':x:'
-					anointemote=':x:'
-					if queryname.lower() in row[0].lower():
-						splashemote=':white_check_mark:'
-						if len(row[3])>0 and row[3]=='Yes':
-							splashemote=':x:'
-						if row[1]=='Yes':
-							anointemote=':white_check_mark:'
-						response=f'Does it do Splash: {splashemote}\n\nDoes it get Splash Anoint: {anointemote}'
-						if len(row[2])>0:
-							notes=row[2]
-							response=f'Does it do Splash: {splashemote}\n\nDoes it get Splash Anoint: {anointemote}\n\nNotes: {notes}'
-						embed=discord.Embed(
-							title=f'Splash Info for {row[0]}',
-							description=response,
-							color=discord.Color.purple()
-						)
-						embed.set_footer(text='')
-						found=True
-						await ctx.send(embed=embed)
-			if found==False:
-				dropsheetpath='utils/droprates3.csv'
-				with open(os.path.join(dir, dropsheetpath), newline='') as csvfile:
-					lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
-					for row in lreader:
-						if queryname.lower() in row[0].lower():
-							embed=discord.Embed(
-								title=f'Splash Info for {row[0]}',
-								description=f'Does it do Splash: :x:\n\nDoes it get Splash Anoint: :x:',
-								color=discord.Color.purple()
-							)
-							embed.set_footer(text='')
-							found=True
-							await ctx.send(embed=embed)
-			if found==False:
-				await ctx.send(f'No Item with Name \'{queryname}\' could be found.')
+	#TODO Actually fix all the edge cases before releasing again
+	#@cog_ext.cog_slash(name='splashinfo', description='Command to see what weapons in Borderlands 3 do Splash and/or get the Splash Anoint', options=[create_option(name='queryname' ,description='Name of Weapon to Search For', option_type=3, required=True)])
+	#async def bl3_splashinfo(self, ctx:SlashContext, queryname:str):
+	#	officialguild=self.bot.get_guild(officialServerID)
+	#	embed=None
+	#	perms=True
+	#	if ctx.guild==officialguild:
+	#		if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(blMediaChatID):
+	#			return
+	#		perms=False
+	#		if officialguild.get_role(rabidRoleID) in ctx.author.roles:
+	#			perms=True
+	#		if perms==False:
+	#			await ctx.send('Oops! You do not have the proper permissions for that.')
+	#	if len(queryname)<3:
+	#		await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
+	#		return
+	#	if perms==True:
+	#		found=False
+	#		dir=os.path.dirname(__file__)
+	#		filepath='utils/splashinfo3.csv'
+	#		with open(os.path.join(dir, filepath), newline='') as csvfile:
+	#			lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
+	#			for row in lreader:
+	#				response=''
+	#				notes=''
+	#				splashemote=':x:'
+	#				anointemote=':x:'
+	#				if queryname.lower() in row[0].lower():
+	#					splashemote=':white_check_mark:'
+	#					if len(row[3])>0 and row[3]=='Yes':
+	#						splashemote=':x:'
+	#					if row[1]=='Yes':
+	#						anointemote=':white_check_mark:'
+	#					response=f'Does it do Splash: {splashemote}\n\nDoes it get Splash Anoint: {anointemote}'
+	#					if len(row[2])>0:
+	#						notes=row[2]
+	#						response=f'Does it do Splash: {splashemote}\n\nDoes it get Splash Anoint: {anointemote}\n\nNotes: {notes}'
+	#					embed=discord.Embed(
+	#						title=f'Splash Info for {row[0]}',
+	#						description=response,
+	#						color=discord.Color.purple()
+	#					)
+	#					embed.set_footer(text='')
+	#					found=True
+	#					await ctx.send(embed=embed)
+	#		if found==False:
+	#			dropsheetpath='utils/droprates3.csv'
+	#			with open(os.path.join(dir, dropsheetpath), newline='') as csvfile:
+	#				lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
+	#				for row in lreader:
+	#					if queryname.lower() in row[0].lower():
+	#						embed=discord.Embed(
+	#							title=f'Splash Info for {row[0]}',
+	#							description=f'Does it do Splash: :x:\n\nDoes it get Splash Anoint: :x:',
+	#							color=discord.Color.purple()
+	#						)
+	#						embed.set_footer(text='')
+	#						found=True
+	#						await ctx.send(embed=embed)
+	#		if found==False:
+	#			await ctx.send(f'No Item with Name \'{queryname}\' could be found.')
 
 
 	# @cog_ext.cog_slash(name='bmupdate', description='Command for Spy to Update Black Market', guild_ids=[officialServerID], 
