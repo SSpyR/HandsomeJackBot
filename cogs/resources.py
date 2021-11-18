@@ -123,8 +123,8 @@ class Resources(commands.Cog):
 		shop+='{} \n \n'.format(item2)
 		shop+='{} \n \n'.format(item3)
 		embed=discord.Embed(
-			title='Maurice\'s Black Market: {}'.format(location),
-			#description=shop,
+			title='Maurice\'s Black Market',
+			description='Due to the change in how Maurice\'s Shop is generated this command will only link to whereismaurice.com until a way is found to dictate the location and store from files each week. Thanks!',
 			color=discord.Color.greyple()
 		)
 		embed.add_field(name='\u200B', value='[Where is Maurice Website](https://whereismaurice.com/)', inline=True)
