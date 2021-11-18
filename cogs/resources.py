@@ -124,7 +124,7 @@ class Resources(commands.Cog):
 		shop+='{} \n \n'.format(item3)
 		embed=discord.Embed(
 			title='Maurice\'s Black Market: {}'.format(location),
-			description=shop,
+			#description=shop,
 			color=discord.Color.greyple()
 		)
 		embed.add_field(name='\u200B', value='[Where is Maurice Website](https://whereismaurice.com/)', inline=True)
