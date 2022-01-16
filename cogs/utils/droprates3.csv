@@ -92,7 +92,7 @@ ASMD,Sniper Rifle,Maxitrillion,10%,
 Firestorm,Sniper Rifle,Red Jabber/Katagawa Jr.,5%/4.5%/10%,5% from Red Jabber; 4.5% on Mayhem 6+; 10% Otherwise
 Krakatoa,Sniper Rifle,Tumorhead,15%,
 Storm,Sniper Rifle,Red Jabber/Katagawa Jr.,10%/9%/20%,10% from Red Jabber; 9% on Mayhem 6+; 20% Otherwise
-Baby Maker ++,Pistol,Brood Mother,10%,
+Baby Maker,Pistol,Brood Mother,10%,
 Bangarang XL,Pistol,Thunk,15%,
 Gunerang XL,Pistol,Indo Tyrant,10%,
 S3RV-8OS-EXECUTE,Pistol,Anointed X-2 ,15.00%,Mayhem 4+
@@ -165,7 +165,7 @@ Grave,Artifact,Graveward,10%,
 Launch Pad,Artifact,Red Rain,50%,
 Loaded Dice,Artifact,Pain,5.7%/7.5%/10%,5.7% on Mayhem 6+; 7.5% on Mayhem 4 and 5; 10% Otherwise
 Moxxis Endowment,Artifact,Tink Train,15%,
-Otto Idol,Artifact,Tyreen the Destroyer,15%,
+Otto Idol,Artifact,Rachel the Annointed,15%,
 Phoenix Tears,Artifact,Phoenix,10%,
 Pull Out Method,Artifact,DJ Deadsk4g,10%,
 Rocket Boots,Artifact,Blue Fire,50%,
@@ -311,10 +311,10 @@ P.A.T.Mk.III,Submachine Gun,Spongeboss,30%,
 Septimator Prime,Sniper Rifle,Evil Mordecai,15%,
 Faulty Star,Shield,Locomobius,10%,
 Plus Ultra,Shield,Dr. Benedict,10%,
-Muse,Class Mod,Evil Lilith,10%,
-Peregrine,Class Mod,Dr. Benedict,10%,
-Flare,Class Mod,Evil Mordecai,15%,
-Hustler,Class Mod,Locomobius,10%,
+Muse,Class Mod,Caretaker/Evil Lilith,7.5%/10%,Rates listed in Order
+Peregrine,Class Mod,Cartaker/Dr. Benedict,7.5%/10%,Rates listed in Order
+Flare,Class Mod,Caretaker/Evil Mordecai,7.5%/15%,Rates listed in Order
+Hustler,Class Mod,Caretaker/Locomobius,7.5%/10%,Rates listed in Order
 RYNAH.,RPG,Loot Enemies,11%,Only From Loot Enemies
 Hotfoot Teddy,Assault Rifle,Seepage & Creepage Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker
 Trickshot,Pistol,Hunker Bunker Loot-Room/Heavyweight Harker,4.2%/8.3%,Lower Rate from Harker

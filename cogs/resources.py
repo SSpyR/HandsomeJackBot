@@ -1,11 +1,15 @@
 # resources.py
 
 import os
+from queue import Empty
 import discord
 import json
 from discord.colour import Color
-import requests
+import requests, certifi, ssl
 import csv
+import random
+from bs4 import BeautifulSoup
+from urllib.request import Request, urlopen
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option, create_permission
@@ -105,7 +109,7 @@ class Resources(commands.Cog):
 		else:
 			await ctx.send(embed=embed)
 
-
+	#TODO Still need to find a way to automate this
 	@cog_ext.cog_slash(name='maurice', description='Information on Where Maurice\'s Black Market is and What its Selling')
 	async def bl3_maurice(self, ctx: SlashContext):
 		officialguild=self.bot.get_guild(officialServerID)
@@ -207,6 +211,67 @@ class Resources(commands.Cog):
 	#						await ctx.send(embed=embed)
 	#		if found==False:
 	#			await ctx.send(f'No Item with Name \'{queryname}\' could be found.')
+	# @cog_ext.cog_slash(name='splashinfo', description='Command to see what weapons in Borderlands 3 do Splash and/or get the Splash Anoint', options=[create_option(name='queryname' ,description='Name of Weapon to Search For', option_type=3, required=True)])
+	# async def bl3_splashinfo(self, ctx:SlashContext, queryname:str):
+	# 	officialguild=self.bot.get_guild(officialServerID)
+	# 	embed=None
+	# 	perms=True
+	# 	if ctx.guild==officialguild:
+	# 		if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(blMediaChatID):
+	# 			return
+	# 		perms=False
+	# 		if officialguild.get_role(rabidRoleID) in ctx.author.roles:
+	# 			perms=True
+	# 		if perms==False:
+	# 			await ctx.send('Oops! You do not have the proper permissions for that.')
+	# 	if len(queryname)<3:
+	# 		await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
+	# 		return
+	# 	if perms==True:
+	# 		found=False
+	# 		dir=os.path.dirname(__file__)
+	# 		filepath='utils/splashinfo3.csv'
+	# 		with open(os.path.join(dir, filepath), newline='') as csvfile:
+	# 			lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
+	# 			for row in lreader:
+	# 				response=''
+	# 				notes=''
+	# 				splashemote=':x:'
+	# 				anointemote=':x:'
+	# 				if queryname.lower() in row[0].lower():
+	# 					splashemote=':white_check_mark:'
+	# 					if len(row[3])>0 and row[3]=='Yes':
+	# 						splashemote=':x:'
+	# 					if row[1]=='Yes':
+	# 						anointemote=':white_check_mark:'
+	# 					response=f'Does it do Splash: {splashemote}\n\nDoes it get Splash Anoint: {anointemote}'
+	# 					if len(row[2])>0:
+	# 						notes=row[2]
+	# 						response=f'Does it do Splash: {splashemote}\n\nDoes it get Splash Anoint: {anointemote}\n\nNotes: {notes}'
+	# 					embed=discord.Embed(
+	# 						title=f'Splash Info for {row[0]}',
+	# 						description=response,
+	# 						color=discord.Color.purple()
+	# 					)
+	# 					embed.set_footer(text='')
+	# 					found=True
+	# 					await ctx.send(embed=embed)
+	# 		if found==False:
+	# 			dropsheetpath='utils/droprates3.csv'
+	# 			with open(os.path.join(dir, dropsheetpath), newline='') as csvfile:
+	# 				lreader=csv.reader(csvfile, delimiter=',', quotechar='|')
+	# 				for row in lreader:
+	# 					if queryname.lower() in row[0].lower():
+	# 						embed=discord.Embed(
+	# 							title=f'Splash Info for {row[0]}',
+	# 							description=f'Does it do Splash: :x:\n\nDoes it get Splash Anoint: :x:',
+	# 							color=discord.Color.purple()
+	# 						)
+	# 						embed.set_footer(text='')
+	# 						found=True
+	# 						await ctx.send(embed=embed)
+	# 		if found==False:
+	# 			await ctx.send(f'No Item with Name \'{queryname}\' could be found.')
 
 
 	# @cog_ext.cog_slash(name='bmupdate', description='Command for Spy to Update Black Market', guild_ids=[officialServerID], 
@@ -330,6 +395,49 @@ class Resources(commands.Cog):
 				await ctx.send('Oops! You do not have the proper permissions for that.')
 		else:
 			await ctx.send(embed=embed)
+
+	#TODO Meme command for creating random skill trees, I will do it eventually
+	# @cog_ext.cog_slash(name='skilltree', description='Random Skill Tree Generator (Thanks Pris)', guild_ids=[723902359276879935])
+	# async def bl3_skilltreeran(self, ctx: SlashContext):
+	# 	fl4k='https://www.lootlemon.com/class/fl4k#xxxx_000000000000_0000000000000_000000000000_00000000000000'
+	# 	amara='https://www.lootlemon.com/class/amara#xxb_00000000000000_0000000000000_0000000000000_0000000000000'
+	# 	moze='https://www.lootlemon.com/class/moze#xxxx_0000000000000_0000000000000_0000000000000_0000000000000'
+	# 	zane='https://www.lootlemon.com/class/zane#xxxxxx_00000000000000_00000000000_00000000000000_000000000000'
+	# 	chars=[fl4k, amara, moze, zane]
+	# 	tree=random.choice(chars)
+
+	@cog_ext.cog_slash(name='lootsearch', description='A Command to Search the LootLemon Website Straight from Discord!')
+	async def lootsearch(self, ctx: SlashContext, queryname: str):
+		officialguild=self.bot.get_guild(officialServerID)
+		perms=True
+		if ctx.guild==officialguild:
+			if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(bl2ChatID) and ctx.channel!=officialguild.get_channel(blMediaChatID):
+				return
+			perms=False
+			#await ctx.send('Request Retrieved')
+			if officialguild.get_role(rabidRoleID) in ctx.author.roles:
+				perms=True
+			if perms==False:
+				await ctx.send('Oops! You do not have the proper permissions for that.')
+		if len(queryname)<3:
+			await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
+			return
+		if perms==True:
+			baselink="https://www.lootlemon.com"
+			searchbase="/search?query="
+			req=Request(baselink+searchbase+queryname)
+			html_page=urlopen(req, context=ssl.create_default_context(cafile=certifi.where()))
+
+			soup=BeautifulSoup(html_page, "html.parser")
+
+			links=[]
+			for table in soup.findAll("div", {"class": "card_grid search-result-items"}):
+				for link in table.findAll("a"):
+					links.append(link.get("href"))
+			try:
+				await ctx.send(baselink+links[0])
+			except IndexError:
+				await ctx.send("Link Search Error, Contact SSpyR for Assistance")
 
 
 def setup(bot):

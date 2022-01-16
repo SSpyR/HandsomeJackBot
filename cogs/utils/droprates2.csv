@@ -5,18 +5,18 @@ Name,Type,Enemy/Quest,Drop Rate,Notes
 12 Pounder,,Big Sleep,33%,
 Actualizer,,Hyperius,0.29%,
 Ahab,,Master Gee (UVHM)/Master Gee,33%/0.5%,Rates Listed in Order
-Avenger,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
+Avenger,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
 Baby Maker,,Madame Von Bartlesby,10%,
 Bad Touch,,Moxxis Jar,N/A,
 Badaboom,,King Mong,5.00%,
-Bearcat,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
-Bekah,,Tubbies (62+),0.80%,
+Bearcat,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
+Bekah,,Tubbies (62+),0.08%,
 Bitch,,BNK-3R/Master Gee,3.3%/1.6%,Rates Listed in Order
 Blockhead,,Badass Creeper,6.25%,
 Bone Shredder,,Bone Head 2.0/Bone Head v3.0/Arguk the Butcher,33.00%,All Enemies Have Same Rate
 Bunny,,Chubby Enemies/Tubbies (62+),25%/5%,Rates Listed in Order
-Butcher,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
-Carnage,,Tubbies (62+),0.80%,
+Butcher,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
+Carnage,,Tubbies (62+),0.08%,
 CHOPPER,,Dexiduous,33.00%,
 Cobra,,Burners,~0.02%,
 Commerce,,Assassin Wot/Digistruct Assassin Wot,33%,Both Enemies Have Same Rate
@@ -30,7 +30,7 @@ Emperor,,Assassins/Digistruct Assassins,5%/1.25%,Rates Listed in Order
 Flakker,,Warrior/Handsome Sorcerer,1.25%/4.125%,Rates Listed in Order
 Florentine,,Seraph Vendor,N/A,
 Fremingtons Edge,,Assassin Reeth/Digistruct Assassin Reeth,33.00%,Both Enemies Have Same Rate
-Godfinger,,Tubbies (62+),0.80%,
+Godfinger,,Tubbies (62+),0.08%,
 Greed,,Captain Scarlett,100%,
 Gub,,Laney White,10%,
 Gunerang,,RakkMan/Master Gee,10%/1.667%,Rates Listed in Order
@@ -45,7 +45,7 @@ Interfacer,,Voracidous (UVHM)/Voracidous/Omnd-Omnd-Ohk/Dexiduous (3x),50%/0.5%/0
 Invader,,Saturn/Saturn v2.0,3.30%,Both Enemies Have Same Rate
 Judge,,Assassin Oney/Digistruct Assassin Oney,33%,Both Enemies Have Same Rate
 Kerblaster,,MidgeMong/Handsome Sorcerer (Story Kill),10%,Both Enemies Have Same Rate
-Law,,The Sheriff of Lynchwood,16.50%,
+Law,,The Sheriff of Lynchwood,11%,
 Lead Storm,,Voracidous/Omnd-Omnd-Ohk/Dexiduous (3x),0.50%,All Enemies Have Same Rate
 Logans Gun,,Wilhelm,5%,
 Longbow,,Badass Creeper,6.25%,
@@ -54,7 +54,7 @@ Madhous!,,Mad Dog,10%,
 Maggie,,Mick Zaford,10%,
 Mongol,,Dukinos Mom/Digistruct Dukinos Mom,5%,Both Enemies Have Same Rate
 Norfleet,,Vermivorous/Hyperius,20%/1.667%,Rates Listed in Order
-Nukem,,Black Queen/Digistruct Black Queen,10%,Both Enemies Have Same Rate
+Nukem,,Dark Web/Black Queen/Digistruct Black Queen,10%,All Enemies Have Same Rate
 Ogre,,Warlord Slog,21.45%,
 Omen,,Ancient Dragons,33%,
 Patriot,,Master Gee (UVHM)/Master Gee,33%/0.5%,Rates Listed in Order
@@ -62,7 +62,7 @@ Pitchfork,,Terramorphous (x2)/Master Gee,1.4%/1.7%,Rates Listed in Order
 Pyrophobia,,Incinerator Clayton/Hyperius/Clark the Combusted Cryptkeeper,10%/0.29%/33%,Rates Listed in Order
 Retcher,,Hyperius (UVHM)/Hyperius,33%/0.286%,Rates Listed in Order
 Rex,,Bulstoss,33%,
-Sawbar,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
+Sawbar,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
 Seeker,,Seraph Vendor,N/A,
 Seraphim,,Master Gee,0.50%,
 Shredifier,,Hyperius,2%,
@@ -70,22 +70,22 @@ Skullmasher,,Son of Mothrakk/Rakkanoth,5.00%,Both Enemies Have Same Rate
 Slagga,,Tector Hodunk/Sorcerers Daughter,10%/2.4%,Rates Listed in Order
 Sledges Shotgun,,Smash Head/Gold Golem/Hyperius,10%/1.95%/1.7%,Rates Listed in Order
 Slow Hand,,Piston/Badassasarus,30%,Both Enemies Have Same Rate
-Stalker,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
+Stalker,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
 Stinger,,Ancient Dragons,33.00%,
 Stinkpot,,No-Beard,33%,
-Storm,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
+Storm,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
 Striker,,Old Slappy/Master Gee,10%/1.667%,Rates Listed in Order
 Tattler,,Hyperius (UVHM)/Hyperius,33%/0.286%,Rates Listed in Order
-Teeth of Terramorphous,,Terramorphous (x2),1.43%,
+Teeth of Terramorphous,,Terramorphous (x2),1.40%,
 Thunderball Fists,,Captain Flynt/Sparky Flynt,5%,Both Enemies Have Same Rate
 Tinderbox,,Captain Flynt/Sparky Flynt,100%/33%,Rates Listed in Order
-Tunguska,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
+Tunguska,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
 Twister,,Omnd-Omnd-Ohk,33%,
-Unforgiven,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.8%/13%/0.17%,Rates Listed in Order
+Unforgiven,,Tubbies (62+)/OMGWTH/Loot Midgets (51+),0.08%/13%/0.17%,Rates Listed in Order
 Unkempt Harold,,Savage Lee,10%,
 Veruc,,Mobley/Sorcerers Daughter,10%/2.4%,Rates Listed in Order
 Volcano,,Warrior/Handsome Sorcerer,1.25%/4.125%,Rates Listed in Order
-Wanderlust,,Tubbies (62+),0.80%,
+Wanderlust,,Tubbies (62+),0.08%,
 Yellow Jacket,,Jackenstein,33%,
 Antagonist,Shield,Seraph Vendor,N/A,
 Big Boom Blaster,Shield,Pyro Pete the Invincible (UVHM),33%,
@@ -108,7 +108,7 @@ The Sham,Shield,BNK-3R ,3.30%,
 The Transformer,Shield,Pimon,10%,
 Whiskey Tango Foxtrot,Shield,Chubby Enemies/Tubbies (62+)/Hyperius,25%/5%/1.7%,Rates Listed in Order
 Bonus Package,Grenade Mod,Bewm/Boom,10%,Both Enemies Have Same Rate
-Breath of Terramorphous,Grenade Mod,Terramorphous (x2),1%,
+Breath of Terramorphous,Grenade Mod,Terramorphous (x2),1.40%,
 Chain Lightning,Grenade Mod,Badass Sorceror/Handsome Sorcerer (x2)/Badass Necromancer/Necromancer,10%/0.2%/0.006%/0.003%,Rates Listed in Order
 Crossfire,Grenade Mod,Seraph Vendor,N/A,
 Fastball,Grenade Mod,Boll,10%,
@@ -123,9 +123,9 @@ Meteor Shower,Grenade Mod,Seraph Vendor,N/A,
 Nasty Surprise,Grenade Mod,Vermivorous ,20%,
 O-Negative,Grenade Mod,Pyro Pete the Invincible (UVHM),33%,
 Pandemic,Grenade Mod,Mortar,10%,
-Quasar,Grenade Mod,Ultimate Badass Varkid,10,
+Quasar,Grenade Mod,Ultimate Badass Varkid,9.9%,
 Rolling Thunder,Grenade Mod,Wilhelm,5%,
-Storm Front,Grenade Mod,(Dan/Lee/Mick/Ralph)/Master Gee,3%/1.6%,Rates Listed in Order
+Storm Front,Grenade Mod,(Dan/Lee/Mick/Ralph)/Master Gee,2.5%/1.6%,Rates Listed in Order
 Legendary Engineer,Class Mod,Tubbies (62+),4.40%,
 Legendary Pointman,Class Mod,Tubbies (62+),4.40%,
 Legendary Ranger,Class Mod,Tubbies (62+),4.40%,
@@ -152,7 +152,7 @@ Legendary Ninja,Class Mod,Tubbies (62+),4.40%,
 Legendary Sniper,Class Mod,Tubbies (62+),4.40%,
 Slayer of Terramorphous,Class Mod,Terramorphous,50%/10%,50% for COM of Current VH; 10% for COM of Other VHs
 Blood of Terramorphous,Artifact,Terramorphous (x2),1.40%,
-Sheriffs Badge,Artifact,The Sheriff of Lynchwood,16.50%,
+Sheriffs Badge,Artifact,The Sheriff of Lynchwood,22%,
 Breath of the Seraphs,Artifact,Seraph Vendor,N/A,
 Might of the Seraphs,Artifact,Seraph Vendor,N/A,
 Hard Carry,Artifact,Haderax,33%,
@@ -175,6 +175,8 @@ The Electric Chair,Grenade Mod,Uranus (x2),10%,
 World Burn,,Lt. Bolson,10%/20%,10% in NVHM; 20% in TVHM+
 Unicornsplosion,,Butt Stallion,N/A,Feed Butt Stallion Eridium while wearing Mysterious Amulet
 Mouthwash,Artifact,Quest Reward,N/A,
+M2828 Thumpson,,Grave in Dahl Abandon,6.8%,
+Hydra,,Rouge,33%,
 ,,,,
 ,,,,
 ,,,,

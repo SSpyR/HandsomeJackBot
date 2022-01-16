@@ -4,6 +4,7 @@
 #TODO Do BL1 & TPS stuff?
 #TODO TPS next
 #TODO Will actually have to start thinking about Wonderlands soon
+#TODO Make seperate bot for Wonderlands stuff
 #TODO Vault Card 2 stuff for BL3
 
 ## Test Bot Invite Link: https://discord.com/api/oauth2/authorize?client_id=723253848898273380&permissions=2147532800&scope=bot%20applications.commands
