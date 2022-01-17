@@ -29,3 +29,5 @@ urllib3==1.25.8
 websockets==8.1
 yarl==1.4.2
 discord-py-slash-command==2.3.1
+bs4==0.0.1
+certifi==2019.11.28
