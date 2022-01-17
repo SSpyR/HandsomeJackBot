@@ -423,6 +423,7 @@ class Resources(commands.Cog):
 			await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
 			return
 		if perms==True:
+			queryname=queryname.replace(" ", "+")
 			baselink="https://www.lootlemon.com"
 			searchbase="/search?query="
 			req=Request(baselink+searchbase+queryname)
