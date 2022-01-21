@@ -10,6 +10,7 @@ import csv
 import random
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
+from requests.utils import quote
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option, create_permission
@@ -423,9 +424,10 @@ class Resources(commands.Cog):
 			await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
 			return
 		if perms==True:
-			queryname=queryname.replace(" ", "+")
+			queryname=quote(queryname)
 			baselink="https://www.lootlemon.com"
 			searchbase="/search?query="
+			print(baselink+searchbase+queryname)
 			req=Request(baselink+searchbase+queryname)
 			html_page=urlopen(req, context=ssl.create_default_context(cafile=certifi.where()))
 
