@@ -407,8 +407,8 @@ class Resources(commands.Cog):
 	# 	chars=[fl4k, amara, moze, zane]
 	# 	tree=random.choice(chars)
 
-	@cog_ext.cog_slash(name='lootsearch', description='A Command to Search the LootLemon Website Straight from Discord!')
-	async def lootsearch(self, ctx: SlashContext, queryname: str):
+	@cog_ext.cog_slash(name='search', description='A Command to Search the LootLemon Website Straight from Discord!')
+	async def search(self, ctx: SlashContext, queryname: str):
 		officialguild=self.bot.get_guild(officialServerID)
 		perms=True
 		if ctx.guild==officialguild:
