@@ -53,12 +53,13 @@ class Hotfix(commands.Cog):
 
 
     #TODO Might have to adjust this for Official if the channel name changes
+    #TODO this is posting WL stuff, fix this, looking at wrong channel?
     @commands.Cog.listener()
     async def on_message(self, message):
         guild=self.bot.get_guild(632633098584064018)
 
         if message.guild==guild:
-            if message.author.display_name=='GitHub':
+            if message.author.display_name=='GitHub' and 'bl3hotfixes' in message:
                 update=message.embeds[0].to_dict()
                 link=update["url"]
                 if 'Auto-update' in update["description"]:
