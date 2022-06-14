@@ -5,7 +5,7 @@ import random
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
-from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, modRoleID
+from bot import officialServerID, jackbotChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, modRoleID, rabidRoleID
 
 #TODO Replace "bl1+2 visual parts" with a separate commands for these links instead:
 # https://borderlands.fandom.com/wiki/Combat_Rifle/parts
@@ -258,6 +258,25 @@ class Official(commands.Cog):
         if perms==True:
             await ctx.send('In order to activate any event (Cartels, Broken Hearts or Bloody Harvest) go to main menu, click play and new option will show up on the bottom of menu to enable it')
             # await officialguild.get_channel(jackbotChatID).send('In order to activate any event (Cartels, Broken Hearts or Bloody Harvest) go to main menu, click play and new option will show up on the bottom of menu to enable it')
+        else:
+            await ctx.send('Oops! You do not have the proper permissions for that.')
+            # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
+
+
+    #@commands.command(name='wonderlands')
+    @cog_ext.cog_slash(name='wonderlands', description='Link to Wonderlands Official Server', guild_ids=[officialServerID])
+    async def wl_server(self, ctx: SlashContext):
+        perms=False
+        officialguild=self.bot.get_guild(officialServerID)
+        if ctx.guild!=officialguild:
+            return
+        # if ctx.channel!=officialguild.get_channel(jackbotChatID):
+        #     return
+        # await ctx.send('Request Retrieved')
+        if officialguild.get_role(rabidRoleID) in ctx.author.roles or officialguild.get_role(invincibleRoleID) in ctx.author.roles or officialguild.get_role(modRoleID) in ctx.author.roles:
+            perms=True
+        if perms==True:
+            await ctx.send('Tiny Tina\'s Wonderlands have a seperate community server! Join via https://discord.gg/wonderlands')
         else:
             await ctx.send('Oops! You do not have the proper permissions for that.')
             # await officialguild.get_channel(jackbotChatID).send('Oops! You do not have the proper permissions for that.')
