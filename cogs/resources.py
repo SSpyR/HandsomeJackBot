@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 from requests.utils import quote
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
-from discord_slash.utils.manage_commands import create_option, create_permission
+from discord_slash.utils.manage_commands import create_option, create_permission, create_choice
 from discord_slash.model import SlashCommandPermissionType
 from bot import officialServerID, jackbotChatID, bl3ChatID, bl3BuildsChatID, bl3LootChatID, bl2ChatID, blMediaChatID, invincibleRoleID, ccRoleID, tubbyRoleID, badassRoleID, rabidRoleID
 
@@ -36,7 +36,6 @@ class Resources(commands.Cog):
 			color=discord.Color.dark_gold()
 		)
 		embed.set_footer(text='')
-		embed.add_field(name='\u200B', value='[Submit a Build Here](https://docs.google.com/forms/d/e/1FAIpQLSe_RkUKIvzHoRXlHgQh4TnERgQK6H-yXW2RJkUmn7sFUn4x0Q/viewform)', inline=True)
 		officialguild=self.bot.get_guild(officialServerID)
 		if ctx.guild==officialguild:
 			if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID):
@@ -397,6 +396,7 @@ class Resources(commands.Cog):
 		else:
 			await ctx.send(embed=embed)
 
+
 	#TODO Meme command for creating random skill trees, I will do it eventually
 	# @cog_ext.cog_slash(name='skilltree', description='Random Skill Tree Generator (Thanks Pris)', guild_ids=[723902359276879935])
 	# async def bl3_skilltreeran(self, ctx: SlashContext):
@@ -407,7 +407,8 @@ class Resources(commands.Cog):
 	# 	chars=[fl4k, amara, moze, zane]
 	# 	tree=random.choice(chars)
 
-	@cog_ext.cog_slash(name='search', description='A Command to Search the LootLemon Website Straight from Discord!')
+
+	@cog_ext.cog_slash(name='search', description='Command to Search the LootLemon Website Straight from Discord!')
 	async def search(self, ctx: SlashContext, queryname: str):
 		officialguild=self.bot.get_guild(officialServerID)
 		perms=True
@@ -441,6 +442,38 @@ class Resources(commands.Cog):
 				await ctx.send(baselink+links[0])
 			except IndexError:
 				await ctx.send("Link Search Error, Contact SSpyR for Assistance")
+
+	#TODO non meme command that entirely relies on good formatting to look decent on discord. (Thanks Pris)
+	#TODO maybe wait to finish this when the "surprise" from Pirek is available
+	# @cog_ext.cog_slash(name='buildsearch', description='Command to Search for the Different Builds of the BL3 Build Docs', 
+	# options=[create_option(name='character', description='Character for Build Search', required=True, choices=['Amara', 'FL4K', 'Moze', 'Zane']), create_option(name='buildname', description='Name of Build to Receive Link For', option_type=3, required=True)])
+	# async def buildsearch(self, ctx: SlashContext, character: str, queryname: str):
+	# 	officialguild=self.bot.get_guild(officialServerID)
+	# 	perms=True
+	# 	if ctx.guild==officialguild:
+	# 		if ctx.channel!=officialguild.get_channel(jackbotChatID) and ctx.channel!=officialguild.get_channel(bl3ChatID) and ctx.channel!=officialguild.get_channel(bl3BuildsChatID) and ctx.channel!=officialguild.get_channel(bl3LootChatID) and ctx.channel!=officialguild.get_channel(blMediaChatID):
+	# 			return
+	# 		perms=False
+	# 		#await ctx.send('Request Retrieved')
+	# 		if officialguild.get_role(rabidRoleID) in ctx.author.roles:
+	# 			perms=True
+	# 		if perms==False:
+	# 			await ctx.send('Oops! You do not have the proper permissions for that.')
+	# 	if len(queryname)<3:
+	# 		await ctx.send('Name \'{}\' too short for searching. Please use at least 3 characters.'.format(queryname))
+	# 		return
+	# 	if perms==True:
+	# 		print(queryname)
+	# 		print(character)
+	# 		amaraDocDict={}
+	# 		fl4kDocDict={}
+	# 		mozeDocDict={}
+	# 		zaneDocDict={}
+	# 		choices=["Hellzerker", "Double Anarchy Phasecast", "Melee Amara", "Driver Amara", "Cast Stab", "Fistsplosion", "Doomsday", "Iceskull", "Amara DoT Gun",
+	# "Fade Away", "Guerillas in the Mist", "Gamma Burst/Fade Hybrid", "Rakk Attack", "Rakk Stab", "Grenade Rakks",
+	# "Fl4uncher", "Punchbot", "Killer Queen", "Lode N Splode", "Yeetbot", "No U", "Nade Away", "FL4CID", "Clonemaster", "Double Launcher Zane",
+	# "Eraser+Hustler Zane", "3-Tree SAK"]
+	# 		return
 
 
 def setup(bot):
