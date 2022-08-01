@@ -210,7 +210,7 @@ class Hotfix(commands.Cog):
 
     #        # Do the git interaction
     #        #print('Pushing to git')
-    #        #repo = git.Repo("C:\\Users\\lavoiet2\\Downloads\\Coding\\HandsomeJackBot")
+    #        #repo = git.Repo("")
     #        #repo.git.pull()
     #        #repo.git.add('--', os.path.join(point_in_time_dir, hotfix_filename))
     #        #repo.git.add('--', os.path.join(output_dir, cumulative_file))
